@@ -1,0 +1,1 @@
+$(window).scroll(function(){$(this).scrollTop()<100?$("#top-logo").removeClass("showme"):$("#top-logo").addClass("showme")});
