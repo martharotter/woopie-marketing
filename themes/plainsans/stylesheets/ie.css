@@ -1,0 +1,72 @@
+/* Woopie framework 0.2 */
+/* IE is the devil. Here you give it its due */
+header, nav, section, article, aside, footer {
+  display: block; }
+
+#frontcover-heading {
+  padding: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -280px;
+  /* half the width */
+  margin-top: -280px;
+  /* half the height */
+  width: 560px;
+  height: 560px; }
+
+#intro-heading #main-image-print {
+  display: block; }
+  #intro-heading #main-image-print img {
+    width: auto;
+    max-width: 100%;
+    width: 960px; }
+#intro-heading #main-image {
+  display: none; }
+
+#wrapper {
+  margin: 0 auto;
+  padding: 0;
+  width: 920px; }
+
+#contributors, #article-body, #end-nav, #publication-footer, #contents-listing, #contents-body, #gallery-body, #listing-body {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  width: 920px; }
+
+#divider #end-nav {
+  display: block; }
+
+.contributor {
+  float: left;
+  width: 460px;
+  margin: 0;
+  padding: 0; }
+  .contributor .contributor-info {
+    padding-right: 40px; }
+
+img {
+  width: auto;
+  max-width: 100%; }
+
+.content-block .fig-video, .content-block .fig-image-fixedsize {
+  margin: 0 auto 20px auto;
+  text-align: center; }
+  .content-block .fig-video video, .content-block .fig-image-fixedsize video {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto; }
+  .content-block .fig-video img, .content-block .fig-image-fixedsize img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto; }
+  .content-block .fig-video figcaption, .content-block .fig-image-fixedsize figcaption {
+    text-align: center;
+    margin: 0 auto; }
+.content-block img {
+  width: auto;
+  max-width: 100%; }
+.content-block .section-image img {
+  width: auto;
+  max-width: 100%; }
