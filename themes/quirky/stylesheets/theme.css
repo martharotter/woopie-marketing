@@ -1,0 +1,3395 @@
+/* Woopie framework 0.2 */
+/* Theme - Pull in relevant template files, set elements values */
+/* normalize.css 2012-01-22T23:30 UTC - http://github.com/necolas/normalize.css */
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects block display not defined in IE6/7/8/9 & FF3
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block; }
+
+/*
+ * Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+/*
+ * Prevents modern browsers from displaying 'audio' without controls
+ */
+audio:not([controls]) {
+  display: none; }
+
+/*
+ * Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4
+ * Known issue: no IE6 support
+ */
+[hidden] {
+  display: none; }
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ *    http://clagnut.com/blog/348/#c790
+ * 2. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* 
+ * Addresses font-family inconsistency between 'textarea' and other form elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif; }
+
+/*
+ * Addresses margins handled incorrectly in IE6/7
+ */
+body {
+  margin: 0; }
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses outline displayed oddly in Chrome
+ */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers
+ * people.opera.com/patrickl/experiments/keyboard/test
+ */
+a:hover,
+a:active {
+  outline: 0; }
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ */
+h1 {
+  font-size: 2em; }
+
+/*
+ * Addresses styling not present in IE7/8/9, S5, Chrome
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+*/
+b,
+strong {
+  font-weight: bold; }
+
+blockquote {
+  margin: 1em 40px; }
+
+/*
+ * Addresses styling not present in S5, Chrome
+ */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE6/7/8/9
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in IE6, S4/5, Chrome
+ * en.wikipedia.org/wiki/User:Davidgothberg/Test59
+ */
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * 1. Addresses CSS quotes not supported in IE6/7
+ * 2. Addresses quote property not supported in S4
+ */
+/* 1 */
+q {
+  quotes: none; }
+
+/* 2 */
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+/*
+ * Prevents sub and sup affecting line-height in all browsers
+ * gist.github.com/413930
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+ul,
+ol {
+  margin-left: 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * 1. Removes border when inside 'a' element in IE6/7/8/9, FF3
+ * 2. Improves image quality when scaled in IE7
+ *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/*
+ * Corrects overflow displayed oddly in IE9 
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+figure {
+  margin: 0; }
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Corrects margin displayed oddly in IE6/7
+ */
+form {
+  margin: 0; }
+
+/*
+ * Define consistent border, margin, and padding
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE6/7/8/9
+ * 2. Corrects text not wrapping in FF3 
+ * 3. Corrects alignment displayed oddly in IE6/7
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/*
+ * 1. Corrects font size not being inherited in all browsers
+ * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * 3. Improves appearance and consistency in all browsers
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/*
+ * Addresses FF3/4 setting line-height on 'input' using !important in the UA stylesheet
+ */
+button,
+input {
+  line-height: normal;
+  /* 1 */ }
+
+/*
+ * 1. Improves usability and consistency of cursor style between image-type 'input' and others
+ * 2. Corrects inability to style clickable 'input' types in iOS
+ * 3. Removes inner spacing in IE7 without affecting normal text inputs
+ *    Known issue: inner spacing remains in IE6
+ */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  /* 1 */
+  -webkit-appearance: button;
+  /* 2 */
+  *overflow: visible;
+  /* 3 */ }
+
+/*
+ * 1. Addresses box sizing set to content-box in IE8/9
+ * 2. Removes excess padding in IE8/9
+ * 3. Removes excess padding in IE7
+      Known issue: excess padding remains in IE6
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/*
+ * 1. Addresses appearance set to searchfield in S5, Chrome
+ * 2. Addresses box-sizing set to border-box in S5, Chrome (include -moz to future-proof)
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in S5, Chrome on OS X
+ */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in FF3+
+ * www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE6/7/8/9
+ * 2. Improves readability and alignment in all browsers
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+/* 
+ * Remove most spacing between table cells
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Woopie framework 0.2 */
+/* Base stylesheet - useful objects */
+/* Box size */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Reset headings */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+/* clearfix */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+a:hover, a:active {
+  cursor: pointer; }
+
+/* Woopie framework 0.2 */
+/* Variables - define widths, colors, font families etc. */
+/* Measurements */
+/* Set a base scale */
+/* Left and right spacing */
+/* Specific left and right spacing for wider screens */
+/* Indent for wider screens */
+/* Main image sizing */
+/* Font Set */
+/* Type */
+/* Color Set */
+/* Plum - Main text color */
+/* Pink - Secondary text color */
+/* Orange - Highlight color */
+/* Brown - Highlight color */
+/* Inverse(ish) Main text color */
+/* Inverse(ish) Secondary text color */
+/* Colors */
+/* Page colors */
+/* Top bar */
+/* Titles */
+/* Links */
+/* Woopie framework 0.2 */
+/* Base stylesheet - web specifics */
+/* Basic Stuff  */
+body {
+  background: white url(../images/pagebg.png);
+  font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+  color: #534245; }
+
+/* *	{
+	outline: 1px dotted red;
+} */
+/* link colors */
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear; }
+  a:link {
+    color: #ff5c27; }
+  a:visited {
+    color: #ff5c27; }
+  a:focus {
+    color: #f33c00; }
+  a:hover {
+    color: #f33c00; }
+  a:active {
+    color: #ff825a; }
+
+/* selection colours */
+::selection {
+  background: #6f595c;
+  /* Safari */
+  color: #fff; }
+
+::-moz-selection {
+  background: #6f595c;
+  /* Firefox */
+  color: #fff; }
+
+/* Woopie framework 0.2 */
+/* Mixins - useful shortcuts and tools */
+/* Woopie framework 0.2 */
+/* Debug */
+/* Debug Info */
+#debug-console {
+  background: #000;
+  bottom: 0;
+  color: #ff0;
+  font-size: 11px;
+  font-family: Arial;
+  font-weight: bold;
+  opacity: 0.8;
+  padding: 5px 10px;
+  position: fixed;
+  left: 0;
+  text-transform: uppercase;
+  text-shadow: none;
+  z-index: 10000;
+  width: 100%; }
+
+#debug-console i {
+  color: #fff;
+  font-style: italic;
+  text-transform: lowercase;
+  padding-right: 10px; }
+
+/* Debug text */
+@media screen and (max-width: 480px) {
+  #debug-console #pixels:after {
+    content: " Under 480px"; } }
+@media screen and (min-width: 481px) {
+  #debug-console #pixels:after {
+    content: " 481px > 600px"; } }
+@media screen and (min-width: 37.6em) {
+  #debug-console #pixels:after {
+    content: " 601px > 768px"; } }
+@media screen and (min-width: 48.1em) {
+  #debug-console #pixels:after {
+    content: " 769px > 1024px"; } }
+@media screen and (min-width: 64.1em) {
+  #debug-console #pixels:after {
+    content: " 1025px > 1280px"; } }
+@media screen and (min-width: 1281px) {
+  #debug-console #pixels:after {
+    content: " 1281px > 1600px"; } }
+@media screen and (min-width: 1601px) {
+  #debug-console #pixels:after {
+    content: " Over 1600px"; } }
+
+@media screen and (max-width: 30em) {
+  #debug-console #ems:after {
+    content: "Under 30em "; } }
+@media screen and (min-width: 30.1em) {
+  #debug-console #ems:after {
+    content: "30em > 37.5em "; } }
+@media screen and (min-width: 37.6em) {
+  #debug-console #ems:after {
+    content: "37.6em > 48em "; } }
+@media screen and (min-width: 48.1em) {
+  #debug-console #ems:after {
+    content: "48.1em > 64em "; } }
+@media screen and (min-width: 64.1em) {
+  #debug-console #ems:after {
+    content: "64.1em > 80em "; } }
+@media screen and (min-width: 80.1em) {
+  #debug-console #ems:after {
+    content: "80.1em > 100em "; } }
+@media screen and (min-width: 100em) {
+  #debug-console #ems:after {
+    content: "Over 100em "; } }
+
+/* Show screen sizes */
+/* Woopie framework 0.1 */
+/* Fonts - Modern Pictograms */
+/* @font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../../fonts/modernpics-webfont.eot');
+    src: url('../../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/modernpics-webfont.woff') format('woff'),
+         url('../../fonts/modernpics-webfont.ttf') format('truetype'),
+         url('../../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+/* Icons - icon typeface */
+/* Woopie framework 0.2 */
+/* Wrapper stylesheet */
+#wrapper {
+  margin: 0;
+  padding: 0; }
+
+/* Containers */
+/* Woopie framework 0.2 */
+/* Wrapper stylesheet - media queries */
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+  #wrapper, #advert {
+    margin-bottom: 96px; } }
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) {
+  #wrapper {
+    max-width: 960px;
+    margin: 0 auto; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #wrapper {
+    max-width: 1280;
+    margin: 0 auto; } }
+/* ############################################################ */
+/* Show on iPhone */
+.ios-only {
+  display: none; }
+
+@media only screen and (max-device-width: 480px) {
+  .ios-only {
+    display: block; } }
+@media only screen and (max-device-width: 1024px) {
+  .ios-only {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* Global content blocks - Base Styles */
+.content-block {
+  /* Start Blockquote */
+  /* End Blockquote */
+  /* Figures */
+  /* Tables*/ }
+  .content-block h1 {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 16px 0;
+    text-rendering: optimizeLegibility; }
+  .content-block h2 {
+    font-family: "rooney-web", Georgia, Serif;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 16px 0; }
+  .content-block h3 {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+  .content-block p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+  .content-block .bullet-heading .word1 {
+    color: #ff7b86;
+    font-weight: bold;
+    margin: 0 4px 0 0; }
+  .content-block .bullet-heading span:last-child, .content-block .date-heading span:last-child {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 0px 0;
+    color: #ff5c27;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif; }
+  .content-block pre {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */ }
+  .content-block ul, .content-block ol {
+    margin: 0 0 16px 24px;
+    padding: 0; }
+  .content-block li {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 4px 0;
+    padding: 0; }
+    .content-block li ul, .content-block li ol {
+      margin: 8px 0 0 32px;
+      padding: 0; }
+  .content-block ul li, .content-block ol ul li {
+    list-style: square; }
+  .content-block ol li, .content-block ul ol li {
+    list-style: decimal; }
+  .content-block sup {
+    font-size: 8px; }
+  .content-block abbr {
+    border-bottom: 1px dotted #ff7b86;
+    cursor: help; }
+  .content-block blockquote {
+    border: 1px solid #ff7b86;
+    border-width: 2px 0 1px 0;
+    margin: 0 0 16px 0;
+    padding: 16px 0;
+    page-break-inside: avoid; }
+  .content-block blockquote p {
+    font-family: "rooney-web", Georgia, Serif;
+    font-style: italic; }
+  .content-block blockquote cite {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-style: normal;
+    color: #ff7b86;
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .content-block blockquote cite:before {
+    content: "— ";
+    opacity: 0.5; }
+  .content-block .fig-image, .content-block .fig-image-fixedsize, .content-block .fig-video, .content-block .fig-pullquote {
+    margin: 0 0 16px 0;
+    padding: 0;
+    page-break-inside: avoid; }
+  .content-block figcaption, .content-block .section-caption {
+    background: white;
+    margin: 0;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0px 0;
+    font-family: "rooney-web", Georgia, Serif;
+    font-style: italic;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .content-block .fig-image img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .content-block .fig-image {
+    position: relative;
+    clear: right;
+    float: right;
+    width: 192px;
+    margin: 0 0 16px 32px; }
+  .content-block .section-image {
+    margin: 0 0 16px 0;
+    position: relative; }
+    .content-block .section-image img {
+      display: block;
+      margin: 0;
+      -webkit-border-top-left-radius: 4px;
+      -webkit-border-top-right-radius: 4px;
+      -webkit-border-bottom-right-radius: 0px;
+      -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-topleft: 4px;
+      -moz-border-radius-topright: 4px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px; }
+  .content-block .fig-image-fixedsize {
+    width: 100%; }
+    .content-block .fig-image-fixedsize img {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+    .content-block .fig-image-fixedsize figcaption {
+      background: none;
+      padding: 8px 0;
+      width: 100%; }
+  .content-block .fig-video {
+    clear: both;
+    display: block;
+    width: 640px;
+    height: 320px;
+    height: auto;
+    page-break-inside: avoid; }
+    .content-block .fig-video video {
+      margin: 0; }
+  .content-block figcaption code {
+    font-style: normal; }
+  .content-block .fig-image-zoom {
+    color: #f9e7bf;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 64px;
+    line-height: 64px;
+    margin: 0 0 0px 0;
+    padding: 0 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  .content-block table {
+    border-collapse: collapse;
+    margin: 0 0 32px 0;
+    padding: 0;
+    width: 100%; }
+  .content-block th, .content-block td {
+    border-bottom: 1px solid #6f595c;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+  .content-block th {
+    text-align: left; }
+  .content-block td {
+    border-bottom: 1px solid #e7e0e1; }
+
+/* Base HTML formating */
+/* Woopie framework 0.2 */
+/* Global content blocks - Media Queries Styles */
+.content-block video {
+  width: 100%;
+  height: auto; }
+.content-block .fig-video {
+  width: 100%; }
+.content-block * {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  .content-block blockquote p {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 16px 0; }
+  .content-block blockquote cite {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 0px 0; }
+  .content-block .fig-image-fixedsize {
+    padding: 16px 16px 0 16px;
+    margin: 0 0 16px 0;
+    text-align: center; }
+    .content-block .fig-image-fixedsize img {
+      margin: 0 auto; }
+  .content-block .fig-image, .content-block .section-image {
+    margin-bottom: 16px;
+    width: 100%; }
+    .content-block .fig-image img, .content-block .section-image img {
+      display: block; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 481px) {
+  .content-block blockquote p {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 16px 0; }
+  .content-block blockquote cite {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0px 0; }
+  .content-block .fig-image, .content-block .section-image {
+    margin: 0 0 16px 0;
+    width: 100%; }
+    .content-block .fig-image img, .content-block .section-image img {
+      display: block; }
+  .content-block .fig-image-fixedsize {
+    padding: 0;
+    margin: 0 0 16px 0;
+    text-align: center;
+    width: 100%; }
+    .content-block .fig-image-fixedsize img {
+      text-align: center;
+      display: block;
+      margin: 0 auto; }
+  .content-block .scroll-vert {
+    margin: 0 0 16px 16px; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 769px) {
+  .content-block {
+    /* Figures */ }
+    .content-block .fig-image, .content-block .fig-video, .content-block .fig-pullquote {
+      clear: left;
+      float: left;
+      width: 384px;
+      margin: 0 32px 16px 0; }
+      .content-block .fig-image blockquote p, .content-block .fig-video blockquote p, .content-block .fig-pullquote blockquote p {
+        text-align: right; }
+      .content-block .fig-image footer, .content-block .fig-video footer, .content-block .fig-pullquote footer {
+        text-align: right; } }
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 1025px) {
+  .content-block {
+    /* Figures */ }
+    .content-block .fig-image, .content-block .fig-video, .content-block .fig-pullquote {
+      margin-left: 0; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  .content-block {
+    /* Figures */
+    /* Tables */ }
+    .content-block h3 {
+      font-size: 19.2px;
+      line-height: 24px;
+      margin: 0 0 16px 0; }
+    .content-block p {
+      font-size: 17.6px;
+      line-height: 28.8px;
+      margin: 0 0 32px 0; }
+    .content-block pre {
+      font-size: 17.6px;
+      line-height: 28.8px;
+      margin: 0 0 32px 0; }
+    .content-block #intro-section {
+      margin: 16px 0; }
+      .content-block #intro-section p {
+        font-size: 28px;
+        line-height: 40px;
+        margin: 0 0 32px 0; }
+    .content-block ul, .content-block ol {
+      margin: 0 0 32px 0;
+      margin-left: 0;
+      padding: 0; }
+    .content-block li {
+      font-size: 17.6px;
+      line-height: 28.8px;
+      margin: 0 0 8px 0; }
+      .content-block li ul, .content-block li ol {
+        margin: 8px 0 0 32px;
+        padding: 0; }
+    .content-block .fig-image, .content-block .fig-video, .content-block .fig-pullquote {
+      margin-left: -96px; }
+    .content-block th, .content-block td {
+      font-size: 17.6px;
+      line-height: 28.8px;
+      margin: 0 0 16px 0; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 1600px) {
+  .content-block {
+    /* Figures */ }
+    .content-block .fig-image, .content-block .fig-video, .content-block .fig-pullquote {
+      margin-left: -144px; } }
+/* ############################################################ */
+/* Print */
+@media print {
+  .content-block .fig-image, .content-block .fig-video, .content-block .fig-pullquote {
+    clear: right;
+    float: right;
+    margin: 0 0 16px 32px;
+    padding: 4px 0 0 0;
+    width: 448px; }
+  .content-block blockquote {
+    margin: 0 0 8px 0;
+    padding: 0 8px 0 32px;
+    border: none; }
+  .content-block pre {
+    border: none; } }
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+/* Intro Headings */
+#intro-heading hgroup {
+  margin: 0;
+  padding: 0;
+  clear: both; }
+  #intro-heading hgroup h1 {
+    color: #362c2d;
+    font-size: 32px;
+    line-height: 36px;
+    margin: 0 0 24px 0;
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-weight: bold; }
+  #intro-heading hgroup h2 {
+    color: #6f595c;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+    padding: 0 0 16px 0;
+    font-family: "rooney-web", Georgia, Serif;
+    font-style: italic; }
+  #intro-heading hgroup h3 {
+    background: #ff5c27 url(../images/titlemask.png);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 16px 0;
+    padding: 8px 16px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+    #intro-heading hgroup h3 b {
+      color: white;
+      font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+      font-style: bold;
+      padding: 0 8px 0 0; }
+    #intro-heading hgroup h3 i {
+      color: #f9e7bf;
+      font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+      font-style: normal; }
+#intro-heading #main-image {
+  background: url(../images/kitten.jpg) no-repeat center center;
+  background-size: cover;
+  border-bottom: 4px solid #c02f00;
+  height: 256px;
+  width: 100%; }
+#intro-heading #main-image-print {
+  display: block;
+  line-height: 0;
+  padding: 0;
+  margin: 0 0 32px 0; }
+#intro-heading.noimage {
+  margin-top: 32px; }
+
+/* Top of page */
+/* Woopie framework 0.2 */
+/* Titles - Media Queries Styles */
+#intro-heading #main-image-print {
+  display: none; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #intro-heading {
+    width: 100%;
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+    box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical; }
+    #intro-heading hgroup {
+      background: black;
+      margin: 0;
+      padding: 32px 24px 4px 24px;
+      box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -webkit-box-ordinal-group: 1; }
+      #intro-heading hgroup h1 {
+        color: white; }
+      #intro-heading hgroup h2 {
+        color: #f9e7bf; }
+    #intro-heading #main-image {
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -webkit-box-ordinal-group: 2; }
+    #intro-heading #credits {
+      box-ordinal-group: 3;
+      -moz-box-ordinal-group: 3;
+      -webkit-box-ordinal-group: 3; }
+    #intro-heading.noimage {
+      margin-top: 0; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #intro-heading {
+    margin: 0; }
+    #intro-heading #main-image {
+      height: 384px;
+      margin: 0 0 32px 0; }
+    #intro-heading hgroup {
+      margin: 0 24px;
+      position: relative; }
+      #intro-heading hgroup h3 {
+        position: absolute;
+        top: -68px;
+        margin: 0;
+        -webkit-border-top-left-radius: 2px;
+        -webkit-border-top-right-radius: 2px;
+        -webkit-border-bottom-right-radius: 0px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-topleft: 2px;
+        -moz-border-radius-topright: 2px;
+        -moz-border-radius-bottomright: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px; }
+    #intro-heading.noimage hgroup {
+      margin-top: 65px; }
+      #intro-heading.noimage hgroup h3 {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) {
+  #intro-heading hgroup {
+    margin: 0 24px; }
+    #intro-heading hgroup h1 {
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 32px 0;
+      font-weight: bold; }
+    #intro-heading hgroup h2 {
+      font-size: 32px;
+      line-height: 40px;
+      margin: 0 0 16px 0; }
+  #intro-heading #main-image {
+    height: 448px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; } }
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #intro-heading hgroup {
+    margin: 0 48px; }
+    #intro-heading hgroup h1 {
+      font-size: 64px;
+      line-height: 72px;
+      margin: 0 0 48px 0;
+      font-weight: bold; }
+    #intro-heading hgroup h2 {
+      font-size: 40px;
+      line-height: 48px;
+      margin: 0 0 16px 0; }
+  #intro-heading #main-image {
+    height: 448px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #intro-heading hgroup {
+    margin: 0 48px 0 96px; }
+    #intro-heading hgroup h1 {
+      font-size: 80px;
+      line-height: 88px;
+      margin: 0 0 64px 0;
+      font-weight: bold; }
+    #intro-heading hgroup h2 {
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 16px 0; }
+  #intro-heading #main-image {
+    height: 512px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #intro-heading hgroup {
+    margin: 0 48px 0 144px; }
+    #intro-heading hgroup h1 {
+      font-size: 96px;
+      line-height: 104px;
+      margin: 0 0 64px 0;
+      font-weight: bold; }
+    #intro-heading hgroup h2 {
+      font-size: 56px;
+      line-height: 64px;
+      margin: 0 0 32px 0; }
+  #intro-heading #main-image {
+    height: 768px; } }
+/* Woopie framework 0.2 */
+/* Introduction section - Base Styles */
+#intro-section p {
+  font-family: "rooney-web", Georgia, Serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0 0 32px 0; }
+#intro-section ul {
+  margin: 0;
+  padding: 0; }
+  #intro-section ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+
+/* Intro deck */
+/* Woopie framework 0.2 */
+/* Introdutcion section - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #intro-section p {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 32px 0; }
+  #intro-section ul li {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 16px 0; } }
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+@media print {
+  #main-image-print {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+#credits {
+  margin: 0 0 16px 0; }
+
+#roles {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0px 0;
+  clear: both;
+  width: 100%; }
+  #roles dt {
+    color: #6f595c;
+    float: left;
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-style: italic;
+    margin: 0 16px 0 0;
+    padding: 0; }
+  #roles dd {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #6f595c; }
+
+/* Roles & Credits */
+/* Woopie framework 0.2 */
+/* Credits - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #credits {
+    margin: 0 0 16px 0; }
+
+  #roles {
+    padding: 16px 24px; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #credits {
+    margin: 0 24px 16px 24px; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #credits {
+    margin: 0 48px 16px 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #credits {
+    margin: 0 48px 16px 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #credits {
+    max-width: 1280px;
+    margin: 0 48px 16px 144px; } }
+/* Woopie framework 0.2 */
+/* Issue Info - Base Styles */
+#edition {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0px 0;
+  font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+  padding: 0 0 32px 0;
+  width: 100%; }
+  #edition dt {
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #edition dd {
+    float: left;
+    margin: 0 32px 0 8px;
+    padding: 0 8px; }
+
+/* Issue details (month, number etc) */
+/* Woopie framework 0.2 */
+/* Issue Info - Media Queries Styles */
+#issue {
+  margin: 16px 24px; }
+
+#edition {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0px 0;
+  font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+  padding: 0 0 32px 0;
+  width: 100%; }
+  #edition dt {
+    color: #362c2d; }
+  #edition dd {
+    background: #ff7b86;
+    color: white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #issue {
+    margin: 0;
+    padding: 16px 24px 8px 24px; }
+
+  #edition {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 0px 0; } }
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #issue {
+    margin: 16px 48px; }
+
+  #edition {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 0px 0; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #issue {
+    margin: 16px 48px 16px 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #issue {
+    margin: 16px 48px 16px 144px; } }
+/* Woopie framework 0.2 */
+/* Footer - Base Styles */
+#publication-footer {
+  margin: 16px;
+  font-family: "rooney-web", Georgia, Serif;
+  font-style: italic; }
+  #publication-footer p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+
+/* Credits block, end of page */
+/* Woopie framework 0.2 */
+/* Footer - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #publication-footer {
+    margin: 16px 24px; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #publication-footer {
+    margin: 16px 24px; }
+    #advert #publication-footer {
+      margin: 16px;
+      text-align: center; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #publication-footer {
+    margin: 16px 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #publication-footer {
+    margin: 16px 48px 16px 96px; }
+    #advert #publication-footer {
+      margin: 16px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #publication-footer {
+    margin: 16px 48px 16px 144px; }
+    #advert #publication-footer {
+      margin: 16px; } }
+/* Woopie framework 0.2 */
+/* Topbar - Base Styles */
+/* Top Bar */
+#top-bar {
+  background: #362c2d url(../images/navbg.png);
+  border-bottom: 4px solid #ff5c27;
+  clear: both;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+
+/* Navigation/Social buttons */
+.button-links ul {
+  margin: 0;
+  padding: 0; }
+  .button-links ul li {
+    display: inline;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    z-index: 200; }
+    .button-links ul li a {
+      -webkit-font-smoothing: antialiased;
+      background: transparent;
+      color: white;
+      display: block;
+      float: left;
+      font-family: 'ModernPictogramsNormal';
+      font-size: 24px;
+      line-height: 40px;
+      margin: 0 0 0px 0;
+      margin: 0;
+      padding: 0;
+      text-decoration: none; }
+      .button-links ul li a:hover {
+        color: #ff5c27; }
+      .button-links ul li a #cont-dropdown {
+        background: #6f595c;
+        position: absolute;
+        width: 100%;
+        left: -9999px;
+        top: 40px; }
+        .button-links ul li a #cont-dropdown ol li {
+          display: block;
+          width: 100%; }
+          .button-links ul li a #cont-dropdown ol li h2 a {
+            background: #534245;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 0px 0; }
+          .button-links ul li a #cont-dropdown ol li a {
+            border-bottom: 1px solid #8b7073;
+            color: #f9e7bf;
+            display: block;
+            font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+            padding: 8px 16px;
+            width: 100%;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 0 0 0px 0; }
+            .button-links ul li a #cont-dropdown ol li a:hover {
+              background: #ff5c27;
+              color: #f9e7bf; }
+            .button-links ul li a #cont-dropdown ol li a span, .button-links ul li a #cont-dropdown ol li a p {
+              display: none; }
+      .button-links ul li a.cont:hover #cont-dropdown, .button-links ul li a.cont:active #cont-dropdown {
+        left: 0; }
+    .button-links ul li i {
+      display: block;
+      float: left;
+      margin: 0;
+      vertical-align: baseline;
+      font-family: "ModernPictogramsNormal", Arial, Serif;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      width: 40px; }
+    .button-links ul li b {
+      float: left;
+      font-family: "rooney-web", Georgia, Serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: none; }
+
+.icon-cover:before {
+  content: "B"; }
+
+.icon-contents:before {
+  content: "5"; }
+
+.icon-previousarticle:before {
+  content: "<"; }
+
+.icon-nextarticle:before {
+  content: ">"; }
+
+.icon-twitter:before {
+  content: "T"; }
+
+.icon-facebook:before {
+  content: "F"; }
+
+.icon-share:before {
+  content: "o"; }
+
+.icon-comment:before {
+  content: "b"; }
+
+#top-nav {
+  float: left;
+  z-index: 200; }
+
+#top-social {
+  float: right;
+  z-index: 200; }
+
+#top-title {
+  color: #ff5c27;
+  font-size: 16px;
+  line-height: 40px;
+  margin: 0 0 0px 0;
+  font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+  left: 50%;
+  margin-left: -128px;
+  /* Half the width */
+  padding: 0 8px;
+  position: absolute;
+  text-align: center;
+  width: 256px;
+  z-index: 1; }
+
+/* Navigation widgets */
+/* Woopie framework 0.2 */
+/* Topbar - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #top-title {
+    display: none; }
+
+  .button-links ul li a #cont-dropdown {
+    height: 300px;
+    overflow-y: auto; }
+  .button-links ul li a ::-webkit-scrollbar {
+    width: 20px;
+    opacity: 0.5; }
+  .button-links ul li a ::-webkit-scrollbar-track {
+    background: #614e50; }
+  .button-links ul li a ::-webkit-scrollbar-thumb {
+    background: #ff7b86;
+    border: 3px solid #614e50; } }
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em) {
+  .button-links ul li a #cont-dropdown {
+    width: 480px; }
+  .button-links ul li a.cont:hover #cont-dropdown {
+    left: 40px; } }
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+  #top-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    -webkit-box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px -1px 4px 4px rgba(0, 0, 0, 0.2); }
+
+  .button-links ul li {
+    line-height: 48px; }
+    .button-links ul li a {
+      font-size: 32px;
+      line-height: 48px;
+      margin: 0 0 0px 0; }
+    .button-links ul li i {
+      width: 48px; }
+
+  #top-title {
+    line-height: 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #top-bar {
+    position: fixed;
+    height: 48px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2); }
+
+  .button-links ul li {
+    line-height: 48px; }
+    .button-links ul li a {
+      font-size: 32px;
+      line-height: 48px;
+      margin: 0 0 0px 0; }
+      .button-links ul li a #cont-dropdown {
+        top: 48px; }
+    .button-links ul li i {
+      width: 48px; }
+
+  #top-title {
+    font-size: 24px;
+    line-height: 48px;
+    margin: 0 0 0px 0;
+    margin-left: -128px;
+    /* Half the width */ } }
+/* ############################################################ */
+/* Print */
+@media print {
+  #top-nav, #top-social {
+    display: none; } }
+/* Woopie framework 0.2 */
+/* End navigation (next/prev) - Base Styles */
+#end-nav {
+  margin: 0 24px; }
+  #end-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #end-nav ul li {
+      float: left;
+      padding: 0;
+      text-align: center;
+      width: 50%; }
+  #end-nav a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none; }
+  #end-nav .arrow {
+    font-family: "ModernPictogramsNormal", Arial, Serif; }
+  #end-nav h1 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0px 0;
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    padding: 4px 0; }
+  #end-nav h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 0px 0;
+    font-family: "rooney-web", Georgia, Serif; }
+  #end-nav #end-nav-prevarticle {
+    text-align: left; }
+  #end-nav #end-nav-nextarticle {
+    text-align: right; }
+
+/* Woopie framework 0.2 */
+/* End navigation (next/prev) - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #end-nav ul {
+    margin: 0; }
+    #end-nav ul li h1, #end-nav ul li h2 {
+      display: none; }
+    #end-nav ul li a {
+      font-size: 32px;
+      line-height: 64px;
+      margin: 0 0 0px 0;
+      padding: 0; }
+    #end-nav ul #end-nav-prevarticle a {
+      text-align: left; }
+    #end-nav ul #end-nav-nextarticle a {
+      text-align: right; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #end-nav ul {
+    margin: 0; }
+    #end-nav ul li h1 {
+      color: #c0a48c;
+      font-size: 12px;
+      line-height: 16px;
+      margin: 0 0 0px 0; }
+    #end-nav ul li h2 {
+      color: #6f595c;
+      font-size: 20px;
+      line-height: 28px;
+      margin: 0 0 0px 0; }
+    #end-nav ul li span {
+      background: #362c2d;
+      margin: 0;
+      line-height: 56px;
+      padding: 0 8px;
+      font-size: 16px;
+      line-height: 56px;
+      margin: 0 0 0px 0;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+      #end-nav ul li span:hover {
+        background: black; }
+    #end-nav ul li hgroup {
+      padding: 0 16px;
+      height: 64px; }
+    #end-nav ul #end-nav-prevarticle .arrow {
+      border-right: 4px solid #c02f00;
+      float: left; }
+    #end-nav ul #end-nav-prevarticle hgroup {
+      float: left; }
+    #end-nav ul #end-nav-nextarticle .arrow {
+      border-left: 4px solid #c02f00;
+      float: right; }
+    #end-nav ul #end-nav-nextarticle hgroup {
+      float: right; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+  #end-nav {
+    display: none; } }
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #end-nav {
+    margin: 0 48px; }
+    #end-nav ul li span {
+      line-height: 80px; }
+    #end-nav ul li hgroup {
+      height: 80px; }
+    #end-nav h1 {
+      font-size: 24px;
+      line-height: 32px;
+      margin: 0 0 0px 0;
+      margin-top: 16px; }
+    #end-nav h2 {
+      font-size: 20px;
+      line-height: 32px;
+      margin: 0 0 0px 0; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #end-nav {
+    margin: 0 48px 0 96px; }
+    #end-nav ul li {
+      display: block;
+      float: left;
+      position: fixed;
+      top: 50%;
+      height: 96px;
+      width: 32px;
+      font-size: 16px;
+      line-height: 16px;
+      margin: 0 0 0px 0;
+      margin-top: -48px;
+      padding: 0; }
+      #end-nav ul li span {
+        display: block;
+        margin: 0;
+        padding: 0 12px; }
+      #end-nav ul li hgroup {
+        display: none; }
+      #end-nav ul li a {
+        display: inline;
+        padding: 0; }
+      #end-nav ul li .arrow {
+        font-size: 32px;
+        line-height: 160px;
+        margin: 0 0 0px 0; }
+    #end-nav #end-nav-prevarticle {
+      left: 16px; }
+    #end-nav #end-nav-nextarticle {
+      right: 16px; } }
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+@media print {
+  #end-nav {
+    display: none; } }
+/* Woopie framework 0.2 */
+/* Addon styles for jQuery plugins, modal windows etc */
+/* Reveal JS Modal Windows */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0; }
+
+.reveal-modal {
+  visibility: hidden;
+  top: 80px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  background: #fff;
+  position: absolute;
+  z-index: 101;
+  padding: 0px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
+.reveal-modal .close-reveal-modal {
+  font-size: 40px;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  line-height: 40px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #fff;
+  text-shadow: none !important;
+  font-weight: normal;
+  cursor: pointer; }
+  .reveal-modal .close-reveal-modal:active {
+    background: none; }
+
+.share-block {
+  border-radius: 4px;
+  float: left;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  width: 219px; }
+
+.share-comment-block {
+  border-radius: 4px;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: scroll; }
+
+.share-wide-block {
+  border-radius: 4px;
+  background: #fff;
+  margin: 20px;
+  padding: 20px; }
+
+.share-block p {
+  margin: 0; }
+
+.share-block h2 {
+  margin: 0 0 10px 0; }
+
+/* Twitter blocks */
+.twitter-window {
+  background: #eeeeee url(../images/twitter-modal-heading.png) repeat-x; }
+
+.twitter-heading {
+  background: url(../images/logo_twitter_withbird_white_blue.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+/* Facebook blocks */
+.facebook-window {
+  background: #eeeeee url(../images/facebook-modal-heading.png) repeat-x; }
+
+.facebook-heading {
+  background: url(../images/logo_facebook.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+.fb-comments, .fb-comments iframe[style] {
+  width: 100% !important; }
+
+.fb-like-box, .fb-like-box iframe[style] {
+  width: 100% !important; }
+
+.fbConnectWidgetTopmost, .fbConnectWidgetTopmost[style] {
+  width: 100% !important; }
+
+/* Share blocks */
+.share-window {
+  background: #eeeeee url(../images/addthis-modal-heading.png) repeat-x; }
+
+.share-heading {
+  background: url(../images/logo_addthis.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+/* Image blocks */
+.image-window {
+  background: #eeeeee url(../images/image-modal-heading.png) repeat-x;
+  top: 40px;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px; }
+
+.image-heading {
+  color: #f9e7bf;
+  display: block;
+  float: left;
+  height: 32px;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 0 16px 0; }
+  .image-heading h1 {
+    margin: 16px 0 0 16px; }
+
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  .reveal-modal {
+    visibility: hidden;
+    top: 40px;
+    left: 0;
+    margin-left: 0;
+    width: 100%; }
+
+  .share-block {
+    border-radius: 4px;
+    float: none;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    width: auto; } }
+/* Less than 580px */
+@media screen and (min-width: 481px) and (max-width: 580px) {
+  .reveal-modal {
+    visibility: hidden;
+    top: 40px;
+    left: 50%;
+    margin-left: -220px;
+    width: 440px; }
+
+  .share-block {
+    border-radius: 4px;
+    float: none;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    width: auto; } }
+/* Less than 1024px */
+@media screen and (min-width: 581px) and (max-width: 1024px) {
+  .image-window {
+    margin-left: -290px;
+    width: 580px; } }
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+.flexslider .slides > li {
+  display: none; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block; }
+
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+html[xmlns] .slides {
+  display: block; }
+
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block; }
+
+#article-body .flexslider ul {
+  margin: 0 0 30px 0;
+  padding: 0;
+  list-style: none; }
+
+#article-body .flexslider ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  background: #fff;
+  border: 10px solid #fff;
+  position: relative;
+  zoom: 1;
+  margin: 0 0 20px 0;
+  width: 100%; }
+
+.flexslider .slides {
+  zoom: 1; }
+
+.flexslider .slides > li {
+  position: relative; }
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {
+  zoom: 1;
+  position: relative; }
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+  zoom: 1; }
+
+.flex-caption {
+  width: 96%;
+  padding: 2%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  line-height: 18px; }
+
+/* Direction Nav */
+#article-body .flex-direction-nav li a {
+  margin: 0;
+  padding: 10px 5px;
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  cursor: pointer;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 24px;
+  color: #000; }
+
+#article-body .flex-direction-nav li .next {
+  right: 0px;
+  text-align: right;
+  float: right; }
+
+#article-body .flex-direction-nav li .prev {
+  left: 0px; }
+
+#article-body .flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* Control Nav */
+#article-body .flex-control-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0px;
+  text-align: center; }
+
+#article-body .flex-control-nav li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+#article-body .flex-control-nav li:first-child {
+  margin: 0; }
+
+#article-body .flex-control-nav li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(../images/flexslider/bg_control_nav.png) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9999px; }
+
+#article-body .flex-control-nav li a:hover {
+  background-position: 0 -13px; }
+
+#article-body .flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default; }
+
+.swipe-icon {
+  color: #fff;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 0px 0;
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+/* Modal windows, jQuery sliders etc */
+/* Woopie framework 0.2 */
+/* Buttons - Base Styles */
+.btn a {
+  background: #ff5c27;
+  border-bottom: 3px solid #c02f00;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  display: inline-block;
+  font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+  font-weight: bold;
+  padding: 12px 16px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .btn a:hover {
+    background: #6f595c;
+    color: #f9e7bf;
+    border-bottom: 3px solid #362c2d; }
+  .btn a:active {
+    position: relative;
+    top: 2px; }
+  .btn a i {
+    font-style: normal;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 24px; }
+
+/* Woopie framework 0.2 */
+/* Buttons - Media Queries Styles */
+.booking i:before {
+  content: "# ";
+  padding: 0 8px 0 0; }
+
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+.colophon h1 {
+  font-family: "rooney-web", Georgia, Serif;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0 0 0px 0; }
+
+#article-body .copyinfo {
+  font-family: "rooney-web", Georgia, Serif;
+  font-style: italic; }
+
+#colophon-listing {
+  margin: 16px 0; }
+
+#colophon-roles {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0px 0;
+  width: 100%; }
+  #colophon-roles dt {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-style: italic;
+    margin: 8px 16px 0 0;
+    padding: 0; }
+  #colophon-roles dd {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    margin: 0;
+    padding: 0; }
+    #colophon-roles dd a {
+      font-style: italic; }
+
+/* Woopie framework 0.2 */
+/* Credits - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* Woopie framework 0.2 */
+/* Contributors - Base Styles */
+#contributors {
+  margin: 0 24px;
+  clear: both; }
+  #contributors h1 {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 8px 0;
+    padding-top: 8px; }
+
+.contributor {
+  margin: 0 16px 0 0;
+  padding: 16px 0; }
+  .contributor address {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 8px 0;
+    font-style: normal; }
+  .contributor .contributor-info, .contributor .more-info {
+    margin: 0 0 8px 0;
+    padding-bottom: 8px; }
+  .contributor .contributor-image {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .contributor h2 {
+    color: #6f595c;
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    font-weight: bold;
+    font-size: 12.8px;
+    line-height: 16px;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #c0a48c; }
+  .contributor h3 {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif; }
+  .contributor p {
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0px 0; }
+  .contributor .contributor-image {
+    border: 0;
+    display: block;
+    margin: 0 0 8px 0;
+    padding: 0;
+    line-height: 1;
+    width: 64px; }
+  .contributor ul {
+    margin: 0;
+    padding: 0; }
+  .contributor li {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 0px 0;
+    font-family: "rooney-web", Georgia, Serif;
+    list-style: none; }
+  .contributor .icon {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 0px 0;
+    display: block;
+    float: left;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-style: normal;
+    width: 32px; }
+  .contributor .cl-twitter:before {
+    content: "U"; }
+  .contributor .cl-facebook:before {
+    content: "G"; }
+  .contributor .cl-website:before {
+    content: "w"; }
+
+#contributors .contributor:last-child {
+  margin-right: 0;
+  border: none; }
+
+/* Woopie framework 0.2 */
+/* Contributors - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  .contributor {
+    width: 100%;
+    margin-bottom: 16px; }
+    .contributor .contributor-image {
+      float: right;
+      margin-left: 16px;
+      width: 96px; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  .contributor {
+    border: none;
+    margin: 0 16px 16px 0;
+    width: 100%; }
+    .contributor .contributor-image {
+      float: left;
+      margin-right: 16px;
+      width: 96px; }
+    .contributor .contributor-info {
+      margin-left: 128px; }
+    .contributor .more-info {
+      margin-left: 128px; }
+
+  #contributors .contributor:last-child {
+    border: none; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #contributors {
+    margin: 0 48px; }
+
+  .contributor {
+    width: 48%;
+    float: left; }
+    .contributor .contributor-image {
+      float: left;
+      width: 128px; }
+    .contributor .contributor-info {
+      margin-left: 160px; }
+    .contributor .more-info {
+      margin-left: 160px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #contributors {
+    margin: 0 48px 0 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #contributors {
+    margin: 0 48px 0 144px; } }
+/* Woopie framework 0.2 */
+/* End social tools - Base Styles */
+#end-social {
+  margin: 0 0 32px 0; }
+  #end-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both; }
+    #end-social ul li {
+      display: inline-block;
+      margin: 0 8px 0 0; }
+  #end-social .fb_iframe_widget iframe {
+    vertical-align: top;
+    margin-top: -3px; }
+  #end-social h1 {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-style: italic;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 8px 0;
+    padding-top: 8px; }
+
+/* Extra bits - tweet this, contributors etc */
+/* Woopie framework 0.2 */
+/* End social tools - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+@media print {
+  #end-social {
+    display: none; } }
+/* Woopie framework 0.2 */
+/* Card Flip - Base Styles */
+.flippers {
+  position: relative;
+  clear: both; }
+
+.flipper {
+  height: 240px;
+  width: 260px;
+  float: left;
+  margin: 0 16px 16px 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1.5s;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+  -moz-box-shadow: 0 2px 5px #ccc; }
+
+.rotated {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+.front {
+  z-index: 50; }
+
+.back {
+  z-index: 10;
+  background: #fff; }
+
+.rotated .back {
+  z-index: 99; }
+
+.side {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  height: 240px;
+  width: 260px; }
+
+.front {
+  background: #fff;
+  color: #000;
+  height: 240px;
+  width: 260px; }
+
+.back {
+  height: 240px;
+  width: 260px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+.flipper article {
+  padding: 16px; }
+  .flipper article ul {
+    margin-left: 16px; }
+  .flipper article img {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    height: 64px;
+    width: auto; }
+
+/* Woopie framework 0.2 */
+/* TEMPLATE - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+/* Woopie framework 0.2 */
+/* Footnotes - Base Styles */
+#footnotes {
+  counter-reset: notes; }
+  #footnotes p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0; }
+    #footnotes p:before {
+      counter-increment: notes;
+      content: "[" counter(notes) "] "; }
+
+.content-block .footnote-ref {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 0px 0;
+  margin: 0 0 0 1.6px; }
+  .content-block .footnote-ref a:before {
+    content: "["; }
+  .content-block .footnote-ref a:after {
+    content: "]"; }
+
+.footnotelink:before {
+  content: "["; }
+.footnotelink:after {
+  content: "]"; }
+
+/* Woopie framework 0.2 */
+/* Buttons - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+/* Woopie framework 0.2 */
+/* scrollbox - Base Styles */
+.scroll-box {
+  clear: right;
+  float: right;
+  margin: 0 0 16px 32px;
+  page-break-inside: avoid;
+  position: relative; }
+  .scroll-box ::-webkit-scrollbar {
+    width: 20px;
+    opacity: 0.5; }
+  .scroll-box ::-webkit-scrollbar-track {
+    background: #614e50; }
+  .scroll-box ::-webkit-scrollbar-thumb {
+    background: #453739;
+    border: 3px solid #614e50;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+  .scroll-box .scroll-icon {
+    background: url(../images/scroll-icon.png) rgba(0, 0, 0, 0.5) no-repeat 1px 0;
+    background-size: 18px 18px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .scroll-box .scroll-body img {
+    display: block;
+    margin: 0 0 16px 0; }
+  .scroll-box .scroll-body p {
+    font-family: "rooney-web", Georgia, Serif; }
+
+.scroll-box {
+  width: 100%;
+  height: auto; }
+  .scroll-box .scroll-body {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto; }
+  .scroll-box .scroll-icon {
+    display: none; }
+
+/* Woopie framework 0.2 */
+/* scrollboxvert - Media Queries Styles */
+#article .scroll-box {
+  background: #6f595c; }
+#article .scroll-box .scroll-body img {
+  margin: 0; }
+.scroll-box .scroll-body p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 16px 0; }
+  #article .scroll-box .scroll-body p {
+    color: #f9e7bf;
+    margin: 0;
+    padding: 16px; }
+  #divider .scroll-box .scroll-body p {
+    color: white; }
+
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  .scroll-box {
+    width: 192px;
+    height: 512px; }
+    .scroll-box .scroll-body {
+      width: 192px;
+      height: 512px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    .scroll-box .scroll-icon {
+      display: block; } }
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em) {
+  .scroll-box {
+    width: 288px;
+    height: 512px; }
+    .scroll-box .scroll-body {
+      width: 288px;
+      height: 512px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    .scroll-box .scroll-icon {
+      display: block; } }
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+  .scroll-box {
+    width: 288px;
+    height: 512px; }
+    .scroll-box .scroll-body {
+      width: 288px;
+      height: 512px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    .scroll-box .scroll-icon {
+      display: block; } }
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+/* Woopie framework 0.2 */
+/* Advert - Base Styles */
+#advert {
+  background: #333333 url(../../images/kitten.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #advert .adblock {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    #advert .adblock p {
+      margin: 0;
+      padding: 0; }
+  #advert #publication-footer {
+    color: #f9e7bf; }
+
+#advert #end-nav ul a {
+  border: none; }
+#advert #end-nav hgroup h1, #advert #end-nav hgroup h2 {
+  color: #fff; }
+
+/* Page types */
+/* Woopie framework 0.2 */
+/* Advert - Media Queries Styles */
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em) {
+  .adblocksub {
+    display: block;
+    float: left;
+    width: 50%; } }
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #advert-body {
+    margin-top: 64px; } }
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+/* Woopie framework 0.2 */
+/* Article - Base Styles */
+#article-body {
+  margin: 0; }
+  #article-body section {
+    margin: 0 0 48px 0; }
+
+/* Woopie framework 0.2 */
+/* Article - Media Queries Styles */
+#article-body {
+  margin: 0 24px; }
+
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #article-body {
+    margin: 0 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #article-body {
+    margin: 0 48px 0 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #article-body {
+    margin: 0 48px 0 144px; } }
+/* ############################################################ */
+/* Print */
+@media print {
+  #main-image-print {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+#contents-body, #contents-listing {
+  margin: 0; }
+
+#contents-listing ol {
+  margin: 0 0 32px 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li {
+    margin: 0;
+    padding: 0; }
+#contents-listing ol li h2 {
+  background: #ff5c27 url(../images/titlemask.png);
+  border: 1px solid #c02f00;
+  border-width: 4px 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0 0 0px 0;
+  padding: 8px;
+  font-family: "rooney-web", Georgia, Serif;
+  font-weight: normal;
+  text-transform: uppercase; }
+  #contents-listing ol li h2 a {
+    color: white; }
+#contents-listing ol li ol li a {
+  display: block;
+  margin: 0;
+  padding: 16px 0; }
+  #contents-listing ol li ol li a h3 {
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    margin: 0;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 0px 0; }
+  #contents-listing ol li ol li a i {
+    color: #6f595c;
+    font-family: "rooney-web", Georgia, Serif; }
+  #contents-listing ol li ol li a em {
+    color: #6f595c;
+    font-style: normal;
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif; }
+  #contents-listing ol li ol li a p {
+    color: #6f595c;
+    font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+    margin: 8px 0 0;
+    padding: 0; }
+  #contents-listing ol li ol li a:hover h3, #contents-listing ol li ol li a:hover i, #contents-listing ol li ol li a:hover em, #contents-listing ol li ol li a:hover p {
+    color: #ff7b86; }
+
+/* Woopie framework 0.2 */
+/* Contents - Media Queries Styles */
+#contents-body, #contents-listing {
+  margin: 0 24px; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #contents-listing {
+    margin-top: 16px; }
+    #contents-listing ol li ol li a {
+      padding: 12px 0;
+      margin: 0; }
+      #contents-listing ol li ol li a i, #contents-listing ol li ol li a em, #contents-listing ol li ol li a p {
+        display: none; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #contents-listing ol li ol li a {
+    background: url(../images/kitten.jpg) left top no-repeat;
+    background-size: 96px, 96px;
+    margin: 8px 0 0 0;
+    padding: 0 8px 8px 112px; }
+    #contents-listing ol li ol li a h3 {
+      padding: 0 0 12px 0; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) {
+  #contents-listing ol li ol li a h3 {
+    float: left; }
+  #contents-listing ol li ol li a span {
+    float: right;
+    padding: 4px 4px 0 0; }
+  #contents-listing ol li ol li a p {
+    clear: both;
+    width: 100%; } }
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #contents-body, #contents-listing {
+    margin: 0 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #contents-body, #contents-listing {
+    margin: 0 48px 0 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #contents-body, #contents-listing {
+    margin: 0 48px 0 144px; } }
+/* ############################################################ */
+/* Print */
+@media print {
+  #main-image-print {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#divider #end-nav, #divider #publication-footer {
+  display: none; }
+
+#divider-image {
+  display: block;
+  margin: 0 0 16px 0; }
+
+#divider-heading {
+  margin: 0;
+  padding: 16px; }
+  #divider-heading h1 {
+    font-size: 32px;
+    line-height: 40px;
+    margin: 0 0 16px 0;
+    font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+    font-weight: bold; }
+  #divider-heading h2 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 0 16px 0;
+    font-family: "rooney-web", Georgia, Serif; }
+    #divider-heading h2 i {
+      padding: 0 16px 0 0; }
+
+.divider-content {
+  padding: 0 16px; }
+
+.divider-box a {
+  color: #ffffff; }
+
+#divider-link {
+  background: #362c2d;
+  display: block;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 8px 0 0 0;
+  padding: 4px 0;
+  opacity: 0.5; }
+  #divider-link:hover, #divider-link:focus {
+    background: #ff7b86;
+    opacity: 0.75; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Media Queries Styles */
+#divider {
+  background: #362c2d; }
+
+#divider-image-print {
+  display: none; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #divider-heading {
+    background: none;
+    margin: 0;
+    padding: 16px 24px; }
+    #divider-heading .scroll-box {
+      width: 100%;
+      height: auto; }
+      #divider-heading .scroll-box .scroll-body {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: auto; }
+      #divider-heading .scroll-box .scroll-icon {
+        display: none; }
+
+  #divider-link {
+    background: #ff7b86;
+    opacity: 1; }
+    #divider-link:hover, #divider-link:focus {
+      background: #ff5c27; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #divider-image {
+    display: none; }
+
+  #divider {
+    background: #ff5c27 url(../images/kitten.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+
+  #divider-heading {
+    background: none;
+    float: right;
+    width: 192px; }
+    #divider-heading h1 {
+      padding-top: 32px;
+      font-size: 32px;
+      line-height: 40px;
+      margin: 0 0 16px 0; }
+    #divider-heading h2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 16px 0; }
+    #divider-heading .scroll-box {
+      margin-top: 16px; }
+    #divider-heading .scroll-box {
+      width: 100%;
+      height: auto; }
+      #divider-heading .scroll-box .scroll-body {
+        width: 100%;
+        height: auto;
+        overflow-x: auto;
+        overflow-y: auto; }
+      #divider-heading .scroll-box .scroll-icon {
+        display: none; } }
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em) {
+  #divider-heading {
+    background: none;
+    float: right;
+    width: 256px; }
+    #divider-heading .scroll-box {
+      margin-top: 16px; } }
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) {
+  #divider-heading {
+    background: none;
+    float: right;
+    width: 320px; }
+    #divider-heading h1 {
+      padding-top: 64px;
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 16px 0; }
+    #divider-heading h2 {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 16px 0; }
+    #divider-heading .scroll-box {
+      margin-top: 32px; } }
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #divider-heading .scroll-box {
+    width: 100%;
+    height: 256px; }
+    #divider-heading .scroll-box .scroll-body {
+      width: 100%;
+      height: 256px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    #divider-heading .scroll-box .scroll-icon {
+      display: block; } }
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+@media print {
+  #divider-image-print {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#frontcover {
+  background: #333 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #frontcover #top-bar, #frontcover #end-nav, #frontcover #publication-footer {
+    display: none; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Media Queries Styles */
+#frontcover-image-print {
+  display: none; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  #frontcover-heading {
+    padding: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -192px;
+    /* half the width */
+    margin-top: -192px;
+    /* half the height */
+    width: 384px;
+    height: 384px; } }
+/* ############################################################ */
+/* Over 480px */
+@media screen and (min-width: 30.1em) {
+  #frontcover-heading {
+    padding: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -288px;
+    /* half the width */
+    margin-top: -288px;
+    /* half the height */
+    width: 576px;
+    height: 576px; } }
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+/* ############################################################ */
+/* Over 1280px */
+/* ############################################################ */
+/* Over 1600px */
+/* ############################################################ */
+/* Print */
+@media print {
+  #frontcover-heading {
+    margin-top: 256px; }
+
+  #frontcover-image-print {
+    display: block; } }
+/* Woopie framework 0.2 */
+/* TEMPLATE - Base Styles */
+#gallery-body {
+  margin: 0; }
+
+.gallery-images {
+  margin: 16px 0 0 0;
+  padding: 0; }
+  .gallery-images section {
+    margin: 0 0 64px 0;
+    padding: 0; }
+    .gallery-images section img {
+      display: block;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+    .gallery-images section .imageinfo {
+      margin: 0; }
+      .gallery-images section .imageinfo p {
+        font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 16px 0;
+        margin: 0 0 8px 0;
+        padding: 8px 0 0 0; }
+      .gallery-images section .imageinfo dl {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0 0 0px 0;
+        width: 100%; }
+        .gallery-images section .imageinfo dl dt {
+          float: left;
+          font-family: "oxtail", "HoeflerText-Regular", Georgia, Serif;
+          font-style: italic;
+          margin: 0 16px 0 0;
+          padding: 0; }
+        .gallery-images section .imageinfo dl dd {
+          font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif;
+          margin: 0;
+          padding: 0; }
+
+/* Woopie framework 0.2 */
+/* TEMPLATE - Media Queries Styles */
+#gallery-body {
+  margin: 0 24px; }
+
+.gallery-images {
+  margin: 16px 0 0 0;
+  padding: 0; }
+
+/* ############################################################ */
+/* Less than 480px */
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #gallery-body {
+    margin: 0 48px; }
+    #gallery-body .imageinfo p {
+      float: left;
+      width: 49.8%;
+      padding-right: 32px;
+      border: none; }
+    #gallery-body .imageinfo dl {
+      float: left;
+      width: 49.8%;
+      padding-top: 8px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #gallery-body {
+    margin: 0 48px 0 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #gallery-body {
+    margin: 0 48px 0 144px; } }
+/* ############################################################ */
+/* Print */
+@media print {
+  .gallery-images section {
+    page-break-inside: avoid; }
+    .gallery-images section img {
+      max-height: 40%;
+      width: auto; }
+    .gallery-images section .imageinfo {
+      clear: both;
+      margin-bottom: 64px; }
+      .gallery-images section .imageinfo p {
+        float: left;
+        width: 49.8%;
+        padding-right: 32px; }
+      .gallery-images section .imageinfo dl {
+        float: left;
+        width: 49.8%;
+        padding-top: 8px; } }
+/* Woopie framework 0.2 */
+/* Listing - Base Styles */
+#listing-body {
+  margin: 0; }
+  #listing-body .events-listing h1 {
+    clear: both; }
+
+.listing-graphic {
+  float: right;
+  margin: 0 0 32px 32px;
+  text-align: center; }
+  .listing-graphic img {
+    display: block;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .listing-graphic em {
+    display: block;
+    font-family: "rooney-web", Georgia, Serif;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 0px 0; }
+
+.lg-small {
+  width: 128px; }
+
+.lg-big {
+  width: 192px; }
+
+.content-block .event-item {
+  margin: 0 0 32px 0;
+  padding: 0; }
+  .content-block .event-item li {
+    list-style: none; }
+    .content-block .event-item li b {
+      font-family: "rooney-web", Georgia, Serif; }
+    .content-block .event-item li em {
+      font-style: normal;
+      font-weight: bold;
+      font-family: "rooney-web", Georgia, Serif; }
+    .content-block .event-item li .sep {
+      opacity: 0;
+      padding: 0 4px; }
+    .content-block .event-item li .twitter-follow-button {
+      display: inline-block;
+      margin-top: 4px; }
+
+.content-block .grp-item {
+  margin: 0 0 32px 0;
+  padding: 0; }
+  .content-block .grp-item li {
+    list-style: none; }
+  .content-block .grp-item .grp-name {
+    font-weight: bold; }
+
+/* Reviews */
+.rating {
+  color: #c0a48c;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 0px 0; }
+
+.rating b {
+  color: #ff5c27; }
+
+.item-credits {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 0px 0;
+  width: 100%;
+  font-family: "open-sans", "EuphemiaUCAS", Helvetica, Arial, Sans-serif; }
+  .item-credits dt {
+    float: left;
+    margin: 0 16px 0 0;
+    padding: 0; }
+  .item-credits dd {
+    margin: 0;
+    padding: 0; }
+
+/* Woopie framework 0.2 */
+/* Listing - Media Queries Styles */
+#listing-body {
+  margin: 0 24px; }
+
+.content-block .grp-item li:before {
+  color: #6f595c;
+  display: block;
+  float: left;
+  font-style: normal;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  padding: 4px 0;
+  text-align: center;
+  text-transform: none;
+  font-size: 28px;
+  line-height: 16px;
+  margin: 0 0 0px 0;
+  width: 48px; }
+.content-block .grp-item .grp-name:before {
+  content: "g "; }
+.content-block .grp-item .grp-city:before {
+  content: ", "; }
+.content-block .grp-item .grp-cnct:before {
+  content: "m "; }
+.content-block .grp-item .grp-wurl:before {
+  content: "w "; }
+.content-block .grp-item .grp-twtr:before {
+  content: "T "; }
+.content-block .grp-item .grp-meet:before {
+  content: "} "; }
+.content-block .grp-item .grp-othr:before {
+  content: "* "; }
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  .lg-small {
+    width: 64px; }
+
+  .lg-big {
+    width: 128px; } }
+/* ############################################################ */
+/* Over 480px */
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em) {
+  .lg-small {
+    width: 128px; }
+
+  .lg-big {
+    width: 256px; } }
+/* ############################################################ */
+/* For general iPad layouts */
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) {
+  .lg-small {
+    width: 192px; }
+
+  .lg-big {
+    width: 320px; } }
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em) {
+  #listing-body {
+    margin: 0 48px; } }
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em) {
+  #listing-body {
+    margin: 0 48px 0 96px; } }
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) {
+  #listing-body {
+    margin: 0 48px 0 144px; } }
+/* ############################################################ */
+/* Print */
