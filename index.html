@@ -292,6 +292,9 @@ $(window).load(function() {
   ga('create', 'UA-28531592-1', 'woop.ie');
   ga('send', 'pageview');
 
+  $('#purechat-name-submit').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'submit_purechat_request');
+  });
 </script>
  
 <script src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>

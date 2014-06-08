@@ -114,7 +114,7 @@
 						<input type="hidden" name="pageNumber" value="0">
 						<input type="hidden" name="backupCache" value="">
 					
-						<input type="submit" name="submit" value="Apply for Private Beta" class="btn btn-success">
+						<input id="submit_beta" type="submit" name="submit" value="Apply for Private Beta" class="btn btn-success">
 						<br /><br />
 						<p style="padding-top:20px;">Want to talk to us about collaboration/advertising/jobs/whatever? <a href="contact.html">Get in touch</a>, we'd love to hear from you.</p>
 						</form>
@@ -214,6 +214,15 @@ $(window).load(function() {
 
   ga('create', 'UA-28531592-1', 'woop.ie');
   ga('send', 'pageview');
+
+  $('#submit_beta').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'submit_beta_form');
+  });
+  $('#purechat-name-submit').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'submit_purechat_request');
+  });
+
+<input type="submit" class="btn" id="purechat-name-submit" value="Send Chat Request">
 </script>
 
 <div id="fb-root"></div>
