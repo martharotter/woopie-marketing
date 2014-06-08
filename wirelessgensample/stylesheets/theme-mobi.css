@@ -1,0 +1,107 @@
+/* Woopie framework 0.3 */
+/* Theme - Very basic mobi stuff */
+/* Normalize the CSS */
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 1%; }
+
+/* Page types */
+/* Woopie framework 0.3 */
+/* Global content blocks - Base Styles */
+article {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 150%;
+  margin-bottom: 0.5em; }
+
+h2 {
+  font-size: 125%;
+  margin-bottom: 0.5em; }
+
+h3 {
+  font-size: 120%;
+  margin-bottom: 0.5em; }
+
+h4 {
+  font-size: 110%;
+  margin-bottom: 0.5em; }
+
+p {
+  font-size: 100%;
+  margin-bottom: 0.5em; }
+
+figcaption {
+  font-size: 100%;
+  margin-bottom: 0.5em; }
+
+img {
+  width: 100%; }
+
+ul, ol {
+  margin: 0 0 1em 1em;
+  padding: 0; }
+
+li {
+  padding: 0; }
+  li ul, li ol {
+    margin: 0 0 0.5em 1em;
+    padding: 0; }
+
+/* Start Blockquote */
+blockquote {
+  margin: 0;
+  padding: 0; }
+
+blockquote p {
+  margin: 0;
+  padding: 0 0 0.5em 0; }
+
+blockquote cite {
+  font-style: italic; }
+
+/* Tables*/
+table {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-collapse: collapse; }
+
+th, td {
+  padding: 0.25em;
+  border: 1px solid black; }
+
+th {
+  text-align: left; }
+
+/* Woopie framework 0.3 */
+/* Credits - Base Styles */
+#credits {
+  font-size: 80%;
+  margin: 0 0 0.5em 0; }
+
+/* Woopie framework 0.3 */
+/* Contents - Mobi Styles */
+#contents-listing ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li ol li {
+    margin: 0 0 1em 0; }
+    #contents-listing ol li ol li h3 {
+      margin: 0; }
+
+/* Woopie framework 0.3 */
+/* Gallery - Mobi Styles */
+section {
+  margin: 0 0 0.5em 0; }
+
+/* Woopie framework 0.3 */
+/* Listing - Mobi Styles */
+.grp-name {
+  font-weight: bold; }
