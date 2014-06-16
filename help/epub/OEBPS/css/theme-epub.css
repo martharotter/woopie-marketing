@@ -1,0 +1,788 @@
+/* Woopie framework 0.2 */
+/* ePub Theme - Pull in relevant template files, set elements values */
+/* Woopie framework 0.2 */
+/* Variables - define widths, colors, font families etc. */
+/* Measurements */
+/* Set a base scale */
+/* Left and right spacing */
+/* Specific left and right spacing for wider screens */
+/* Indent for wider screens */
+/* Main image sizing */
+/* Font Set */
+/* Type */
+/* Color Set */
+/* Grey - Main text color */
+/* Blue - Secondary text color */
+/* Red - Highlight color */
+/* Green - Highlight color */
+/* Very light grey */
+/* Light blue */
+/* Colors */
+/* Page colors */
+/* Top bar */
+/* Titles */
+/* Links */
+/* Woopie framework 0.2 */
+/* Base stylesheet - epub specifics */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Basic Stuff  */
+#wrapper {
+  font-family: "OpenSansRegular";
+  font-size: 11pt;
+  background-color: #fff;
+  color: #121212; }
+
+/* link colors */
+a {
+  text-decoration: none;
+  -webkit-text-fill-color: #0098ff; }
+
+/* Woopie framework 0.2 */
+/* Mixins - useful shortcuts and tools */
+/* Woopie framework 0.2 */
+/* Wrapper stylesheet */
+#wrapper {
+  margin: 0;
+  padding: 0; }
+
+/* Containers */
+/* Woopie framework 0.1 */
+/* Fonts - Modern Pictograms */
+/* @font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../../fonts/modernpics-webfont.eot');
+    src: url('../../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/modernpics-webfont.woff') format('woff'),
+         url('../../fonts/modernpics-webfont.ttf') format('truetype'),
+         url('../../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+/* Icons - icon typeface */
+/* Woopie framework 0.2 */
+/* Global content blocks - Base Styles */
+.content-block {
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  /* Start Blockquote */
+  /* End Blockquote */
+  /* Figures */
+  /* Tables*/ }
+  .content-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content-block h1 {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 2.5em;
+    line-height: 1.25;
+    margin: 0 0 24px 0;
+    font-weight: 300;
+    font-style: normal;
+    text-rendering: optimizeLegibility; }
+  .content-block h2 {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0 0 24px 0;
+    font-weight: 300;
+    font-style: normal; }
+  .content-block h3 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 0 0 24px 0;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase; }
+  .content-block p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 36px 0; }
+  .content-block iframe {
+    margin-bottom: 36px; }
+  .content-block pre {
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */ }
+  .content-block ul, .content-block ol {
+    margin: 0 0 36px 18px;
+    padding: 0; }
+  .content-block li {
+    font-size: 1em;
+    line-height: 1.75;
+    margin: 0 0 3px 0;
+    padding: 0;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+    .content-block li ul, .content-block li ol {
+      margin: 6px 0 0 24px;
+      padding: 0; }
+  .content-block ul li, .content-block ol ul li {
+    list-style: square; }
+  .content-block ol li, .content-block ul ol li {
+    list-style: decimal; }
+  .content-block sup {
+    font-size: 6px; }
+  .content-block abbr {
+    border-bottom: 1px dotted #0098ff;
+    cursor: help; }
+  .content-block blockquote, .content-block quote {
+    margin: 0 0 12px 0;
+    padding: 12px 0;
+    page-break-inside: avoid; }
+  .content-block blockquote p {
+    color: #c72211;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 3px 0;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0 0 12px 0;
+    padding: 0; }
+  .content-block blockquote cite {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-style: normal;
+    color: #121212;
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase; }
+    .content-block blockquote cite:before {
+      content: "— ";
+      color: #121212;
+      opacity: 0.5; }
+  .content-block .fig-image, .content-block .fig-image-fixedsize, .content-block .fig-video, .content-block .fig-pullquote {
+    margin: 12px 0 36px 0;
+    padding: 0;
+    page-break-inside: avoid; }
+    .content-block .fig-image blockquote, .content-block .fig-image-fixedsize blockquote, .content-block .fig-video blockquote, .content-block .fig-pullquote blockquote {
+      border: 2px solid #0098ff;
+      padding: 0; }
+      .content-block .fig-image blockquote p, .content-block .fig-image-fixedsize blockquote p, .content-block .fig-video blockquote p, .content-block .fig-pullquote blockquote p {
+        margin: 0;
+        padding: 18px;
+        font-size: 1.25em;
+        line-height: 1.25;
+        margin: 0 0 3px 0; }
+      .content-block .fig-image blockquote cite, .content-block .fig-image-fixedsize blockquote cite, .content-block .fig-video blockquote cite, .content-block .fig-pullquote blockquote cite {
+        background: #0098ff;
+        color: white;
+        display: block;
+        padding: 12px 18px;
+        font-size: 1em;
+        line-height: 1.25;
+        margin: 0 0 0px 0; }
+        .content-block .fig-image blockquote cite:before, .content-block .fig-image-fixedsize blockquote cite:before, .content-block .fig-video blockquote cite:before, .content-block .fig-pullquote blockquote cite:before {
+          color: white; }
+    .content-block .fig-image iframe, .content-block .fig-image-fixedsize iframe, .content-block .fig-video iframe, .content-block .fig-pullquote iframe {
+      margin: 0; }
+  .content-block figcaption, .content-block .section-caption {
+    background: #eeeeee;
+    margin: 0;
+    padding: 12px;
+    font-size: 0.75em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase; }
+    .content-block figcaption code, .content-block .section-caption code {
+      text-transform: none; }
+  .content-block .fig-image img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .content-block .fig-image {
+    position: relative;
+    clear: right;
+    float: right;
+    width: 144px;
+    margin: 0 0 36px 24px; }
+  .content-block .section-image, .content-block .embed-video {
+    margin: 0 0 36px 0;
+    position: relative; }
+    .content-block .section-image img, .content-block .embed-video img {
+      display: block;
+      margin: 0; }
+    .content-block .section-image iframe, .content-block .embed-video iframe {
+      margin: 0; }
+  .content-block .fig-image-fixedsize {
+    width: 100%; }
+    .content-block .fig-image-fixedsize img {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0; }
+    .content-block .fig-image-fixedsize figcaption {
+      background: none;
+      padding: 6px 0;
+      width: 100%; }
+  .content-block .fig-video {
+    clear: both;
+    display: block;
+    width: 640px;
+    height: 320px;
+    height: auto;
+    page-break-inside: avoid; }
+    .content-block .fig-video video {
+      margin: 0; }
+  .content-block figcaption code {
+    font-style: normal; }
+  .content-block .fig-image-zoom {
+    color: #eeeeee;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 4em;
+    line-height: 1;
+    margin: 0 0 0px 0;
+    padding: 0 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  .content-block table {
+    border-collapse: collapse;
+    margin: 0 0 24px 0;
+    padding: 0;
+    width: 100%; }
+  .content-block th, .content-block td {
+    border-bottom: 1px solid #121212;
+    padding: 12px;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 12px 0; }
+  .content-block th {
+    text-align: left; }
+  .content-block td {
+    border-bottom: 1px solid #dedede; }
+
+/* Base HTML formating */
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+/* Intro Headings */
+#intro-heading hgroup {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  z-index: 0; }
+#intro-heading h1 {
+  color: #121212;
+  font-size: 3em;
+  line-height: 1.25;
+  margin: 0 0 18px 0;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+#intro-heading h2 {
+  color: #c72211;
+  font-size: 1.5em;
+  line-height: 1.25;
+  margin: 0 0 24px 0;
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+#intro-heading h3 {
+  background: #c72211;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  line-height: 1;
+  margin: 0 0 24px 0;
+  padding: 9px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px; }
+  #intro-heading h3 b {
+    color: #eeeeee;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-weight: bold;
+    padding: 0 6px 0 0; }
+  #intro-heading h3 i {
+    color: white;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-style: normal; }
+#intro-heading #main-image {
+  background: url(../images/changes.jpg) no-repeat center center;
+  background-size: cover;
+  height: 432px;
+  width: 100%; }
+#intro-heading #main-image-print {
+  display: block;
+  line-height: 0;
+  padding: 0;
+  margin: 0 0 24px 0; }
+#intro-heading.noimage {
+  margin-top: 24px; }
+
+/* Top of page */
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+#credits {
+  margin: 0 0 12px 0; }
+
+#roles {
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  clear: both;
+  width: 100%; }
+  #roles dt {
+    color: #121212;
+    float: left;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-weight: bold;
+    margin: 0 12px 0 0;
+    padding: 0; }
+  #roles dd {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    margin: 0;
+    padding: 0;
+    color: #121212; }
+
+/* Roles & Credits */
+/* Woopie framework 0.2 */
+/* Issue Info - Base Styles */
+#edition {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  padding: 0 0 24px 0;
+  width: 100%; }
+  #edition dt {
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #edition dd {
+    float: left;
+    margin: 0 24px 0 6px;
+    padding: 0 6px; }
+
+/* Issue details (month, number etc) */
+/* Woopie framework 0.2 */
+/* Introduction section - Base Styles */
+#intro-section p {
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 0 0 24px 0;
+  font-weight: normal;
+  font-style: normal; }
+#intro-section ul {
+  margin: 0;
+  padding: 0; }
+  #intro-section ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 12px 0; }
+
+/* Intro deck */
+/* Woopie framework 0.2 */
+/* Buttons - Base Styles */
+.btn a {
+  background: #0098ff;
+  border-bottom: 3px solid #005b99;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  display: inline-block;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  font-weight: bold;
+  padding: 9px 12px;
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .btn a:hover {
+    background: #b2cf00;
+    color: #eeeeee;
+    border-bottom: 3px solid #5a6900; }
+  .btn a:active {
+    position: relative;
+    top: 2px; }
+  .btn a i {
+    font-style: normal;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 18px; }
+
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+.colophon h1 {
+  font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 2em;
+  line-height: 2.5;
+  margin: 0 0 0px 0; }
+
+#article-body .copyinfo {
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-style: italic; }
+
+#colophon-listing {
+  margin: 12px 0; }
+
+#colophon-roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%; }
+  #colophon-roles dt {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    margin: 6px 12px 0 0;
+    padding: 0; }
+  #colophon-roles dd {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    margin: 0;
+    padding: 0; }
+    #colophon-roles dd a {
+      font-style: italic; }
+
+/* Woopie framework 0.2 */
+/* Footnotes - Base Styles */
+#footnotes {
+  counter-reset: notes; }
+  #footnotes p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 12px 0; }
+    #footnotes p:before {
+      counter-increment: notes;
+      content: "[" counter(notes) "] "; }
+
+.content-block .footnote-ref {
+  font-size: 0.75em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  margin: 0 0 0 1.2px; }
+  .content-block .footnote-ref a:before {
+    content: "["; }
+  .content-block .footnote-ref a:after {
+    content: "]"; }
+
+.footnotelink:before {
+  content: "["; }
+.footnotelink:after {
+  content: "]"; }
+
+/* Woopie framework 0.2 */
+/* scrollbox - Base Styles */
+.scroll-box {
+  clear: right;
+  float: right;
+  margin: 0 0 12px 24px;
+  page-break-inside: avoid;
+  position: relative; }
+  .scroll-box ::-webkit-scrollbar {
+    width: 15px;
+    opacity: 0.5; }
+  .scroll-box ::-webkit-scrollbar-track {
+    background: #050505; }
+  .scroll-box ::-webkit-scrollbar-thumb {
+    background: black;
+    border: 3px solid #050505;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+  .scroll-box .scroll-icon {
+    background: url(../images/scroll-icon.png) rgba(0, 0, 0, 0.5) no-repeat 1px 0;
+    background-size: 18px 18px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .scroll-box .scroll-body img {
+    display: block;
+    margin: 0 0 12px 0; }
+  .scroll-box .scroll-body p {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+.scroll-box {
+  width: 100%;
+  height: auto; }
+  .scroll-box .scroll-body {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto; }
+  .scroll-box .scroll-icon {
+    display: none; }
+
+/* Woopie framework 0.2 */
+/* Advert - Base Styles */
+#advert {
+  background: #333333 url(../images/kitten.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #advert .adblock {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    #advert .adblock p {
+      margin: 0;
+      padding: 0; }
+  #advert #publication-footer {
+    color: #eeeeee; }
+
+#advert #end-nav ul a {
+  border: none; }
+#advert #end-nav hgroup h1, #advert #end-nav hgroup h2 {
+  color: #fff; }
+
+/* Page types */
+/* Woopie framework 0.2 */
+/* Article - Base Styles */
+#article-body {
+  margin: 0; }
+  #article-body section {
+    margin: 0 0 36px 0; }
+
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+#contents-body {
+  margin: 0; }
+
+#contents-listing ol {
+  margin: 0 0 24px 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li {
+    margin: 0;
+    padding: 0; }
+    #contents-listing ol li h2 {
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 0 0 0px 0;
+      font-weight: bold;
+      font-style: normal;
+      padding: 9px 0;
+      font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+    #contents-listing ol li ol li a {
+      border-bottom: 1px solid #dedede;
+      display: block;
+      margin: 0;
+      padding: 12px 0; }
+      #contents-listing ol li ol li a h3 {
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.25em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        font-weight: bold;
+        font-style: normal; }
+      #contents-listing ol li ol li a i {
+        font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+        font-size: 0.6em;
+        line-height: 1;
+        margin: 0 0 0px 0;
+        font-weight: normal;
+        font-style: normal;
+        text-transform: uppercase; }
+      #contents-listing ol li ol li a em {
+        font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+        font-size: 0.8em;
+        line-height: 1;
+        margin: 0 0 0px 0;
+        font-weight: normal;
+        font-style: normal; }
+      #contents-listing ol li ol li a p {
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-weight: 300;
+        margin: 12px 0 0 0;
+        padding: 0; }
+      #contents-listing ol li ol li a:hover h3, #contents-listing ol li ol li a:hover i, #contents-listing ol li ol li a:hover em, #contents-listing ol li ol li a:hover p {
+        color: #0098ff; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#divider #end-nav, #divider #publication-footer {
+  display: none; }
+
+#divider-image {
+  display: block;
+  margin: 0 0 12px 0; }
+
+#divider-heading {
+  margin: 0;
+  padding: 12px; }
+  #divider-heading h1 {
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
+    font-weight: 900;
+    font-style: normal;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    text-transform: uppercase; }
+  #divider-heading h2 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 12px 0;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+    #divider-heading h2 i {
+      padding: 0 12px 0 0; }
+  #divider-heading a {
+    color: white; }
+
+.divider-content {
+  padding: 0 12px; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#frontcover {
+  background: #333333 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #frontcover #top-bar, #frontcover #end-nav, #frontcover #publication-footer {
+    display: none; }
+
+/* Woopie framework 0.2 */
+/* TEMPLATE - Base Styles */
+#gallery-body {
+  margin: 0; }
+
+.gallery-images {
+  margin: 12px 0 0 0;
+  padding: 0; }
+  .gallery-images section {
+    margin: 0 0 48px 0;
+    padding: 0; }
+    .gallery-images section img {
+      display: block;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+    .gallery-images section .imageinfo {
+      margin: 0; }
+      .gallery-images section .imageinfo p {
+        border-left: 1px solid #ababab;
+        background: #eeeeee;
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        margin: 0;
+        padding: 12px 24px; }
+      .gallery-images section .imageinfo dl {
+        border-left: 1px solid #ababab;
+        font-size: 0.85em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        padding: 18px 12px 0 24px;
+        font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+        width: 100%; }
+        .gallery-images section .imageinfo dl dt {
+          float: left;
+          font-weight: bold;
+          margin: 0 12px 0 0;
+          padding: 0; }
+        .gallery-images section .imageinfo dl dd {
+          margin: 0;
+          padding: 0; }
+
+/* Woopie framework 0.2 */
+/* Listing - Base Styles */
+#listing-body {
+  margin: 0; }
+  #listing-body .events-listing h1 {
+    clear: both; }
+
+.listing-graphic {
+  float: right;
+  margin: 0 0 24px 24px;
+  text-align: center; }
+  .listing-graphic img {
+    display: block;
+    margin: 0 0 6px 0;
+    padding: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .listing-graphic em {
+    display: block;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-size: 0.75em;
+    line-height: 1;
+    margin: 0 0 0px 0; }
+
+.lg-small {
+  width: 96px; }
+
+.lg-big {
+  width: 144px; }
+
+.content-block .event-item {
+  margin: 0 0 24px 0;
+  padding: 0; }
+  .content-block .event-item li {
+    list-style: none; }
+    .content-block .event-item li b {
+      font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+    .content-block .event-item li em {
+      font-style: normal;
+      font-weight: bold; }
+    .content-block .event-item li .sep {
+      opacity: 0;
+      padding: 0 3px; }
+    .content-block .event-item li .twitter-follow-button {
+      display: inline-block;
+      margin-top: 6px; }
+    .content-block .event-item li iframe {
+      margin: 0; }
+
+.content-block .grp-item {
+  margin: 0 0 24px 0;
+  padding: 0; }
+  .content-block .grp-item li {
+    list-style: none; }
+  .content-block .grp-item .grp-name {
+    font-weight: bold; }
+
+/* Reviews */
+.rating {
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 2em;
+  line-height: 2;
+  margin: 0 0 0px 0;
+  color: #0098ff; }
+
+.rating b {
+  color: #005b99; }
+
+.item-credits {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+  .item-credits dt {
+    float: left;
+    margin: 0 12px 0 0;
+    padding: 0; }
+  .item-credits dd {
+    margin: 0;
+    padding: 0; }

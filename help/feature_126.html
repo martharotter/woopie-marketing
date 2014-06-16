@@ -14,7 +14,7 @@
 <! -- About the Article //-->
 <title>Preview Your Article</title>
 <meta name="description" content="See how your article looks on different devices and in different sizes">
-<meta name="author" content="Firstname Lastname">
+<meta name="author" content="Stewart Curry">
 
 <meta property="og:site_name" content="woop.ie" />
 <meta property="og:title" content="Preview Your Article" />
@@ -53,9 +53,8 @@
 
 <!-- CUSTOM CSS -->
 <style> 
-   #end-social { display: none; }
-#top-social { display: none; }
-
+    #end-social { display: none; }
+    #top-social { display: none; }
 </style>
 
 <!-- Prev / Next pages //-->
@@ -63,10 +62,7 @@
 <link rel="next" href="$NEXTPAGEURL" />
 </head>
 
-
 <body class="page" id="article">
-
- 
 
 <!-- START main wrapper //-->
 <div id="wrapper">
@@ -109,8 +105,6 @@
 		<p class="subtitle">See how it looks in different sizes</p>
 	</div>
 
-	
-
 </header>
 <!-- End article heading //-->
 
@@ -120,7 +114,7 @@
 	<!-- START a section //-->
 	<section class="content-block">
         <p>Woopie makes it simple to see how your article will look on different devices and at different sizes.</p>
-<p>The quickest way to get an idea about how you content will look at different sizes is to hit the <strong>Preview</strong> tab when composing your article. This will allow you to see your article at a number of different sizes:</p>
+<p>The quickest way to get an idea about how you content will look at different sizes is to click the <strong>Preview</strong> tab when composing your article. This will allow you to see your article at a number of different sizes:</p>
 <div class="media-element-full">
 <img src="articleContent/126/preview_1.png" alt="Woopie preview" />
 <div class="caption"><p>Quickly click through different screen sizes</p></div>
@@ -134,15 +128,20 @@
 <li>Mobile Landscape <em>480 X 320</em></li>
 </ul>
 <p>(Note: make sure to click <strong>Save Draft</strong> to see the latest version of your article.)</p>
-<p>You can also click <strong>Open in New Tab</strong> to preview it as a full web page. Take this page and resize it to see how your content reflows and adapts to the device width. Use this link to view your article on a mobile or tablet browser - one easy way to do this to save typing is to email it to yourself.</p>
+<p>You can also click <strong>Open in New Window</strong> to preview it as a full web page. Take this page and resize it to see how your content reflows and adapts to the device width. Use this link to view your article on a mobile or tablet browser - one easy way to do this to save typing is to email it to yourself.</p>
 <h2>Preview the entire publication</h2>
 <p>Want to see how your entire publication flows? How the relationship between one article and another affects your narrative structure? Then you need to <em>Generate</em> and <em>Preview</em> your publication.</p>
 <div class="media-element-full">
-<img src="articleContent/126/preview-buttons.png" alt="Generate and Preview" />
+<img src="articleContent/126/generate.png" alt="Generate" />
+<div class="caption"><p>Generate the formats you need</p></div>
+</div>
+<p>Click <strong>Generate</strong> to generate your publication. This will build the latest version of every article.</p> 
+
+<div class="media-element-full">
+<img src="articleContent/126/preview.png" alt="Preview" />
 <div class="caption"><p>Preview the entire publication</p></div>
 </div>
-
-<p>Hit <strong>Generate Web</strong> to generate your publication. This will build the latest version of every article, and then hit <strong>Preview Issue</strong>. This will open the web version of your publication in a new tab. You can now see review each article, and navigate through the publication.</p>
+<p>Next click <strong>Launch Preview</strong>. This will open the web version of your publication in a new tab. You can now see review each article, and navigate through the publication.</p>
 
         
 	</section>
@@ -231,18 +230,16 @@ if (typeof jQuery == 'undefined') {
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<!-- Google Analytics //-->
+<!-- Google Analytics -->
 <script>
- var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
- (function(d, t) {
-  var g = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-  g.async = true;
-  g.src = '//www.google-analytics.com/ga.js';
-  s.parentNode.insertBefore(g, s);
- })(document, 'script');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-28531592-1', 'woop.ie');
+  ga('send', 'pageview');
 </script>
 
 </body>
-
 </html>
