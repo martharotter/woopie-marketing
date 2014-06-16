@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+
+<head>
+
+<meta charset="utf-8">
+
+<! -- About the Article //-->
+<title>Adding your own HTML</title>
+<meta name="description" content="Adding HTML to your article">
+<meta name="author" content="Firstname Lastname">
+
+<meta property="og:site_name" content="woop.ie" />
+<meta property="og:title" content="Adding your own HTML" />
+<meta property="og:description" content="Adding HTML to your article" />
+<meta property="og:article:author" content="AUTHORURL" />
+<meta property="og:article:section" content="Section" />
+<meta property="fb:admins" content="536042363" />
+<meta property="og:type" content="article"> 
+<meta property="og:url" content="http://www.woop.ie/url/" />
+<meta property="og:image" content="article/img/thumbnail.jpg" />
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<! -- iOS view formatting //-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!--Microsoft -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<! -- Stylesheets //-->
+<link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
+<link href="stylesheets/theme.css" rel="stylesheet" />
+<link href="article/styles.css" rel="stylesheet" />
+<link href="stylesheets/print.css" rel="stylesheet" />
+
+<!--[if IE]>
+<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CUSTOM CSS -->
+<style> 
+   #end-social { display: none; }
+#top-social { display: none; }
+
+</style>
+
+<!-- Prev / Next pages //-->
+<link rel="prev" href="$PREVPAGEURL" />
+<link rel="next" href="$NEXTPAGEURL" />
+</head>
+
+
+<body class="page" id="article">
+
+ 
+
+<!-- START main wrapper //-->
+<div id="wrapper">
+
+<!-- START top bar //-->
+<div id="top-bar" class="group">
+
+	<!-- START top bar navigation //-->
+	<nav role="navigation" id="top-nav" class="button-links">
+		<ul>
+			<li id="top-nav-cover"><a href="index.html"><i class="icon icon-cover"></i> <b>Cover</b></a></li>
+			<li id="top-nav-contents"><a href="contents.html" class="cont"><i class="icon icon-contents"></i> <b>Contents</b>
+				<nav id="cont-dropdown"><span data-src="inc/toc.html">[toc]</span></nav>
+			</a>
+			</li>
+			<li id="top-nav-prevarticle"><a href="feature_122.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
+			<li id="top-nav-nextarticle"><a href="feature_126.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
+		</ul>
+	</nav>
+	<!-- END top bar navigation //-->
+	
+	<h1 id="top-title">Woopie</h1>
+	
+	<!-- START top social navigation //-->
+    
+	<!-- END top social navigation //-->
+
+</div><!-- END top bar //-->
+
+<!-- START article heading //-->
+	<header role="banner" id="intro-heading" class="group">
+	<!-- START main image //-->
+	<div id="main-image">
+	<img src="articleContent/129/html-top.jpg" alt="HTML" width="100%" />
+	</div>
+	<!-- END main image //-->
+
+	<div class="titles">
+		<h1>Adding your own HTML</h1>
+		<p class="subtitle">Want to add custom content? Use HTML </p>
+	</div>
+
+	
+
+</header>
+<!-- End article heading //-->
+
+<!-- START article //-->
+<article role="main" id="article-body">
+
+	<!-- START a section //-->
+	<section class="content-block">
+        <h2>HTML</h2>
+<p>The beauty of Markdown is that you can use HTML with it. (note: you can't mix Markdown <em>inside</em> of HTML).</p>
+<p>To add HTML, just paste it in. That's it!</p>
+<h3>Embeds</h3>
+<p>Here's some sample HTML. To embed a YouTube video, just paste in the embed code, wrapped in our HTML wrapper block:</p>
+<pre><code>&lt;div class="media-element-full"&gt;
+    &lt;iframe width="420" height="315" src="https://www.youtube.com/embed/4eGQ5VFt7P4" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;div class="caption"&gt;&lt;p&gt;Caption goes here&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>which will give you...</p>
+<div class="media-element-full">
+<iframe width="420" height="315" src="https://www.youtube.com/embed/4eGQ5VFt7P4" frameborder="0" allowfullscreen></iframe>
+<div class="caption"><p>Caption goes here</p></div>
+</div>
+
+<p>Note: we automatically resize videos to fill the width of the content area for the following services:</p>
+<ul>
+<li>YouTube</li>
+<li>Vimeo</li>
+<li>Blip.tv</li>
+<li>Viddler</li>
+<li>Kickstarter</li>
+<li>Wistia</li>
+</ul>
+<h3>Tables</h3>
+<p>You can add tables using HTML. Here's an example table code:</p>
+<pre><code>&lt;table&gt;
+&lt;caption&gt;Caption&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+     &lt;th&gt;A&lt;/th&gt;
+     &lt;th&gt;B&lt;/th&gt;
+     &lt;th&gt;C&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;
+    &lt;td&gt;A.1&lt;/td&gt;
+    &lt;td&gt;B.1&lt;/td&gt;
+    &lt;td&gt;C.1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+     &lt;td&gt;A.2&lt;/td&gt;
+     &lt;td&gt;B.2&lt;/td&gt;
+     &lt;td&gt;C.2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+<p>which will give you:</p>
+<table> <caption>Caption</caption>
+<thead>
+<tr>
+<th>A</th>
+<th>B</th>
+<th>C</th>
+</tr>
+</thead>
+<tr>
+<td>A.1</td>
+<td>B.1</td>
+<td>C.1</td>
+</tr>
+<tr>
+<td>A.2</td>
+<td>B.2</td>
+<td>C.2</td>
+</tr>
+</table>
+
+<h3>3rd Party Widgets</h3>
+<p>You can add third party widgets by linking to the source files. For example, to add a Google Chart, link to the required source files:</p>
+<pre><code>&lt;script type="text/javascript" src="https://www.google.com/jsapi"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+  google.load("visualization", "1", {packages:["corechart"]});
+  google.setOnLoadCallback(drawChart);
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Work',     11],
+      ['Eat',      2],
+      ['Commute',  2],
+      ['Watch TV', 2],
+      ['Sleep',    7]
+    ]);
+
+    var options = {
+      title: 'My Daily Activities'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+    chart.draw(data, options);
+  }
+&lt;/script&gt;
+</code></pre>
+<p>and the HTML it needs to render the output:</p>
+<pre><code>&lt;div id="chart_div" style="width: 900px; height: 500px;"&gt;&lt;/div&gt;
+</code></pre>
+<h4>Here's the output:</h4>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+google.load("visualization", "1", {packages:["corechart"]});
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+var data = google.visualization.arrayToDataTable([
+['Task', 'Hours per Day'],
+['Work',     11],
+['Eat',      2],
+['Commute',  2],
+['Watch TV', 2],
+['Sleep',    7]
+]);
+var options = {
+title: 'My Daily Activities'
+};
+var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+chart.draw(data, options);
+}
+</script>
+
+<div id="chart_div" style="width: 900px; height: 500px;"></div>
+
+<p>(note: adding calls to the body of your HTML like this will affect your page load speed. Also, be sure to add fallbacks for ePub and offline access.</p>
+
+        
+	</section>
+	<!-- END a section //-->
+
+	<!-- START end social tools //-->
+	
+	<!-- END end social tools //-->
+	
+</article>
+<!-- END article //-->
+
+
+<!-- START Contributors listing info -->
+<footer role="complimentary" id="contributors" class="group">
+			
+	<!-- START Contributor info -->
+	
+	<!-- END Contributor info -->
+
+</footer>
+<!-- END Contributors listing info -->
+
+<!-- START end pagination //-->
+<nav id="end-nav" class="group">
+	<ul>
+	
+		<!-- Previous article //-->
+		<li id="end-nav-prevarticle">
+			<a href="feature_122.html">
+ <span class="arrow">&lt;</span>
+ <div class="end-titles">
+ <p class="end-prevnext">Previous Article</p>
+ <p class="end-article">Media Elements</p>
+ </div>
+ </a>
+
+		</li>
+		
+		<!-- Next article //-->
+		<li id="end-nav-nextarticle">
+			<a href="feature_126.html">
+<span class="arrow">&gt;</span>
+ <div class="end-titles">
+ <p class="end-prevnext">Next Article</p>
+ <p class="end-article">Preview Your Article</p>
+ </div>
+ </a>
+
+		</li>
+		
+	</ul>
+</nav>
+<!-- END end pagination //-->
+
+
+<footer role="contentinfo" id="publication-footer">
+	<span data-src="inc/footer.html">[footer]</span>
+</footer>
+
+
+</div><!-- END main wrapper //-->
+
+
+<!-- START Modal windows for Social & Sharing //-->
+
+<!-- END Modal windows for Social & Sharing //-->
+
+<!-- jQuery plugins, CDN and fallback //-->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+	<script type="text/javascript" src="js/scripts-combined.js"></script>
+	<script type="text/javascript" src="js/debug.js"></script>
+
+<!-- Facebook Code //-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117684858358873";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-28531592-1', 'woop.ie');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>

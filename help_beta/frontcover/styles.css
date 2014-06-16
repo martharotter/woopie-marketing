@@ -1,0 +1,74 @@
+/* Woopie framework 0.2 */
+/* Article - Base Styles */
+#frontcover {
+
+}
+
+/* Woopie framework 0.2 */
+/* Article - Media Queries Styles */
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+}
+
+/* ############################################################ */
+/* iPhone */
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+}
