@@ -1,0 +1,3710 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|Open+Sans:300italic,700italic,400,300,700,800|Open+Sans+Condensed:300);
+/* Woopie framework 0.3 */
+/* Theme Customisation - fonts and variables */
+/* Woopie framework 0.3 */
+/* Import fonts from Google */
+/* Fonts */
+/* Woopie framework 0.3 */
+/* Variables - define widths, colors, font families etc. */
+/* Measurements */
+/* Set a base scale */
+/* Left and right spacing */
+/* Specific left and right spacing for wider screens */
+/* Indent for wider screens */
+/* Font Set */
+.font1 {
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+.font2 {
+  font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+.font3 {
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+
+/* Type */
+/* Color Set */
+/* Grey - Main text color */
+/* Blue - Secondary text color */
+/* Red - Highlight color */
+/* Green - Highlight color */
+/* Very light grey */
+/* Light blue */
+.color1 {
+  color: #121212 !important; }
+
+.color2 {
+  color: #0098ff !important; }
+
+.color3 {
+  color: #c72211 !important; }
+
+.color4 {
+  color: #b2cf00 !important; }
+
+.revcolor1 {
+  color: white !important; }
+
+.revcolor2 {
+  color: #eeeeee !important; }
+
+.color1-bg {
+  background-color: #121212 !important; }
+
+.color2-bg {
+  background-color: #0098ff !important; }
+
+.color3-bg {
+  background-color: #c72211 !important; }
+
+.color4-bg {
+  background-color: #b2cf00 !important; }
+
+.revcolor1-bg {
+  background-color: white !important; }
+
+.revcolor2-bg {
+  background-color: #eeeeee !important; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.allcaps {
+  text-transform: uppercase; }
+
+/* Colors */
+/* Page colors */
+/* Top bar */
+/* Titles */
+/* Links */
+/* Theme - Pull in relevant template files, set elements values */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:hover, a:active {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+blockquote {
+  margin: 1em 40px; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+pre, code, kbd, samp {
+  font-family: monospace,serif;
+  _font-family: 'courier new',monospace;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 75%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+ul, ol {
+  margin-left: 0;
+  padding: 0 0 0 40px; }
+
+dd {
+  margin: 0 0 0 40px; }
+
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+form {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+button, input {
+  line-height: normal; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+  *overflow: visible; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Woopie framework 0.3 */
+/* Base stylesheet - web specifics */
+/* Box size */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* Reset headings */
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+  padding: 0; }
+
+/* clearfix */
+.group:before,
+.group:after {
+  content: "";
+  display: table; }
+
+.group:after {
+  clear: both; }
+
+.group {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+/* Basic Stuff  */
+body {
+  background: white;
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: #121212;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased; }
+
+/* link colors */
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear; }
+  a:link {
+    color: #0098ff; }
+  a:visited {
+    color: #0098ff; }
+  a:focus {
+    color: #c72211; }
+  a:hover {
+    color: #c72211;
+    cursor: pointer; }
+  a:active {
+    color: #c72211;
+    cursor: pointer; }
+
+/* selection colours */
+::selection {
+  background: #c72211;
+  /* Safari */
+  color: white; }
+
+::-moz-selection {
+  background: #c72211;
+  /* Firefox */
+  color: white; }
+
+/* Show on iPhone */
+.ios-only {
+  display: none; }
+
+@media only screen and (max-device-width: 480px) {
+  .ios-only {
+    display: block; } }
+@media only screen and (max-device-width: 1024px) {
+  .ios-only {
+    display: block; } }
+/* Woopie framework 0.3 */
+/* Mixins - useful shortcuts and tools */
+/* Woopie framework 0.3 */
+/* Debug */
+/* Debug Info */
+#debug-console {
+  background: #000;
+  bottom: 20px;
+  color: #ff0;
+  font-size: 11px;
+  font-family: Arial;
+  font-weight: bold;
+  opacity: 0.8;
+  padding: 5px 10px;
+  position: fixed;
+  left: 0;
+  text-transform: uppercase;
+  text-shadow: none;
+  z-index: 10000;
+  width: 100%; }
+
+#debug-console i {
+  color: #fff;
+  font-style: italic;
+  text-transform: lowercase;
+  padding-right: 10px; }
+
+/* Debug text */
+@media screen and (max-width: 31.25em) {
+  #debug-console #pixels:after {
+    content: " Under 500px"; } }
+@media screen and (min-width: 31.25em) {
+  #debug-console #pixels:after {
+    content: " 501px > 799px"; } }
+@media screen and (min-width: 50em) {
+  #debug-console #pixels:after {
+    content: " 800px > 999px"; } }
+@media screen and (min-width: 62.5em) {
+  #debug-console #pixels:after {
+    content: " 1000px > 1199px"; } }
+@media screen and (min-width: 75em) {
+  #debug-console #pixels:after {
+    content: " Over 1200px"; } }
+
+@media screen and (max-width: 31.25em) {
+  #debug-console #ems:after {
+    content: "Under 31.25em "; } }
+@media screen and (min-width: 31.25em) {
+  #debug-console #ems:after {
+    content: "31.25em > 50em "; } }
+@media screen and (min-width: 50em) {
+  #debug-console #ems:after {
+    content: "50em > 62.5em "; } }
+@media screen and (min-width: 50em) {
+  #debug-console #ems:after {
+    content: "62.5em > 75em "; } }
+@media screen and (min-width: 75em) {
+  #debug-console #ems:after {
+    content: "Over 75em "; } }
+
+/* Show screen sizes */
+/* Woopie framework 0.1 */
+/* Fonts - Modern Pictograms */
+@font-face {
+  font-family: 'ModernPictogramsNormal';
+  src: url("../fonts/modern-pictograms/modernpics-webfont.eot");
+  src: url("../fonts/modern-pictograms/modernpics-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/modern-pictograms/modernpics-webfont.woff") format("woff"), url("../fonts/modern-pictograms/modernpics-webfont.ttf") format("truetype"), url("../fonts/modern-pictograms/modernpics-webfont.svg#ModernPictogramsNormal") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Icons - icon typeface */
+/* Woopie framework 0.3 */
+/* Wrapper stylesheet */
+#wrapper {
+  margin: 0;
+  padding: 0; }
+  #wrapper.wide {
+    max-width: 100%; }
+    #wrapper.wide .content-block .media-element-side.go-right {
+      margin-right: 0; }
+    #wrapper.wide .content-block, #wrapper.wide #end-social, #wrapper.wide #footnotes, #wrapper.wide #contributors {
+      max-width: 900px; }
+
+/* Containers */
+/* Woopie framework 0.3 */
+/* Wrapper stylesheet - media queries */
+/* Less than 500px #################### */
+/* More than 500px #################### */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #wrapper {
+    max-width: 960px;
+    margin: 0 auto; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #wrapper.wide .content-block .media-element-side.go-right {
+    margin-right: -144px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Topbar - Base Styles */
+/* Top Bar */
+#top-bar {
+  background: black;
+  border-bottom: 4px solid black;
+  clear: both;
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 100; }
+
+#top-nav {
+  float: left;
+  z-index: 200; }
+
+#top-social {
+  float: right;
+  z-index: 200; }
+
+#top-title {
+  color: #b2cf00;
+  font-size: 1em;
+  line-height: 2.5;
+  margin: 0 0 0px 0;
+  line-height: 40px;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  left: 50%;
+  margin-left: -128px;
+  /* Half the width */
+  padding: 0 8px;
+  position: absolute;
+  text-align: center;
+  width: 256px;
+  z-index: 1; }
+
+/* Navigation/Social buttons */
+.button-links ul {
+  margin: 0;
+  padding: 0; }
+  .button-links ul li {
+    display: inline;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    z-index: 200; }
+    .button-links ul li a {
+      -webkit-font-smoothing: antialiased;
+      background: transparent;
+      color: #cccccc;
+      display: block;
+      float: left;
+      font-family: 'ModernPictogramsNormal';
+      font-size: 1.5em;
+      line-height: 2.5;
+      margin: 0 0 0px 0;
+      line-height: 40px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none; }
+      .button-links ul li a:hover {
+        color: #eeeeee; }
+      .button-links ul li a #cont-dropdown {
+        background: #121212;
+        position: absolute;
+        width: 100%;
+        left: -9999px;
+        top: 40px;
+        z-index: 1000; }
+        .button-links ul li a #cont-dropdown ol li {
+          display: block;
+          width: 100%; }
+          .button-links ul li a #cont-dropdown ol li h2 a {
+            background: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            margin: 0 0 0px 0; }
+          .button-links ul li a #cont-dropdown ol li a {
+            border-bottom: 1px solid #2c2c2c;
+            color: white;
+            display: block;
+            font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+            padding: 8px 16px;
+            width: 100%;
+            font-size: 0.8em;
+            line-height: 1.5;
+            margin: 0 0 0px 0; }
+            .button-links ul li a #cont-dropdown ol li a:hover {
+              background: #c72211;
+              color: white; }
+            .button-links ul li a #cont-dropdown ol li a span, .button-links ul li a #cont-dropdown ol li a p {
+              display: none; }
+      .button-links ul li a.cont:hover #cont-dropdown, .button-links ul li a.cont:active #cont-dropdown {
+        left: 0; }
+    .button-links ul li i {
+      display: block;
+      float: left;
+      margin: 0;
+      vertical-align: baseline;
+      font-family: "ModernPictogramsNormal", Arial, Serif;
+      font-style: normal;
+      font-weight: normal;
+      text-align: center;
+      width: 40px; }
+    .button-links ul li b {
+      float: left;
+      font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      text-transform: uppercase;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: none; }
+
+.icon-cover:before {
+  content: "B"; }
+
+.icon-contents:before {
+  content: "5"; }
+
+.icon-previousarticle:before {
+  content: "<"; }
+
+.icon-nextarticle:before {
+  content: ">"; }
+
+.icon-twitter:before {
+  content: "T"; }
+
+.icon-facebook:before {
+  content: "F"; }
+
+.icon-share:before {
+  content: "o"; }
+
+.icon-comment:before {
+  content: "b"; }
+
+/* End Navigation */
+#end-nav {
+  margin: 0 48px; }
+  #end-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    #end-nav ul li {
+      float: left;
+      padding: 0;
+      text-align: center;
+      width: 50%; }
+      #end-nav ul li .end-titles {
+        width: 90%; }
+  #end-nav a {
+    display: block;
+    padding: 8px 0;
+    text-decoration: none; }
+  #end-nav .arrow {
+    font-family: "ModernPictogramsNormal", Arial, Serif; }
+  #end-nav .end-prevnext {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    padding: 4px 0; }
+  #end-nav .end-article {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  #end-nav #end-nav-prevarticle {
+    text-align: left; }
+  #end-nav #end-nav-nextarticle {
+    text-align: right; }
+
+/* Navigation widgets */
+/* Woopie framework 0.3 */
+/* Topbar - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #top-title {
+    display: none; }
+
+  .button-links ul li a #cont-dropdown {
+    height: 300px;
+    overflow-y: auto; }
+  .button-links ul li a ::-webkit-scrollbar {
+    width: 20px;
+    opacity: 0.5; }
+  .button-links ul li a ::-webkit-scrollbar-track {
+    background: #050505; }
+  .button-links ul li a ::-webkit-scrollbar-thumb {
+    background: #0098ff;
+    border: 3px solid #050505; }
+
+  #end-nav ul {
+    margin: 0; }
+    #end-nav ul li p {
+      display: none; }
+    #end-nav ul li a {
+      background: #121212;
+      color: white;
+      font-size: 2em;
+      line-height: 2;
+      margin: 0 0 0px 0;
+      padding: 0;
+      text-align: center; }
+      #end-nav ul li a:hover {
+        background: #0098ff; }
+    #end-nav ul #end-nav-prevarticle {
+      border-right: 1px solid #454545; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .button-links ul li a #cont-dropdown {
+    width: 480px; }
+  .button-links ul li a.cont:hover #cont-dropdown {
+    left: 40px; }
+
+  #end-nav ul {
+    margin: 0; }
+    #end-nav ul li .end-prevnext {
+      color: #c72211;
+      font-size: 0.75em;
+      line-height: 1;
+      margin: 0 0 0px 0; }
+    #end-nav ul li .end-article {
+      color: #121212;
+      font-size: 1.25em;
+      line-height: 1.25;
+      margin: 0 0 0px 0; }
+    #end-nav ul li span {
+      margin: 0;
+      padding: 0;
+      font-size: 2em;
+      line-height: 2;
+      margin: 0 0 0px 0;
+      height: 64px; }
+    #end-nav ul li .end-titles {
+      padding: 0 16px;
+      height: 64px; }
+    #end-nav ul #end-nav-prevarticle .arrow {
+      float: left; }
+    #end-nav ul #end-nav-prevarticle .end-titles {
+      float: left; }
+    #end-nav ul #end-nav-nextarticle .arrow {
+      float: right; }
+    #end-nav ul #end-nav-nextarticle .end-titles {
+      float: right; } }
+/* More than 800px #################### */
+@media screen and (min-width: 50em) {
+  #end-nav {
+    margin: 0 144px; } }
+/* More than 1000px #################### */
+@media screen and (min-width: 62.5em) {
+  #end-nav {
+    margin: 0 144px; }
+    #end-nav ul li {
+      display: block;
+      float: left;
+      margin-top: -80px;
+      position: fixed;
+      top: 50%;
+      height: 160px;
+      width: 184px;
+      font-size: 1em;
+      line-height: 1;
+      margin: 0 0 0px 0;
+      padding: 0;
+      z-index: 1000; }
+      #end-nav ul li span {
+        background: #121212;
+        color: white;
+        display: block;
+        float: left;
+        height: 160px;
+        margin: 0;
+        padding: 0 12px;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; }
+      #end-nav ul li .end-titles {
+        opacity: 0;
+        background: black;
+        display: block;
+        height: 160px;
+        width: 128px;
+        padding: 0;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; }
+        #end-nav ul li .end-titles .end-prevnext {
+          background: #c72211;
+          border-bottom: 1px solid white;
+          color: white;
+          padding: 8px 16px;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 0.6em;
+          line-height: 1;
+          margin: 0 0 0px 0;
+          font-weight: bold;
+          font-style: normal; }
+        #end-nav ul li .end-titles .end-article {
+          color: white;
+          padding: 8px 16px;
+          height: 128px;
+          font-size: 1em;
+          line-height: 1.25;
+          margin: 0 0 0px 0;
+          font-weight: normal;
+          font-style: normal; }
+      #end-nav ul li:hover span {
+        background: #c72211;
+        color: white;
+        opacity: 0.9; }
+      #end-nav ul li:hover .end-titles {
+        opacity: 0.9; }
+      #end-nav ul li .arrow {
+        font-size: 2em;
+        line-height: 1;
+        margin: 0 0 0px 0;
+        line-height: 160px; }
+    #end-nav #end-nav-prevarticle {
+      left: 0; }
+      #end-nav #end-nav-prevarticle span {
+        border-right: 1px solid white; }
+    #end-nav #end-nav-nextarticle {
+      right: 0; }
+      #end-nav #end-nav-nextarticle span {
+        border-left: 1px solid white; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #top-bar {
+    position: fixed;
+    height: 48px;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+    width: 100%;
+    z-index: 1000;
+    -webkit-box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 0px 2px rgba(0, 0, 0, 0.2); }
+
+  .button-links ul li {
+    line-height: 48px; }
+    .button-links ul li a {
+      font-size: 2em;
+      line-height: 3;
+      margin: 0 0 0px 0;
+      line-height: 48px; }
+      .button-links ul li a #cont-dropdown {
+        top: 48px; }
+    .button-links ul li i {
+      width: 48px; }
+
+  #end-nav {
+    margin: 0 48px 0 144px; } }
+/* ############################################################ */
+/* Print */
+@media print {
+  #top-nav, #top-social {
+    display: none; } }
+/* Woopie framework 0.3 */
+/* Titles - Base Styles */
+/* Intro Headings */
+#intro-heading {
+  /* headings with text on top */ }
+  #intro-heading .titles {
+    margin: 0;
+    padding: 0;
+    clear: both;
+    z-index: 0; }
+  #intro-heading h1 {
+    color: #0098ff;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 24px 0;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  #intro-heading .subtitle {
+    color: #c72211;
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0 0 16px 0;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  #intro-heading .sections {
+    background: #c72211;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 0 16px 0;
+    padding: 8px 16px; }
+    #intro-heading .sections b {
+      color: white;
+      font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+      font-weight: bold;
+      padding: 0 8px 0 0; }
+    #intro-heading .sections i {
+      color: #eeeeee;
+      font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+      font-style: normal; }
+  #intro-heading #main-image {
+    margin: 0 0 16px 0; }
+    #intro-heading #main-image img {
+      display: block;
+      width: 100%; }
+  #intro-heading.noimage {
+    margin-top: 32px; }
+  #intro-heading.overlay {
+    background-image: url();
+    background-position: center center;
+    background-position: fixed;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 32px; }
+    #intro-heading.overlay:after {
+      content: "";
+      display: block;
+      background: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1; }
+    #intro-heading.overlay #main-image {
+      display: none; }
+    #intro-heading.overlay .titles {
+      background-color: transparent;
+      padding-top: 192px;
+      z-index: 100;
+      position: relative; }
+      #intro-heading.overlay .titles h1 {
+        color: white;
+        text-shadow: 1px 0 20px #121212; }
+      #intro-heading.overlay .titles .subtitle {
+        color: white;
+        text-shadow: 1px 0 20px black; }
+    #intro-heading.overlay #credits {
+      position: relative;
+      z-index: 100;
+      margin-top: 192px; }
+    #intro-heading.overlay #roles dt, #intro-heading.overlay #roles dd {
+      color: white; }
+
+/* Top of page */
+/* Woopie framework 0.3 */
+/* Titles - Media Queries Styles */
+#intro-heading #main-image-print {
+  display: none; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #intro-heading {
+    width: 100%;
+    height: auto;
+    display: table; }
+    #intro-heading .titles {
+      display: table-header-group; }
+      #intro-heading .titles h1 {
+        font-size: 2em;
+        line-height: 1.25;
+        margin: 0 0 16px 0;
+        padding: 16px 48px 4px 48px; }
+      #intro-heading .titles .subtitle {
+        font-size: 1.5em;
+        line-height: 1.25;
+        margin: 0 0 16px 0;
+        padding: 0 48px 4px 48px; }
+      #intro-heading .titles .sections {
+        margin: 0 48px 16px 48px; }
+    #intro-heading #main-image {
+      display: table-row-group;
+      padding: 0;
+      width: 100%;
+      overflow: hidden; }
+      #intro-heading #main-image img {
+        width: 100%;
+        display: block;
+        overflow: hidden; }
+    #intro-heading #credits {
+      display: table-footer-group; }
+    #intro-heading.noimage {
+      margin-top: 0; }
+    #intro-heading.overlay {
+      display: block;
+      position: relative;
+      min-height: 400px; }
+      #intro-heading.overlay .titles {
+        background: transparent;
+        display: block;
+        padding-top: 100px; }
+      #intro-heading.overlay #credits {
+        background: #121212;
+        display: block; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  #intro-heading {
+    margin: 0; }
+    #intro-heading #main-image {
+      margin: 0 0 32px 0; }
+    #intro-heading .titles {
+      margin: 0 48px; }
+    #intro-heading.overlay {
+      min-height: 512px; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #intro-heading .titles {
+    margin: 0 144px; }
+    #intro-heading .titles h1 {
+      font-size: 3em;
+      line-height: 1.25;
+      margin: 0 0 32px 0; }
+    #intro-heading .titles .subtitle {
+      font-size: 2em;
+      line-height: 1.25;
+      margin: 0 0 16px 0; }
+  #intro-heading.overlay {
+    min-height: 640px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #intro-heading .titles {
+    margin: 0 48px 0 144px; }
+    #intro-heading .titles h1 {
+      font-size: 5em;
+      line-height: 1.25;
+      margin: 0 0 64px 0; }
+    #intro-heading .titles .subtitle {
+      font-size: 3em;
+      line-height: 1.25;
+      margin: 0 0 16px 0; }
+  #intro-heading.noimage {
+    margin-top: 96px; } }
+/* Print  ############################## */
+@media print {
+  #intro-heading.overlay #main-image {
+    display: block; } }
+/* Woopie framework 0.3 */
+/* Introduction section - Base Styles */
+#intro-section p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+  font-weight: normal;
+  font-style: italic; }
+#intro-section ul {
+  margin: 0;
+  padding: 0; }
+  #intro-section ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; }
+
+/* Credits */
+#credits {
+  margin: 0 0 16px 0; }
+
+#roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 32px 0;
+  clear: both;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  width: 100%; }
+  #roles dt {
+    color: #121212;
+    float: left;
+    font-weight: bold;
+    margin: 0 16px 0 0;
+    padding: 0; }
+  #roles dd {
+    margin: 0;
+    padding: 0;
+    color: #121212; }
+
+/* Issue Info */
+#issue {
+  margin: 16px 48px; }
+
+#edition {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  padding: 0 0 32px 0;
+  width: 100%; }
+  #edition dt {
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #edition dd {
+    float: left;
+    margin: 0 32px 0 8px;
+    padding: 0 8px; }
+
+/* Intro deck */
+/* Woopie framework 0.3 */
+/* Introdutcion section - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #credits {
+    margin: 0 0 16px 0; }
+
+  #roles {
+    padding: 16px 48px; }
+
+  #issue {
+    margin: 0;
+    padding: 16px 48px 8px 48px; }
+
+  #edition {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0 0 0px 0; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  #credits {
+    margin: 0 48px 16px 48px; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #intro-section p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 0 0 32px 0;
+    font-weight: normal;
+    font-style: italic; }
+  #intro-section ul {
+    margin: 0;
+    padding: 0; }
+    #intro-section ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 1.5em;
+      line-height: 1.5;
+      margin: 0 0 16px 0; }
+
+  #credits {
+    margin: 0 144px 16px 144px; }
+
+  #issue {
+    margin: 16px 144px; }
+
+  #edition {
+    font-size: 2em;
+    line-height: 2;
+    margin: 0 0 0px 0; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #credits {
+    margin: 0 48px 16px 144px; }
+
+  #issue {
+    margin: 16px 48px 16px 144px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Global content blocks - Base Styles */
+.content-block {
+  margin: 0 0 32px 0;
+  /* Start Blockquote */
+  /* End Blockquote */
+  /* Tooltips */
+  /* Tables*/
+  /* Report Tables	*/
+  /* Size things */ }
+  .content-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content-block h1 {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0 0 16px 0;
+    font-weight: bold;
+    font-style: normal;
+    text-rendering: optimizeLegibility; }
+  .content-block h2 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0 0 16px 0;
+    font-weight: normal;
+    font-style: normal; }
+  .content-block h3 {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 0 0 16px 0; }
+  .content-block h4 {
+    color: #121212;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 0 0 16px 0; }
+  .content-block p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; }
+  .content-block pre {
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 16px 0;
+    background: #eeeeee;
+    border: 1px inset #eeeeee;
+    box-shadow: inset 1px 1px 5px #bbbbbb;
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 16px;
+    white-space: pre-wrap; }
+  .content-block ul, .content-block ol {
+    margin: 0 0 24px 24px;
+    padding: 0; }
+  .content-block li {
+    font-size: 1em;
+    line-height: 1.75;
+    margin: 0 0 4px 0;
+    padding: 0; }
+    .content-block li ul, .content-block li ol {
+      margin: 8px 0 0 32px;
+      padding: 0; }
+  .content-block ul li, .content-block ol ul li {
+    list-style: square; }
+  .content-block ol li, .content-block ul ol li {
+    list-style: decimal; }
+  .content-block sup {
+    font-size: 8px; }
+  .content-block abbr {
+    border-bottom: 1px dotted #0098ff;
+    cursor: help; }
+  .content-block blockquote, .content-block quote {
+    border: 1px solid #0098ff;
+    border-width: 2px 0 1px 0;
+    margin: 0 0 16px 0;
+    padding: 16px 0;
+    page-break-inside: avoid; }
+  .content-block blockquote p {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-style: italic; }
+  .content-block blockquote cite {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-style: normal;
+    color: #0098ff;
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .content-block blockquote cite:before {
+    content: "— ";
+    opacity: 0.5; }
+  .content-block .tooltip {
+    border-bottom: 1px dotted #b2cf00; }
+  .content-block table {
+    border-collapse: collapse;
+    margin: 0 0 32px 0;
+    padding: 0;
+    width: 100%; }
+    .content-block table caption {
+      text-align: left;
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 0 0 16px 0;
+      font-weight: bold;
+      font-style: normal; }
+    .content-block table th, .content-block table td {
+      border-bottom: 1px solid #929292;
+      padding: 8px 8px 8px 0;
+      font-size: 1em;
+      line-height: 1.25;
+      margin: 0 0 16px 0;
+      vertical-align: top; }
+    .content-block table th {
+      text-align: left;
+      vertical-align: bottom; }
+    .content-block table thead th {
+      border-bottom: 1px solid black; }
+  .content-block .footable .footable-row-detail-inner div {
+    margin-bottom: 4px; }
+  .content-block .report th, .content-block .report td {
+    border: none;
+    vertical-align: top; }
+  .content-block .report .right {
+    padding: 8px 0 8px 8px;
+    text-align: right; }
+  .content-block .report .level1 {
+    padding-left: 16px; }
+  .content-block .report .level2 {
+    padding-left: 32px; }
+  .content-block .report .level3 {
+    padding-left: 48px; }
+  .content-block .report .singleLine {
+    border-bottom: 1px solid #929292; }
+  .content-block .report .doubleLine {
+    border-bottom: 2px double #929292; }
+  .content-block .tiny {
+    width: 64px; }
+  .content-block .small {
+    width: 128px; }
+  .content-block .medium {
+    width: 256px; }
+  .content-block .large {
+    width: 384px; }
+
+/* Base HTML formating */
+/* Woopie framework 0.3 */
+/* Global content blocks - Media Queries Styles */
+/* Not for ePub */
+.content-block * {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+.content-block pre {
+  white-space: pre;
+  word-wrap: normal;
+  overflow-x: scroll;
+  overflow-y: hidden; }
+
+.columnise {
+  -moz-column-rule-color: #929292;
+  -moz-column-rule-style: solid;
+  -moz-column-rule-width: 1px;
+  -webkit-column-rule-color: #929292;
+  -webkit-column-rule-style: solid;
+  -webkit-column-rule-width: 1px;
+  column-rule-color: #929292;
+  column-rule-style: solid;
+  column-rule-width: 1px; }
+  .columnise h1 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .content-block blockquote p {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 16px 0; }
+  .content-block blockquote cite {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 0px 0; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .content-block blockquote p {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 16px 0; }
+  .content-block blockquote cite {
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0; } }
+/* iPad */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  .content-block {
+    /* Positioning */ }
+    .content-block .go-left {
+      float: left;
+      margin: 0 32px 32px 0; }
+    .content-block .go-right {
+      float: right;
+      margin: 0 0 32px 32px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  .content-block {
+    /* Tables */ }
+    .content-block h3 {
+      font-size: 1.2em;
+      line-height: 1.5;
+      margin: 0 0 16px 0; }
+    .content-block p {
+      font-size: 1.1em;
+      line-height: 1.5;
+      margin: 0 0 32px 0; }
+    .content-block pre {
+      font-size: 1.1em;
+      line-height: 1.5;
+      margin: 0 0 32px 0; }
+    .content-block ul, .content-block ol {
+      margin: 0 0 32px 0;
+      margin-left: 0;
+      padding: 0; }
+    .content-block li {
+      font-size: 1.1em;
+      line-height: 1.8;
+      margin: 0 0 8px 0; }
+      .content-block li ul, .content-block li ol {
+        margin: 8px 0 0 32px;
+        padding: 0; }
+    .content-block th, .content-block td {
+      font-size: 1.1em;
+      line-height: 1.25;
+      margin: 0 0 16px 0; } }
+/* Print  ############################## */
+@media print {
+  .content-block blockquote {
+    margin: 0 0 8px 0;
+    padding: 0 8px 0 32px;
+    border: none; }
+  .content-block pre {
+    border: none; } }
+/* Over a certain height */
+@media screen and (min-height: 40em) and (min-width: 768px) {
+  .columnise {
+    -moz-column-count: 2;
+    -moz-column-gap: 48px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 48px;
+    column-count: 2;
+    column-gap: 48px; } }
+/* Over a certain height */
+@media screen and (min-height: 40em) and (min-width: 1025px) {
+  .columnise {
+    -moz-column-count: 3;
+    -moz-column-gap: 64px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 64px;
+    column-count: 3;
+    column-gap: 64px; } }
+/* Woopie framework 0.3 */
+/* Footer - Base Styles */
+#publication-footer {
+  margin: 16px;
+  font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  #publication-footer p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; }
+
+/* Credits block, end of page */
+/* Woopie framework 0.3 */
+/* Footer - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #publication-footer {
+    margin: 16px 48px; } }
+/* More than 500px #################### */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #publication-footer {
+    margin: 16px 144px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #publication-footer {
+    margin: 16px 48px 16px 144px; }
+    #advert #publication-footer {
+      margin: 16px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Global content blocks - Base Styles */
+.content-block {
+  /* Elements */
+  /* Fixed Background Callout */
+  /* Callout Image with text */
+  /* Callout Box */ }
+  .content-block .media-element-side, .content-block .media-element-full {
+    margin: 0 0 32px 0;
+    padding: 0;
+    page-break-inside: avoid;
+    text-align: left; }
+    .content-block .media-element-side img, .content-block .media-element-side video, .content-block .media-element-side audio, .content-block .media-element-full img, .content-block .media-element-full video, .content-block .media-element-full audio {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+  .content-block .media-element-full {
+    clear: both; }
+  .content-block figcaption, .content-block .caption {
+    margin: 0;
+    padding: 8px 0;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+    .content-block figcaption h3, .content-block .caption h3 {
+      font-weight: bold; }
+    .content-block figcaption p, .content-block .caption p {
+      margin: 0; }
+    .content-block figcaption code, .content-block .caption code {
+      font-style: normal; }
+  .content-block .fixedsize {
+    width: 100%;
+    margin: 0 0 16px 0; }
+    .content-block .fixedsize img {
+      width: auto;
+      margin: 0; }
+    .content-block .fixedsize figcaption {
+      background: none;
+      padding: 8px 0;
+      text-align: left;
+      width: 100%; }
+  .content-block .fixed-bg {
+    background-color: #121212;
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    display: block;
+    clear: both;
+    color: #fff;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    padding: 64px;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 32px 0;
+    font-weight: bold;
+    font-style: normal;
+    margin: 32px -48px; }
+  .content-block .callout-image {
+    background: #0098ff;
+    clear: both;
+    margin: 0 0 32px 0;
+    page-break-before: always;
+    page-break-after: avoid; }
+    .content-block .callout-image img {
+      width: 100%;
+      margin: 0; }
+    .content-block .callout-image .caption {
+      background: transparent; }
+      .content-block .callout-image .caption p {
+        padding: 16px;
+        font-size: 1.5em;
+        line-height: 1.25;
+        margin: 0 0 0px 0;
+        font-weight: normal;
+        font-style: normal;
+        color: white; }
+  .content-block .callout-box {
+    border: 2px solid #0098ff;
+    clear: both;
+    padding: 16px;
+    padding-bottom: 0;
+    margin: 0 0 32px 0;
+    page-break-before: always;
+    page-break-after: avoid; }
+    .content-block .callout-box ul, .content-block .callout-box ol {
+      margin-left: 32px; }
+
+/* Media Elements */
+/* Woopie framework 0.3 */
+/* Global content blocks - Media Queries Styles */
+/* Not for ePub */
+.content-block video {
+  width: 100%;
+  height: auto; }
+.content-block .fixed-bg {
+  background-attachment: fixed; }
+.content-block .fixedsize {
+  clear: both;
+  width: 100%;
+  margin: 0 0 16px 0; }
+  .content-block .fixedsize.go-right img {
+    clear: both;
+    float: right;
+    width: auto; }
+  .content-block .fixedsize.go-right figcaption {
+    clear: both;
+    display: block;
+    text-align: right;
+    width: 100%; }
+  .content-block .fixedsize.go-center img {
+    width: auto;
+    margin: 0 auto; }
+  .content-block .fixedsize.go-center figcaption {
+    text-align: center; }
+.content-block .media-element-side, .content-block .media-element-full {
+  position: relative; }
+.content-block .fig-image-zoom {
+  background: #121212;
+  color: white;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 4em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .content-block .media-element-full, .content-block .media-element-side {
+    clear: both;
+    margin-bottom: 16px;
+    width: 100%; }
+  .content-block .full-width-mobile {
+    width: 100%; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .content-block .fixedsize {
+    width: 100%; }
+  .content-block .scroll-vert {
+    margin: 0 0 16px 16px; } }
+/* iPad */
+@media only screen and (device-width: 768px) {
+  .content-block .fixed-bg {
+    background-attachment: scroll;
+    background-size: cover; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  .content-block {
+    /* Figures */
+    /* Callout Image with text */
+    /* Callout Text */
+    /* Fixed BG */ }
+    .content-block .media-element-side {
+      clear: left;
+      float: left;
+      width: 384px;
+      margin: 0 32px 16px -144px;
+      /* Positioning */ }
+      .content-block .media-element-side.go-left {
+        float: left;
+        margin: 0 32px 32px -144px; }
+      .content-block .media-element-side.go-right {
+        float: right;
+        margin: 0 -144px 32px 32px; }
+    .content-block .fixed-bg {
+      padding: 160px 64px;
+      font-size: 4em;
+      line-height: 1.25;
+      margin: 0 0 32px 0;
+      margin: 32px 0; }
+    .content-block .callout-image {
+      overflow: auto; }
+      .content-block .callout-image img {
+        float: right;
+        width: 320px;
+        margin: 0 0 0 32px; }
+      .content-block .callout-image figcaption {
+        padding: 24px; }
+    .content-block .callout-box {
+      border: 8px solid #0098ff;
+      padding: 32px;
+      padding-bottom: 0; }
+    .content-block .fixed-bg {
+      margin-left: -144px;
+      margin-right: -144px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  .content-block {
+    /* Figures */
+    /* Callout Image with text */
+    /* Fixed BG */ }
+    .content-block .media-element-side {
+      margin-left: -144px;
+      /* Positioning */ }
+      .content-block .media-element-side.go-left {
+        margin: 0 32px 32px -144px; }
+      .content-block .media-element-side.go-right {
+        margin: 0 -144px 32px 32px; }
+    .content-block .callout-image img {
+      width: 448px; }
+    .content-block .fixed-bg {
+      margin-left: -144px;
+      margin-right: -144px; } }
+/* Print  ############################## */
+@media print {
+  .content-block .media-element-side {
+    clear: right;
+    float: right;
+    margin: 0 0 16px 32px;
+    padding: 4px 0 0 0;
+    width: 448px; } }
+/* Woopie framework 0.3 */
+/* Addon styles for jQuery plugins, modal windows etc */
+/* Reveal JS Modal Windows */
+.reveal-modal-bg {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: none;
+  top: 0;
+  left: 0; }
+
+.reveal-modal {
+  visibility: hidden;
+  top: 80px;
+  left: 50%;
+  margin-left: -260px;
+  width: 520px;
+  background: #fff;
+  position: absolute;
+  z-index: 101;
+  opacity: 0;
+  padding: 0;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #000;
+  -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  -box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
+.reveal-modal .close-reveal-modal {
+  font-size: 40px;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  line-height: 40px;
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  color: #fff;
+  text-shadow: none !important;
+  font-weight: 400;
+  cursor: pointer; }
+  .reveal-modal .close-reveal-modal:active {
+    background: none; }
+
+.share-block {
+  border-radius: 4px;
+  float: left;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  width: 219px; }
+
+.share-comment-block {
+  border-radius: 4px;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  max-height: 500px;
+  overflow-y: scroll; }
+
+.share-wide-block {
+  border-radius: 4px;
+  background: #fff;
+  margin: 20px;
+  padding: 20px; }
+
+.share-block p {
+  margin: 0; }
+
+.share-block h2 {
+  margin: 0 0 10px; }
+
+/* Twitter blocks */
+.twitter-window {
+  background: #eeeeee url(../images/twitter-modal-heading.png) repeat-x; }
+
+.twitter-heading {
+  background: url(../images/logo_twitter_withbird_white_blue.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+/* Facebook blocks */
+.facebook-window {
+  background: #eeeeee url(../images/facebook-modal-heading.png) repeat-x; }
+
+.facebook-heading {
+  background: url(../images/logo_facebook.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+.fb-comments, .fb-comments iframe[style] {
+  width: 100% !important; }
+
+.fb-like-box, .fb-like-box iframe[style] {
+  width: 100% !important; }
+
+.fbConnectWidgetTopmost, .fbConnectWidgetTopmost[style] {
+  width: 100% !important; }
+
+/* Share blocks */
+.share-window {
+  background: #eeeeee url(../images/addthis-modal-heading.png) repeat-x; }
+
+.share-heading {
+  background: url(../images/logo_addthis.png) no-repeat 15px 9px;
+  clear: both;
+  height: 50px;
+  text-indent: -9999em; }
+
+/* Image blocks */
+.image-window {
+  background: #eeeeee url(../images/image-modal-heading.png) repeat-x;
+  top: 40px;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px; }
+  .image-window img {
+    width: 100%; }
+
+.image-heading {
+  color: white;
+  display: block;
+  float: left;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 0 0 16px; }
+  .image-heading h1 {
+    line-height: 50px;
+    margin: 0;
+    padding: 0; }
+
+/* Less than 480px */
+@media screen and (max-width: 30em) {
+  .reveal-modal {
+    visibility: hidden;
+    top: 40px;
+    left: 0;
+    margin-left: 0;
+    width: 100%; }
+
+  .share-block {
+    border-radius: 4px;
+    float: none;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    width: auto; } }
+/* Less than 580px */
+@media screen and (min-width: 481px) and (max-width: 580px) {
+  .reveal-modal {
+    visibility: hidden;
+    top: 40px;
+    left: 50%;
+    margin-left: -220px;
+    width: 440px; }
+
+  .share-block {
+    border-radius: 4px;
+    float: none;
+    background: #fff;
+    margin: 20px;
+    padding: 20px;
+    width: auto; } }
+/* Less than 1024px */
+@media screen and (min-width: 581px) and (max-width: 1024px) {
+  .image-window {
+    margin-left: -290px;
+    width: 580px; } }
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+/* Browser Resets */
+.slides, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both; }
+
+.flexslider .slides > li {
+  display: none; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {
+  max-width: 100%;
+  display: block; }
+
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+html[xmlns] .slides {
+  display: block; }
+
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {
+  display: block; }
+
+.content-block .flexslider ul {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none; }
+
+.content-block .flexslider ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  background: #f2f2f2;
+  border: 10px solid #f2f2f2;
+  position: relative;
+  zoom: 1;
+  margin: 0 0 20px;
+  width: 100%; }
+
+.flexslider .slides {
+  zoom: 1; }
+
+.flexslider .slides > li {
+  position: relative;
+  max-height: 600px;
+  overflow: hidden; }
+
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {
+  zoom: 1;
+  position: relative; }
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {
+  zoom: 1; }
+
+.content-block .flex-caption {
+  width: 100%;
+  padding: 2%;
+  margin: 0 !important;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); }
+
+/* Direction Nav */
+.content-block .flex-direction-nav li a {
+  margin: 0;
+  padding: 10px 5px;
+  display: block;
+  position: absolute;
+  bottom: -14px;
+  cursor: pointer;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 24px;
+  color: #000; }
+
+.content-block .flex-direction-nav li .flex-next {
+  right: 0;
+  text-align: right;
+  float: right; }
+
+.content-block .flex-direction-nav li .flex-prev {
+  left: 0; }
+
+.content-block .flex-direction-nav li .disabled {
+  opacity: .3;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* Control Nav */
+.content-block .flex-control-nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center; }
+
+.content-block .flex-control-nav li {
+  margin: 0 0 0 5px;
+  padding: 0;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.content-block .flex-control-nav li:first-child {
+  margin: 0; }
+
+.content-block .flex-control-nav li a {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: url(../images/flexslider/bg_control_nav.png) no-repeat 0 0;
+  cursor: pointer;
+  text-indent: -9999px; }
+
+.content-block .flex-control-nav li a:hover {
+  background-position: 0 -13px; }
+
+.content-block .flex-control-nav li a.active {
+  background-position: 0 -26px;
+  cursor: default; }
+
+.swipe-icon {
+  color: #fff;
+  padding: 0 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10; }
+
+/* Footable */
+.footable > thead > tr > th, .footable > thead > tr > td {
+  position: relative; }
+
+.footable.breakpoint > tbody > tr > td.expand {
+  background: url(../images/plus.png) no-repeat 5px center;
+  padding-left: 40px; }
+
+.footable.breakpoint > tbody > tr.footable-detail-show > td.expand {
+  background: url(../images/minus.png) no-repeat 5px center; }
+
+.footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
+  cursor: pointer; }
+
+.footable > tbody img {
+  vertical-align: middle; }
+
+/* Tooltips */
+/* This next selector defines the color of the border on the outside of the arrow. This will automatically match the color and size of the border set on the main tooltip styles. Set display: none; if you would like a border around the tooltip but no border around the arrow */
+.tooltipster-default .tooltipster-arrow .tooltipster-arrow-border {
+  /* border-color: ... !important; */ }
+
+/* Tooltip */
+.tooltipster-default {
+  border-radius: 4px;
+  border: 1px solid black;
+  background: #121212;
+  color: #fff; }
+
+.tooltipster-default .tooltipster-content {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 8px;
+  overflow: hidden; }
+
+/* This is the base styling required to make all Tooltipsters work */
+.tooltipster-base {
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  z-index: 9999999;
+  pointer-events: none;
+  width: auto;
+  overflow: visible; }
+
+.tooltipster-base .tooltipster-content {
+  overflow: hidden; }
+
+/* These next classes handle the styles for the little arrow attached to the tooltip. By default, the arrow will inherit the same colors and border as what is set on the main tooltip itself. */
+.tooltipster-arrow {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.tooltipster-arrow span, .tooltipster-arrow-border {
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute; }
+
+.tooltipster-arrow-top span, .tooltipster-arrow-top-right span, .tooltipster-arrow-top-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-top: 8px solid;
+  bottom: -8px; }
+
+.tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-top-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-top: 9px solid;
+  bottom: -8px; }
+
+.tooltipster-arrow-bottom span, .tooltipster-arrow-bottom-right span, .tooltipster-arrow-bottom-left span {
+  border-left: 8px solid transparent !important;
+  border-right: 8px solid transparent !important;
+  border-bottom: 8px solid;
+  top: -8px; }
+
+.tooltipster-arrow-bottom .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  border-left: 9px solid transparent !important;
+  border-right: 9px solid transparent !important;
+  border-bottom: 9px solid;
+  top: -8px; }
+
+.tooltipster-arrow-top span, .tooltipster-arrow-top .tooltipster-arrow-border, .tooltipster-arrow-bottom span, .tooltipster-arrow-bottom .tooltipster-arrow-border {
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.tooltipster-arrow-top-left span, .tooltipster-arrow-bottom-left span {
+  left: 6px; }
+
+.tooltipster-arrow-top-left .tooltipster-arrow-border, .tooltipster-arrow-bottom-left .tooltipster-arrow-border {
+  left: 5px; }
+
+.tooltipster-arrow-top-right span, .tooltipster-arrow-bottom-right span {
+  right: 6px; }
+
+.tooltipster-arrow-top-right .tooltipster-arrow-border, .tooltipster-arrow-bottom-right .tooltipster-arrow-border {
+  right: 5px; }
+
+.tooltipster-arrow-left span, .tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-left: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  right: -8px; }
+
+.tooltipster-arrow-left .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-left: 9px solid;
+  margin-top: -8px; }
+
+.tooltipster-arrow-right span, .tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 8px solid transparent !important;
+  border-bottom: 8px solid transparent !important;
+  border-right: 8px solid;
+  top: 50%;
+  margin-top: -7px;
+  left: -8px; }
+
+.tooltipster-arrow-right .tooltipster-arrow-border {
+  border-top: 9px solid transparent !important;
+  border-bottom: 9px solid transparent !important;
+  border-right: 9px solid;
+  margin-top: -8px; }
+
+/* Some CSS magic for the awesome animations - feel free to make your own custom animations and reference it in your Tooltipster settings! */
+.tooltipster-fade {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -ms-transition-property: opacity;
+  transition-property: opacity; }
+
+.tooltipster-fade-show {
+  opacity: 1; }
+
+/* Modal windows, jQuery sliders etc */
+/* Woopie framework 0.3 */
+/* Credits - Base Styles */
+.colophon h1 {
+  font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-size: 2em;
+  line-height: 2.5;
+  margin: 0 0 0px 0; }
+
+#article-body .copyinfo {
+  font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-style: italic; }
+
+#colophon-listing {
+  margin: 16px 0; }
+
+#colophon-roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%; }
+  #colophon-roles dt {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    margin: 8px 16px 0 0;
+    padding: 0; }
+  #colophon-roles dd {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    margin: 0;
+    padding: 0; }
+    #colophon-roles dd a {
+      font-style: italic; }
+
+/* Woopie framework 0.3 */
+/* Credits - Media Queries Styles */
+/* Woopie framework 0.3 */
+/* Contributors - Base Styles */
+#contributors {
+  font-style: normal;
+  margin: 0 48px;
+  clear: both; }
+  #contributors h1 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 2;
+    margin: 0 0 8px 0;
+    padding-top: 8px; }
+
+.contributor {
+  margin: 0 16px 0 0;
+  padding: 16px 0; }
+  .contributor address {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 8px 0; }
+  .contributor .contributor-info, .contributor .more-info {
+    margin: 0 0 8px 0;
+    padding-bottom: 8px; }
+  .contributor h2 {
+    color: #121212;
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-size: 0.75em;
+    line-height: 1;
+    margin: 0 0 16px 0; }
+  .contributor h3 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.25;
+    margin: 0 0 8px 0; }
+  .contributor p {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.3;
+    margin: 0 0 16px 0; }
+  .contributor .contributor-image {
+    border: 0;
+    display: block;
+    margin: 0 0 8px 0;
+    padding: 0;
+    line-height: 1;
+    width: 64px; }
+  .contributor ul {
+    margin: 0;
+    padding: 0; }
+  .contributor li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    list-style: none;
+    word-wrap: break-word; }
+  .contributor .icon {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0 0 0px 0;
+    height: 16px;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-style: normal; }
+  .contributor .cl-twitter:before {
+    content: "U"; }
+  .contributor .cl-facebook:before {
+    content: "G"; }
+  .contributor .cl-website:before {
+    content: "w"; }
+
+#contributors .contributor:last-child {
+  margin-right: 0;
+  border: none; }
+
+/* Woopie framework 0.3 */
+/* Contributors - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .contributor {
+    width: 100%;
+    margin-bottom: 16px; }
+    .contributor .contributor-image {
+      float: right;
+      margin-left: 16px;
+      width: 96px; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .contributor {
+    border: none;
+    margin: 0 16px 16px 0;
+    width: 100%; }
+    .contributor .contributor-image {
+      float: left;
+      margin-right: 16px;
+      width: 96px; }
+    .contributor .contributor-info {
+      margin-left: 128px; }
+    .contributor .more-info {
+      margin-left: 128px; }
+
+  #contributors .contributor:last-child {
+    border: none; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #contributors {
+    margin: 0 144px; }
+
+  .contributor {
+    width: 48%;
+    float: left; }
+    .contributor .contributor-image {
+      float: left;
+      width: 128px; }
+    .contributor .contributor-info {
+      margin-left: 160px; }
+    .contributor .more-info {
+      margin-left: 160px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #contributors {
+    margin: 0 48px 0 144px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* End social tools - Base Styles */
+#end-social {
+  margin: 0 0 32px 0; }
+  #end-social ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both; }
+    #end-social ul li {
+      display: inline-block;
+      margin: 0 8px 0 0; }
+  #end-social .fb_iframe_widget iframe {
+    vertical-align: top;
+    margin-top: 0px; }
+  #end-social h1 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 2;
+    margin: 0 0 8px 0;
+    padding-top: 8px; }
+
+/* Extra bits - tweet this, contributors etc */
+/* Woopie framework 0.3 */
+/* End social tools - Media Queries Styles */
+/* Print */
+@media print {
+  #end-social {
+    display: none; } }
+/* Woopie framework 0.3 */
+/* Card Flip - Base Styles */
+.flippers {
+  position: relative;
+  clear: both; }
+
+.flipper {
+  border: 1px solid #eeeeee;
+  margin: 0 0 32px 0; }
+
+.flipper article {
+  padding: 16px; }
+  .flipper article ul {
+    margin-left: 16px; }
+  .flipper article img {
+    max-height: 200px;
+    max-width: 100%; }
+
+/* Woopie framework 0.3 */
+/* Flip cards - Media Queries Styles */
+.flipper {
+  border: none;
+  height: 280px;
+  width: 260px;
+  float: left;
+  position: relative;
+  margin: 0 16px 16px 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1.5s;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+  -moz-box-shadow: 0 2px 5px #ccc; }
+
+.rotated {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+.front {
+  z-index: 50; }
+
+.back {
+  z-index: 10;
+  background: #fff; }
+
+.rotated .back {
+  z-index: 99; }
+
+.side {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  height: 280px;
+  width: 260px;
+  overflow: auto; }
+
+.front {
+  background: #fff;
+  color: #000;
+  height: 280px;
+  width: 260px; }
+
+.back {
+  height: 280px;
+  width: 260px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .flipper, .side, .front, .back {
+    width: 100%; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .flipper {
+    width: 46%;
+    margin: 2%; }
+    .flipper .side, .flipper .front, .flipper .back {
+      width: 100%; } }
+/* More than 800px ##################### */
+/* More than 1200px #################### */
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Footnotes - Base Styles */
+#footnotes {
+  counter-reset: notes; }
+  #footnotes p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; }
+    #footnotes p:before {
+      counter-increment: notes;
+      content: "[" counter(notes) "] "; }
+
+.content-block .footnote-ref {
+  font-size: 0.75em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  margin: 0 0 0 1.6px; }
+  .content-block .footnote-ref a:before {
+    content: "["; }
+  .content-block .footnote-ref a:after {
+    content: "]"; }
+
+.footnotelink:before {
+  content: "["; }
+.footnotelink:after {
+  content: "]"; }
+
+/* Woopie framework 0.3 */
+/* Buttons - Media Queries Styles */
+/* Woopie framework 0.3 */
+/* scrollbox - Base Styles */
+.scroll-box {
+  clear: right;
+  float: right;
+  margin: 0 0 16px 32px;
+  page-break-inside: avoid;
+  position: relative; }
+  .scroll-box ::-webkit-scrollbar {
+    width: 20px;
+    opacity: 0.5; }
+  .scroll-box ::-webkit-scrollbar-track {
+    background: #050505; }
+  .scroll-box ::-webkit-scrollbar-thumb {
+    background: #006ab3;
+    border: 3px solid #050505;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+  .scroll-box .scroll-icon {
+    background: url(../images/scroll-icon.png) rgba(0, 0, 0, 0.5) no-repeat 1px 0;
+    background-size: 18px 18px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .scroll-box .scroll-body img {
+    display: block;
+    margin: 0 0 16px 0;
+    width: 100%; }
+  .scroll-box .scroll-body p {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+
+.scroll-box {
+  width: 100%;
+  height: auto; }
+  .scroll-box .scroll-body {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto; }
+  .scroll-box .scroll-icon {
+    display: none; }
+
+/* Woopie framework 0.3 */
+/* scrollboxvert - Media Queries Styles */
+/* Not for ePub */
+#article .scroll-box {
+  background: #121212; }
+#article .scroll-box .scroll-body img {
+  margin: 0; }
+.scroll-box .scroll-body p {
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0 0 16px 0; }
+  #article .scroll-box .scroll-body p {
+    color: white;
+    margin: 0;
+    padding: 16px; }
+  #divider .scroll-box .scroll-body p {
+    color: white;
+    margin: 0;
+    padding: 0 0 16px 0; }
+
+/* Less than 500px #################### */
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .scroll-box {
+    width: 192px;
+    height: 512px; }
+    .scroll-box .scroll-body {
+      width: 192px;
+      height: 512px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    .scroll-box .scroll-icon {
+      display: block; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  .scroll-box {
+    width: 288px;
+    height: 512px; }
+    .scroll-box .scroll-body {
+      width: 288px;
+      height: 512px;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+    .scroll-box .scroll-icon {
+      display: block; } }
+/* More than 1200px #################### */
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* QUIZ - Base Styles */
+.correct {
+  color: #2fbe76; }
+
+.incorrect {
+  color: #ae1717; }
+
+.content-block .quiz-single, .content-block .quiz-multiple, .content-block .quiz-text {
+  page-break-inside: avoid; }
+  .content-block .quiz-single p, .content-block .quiz-multiple p, .content-block .quiz-text p {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    padding: 16px;
+    margin: 0; }
+    .content-block .quiz-single p.quiz-question, .content-block .quiz-multiple p.quiz-question, .content-block .quiz-text p.quiz-question {
+      font-weight: bold; }
+  .content-block .quiz-single label, .content-block .quiz-multiple label, .content-block .quiz-text label {
+    margin: 0;
+    padding: 0; }
+  .content-block .quiz-single ul, .content-block .quiz-multiple ul, .content-block .quiz-text ul {
+    padding: 0 32px; }
+    .content-block .quiz-single ul li, .content-block .quiz-multiple ul li, .content-block .quiz-text ul li {
+      margin: 0;
+      padding: 0; }
+  .content-block .quiz-single .quiz-answerbox, .content-block .quiz-multiple .quiz-answerbox, .content-block .quiz-text .quiz-answerbox {
+    border: 1px solid #929292;
+    padding: 8px;
+    margin: 0 0 16px 16px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .content-block .quiz-single .quiz-help p, .content-block .quiz-multiple .quiz-help p, .content-block .quiz-text .quiz-help p {
+    border-bottom: 8px solid #eeeeee; }
+.content-block .quiz-option label {
+  padding-left: 10px;
+  padding-right: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 5px; }
+.content-block input[type="text"].quiz-correct, .content-block textarea.quiz-correct {
+  background-color: #2fbe76;
+  border-color: #1b6c43;
+  color: white; }
+.content-block input[type="text"].quiz-wrong, .content-block textarea.quiz-wrong {
+  background-color: #ae1717;
+  border-color: #540b0b;
+  color: white; }
+.content-block .quiz-correct label {
+  background-color: #2fbe76;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .content-block .quiz-correct label:after {
+    background: #25955d;
+    color: white;
+    content: "Correct";
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0 16px;
+    padding: 3px 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+.content-block .quiz-wrong label {
+  background-color: #ae1717;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .content-block .quiz-wrong label:after {
+    background: #811111;
+    color: white;
+    content: "Incorrect";
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0 16px;
+    padding: 3px 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+
+/* Woopie framework 0.3 */
+/* TEMPLATE - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .content-block .quiz-single p, .content-block .quiz-multiple p, .content-block .quiz-text p {
+    padding: 16px; }
+  .content-block .quiz-single ul, .content-block .quiz-multiple ul, .content-block .quiz-text ul {
+    padding: 0; }
+    .content-block .quiz-single ul li, .content-block .quiz-multiple ul li, .content-block .quiz-text ul li {
+      list-style: none; }
+  .content-block .quiz-single .quiz-answerbox, .content-block .quiz-multiple .quiz-answerbox, .content-block .quiz-text .quiz-answerbox {
+    margin: 0 16px 16px 16px; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .content-block .quiz-single p, .content-block .quiz-multiple p, .content-block .quiz-text p {
+    padding: 16px; }
+  .content-block .quiz-single ul, .content-block .quiz-multiple ul, .content-block .quiz-text ul {
+    padding: 0; }
+    .content-block .quiz-single ul li, .content-block .quiz-multiple ul li, .content-block .quiz-text ul li {
+      list-style: none; } }
+/* More than 800px ##################### */
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  .content-block .quiz-single p, .content-block .quiz-multiple p, .content-block .quiz-text p {
+    padding: 16px 32px; }
+  .content-block .quiz-single ul, .content-block .quiz-multiple ul, .content-block .quiz-text ul {
+    padding: 0 32px; }
+  .content-block .quiz-single .quiz-answerbox, .content-block .quiz-multiple .quiz-answerbox, .content-block .quiz-text .quiz-answerbox {
+    margin: 0 16px 16px 32px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* FORM - Base Styles */
+.form {
+  background: white;
+  border: 8px solid #eeeeee;
+  border-bottom: 0;
+  -webkit-box-shadow: 1px 1px 2px 1px #ababab;
+  -moz-box-shadow: 1px 1px 2px 1px #ababab;
+  box-shadow: 1px 1px 2px 1px #ababab;
+  margin-bottom: 32px; }
+  .form .form-line {
+    border-bottom: 1px dotted #eeeeee;
+    padding: 16px; }
+  .form .form-inline {
+    clear: both; }
+    .form .form-inline label {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 128px; }
+    .form .form-inline input, .form .form-inline select {
+      margin: 0;
+      font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  .form .form-full {
+    clear: both; }
+    .form .form-full label {
+      display: block;
+      margin: 0 0 8px 0; }
+    .form .form-full textarea {
+      margin: 0;
+      width: 100%;
+      font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+  .form h1 {
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 16px 0; }
+  .form .explanation {
+    background: #f27366;
+    margin: 0;
+    padding: 16px; }
+  .form .form-inline input, .form .form-inline textarea, .form .form-full input, .form .form-full textarea {
+    border: 1px solid #929292;
+    padding: 8px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .form .form-controls {
+    background: #eeeeee;
+    padding: 16px;
+    margin: 0; }
+
+.content-block .switching {
+  margin: 0 0 16px 0;
+  padding: 0 0 16px 0;
+  border-bottom: 1px solid #d4d4d4; }
+.content-block button, .content-block .btn {
+  background: #d4d4d4;
+  border: none;
+  color: #454545;
+  display: inline-block;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase; }
+  .content-block button:hover, .content-block .btn:hover {
+    background: #aeaeae; }
+.content-block .btn-submit {
+  background: #b2cf00;
+  color: white;
+  font-weight: bold; }
+  .content-block .btn-submit:hover {
+    background: #869c00; }
+.content-block .btn-helper {
+  background: #c72211;
+  color: white; }
+  .content-block .btn-helper:hover {
+    background: #981a0d; }
+
+/* Woopie framework 0.3 */
+/* TEMPLATE - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .content-block .form .form-line {
+    padding: 8px; }
+  .content-block .form .form-inline label {
+    display: block;
+    margin: 0 0 8px 0; }
+  .content-block .form .form-inline input, .content-block .form .form-inline select {
+    width: 100%; }
+  .content-block .form .form-controls button {
+    display: block;
+    margin-bottom: 4px;
+    width: 100%; }
+  .content-block .form h1 {
+    background: #c72211;
+    color: white;
+    display: block;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    padding: 8px;
+    width: 100%; }
+  .content-block .form .explanation {
+    padding: 8px; } }
+/* More than 500px #################### */
+/* More than 800px ##################### */
+/* More than 1200px #################### */
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Sidebar - Base Styles */
+.content-block .sidebar {
+  border: 1px solid #eeeeee;
+  margin: 0 0 16px 0;
+  padding: 8px; }
+  .content-block .sidebar img {
+    width: 100%;
+    margin: 0 0 8px 0; }
+  .content-block .sidebar h3 {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-size: 0.9em;
+    line-height: 1.25;
+    margin: 0 0 8px 0;
+    font-weight: normal;
+    font-style: normal; }
+    .content-block .sidebar h3 b {
+      color: #0098ff;
+      text-transform: none;
+      font-weight: normal;
+      padding: 0 4px; }
+  .content-block .sidebar h4 {
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 0.8em;
+    line-height: 1.25;
+    margin: 0 0 8px 0;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none; }
+  .content-block .sidebar p {
+    margin: 0;
+    font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 0.75em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: normal;
+    color: #454545; }
+  .content-block .sidebar:hover h3 b {
+    color: #c72211; }
+
+/* Woopie framework 0.3 */
+/* Sidebar - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .content-block .sidebar {
+    background: #121212;
+    padding: 16px;
+    clear: both; }
+    .content-block .sidebar p {
+      color: white; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .content-block .sidebar {
+    float: right;
+    padding: 12px;
+    margin: 0 0 16px 16px;
+    width: 128px; }
+    .content-block .sidebar.go-left {
+      float: left;
+      margin: 0 16px 16px 0; }
+    .content-block .sidebar.go-right {
+      float: right;
+      margin: 0 0 16px 16px; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  .content-block .sidebar {
+    border: none;
+    border-left: 1px solid #eeeeee;
+    padding: 0 0 0 16px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  .content-block .sidebar.go-left {
+    margin: 0 16px 16px -144px; }
+  .content-block .sidebar.go-right {
+    margin: 0 -144px 16px 16px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Advert - Base Styles */
+#advert {
+  background: #333333 url(../../images/kitten.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #advert .adblock {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    #advert .adblock p {
+      margin: 0;
+      padding: 0; }
+  #advert #publication-footer {
+    color: white; }
+
+#advert #end-nav ul a {
+  border: none; }
+#advert #end-nav hgroup h1, #advert #end-nav hgroup h2 {
+  color: #fff; }
+
+/* Page types */
+/* Woopie framework 0.3 */
+/* Advert - Media Queries Styles */
+/* Less than 500px #################### */
+/* More than 500px #################### */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  .adblocksub {
+    display: block;
+    float: left;
+    width: 50%; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #advert {
+    margin-top: 48px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Article - Base Styles */
+#article-body {
+  margin: 0; }
+  #article-body section {
+    margin: 0 0 48px 0; }
+
+/* Woopie framework 0.3 */
+/* Article - Media Queries Styles */
+/* Not for ePub */
+#article-body {
+  margin: 0 48px; }
+
+/* Less than 500px #################### */
+/* More than 500px #################### */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #article-body {
+    margin: 0 144px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #article-body {
+    margin: 0 48px 0 144px; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Contents - Base Styles */
+#contents-body {
+  margin: 0; }
+
+#contents-listing ol {
+  margin: 0 0 32px 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li {
+    margin: 0;
+    padding: 0; }
+    #contents-listing ol li h2 {
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 0 0 0px 0;
+      font-weight: bold;
+      font-style: normal;
+      padding: 12px 0;
+      font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+    #contents-listing ol li ol li a {
+      display: block;
+      margin: 0;
+      padding: 16px 0; }
+      #contents-listing ol li ol li a h3 {
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.25em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        font-weight: bold;
+        font-style: normal; }
+      #contents-listing ol li ol li a i {
+        font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+      #contents-listing ol li ol li a em {
+        font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+      #contents-listing ol li ol li a p {
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        margin: 16px 0 0 0;
+        padding: 0; }
+      #contents-listing ol li ol li a:hover h3, #contents-listing ol li ol li a:hover i, #contents-listing ol li ol li a:hover em, #contents-listing ol li ol li a:hover p {
+        color: #0098ff; }
+
+/* Woopie framework 0.3 */
+/* Contents - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #contents-body {
+    margin: 0 48px; }
+
+  #contents-intro {
+    padding: 16px 0; }
+
+  #contents-listing {
+    margin: 0 -48px; }
+    #contents-listing ol li h2 {
+      font-size: 1em;
+      line-height: 1;
+      margin: 0 0 0px 0;
+      font-weight: bold;
+      font-style: normal;
+      margin: 0;
+      padding: 0; }
+      #contents-listing ol li h2 a {
+        background: black;
+        color: #eeeeee;
+        display: block;
+        margin: 0;
+        padding: 16px 48px; }
+        #contents-listing ol li h2 a:hover {
+          background: #eeeeee;
+          color: white; }
+    #contents-listing ol li ol {
+      margin: 0; }
+      #contents-listing ol li ol li a {
+        border-bottom: 1px solid #787878;
+        color: #121212;
+        padding: 16px 48px;
+        margin: 0; }
+        #contents-listing ol li ol li a:hover, #contents-listing ol li ol li a:focus, #contents-listing ol li ol li a:active {
+          color: #eeeeee; }
+        #contents-listing ol li ol li a h3 {
+          font-size: 1em;
+          line-height: 1.25;
+          margin: 0 0 0px 0;
+          font-weight: normal;
+          font-style: normal; }
+        #contents-listing ol li ol li a i, #contents-listing ol li ol li a em, #contents-listing ol li ol li a p {
+          display: none; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  #contents-body {
+    margin: 0 48px; }
+
+  #contents-intro {
+    padding: 16px 0; }
+
+  #contents-listing {
+    margin: 0; }
+    #contents-listing ol li h2 {
+      clear: both;
+      margin: 0;
+      padding: 0; }
+      #contents-listing ol li h2 a {
+        border-bottom: 2px solid #454545;
+        color: #121212;
+        display: block;
+        margin: 0;
+        padding: 16px 0; }
+        #contents-listing ol li h2 a:hover {
+          color: #0098ff; }
+    #contents-listing ol li ol {
+      margin: 0 0 16px 0; }
+      #contents-listing ol li ol li {
+        border-bottom: 1px solid #787878; }
+        #contents-listing ol li ol li a {
+          color: #121212;
+          padding: 16px 0;
+          margin: 0; }
+          #contents-listing ol li ol li a:hover, #contents-listing ol li ol li a:focus, #contents-listing ol li ol li a:active {
+            color: #0098ff; }
+        #contents-listing ol li ol li:last-child a {
+          border: none; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #contents-body {
+    margin: 0 144px; }
+
+  #contents-listing ol li ol {
+    display: table; }
+    #contents-listing ol li ol li {
+      display: table-cell;
+      float: left;
+      width: 100%;
+      padding: 16px 0; }
+      #contents-listing ol li ol li a {
+        /* background: url(../images/titans.jpg) top left no-repeat;
+        background-size: $grid*6 $grid*6; */
+        color: #121212;
+        margin: 0;
+        /* padding: 0 0 0 $grid*8; */
+        padding: 0; }
+        #contents-listing ol li ol li a:hover, #contents-listing ol li ol li a:focus, #contents-listing ol li ol li a:active {
+          color: #0098ff; }
+      #contents-listing ol li ol li.featured-content {
+        background: url(../images/kitten.jpg) center center no-repeat;
+        background-size: cover;
+        padding: 192px 0 0 0;
+        text-align: center;
+        width: 100%; }
+        #contents-listing ol li ol li.featured-content a {
+          background: white;
+          padding: 16px; }
+          #contents-listing ol li ol li.featured-content a h3 {
+            font-size: 2em;
+            line-height: 1.25;
+            margin: 0 0 16px 0;
+            font-weight: bold;
+            font-style: normal; }
+          #contents-listing ol li ol li.featured-content a p {
+            height: auto; }
+      #contents-listing ol li ol li:last-child {
+        border: none; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #contents-body {
+    margin: 0 48px 0 144px; } }
+/* Print  ############################## */
+@media print {
+  #main-image-print {
+    display: block; } }
+/* Woopie framework 0.3 */
+/* Front cover - Base Styles */
+#divider #publication-footer {
+  display: none; }
+#divider #end-nav {
+  background: black;
+  bottom: 32px;
+  position: relative;
+  z-index: 500; }
+  #divider #end-nav ul li a .end-titles p {
+    color: #cccccc; }
+  #divider #end-nav ul li a:hover .end-titles p {
+    color: #eeeeee; }
+
+#divider-heading {
+  margin: 0;
+  padding: 16px;
+  z-index: 100; }
+  #divider-heading .titles {
+    position: relative;
+    color: white; }
+    #divider-heading .titles h1 {
+      font-size: 2em;
+      line-height: 1.25;
+      margin: 0 0 16px 0;
+      font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+    #divider-heading .titles .subtitle {
+      font-size: 1.5em;
+      line-height: 1.25;
+      margin: 0 0 16px 0;
+      font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif; }
+      #divider-heading .titles .subtitle i {
+        padding: 0 16px 0 0; }
+
+/* Woopie framework 0.3 */
+/* Front cover - Media Queries Styles */
+/* Not for ePub*/
+#divider {
+  background: black; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #divider #bg {
+    width: 100%; }
+  #divider #divider-heading {
+    background: none;
+    margin: 0 0 64px 0;
+    padding: 16px 48px; }
+  #divider #end-nav {
+    margin: 0;
+    padding: 16px 8px; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  #divider #bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0; }
+  #divider .bgwidth {
+    width: 100%; }
+  #divider .bgheight {
+    height: 100%; }
+  #divider #divider-heading {
+    background: transparent;
+    text-align: center;
+    margin: 256px auto; }
+    #divider #divider-heading .titles h1 {
+      padding-top: 32px;
+      font-size: 2.5em;
+      line-height: 1.25;
+      margin: 0 0 16px 0; }
+    #divider #divider-heading .titles .subtitle {
+      font-size: 2em;
+      line-height: 1.25;
+      margin: 0 0 16px 0; }
+  #divider #end-nav {
+    margin: 0;
+    padding: 16px 8px; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #divider #divider-heading .titles h1 {
+    padding-top: 16px;
+    font-size: 3.5em;
+    line-height: 1.25;
+    margin: 0 0 16px 0; }
+  #divider #divider-heading .titles .subtitle {
+    font-size: 2.5em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #divider #divider-heading .titles h1 {
+    padding-top: 16px;
+    font-size: 4.5em;
+    line-height: 1.25;
+    margin: 0 0 16px 0; }
+  #divider #divider-heading .titles .subtitle {
+    font-size: 3em;
+    line-height: 1.5;
+    margin: 0 0 16px 0; }
+  #divider #end-nav {
+    background: transparent; } }
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Front cover - Base Styles */
+#frontcover #wrapper {
+  display: table; }
+#frontcover #top-bar, #frontcover #end-nav, #frontcover #publication-footer {
+  display: none; }
+#frontcover #bg {
+  position: fixed;
+  top: 0;
+  left: 0; }
+#frontcover .bgwidth {
+  width: 100%; }
+#frontcover .bgheight {
+  height: 100%; }
+
+#frontcover-heading {
+  padding: 16px; }
+  #frontcover-heading img {
+    width: 100%; }
+
+#frontcover-items {
+  color: #fff;
+  width: 100%; }
+  #frontcover-items p a {
+    display: block; }
+    #frontcover-items p a:hover {
+      text-decoration: underline; }
+
+#linkthrough {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  #linkthrough:hover {
+    border: 2px solid rgba(255, 255, 255, 0.75); }
+
+.go-middle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+/* Woopie framework 0.3 */
+/* Front cover - Media Queries Styles */
+/* Not for ePub */
+html, body {
+  height: 100%;
+  width: 100%; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  #frontcover #wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%; }
+
+  #frontcover-items-wrap {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 32px;
+    background: rgba(0, 0, 0, 0.75);
+    z-index: 200; }
+
+  #frontcover-items {
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 0 0px 0;
+    padding: 16px;
+    margin: 0; }
+    #frontcover-items p {
+      border-bottom: 1px solid transparent;
+      margin: 0 0 16px 0;
+      padding: 0; }
+      #frontcover-items p:last-child {
+        margin: 0; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  #frontcover #wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%; }
+
+  #frontcover-items-wrap {
+    bottom: 0;
+    margin-bottom: 32px;
+    position: absolute;
+    width: 100%;
+    z-index: 200; }
+
+  #frontcover-items {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0 0 0px 0; }
+    #frontcover-items p {
+      padding: 8px 16px;
+      margin: 0; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #frontcover-heading {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 64px; }
+    #frontcover-heading.go-left {
+      margin: 0;
+      float: left; }
+    #frontcover-heading.go-right {
+      margin: 0;
+      float: right; }
+    #frontcover-heading.go-center {
+      margin: 0 auto; }
+
+  .go-middle h1 {
+    width: 60%;
+    margin: 0 auto; }
+
+  #frontcover-items-wrap {
+    width: 60%; }
+    #frontcover-items-wrap.go-left {
+      left: 0; }
+    #frontcover-items-wrap.go-right {
+      right: 0;
+      text-align: right; }
+    #frontcover-items-wrap.go-center {
+      left: 20%;
+      text-align: center; }
+
+  #frontcover-items {
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 0px 0; } }
+/* More than 1200px #################### */
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* TEMPLATE - Base Styles */
+#gallery-body {
+  margin: 0; }
+
+.gallery-images {
+  margin: 16px 0 0 0;
+  padding: 0; }
+  .gallery-images section {
+    margin: 0 0 64px 0;
+    padding: 0; }
+    .gallery-images section img {
+      display: block;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+    .gallery-images section .imageinfo {
+      margin: 0; }
+      .gallery-images section .imageinfo p {
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 0 16px 0;
+        margin: 0 0 8px 0;
+        padding: 8px 0 0 0; }
+      .gallery-images section .imageinfo dl {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        font-family: "Open Sans", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        width: 100%; }
+        .gallery-images section .imageinfo dl dt {
+          float: left;
+          font-weight: bold;
+          margin: 0 16px 0 0;
+          padding: 0; }
+        .gallery-images section .imageinfo dl dd {
+          margin: 0;
+          padding: 0; }
+
+/* Woopie framework 0.3 */
+/* TEMPLATE - Media Queries Styles */
+/* Not for ePub */
+#gallery-body {
+  margin: 0 48px; }
+
+.gallery-images {
+  margin: 16px 0 0 0;
+  padding: 0; }
+
+/* Less than 500px #################### */
+/* More than 500px #################### */
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #gallery-body {
+    margin: 0 144px; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #gallery-body {
+    margin: 0 48px 0 144px; } }
+/* Print  ############################## */
+@media print {
+  .gallery-images section {
+    page-break-inside: avoid; }
+    .gallery-images section img {
+      max-height: 40%;
+      width: auto; }
+    .gallery-images section .imageinfo {
+      clear: both;
+      margin-bottom: 64px; }
+      .gallery-images section .imageinfo p {
+        float: left;
+        width: 49.8%;
+        padding-right: 32px; }
+      .gallery-images section .imageinfo dl {
+        float: left;
+        width: 49.8%;
+        padding-top: 8px; } }
+/* Woopie framework 0.3 */
+/* Listing - Base Styles */
+#listing-body {
+  margin: 0; }
+  #listing-body .events-listing h1 {
+    clear: both; }
+
+.item-graphic {
+  text-align: center;
+  position: relative; }
+  .item-graphic img {
+    display: block;
+    margin: 0 0 8px 0;
+    padding: 0;
+    width: 100%; }
+  .item-graphic .caption p {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0; }
+  .item-graphic b {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    background: #0098ff;
+    border-bottom: 2px solid #007acc;
+    color: white;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 0 0px 0; }
+
+.content-block .grp-item {
+  margin: 0 0 32px 0;
+  padding: 0; }
+  .content-block .grp-item li {
+    list-style: none; }
+  .content-block .grp-item .grp-name {
+    font-weight: bold; }
+
+/* Ratings */
+.rating {
+  font-size: 2em;
+  line-height: 2;
+  margin: 0 0 0px 0; }
+
+.rating b {
+  color: #0098ff; }
+
+/* item Elements */
+.content-block .item-location {
+  text-transform: none; }
+.content-block .item-date {
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1;
+  margin: 0 0 16px 0; }
+.content-block .item-credits {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%;
+  font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+  .content-block .item-credits dt {
+    float: left;
+    font-weight: bold;
+    margin: 0 16px 0 0;
+    padding: 0; }
+  .content-block .item-credits dd {
+    margin: 0;
+    padding: 0; }
+.content-block .item-button {
+  margin: 0 0 32px 0; }
+  .content-block .item-button .btn {
+    display: inline-block;
+    font-family: "Open Sans Condensed", "OpenSansRegular", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-weight: bold;
+    background: #0098ff;
+    color: white; }
+    .content-block .item-button .btn:hover {
+      background: #007acc; }
+  .content-block .item-button i {
+    font-style: normal;
+    font-size: 24px; }
+  .content-block .item-button a[itemprop="url"] {
+    margin-left: 32px; }
+.content-block .item-social {
+  clear: both;
+  min-height: 32px; }
+  .content-block .item-social .fb-follow {
+    float: left;
+    margin: -2px 16px 0 0; }
+  .content-block .item-social .twitter-follow-button {
+    float: left; }
+
+/* Woopie framework 0.3 */
+/* Listing - Media Queries Styles */
+/* Not for ePub */
+#listing-body {
+  margin: 0 48px; }
+
+.content-block .grp-item li:before {
+  color: #121212;
+  display: block;
+  float: left;
+  font-style: normal;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  padding: 4px 0;
+  text-align: center;
+  text-transform: none;
+  font-size: 1.75em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  line-height: 20px;
+  width: 48px; }
+.content-block .grp-item .grp-name:before {
+  content: "g "; }
+.content-block .grp-item .grp-city:before {
+  content: ", "; }
+.content-block .grp-item .grp-cnct:before {
+  content: "m "; }
+.content-block .grp-item .grp-wurl:before {
+  content: "w "; }
+.content-block .grp-item .grp-twtr:before {
+  content: "T "; }
+.content-block .grp-item .grp-meet:before {
+  content: "} "; }
+.content-block .grp-item .grp-othr:before {
+  content: "* "; }
+.content-block .item-button i {
+  font-family: "ModernPictogramsNormal", Arial, Serif; }
+
+.booking i:before {
+  content: "# ";
+  padding: 0 8px 0 0; }
+
+.shop i:before {
+  content: "i ";
+  padding: 0 8px 0 0; }
+
+/* Ratings */
+.rating {
+  font-family: "ModernPictogramsNormal", Arial, Serif; }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .item-graphic {
+    margin: 0 0 16px 0; }
+    .item-graphic.tiny, .item-graphic.small, .item-graphic.medium, .item-graphic.large {
+      width: 100%; }
+
+  .content-block .item-button {
+    margin: 0; }
+    .content-block .item-button .btn {
+      display: block;
+      margin: 0 0 8px 0;
+      padding: 12px;
+      text-align: center; }
+    .content-block .item-button a[itemprop="url"] {
+      background: white;
+      border: 1px solid #eeeeee;
+      display: block;
+      margin: 0 0 8px 0;
+      padding: 12px;
+      text-align: center; }
+      .content-block .item-button a[itemprop="url"]:hover {
+        background: #eeeeee; }
+  .content-block .item-social {
+    margin: 8px 0 0 0; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .item-graphic {
+    float: right;
+    margin: 0 0 32px 32px; }
+    .item-graphic.go-left {
+      float: left;
+      margin: 0 32px 32px 0; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  #listing-body {
+    margin: 0 144px; }
+
+  .item-graphic b {
+    padding: 12px;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0 0 0px 0; } }
+/* More than 1200px #################### */
+@media screen and (min-width: 75em) {
+  #listing-body {
+    margin: 0 48px 0 144px; }
+
+  .item-graphic b {
+    padding: 16px 24px;
+    font-size: 3em;
+    line-height: 1;
+    margin: 0 0 0px 0; } }
+/* Print  ############################## */
+/* Theme Customisation - tweaks */
+/* Woopie framework 0.3 */
+/* Custom Tweaks - Base Styles */
+/* Intro heading */
+#intro-heading h1, #intro-heading .subtitle {
+  font-weight: 300; }
+
+/* Content */
+.content-block {
+  /* Forms */ }
+  .content-block h1, .content-block h2 {
+    font-weight: 300; }
+  .content-block blockquote p {
+    color: #c72211;
+    font-style: normal;
+    font-weight: 300; }
+  .content-block figcaption, .content-block .caption {
+    background: #eeeeee;
+    color: #454545;
+    font-style: normal;
+    padding: 16px; }
+  .content-block .media-element-full {
+    background: #eeeeee;
+    padding: 16px; }
+    .content-block .media-element-full figcaption, .content-block .media-element-full .caption {
+      padding: 16px 0 0 0; }
+    .content-block .media-element-full.fixedsize {
+      background: none; }
+  .content-block .callout-image figcaption {
+    background: transparent;
+    color: white; }
+  .content-block .sidebar h3 {
+    text-transform: uppercase; }
+  .content-block .sidebar h4 {
+    font-family: "Arvo", "OpenSansRegular", "Georgia", Serif; }
+  .content-block .form .explanation {
+    background: #eeeeee; }
+
+/* Contributors */
+.contributor h2 {
+  font-weight: normal;
+  text-transform: uppercase; }
+
+/* Listing images */
+.item-graphic img {
+  margin: 0; }
+
+/* End Nav */
+#end-nav .end-prevnext {
+  text-transform: uppercase; }
+
+/* Woopie framework 0.3 */
+/* Custom Tweaks - Media Queries Styles */
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  /* Intro heading */
+  #intro-heading .titles {
+    background: #121212; }
+    #intro-heading .titles h1, #intro-heading .titles .subtitle {
+      font-weight: normal; }
+    #intro-heading .titles h1 {
+      color: white; }
+    #intro-heading .titles .subtitle {
+      color: #b2cf00; }
+    #intro-heading .titles .sections {
+      background: #0098ff; }
+
+  /* Content */
+  .content-block blockquote {
+    border: 2px solid #0098ff;
+    padding: 0; }
+    .content-block blockquote p {
+      padding: 16px;
+      margin: 0; }
+    .content-block blockquote cite {
+      background: #0098ff;
+      color: white;
+      padding: 8px 16px; }
+  .content-block .sidebar h3 {
+    color: white; }
+  .content-block .sidebar h4 {
+    color: #b2cf00; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  /* Content */
+  .content-block blockquote {
+    border: none;
+    border-left: 2px solid #0098ff;
+    padding: 0; }
+    .content-block blockquote p {
+      padding: 16px 32px;
+      margin: 0; }
+    .content-block blockquote cite {
+      color: #0098ff;
+      padding: 8px 32px 16px 32px; } }
+/* More than 800px ##################### */
+@media screen and (min-width: 50em) {
+  /* Content */
+  .content-block .media-element-side {
+    /* Positioning */ }
+    .content-block .media-element-side blockquote {
+      border: 2px solid #0098ff;
+      border-width: 0 2px 0 0;
+      padding: 0;
+      text-align: right; }
+      .content-block .media-element-side blockquote p {
+        padding: 0 32px;
+        margin: 0 0 16px 0; }
+      .content-block .media-element-side blockquote cite {
+        background: white;
+        color: #0098ff;
+        padding: 8px 32px; }
+    .content-block .media-element-side.go-left {
+      float: left; }
+    .content-block .media-element-side.go-right {
+      float: right; }
+      .content-block .media-element-side.go-right blockquote {
+        border-width: 0 0 0 2px;
+        text-align: left; } }
+/* More than 1200px #################### */
+/* Print  ############################## */
+/* Woopie framework 0.3 */
+/* Print stylesheet */
+/* based on 320 and up https://github.com/malarkey/320andup */
+@print {
+  * {
+    background: transparent;
+    color: black;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  h2, h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid; }
+
+  p {
+    orphans: 3;
+    widows: 3; }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: none; }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-style: italic;
+    color: #999 !important; }
+
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr {
+    page-break-inside: avoid; }
+
+  /* Hide */
+  .no-print {
+    display: none; } }
