@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html lang="en" class="lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html lang="en" class="lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+
+<head>
+
+<meta charset="utf-8">
+
+<! -- About the Article //-->
+<title>Extra Media Elements</title>
+<meta name="description" content="We have beta media elements that you can use right now with some HTML skills!">
+<meta name="author" content="Firstname Lastname">
+
+<meta property="og:site_name" content="woop.ie" />
+<meta property="og:title" content="Extra Media Elements" />
+<meta property="og:description" content="We have beta media elements that you can use right now with some HTML skills!" />
+<meta property="og:article:author" content="AUTHORURL" />
+<meta property="og:article:section" content="Section" />
+<meta property="fb:admins" content="536042363" />
+<meta property="og:type" content="article"> 
+<meta property="og:url" content="http://www.woop.ie/url/" />
+<meta property="og:image" content="article/img/thumbnail.jpg" />
+
+<link rel="shortcut icon" href="/favicon.ico">
+
+<! -- iOS view formatting //-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!--Microsoft -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<! -- Stylesheets //-->
+<link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
+<link href="stylesheets/theme.css" rel="stylesheet" />
+<link href="article/styles.css" rel="stylesheet" />
+<link href="stylesheets/print.css" rel="stylesheet" />
+
+<!--[if IE]>
+<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- CUSTOM CSS -->
+<style> 
+   #end-social { display: none; }
+#top-social { display: none; }
+
+</style>
+
+<!-- Prev / Next pages //-->
+<link rel="prev" href="$PREVPAGEURL" />
+<link rel="next" href="$NEXTPAGEURL" />
+</head>
+
+
+<body class="page" id="article">
+
+ 
+
+<!-- START main wrapper //-->
+<div id="wrapper">
+
+<!-- START top bar //-->
+<div id="top-bar" class="group">
+
+	<!-- START top bar navigation //-->
+	<nav role="navigation" id="top-nav" class="button-links">
+		<ul>
+			<li id="top-nav-cover"><a href="index.html"><i class="icon icon-cover"></i> <b>Cover</b></a></li>
+			<li id="top-nav-contents"><a href="contents.html" class="cont"><i class="icon icon-contents"></i> <b>Contents</b>
+				<nav id="cont-dropdown"><span data-src="inc/toc.html">[toc]</span></nav>
+			</a>
+			</li>
+			<li id="top-nav-prevarticle"><a href="feature_121.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
+			<li id="top-nav-nextarticle"><a href="feature_125.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
+		</ul>
+	</nav>
+	<!-- END top bar navigation //-->
+	
+	<h1 id="top-title">Woopie</h1>
+	
+	<!-- START top social navigation //-->
+    
+	<!-- END top social navigation //-->
+
+</div><!-- END top bar //-->
+
+<!-- START article heading //-->
+	<header role="banner" id="intro-heading" class="group">
+	<!-- START main image //-->
+	<div id="main-image">
+	<img src="articleContent/129/html-top.jpg" alt="HTML" width="100%" />
+	</div>
+	<!-- END main image //-->
+
+	<div class="titles">
+		<h1>Extra Media Elements</h1>
+		<p class="subtitle">Add beta media elements with HTML</p>
+	</div>
+
+	
+
+</header>
+<!-- End article heading //-->
+
+<!-- START article //-->
+<article role="main" id="article-body">
+
+	<!-- START a section //-->
+	<section class="content-block">
+        <p>The beauty of Woopie's content editor is that you can use HTML with it. Click the "HTML markup" icon in the wysiwyg editor to view and edit in HTML.</p>
+        <div class="media-element-full">
+            <img src="articleContent/185/edit_html.png" />
+            <div class="caption"><p>Click the icon to switch from wysiwyg to HTML</p></div>
+        </div>
+        <p>If you're comfortable using HTML, we have some bonus media elements you can use! They will give you some nice, interesting effects for your content.</p>
+        <hr style="margin:40px 0;" />
+
+<h1>Sidebars</h1>
+<aside class="sidebar go-right">
+    <h3>I am the aside heading</h3>
+    <h4>I am the aside sub-heading</h4>
+    <p>The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.</p>
+</aside>
+
+<pre><code>&lt;aside class="sidebar go-right"&gt;
+    &lt;h3&gt;I am the aside heading&lt;/h3&gt;
+    &lt;h4&gt;I am the aside sub-heading&lt;/h4&gt;
+    &lt;p&gt;The aside element represents a section of a page that consists of content that is tangentially related to the content around the aside element, and which could be considered separate from that content.&lt;/p&gt;
+&lt;/aside&gt;
+</code></pre>
+<p>Side bars are asides, or tangential content that aids your article, but is not essential to it. We allow for two headings (using <code>&lt;h3&gt;</code> and <code>&lt;h4&gt;</code>) and a paragraph (in a <code>&lt;p&gt;</code>). You can add a class of <code>go-right</code> or <code>go-left</code> to change its positioning.</p>
+<hr style="margin:40px 0;" />
+
+<h1>Fixed background quotes</h1>
+<div class="fixed-bg" style="background-image:url(https://beta.woop.ie/media/articleContent/53/cover-help-bg.jpg);">I'm a really nice big quote on a background. Hopefully my background doesn't scroll!</div>
+
+<pre><code>&lt;div class="fixed-bg" style="background-image:url(https://beta.woop.ie/media/articleContent/53/cover-help-bg.jpg);"&gt;I'm a really nice big quote on a background. Hopefully my background doesn't scroll!&lt;/div&gt;
+</code></pre>
+<p>Fixed background quotes 'fix' the background image so it stays put while you scroll. It's a really nice effect if you have some great imagery available. Be sure the background is dark enough for the text to be visible and that the path to the image is correct.</p>
+<hr style="margin:40px 0;" />
+
+<h1>Callout Image</h1>
+<div class="callout-image">
+    <img src="articleContent/185/kitten.jpeg">
+    <div class="caption">
+         <p>A big piece of text you want to emphasize. Make sure it's not too long or it will spill out.</p>
+    </div>
+</div>
+
+<pre><code>&lt;div class="callout-image"&gt;
+    &lt;img src="articleContent/185/kitten.jpeg"&gt;
+    &lt;div class="caption"&gt;
+         &lt;p&gt;A big piece of text you want to emphasize. Make sure it's not too long or it will spill out.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Callout images are used when you want to draw extra attention to an image. The caption is a paragraph inside a <code>&lt;div&gt;</code>.Be sure that the path to the image is correct.</p>
+<hr style="margin:40px 0;" />
+
+<h1>Callout Box</h1>
+<div class="callout-box">
+    <h1>Down the Rabbit Hole</h1>
+    <img src="articleContent/185/kitten.jpeg" class="go-right medium full-width-mobile">
+    <p>Alice is feeling bored while sitting on the riverbank with her sister, when she notices a talking, clothed White Rabbit with a pocket watch run past. She follows it down a rabbit hole when suddenly she falls a long way to a curious hall with many locked doors of all sizes. She finds a small key to a door too small for her to fit through, but through which she sees an attractive garden. She then discovers a bottle on a table labelled "DRINK ME", the contents of which cause her to shrink too small to reach the key which she has left on the table. A cake with "EAT ME" on it causes her to grow to such a tremendous size her head hits the ceiling.</p>
+</div>
+
+<pre><code>&lt;div class="callout-box"&gt;
+    &lt;h1&gt;Down the Rabbit Hole&lt;/h1&gt;
+    &lt;img src="https://beta.woop.ie/media/gen/3/12/images/kitten.jpg" class="go-right medium full-width-mobile"&gt;
+    &lt;p&gt;Alice is feeling bored while sitting on the riverbank with her sister, when she notices a talking, clothed White Rabbit with a pocket watch run past. She follows it down a rabbit hole when suddenly she falls a long way to a curious hall with many locked doors of all sizes. She finds a small key to a door too small for her to fit through, but through which she sees an attractive garden. She then discovers a bottle on a table labelled "DRINK ME", the contents of which cause her to shrink too small to reach the key which she has left on the table. A cake with "EAT ME" on it causes her to grow to such a tremendous size her head hits the ceiling.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Callout boxes are another way to emphasize a certain piece of content. You <strong>must</strong> use HTML inside them, as you cannot place Markdown <em>inside</em> HTML content.</p>
+<p>We have some extra markup for images - you can float images left or right by adding the class <code>go-left</code> or <code>go-right</code>. </p>
+<h2>Image sizes</h2>
+<p>You can also have different sizes of images, by adding a class to the image. The sizes are proportional to the overall grid of the theme.</p>
+<ol>
+<li>Tiny - add <code>tiny</code></li>
+<li>Small - add <code>small</code></li>
+<li>Medium - add <code>medium</code></li>
+<li>Large - add <code>large</code></li>
+<li>Extra class - add <code>full-width-mobile</code> to scale up the image to full width on smaller screens.</li>
+</ol>
+<hr style="margin:40px 0;" />
+
+<h1>Tooltips</h1>
+<p>Want to add in a <span class="tooltip" title="Here is a tooltip, a way of providing extra information">fancy tooltip</span> to explain certain words or phrases? Wrap the text you want as a tooltip in the following:</p>
+<pre><code>&lt;span class="tooltip" title="Here is a tooltip, a way of providing extra informtaion"&gt;fancy tooltip&lt;/span&gt;
+</code></pre>
+<hr style="margin:40px 0;" />
+
+<h1>Flip Cards</h1>
+<div class="flippers group">
+
+    <div class="flipper">
+        <div class="front side">
+            <article>
+                <h1>Question</h1>
+                <p>Question can go here</p>
+            </article>
+        </div>
+        <div class="back side">
+            <article>
+                <h1>Answer</h1>
+                <p>Answer text can go here</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="flipper">
+        <div class="front side">
+            <article>
+                <h1>Question</h1>
+                <p>Question can go here</p>
+            </article>
+        </div>
+        <div class="back side">
+            <article>
+                <h1>Answer</h1>
+                <p>Answer text can go here</p>
+            </article>
+        </div>
+    </div>
+
+</div>
+
+<pre><code>&lt;div class="flippers group"&gt;
+
+    &lt;div class="flipper"&gt;
+        &lt;div class="front side"&gt;
+            &lt;article&gt;
+                &lt;h1&gt;Question&lt;/h1&gt;
+                &lt;p&gt;Question can go here&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+        &lt;div class="back side"&gt;
+            &lt;article&gt;
+                &lt;h1&gt;Answer&lt;/h1&gt;
+                &lt;p&gt;Answer text can go here&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="flipper"&gt;
+        &lt;div class="front side"&gt;
+            &lt;article&gt;
+                &lt;h1&gt;Question&lt;/h1&gt;
+                &lt;p&gt;Question can go here&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+        &lt;div class="back side"&gt;
+            &lt;article&gt;
+                &lt;h1&gt;Answer&lt;/h1&gt;
+                &lt;p&gt;Answer text can go here&lt;/p&gt;
+            &lt;/article&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</code></pre>
+<p>Flip cards work best in pairs - to add another flip card just repeat the code block <code>&lt;div class="flipper"&gt;</code>. Add the front text to the <code>article</code> in the <code>front side</code> block, and the back text to the <code>article</code> in the <code>back side</code> block. You can also use images, just keep them small.</p>
+<hr style="margin:40px 0;" />
+
+<h1>Quizzes</h1>
+<div class="form quiz-single">
+<p class="quiz-question">Quiz Question</p>
+<ul>
+<li class="quiz-option">Wrong Answer</li>
+<li class="quiz-option">Wrong Answer</li>
+<li class="quiz-option">Wrong Answer</li>
+<li class="quiz-answer">Correct Answer</li>
+</ul>
+
+<div class="form-controls quiz-controls">
+<a class="quiz-submit btn btn-submit">Check my Answer</a>
+<a class="quiz-clear btn">Clear</a>
+<a class="quiz-show-answer btn">Reveal</a>
+<a class="quiz-toggle-hint btn">Hint</a>
+</div>
+
+<div class="quiz-help">
+<aside id="ans002" epub:type="footnote" class="quiz-hint"><p>Hint text</p></aside>
+<aside id="ans001" epub:type="footnote" class="quiz-explanation"><p>Explanation text <b class="correct">with highlight color</b> is revealed when the correct answer is selected</p></aside>
+</div>
+</div>
+
+<pre><code>&lt;div class="form quiz-single"&gt;
+    &lt;p class="quiz-question"&gt;Quiz Question&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li class="quiz-option"&gt;Wrong Answer&lt;/li&gt;
+        &lt;li class="quiz-option"&gt;Wrong Answer&lt;/li&gt;
+        &lt;li class="quiz-option"&gt;Wrong Answer&lt;/li&gt;
+        &lt;li class="quiz-answer"&gt;Correct Answer&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;div class="form-controls quiz-controls"&gt;
+        &lt;a class="quiz-submit btn btn-submit"&gt;Check my Answer&lt;/a&gt;
+        &lt;a class="quiz-clear btn"&gt;Clear&lt;/a&gt;
+        &lt;a class="quiz-show-answer btn"&gt;Reveal&lt;/a&gt;
+        &lt;a class="quiz-toggle-hint btn"&gt;Hint&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class="quiz-help"&gt;
+        &lt;aside id="ans002" class="quiz-hint"&gt;&lt;p&gt;Hint text&lt;/p&gt;&lt;/aside&gt;
+        &lt;aside id="ans001" class="quiz-explanation"&gt;&lt;p&gt;Explanation text &lt;b     class="correct"&gt;with highlight color&lt;/b&gt; is revealed when the correct answer is selected&lt;/p&gt;&lt;/aside&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>This is an example multiple-choice quiz. Each quiz item is unique - i.e. you can't connect or gather answers at the moment. Just replace the text above to make your quiz question. Indicate the wrong answer(s) by using the class <code>quiz-option</code> on the questions list item, and indicate the correct answer(s) by using the class <code>quiz-answer</code>. You can supply give hints and explanations for your quiz - if you don't want these, delete the relevant buttons.</p>
+
+        
+	</section>
+	<!-- END a section //-->
+
+	<!-- START end social tools //-->
+	
+	<!-- END end social tools //-->
+	
+</article>
+<!-- END article //-->
+
+
+<!-- START Contributors listing info -->
+<footer role="complimentary" id="contributors" class="group">
+			
+	<!-- START Contributor info -->
+	
+	<!-- END Contributor info -->
+
+</footer>
+<!-- END Contributors listing info -->
+
+<!-- START end pagination //-->
+<nav id="end-nav" class="group">
+	<ul>
+	
+		<!-- Previous article //-->
+		<li id="end-nav-prevarticle">
+			<a href="feature_121.html">
+ <span class="arrow">&lt;</span>
+ <div class="end-titles">
+ <p class="end-prevnext">Previous Article</p>
+ <p class="end-article">Customizing</p>
+ </div>
+ </a>
+
+		</li>
+		
+		<!-- Next article //-->
+		<li id="end-nav-nextarticle">
+			<a href="feature_125.html">
+<span class="arrow">&gt;</span>
+ <div class="end-titles">
+ <p class="end-prevnext">Next Article</p>
+ <p class="end-article">Getting Help</p>
+ </div>
+ </a>
+
+		</li>
+		
+	</ul>
+</nav>
+<!-- END end pagination //-->
+
+
+<footer role="contentinfo" id="publication-footer">
+	<span data-src="inc/footer.html">[footer]</span>
+</footer>
+
+
+</div><!-- END main wrapper //-->
+
+
+<!-- START Modal windows for Social & Sharing //-->
+
+<!-- END Modal windows for Social & Sharing //-->
+
+<!-- jQuery plugins, CDN and fallback //-->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='js/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+	<script type="text/javascript" src="js/scripts-combined.js"></script>
+	<script type="text/javascript" src="js/debug.js"></script>
+
+<!-- Facebook Code //-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117684858358873";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-28531592-1', 'woop.ie');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
