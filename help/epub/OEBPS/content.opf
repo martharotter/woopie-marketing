@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" xml:lang="en" unique-identifier="BookId">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="BookId" >123456789X</dc:identifier>
+        <dc:title>PUBLICATIONTITLE</dc:title>
+        <dc:creator>Woopie Publications</dc:creator>
+        <dc:language>en-US</dc:language>
+        <dc:date>2012-07-12</dc:date>
+        <dc:description>Sample theme</dc:description>
+        <dc:rights>All rights reserved.</dc:rights>        
+        <meta property="dcterms:modified">2012-01-18T12:47:00Z</meta>
+        <meta name="cover" content="cover"/>
+    </metadata>
+  
+  <manifest>
+    <item id="toc"        href="toc.xhtml"          media-type="application/xhtml+xml"  properties="nav" />
+    <item id="cover-image"    href="images/book-cover.png"      media-type="image/png"        properties="cover-image" />
+		<item id="cover" href="html/cover_53.xhtml" media-type="application/xhtml+xml"/>
+		<item id="feature_54.xhtml" href="html/feature_54.xhtml" media-type="application/xhtml+xml"/>
+		<item id="feature_60.xhtml" href="html/feature_60.xhtml" media-type="application/xhtml+xml"/>
+
+    <item id="ncx"          href="toc.ncx"                media-type="application/x-dtbncx+xml" />
+
+
+    <item id="style"      href="css/theme-epub.css"         media-type="text/css" />
+
+    		<item id="images_scroll-icon.png" href="images/scroll-icon.png" media-type="image/png"/>
+		<item id="images_novideo.png" href="images/novideo.png" media-type="image/png"/>
+		<item id="images_advert-placeholder.png" href="images/advert-placeholder.png" media-type="image/png"/>
+		<item id="images_kitten.jpg" href="images/kitten.jpg" media-type="image/jpeg"/>
+		<item id="images_twitter-modal-heading.png" href="images/twitter-modal-heading.png" media-type="image/png"/>
+		<item id="images_titans.jpg" href="images/titans.jpg" media-type="image/jpeg"/>
+		<item id="images_textmask.png" href="images/textmask.png" media-type="image/png"/>
+		<item id="images_cover.png" href="images/cover.png" media-type="image/png"/>
+		<item id="images_logo_facebook.png" href="images/logo_facebook.png" media-type="image/png"/>
+		<item id="images_h1bg.png" href="images/h1bg.png" media-type="image/png"/>
+		<item id="images_coverimages.png" href="images/coverimages.png" media-type="image/png"/>
+		<item id="images_titlemask.png" href="images/titlemask.png" media-type="image/png"/>
+		<item id="images_desk-view.jpg" href="images/desk-view.jpg" media-type="image/jpeg"/>
+		<item id="images_addthis-modal-heading.png" href="images/addthis-modal-heading.png" media-type="image/png"/>
+		<item id="images_bordermask.png" href="images/bordermask.png" media-type="image/png"/>
+		<item id="images_facebook-modal-heading.png" href="images/facebook-modal-heading.png" media-type="image/png"/>
+		<item id="images_image-modal-heading.png" href="images/image-modal-heading.png" media-type="image/png"/>
+		<item id="images_desk-laptop.jpg" href="images/desk-laptop.jpg" media-type="image/jpeg"/>
+		<item id="images_logo_twitter_withbird_white_blue.png" href="images/logo_twitter_withbird_white_blue.png" media-type="image/png"/>
+		<item id="images_woop-logo.png" href="images/woop-logo.png" media-type="image/png"/>
+		<item id="images_logo_addthis.png" href="images/logo_addthis.png" media-type="image/png"/>
+		<item id="articleContent_54_markdown.jpg" href="articleContent/54/markdown.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_54_markdown_1.jpg" href="articleContent/54/markdown_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_devices.jpg" href="articleContent/None/devices.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_francis-thumb.jpg" href="articleContent/None/francis-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_quiz-thumb.jpg" href="articleContent/None/quiz-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_wbd-thumb.jpg" href="articleContent/None/wbd-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_galery-thumb.jpg" href="articleContent/None/galery-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_woop.png" href="articleContent/None/woop.png" media-type="image/png"/>
+		<item id="articleContent_None_extinct-thumb.jpg" href="articleContent/None/extinct-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_themes-thumb.jpg" href="articleContent/None/themes-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_D2x_0168_ELK_.jpg" href="articleContent/None/D2x_0168_ELK_.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_markdown-thumb_1.png" href="articleContent/None/markdown-thumb_1.png" media-type="image/png"/>
+		<item id="articleContent_None_31thumb_4.png" href="articleContent/None/31thumb_4.png" media-type="image/png"/>
+		<item id="articleContent_None_create-thumb.jpg" href="articleContent/None/create-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_pope-thumb.jpg" href="articleContent/None/pope-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_issue-no1.png" href="articleContent/None/issue-no1.png" media-type="image/png"/>
+		<item id="articleContent_None_cover-thumb_1.jpg" href="articleContent/None/cover-thumb_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_getty-101751280-thumb.jpg" href="articleContent/None/getty-101751280-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_31thumb_1.png" href="articleContent/None/31thumb_1.png" media-type="image/png"/>
+		<item id="articleContent_None_cover0thumb.png" href="articleContent/None/cover0thumb.png" media-type="image/png"/>
+		<item id="articleContent_None_HomePage.jpg" href="articleContent/None/HomePage.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_31thumb_3.png" href="articleContent/None/31thumb_3.png" media-type="image/png"/>
+		<item id="articleContent_None_themes-gallery-thumb.jpg" href="articleContent/None/themes-gallery-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_cover-badge_2.png" href="articleContent/None/cover-badge_2.png" media-type="image/png"/>
+		<item id="articleContent_None_markdown-thumb_2.png" href="articleContent/None/markdown-thumb_2.png" media-type="image/png"/>
+		<item id="articleContent_None_tour-thumb.jpg" href="articleContent/None/tour-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_theme-52weeks.png" href="articleContent/None/theme-52weeks.png" media-type="image/png"/>
+		<item id="articleContent_None_Tablet on table.png" href="articleContent/None/Tablet on table.png" media-type="image/png"/>
+		<item id="articleContent_None_markdown-thumb.png" href="articleContent/None/markdown-thumb.png" media-type="image/png"/>
+		<item id="articleContent_None_markdown-thumb_4.png" href="articleContent/None/markdown-thumb_4.png" media-type="image/png"/>
+		<item id="articleContent_None_destinee-thumb.jpg" href="articleContent/None/destinee-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_quizcards-THUMB.jpg" href="articleContent/None/quizcards-THUMB.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_cover-help-thumb.jpg" href="articleContent/None/cover-help-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_Irish-Food_IrishStrawberries-with-cream-and-shortbread.jpg" href="articleContent/None/Irish-Food_IrishStrawberries-with-cream-and-shortbread.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_01obrien1tn_1.jpg" href="articleContent/None/01obrien1tn_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_pope-quiz-thumb.jpg" href="articleContent/None/pope-quiz-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_devices.png" href="articleContent/None/devices.png" media-type="image/png"/>
+		<item id="articleContent_None_cover-badge.png" href="articleContent/None/cover-badge.png" media-type="image/png"/>
+		<item id="articleContent_None_cover.jpg" href="articleContent/None/cover.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_riley-thumb.jpg" href="articleContent/None/riley-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_31thumb.png" href="articleContent/None/31thumb.png" media-type="image/png"/>
+		<item id="articleContent_None_skillbuilder.png" href="articleContent/None/skillbuilder.png" media-type="image/png"/>
+		<item id="articleContent_None_markdown-thumb_3.png" href="articleContent/None/markdown-thumb_3.png" media-type="image/png"/>
+		<item id="articleContent_None_31thumb_6.png" href="articleContent/None/31thumb_6.png" media-type="image/png"/>
+		<item id="articleContent_None_02aylwardtn.jpg" href="articleContent/None/02aylwardtn.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_31thumb_2.png" href="articleContent/None/31thumb_2.png" media-type="image/png"/>
+		<item id="articleContent_None_mooc-thumb.jpg" href="articleContent/None/mooc-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_crowd-pope-thumb.jpg" href="articleContent/None/crowd-pope-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_getty-99129072-thumb.jpg" href="articleContent/None/getty-99129072-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_dublin.jpg" href="articleContent/None/dublin.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_Castlemartyr_Resort.jpg" href="articleContent/None/Castlemartyr_Resort.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_themes-thumb_1.jpg" href="articleContent/None/themes-thumb_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_01obrien1tn.jpg" href="articleContent/None/01obrien1tn.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_cover-thumb.jpg" href="articleContent/None/cover-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_quest.jpg" href="articleContent/None/quest.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_conclave-thumb.jpg" href="articleContent/None/conclave-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_Tablet on table_1.png" href="articleContent/None/Tablet on table_1.png" media-type="image/png"/>
+		<item id="articleContent_None_cover-badge_1.png" href="articleContent/None/cover-badge_1.png" media-type="image/png"/>
+		<item id="articleContent_None_create-thumb_1.jpg" href="articleContent/None/create-thumb_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_Irish-food_apple-tart-with-bramley-apples.jpg" href="articleContent/None/Irish-food_apple-tart-with-bramley-apples.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_marktwain.jpg" href="articleContent/None/marktwain.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_inferences-thumb.jpg" href="articleContent/None/inferences-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_too-many-thumb.jpg" href="articleContent/None/too-many-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_cover-thumb.png" href="articleContent/None/cover-thumb.png" media-type="image/png"/>
+		<item id="articleContent_None_3241405_01.jpg" href="articleContent/None/3241405_01.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_Mordor.jpg" href="articleContent/None/Mordor.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_31thumb_5.png" href="articleContent/None/31thumb_5.png" media-type="image/png"/>
+		<item id="articleContent_None_credits-thumb.jpg" href="articleContent/None/credits-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_getty-200314329-thumb.jpg" href="articleContent/None/getty-200314329-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_None_PopeBenedict-thumb.jpg" href="articleContent/None/PopeBenedict-thumb.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_60_create.jpg" href="articleContent/60/create.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_53_cover-help-badge.png" href="articleContent/53/cover-help-badge.png" media-type="image/png"/>
+		<item id="articleContent_53_cover-help-bg.jpg" href="articleContent/53/cover-help-bg.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_walkthrough-004.png" href="articleContent/miscellaneous/walkthrough-004.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.16.13.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.16.13.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Irish-food_bacon-cabbage-and-potatoes_2.jpg" href="articleContent/miscellaneous/Irish-food_bacon-cabbage-and-potatoes_2.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_walkthrough-007.png" href="articleContent/miscellaneous/walkthrough-007.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Irish-food_bacon-cabbage-and-potatoes.jpg" href="articleContent/miscellaneous/Irish-food_bacon-cabbage-and-potatoes.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Irish-food_Irish-farmhouse-cheese-board.jpg" href="articleContent/miscellaneous/Irish-food_Irish-farmhouse-cheese-board.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_seasons3.jpg" href="articleContent/miscellaneous/seasons3.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_seasons2.jpg" href="articleContent/miscellaneous/seasons2.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_opportunities.jpg" href="articleContent/miscellaneous/opportunities.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_highperfsmalllogo.jpg" href="articleContent/miscellaneous/highperfsmalllogo.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_walkthrough-008.png" href="articleContent/miscellaneous/walkthrough-008.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.15.37.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.15.37.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_walkthrough-002.png" href="articleContent/miscellaneous/walkthrough-002.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_seasons4.jpg" href="articleContent/miscellaneous/seasons4.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Scot profile.jpg" href="articleContent/miscellaneous/Scot profile.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Irish-food_Irish-bread-buttered-with-jam.jpg" href="articleContent/miscellaneous/Irish-food_Irish-bread-buttered-with-jam.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.16.01.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.16.01.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_walkthrough-003.png" href="articleContent/miscellaneous/walkthrough-003.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Irish-food_bacon-cabbage-and-potatoes_1.jpg" href="articleContent/miscellaneous/Irish-food_bacon-cabbage-and-potatoes_1.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.15.26.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.15.26.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.16.23.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.16.23.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_walkthrough-010.png" href="articleContent/miscellaneous/walkthrough-010.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Screen Shot 2013-02-18 at 19.15.52.png" href="articleContent/miscellaneous/Screen Shot 2013-02-18 at 19.15.52.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_walkthrough-006.png" href="articleContent/miscellaneous/walkthrough-006.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_Irish-food_Irish-craft-beer-with-cheese-sandwich-and-relish.jpg" href="articleContent/miscellaneous/Irish-food_Irish-craft-beer-with-cheese-sandwich-and-relish.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_reflect.jpg" href="articleContent/miscellaneous/reflect.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_walkthrough-009.png" href="articleContent/miscellaneous/walkthrough-009.png" media-type="image/png"/>
+		<item id="articleContent_miscellaneous_tada.jpg" href="articleContent/miscellaneous/tada.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_Irish-food_Irish-lamb-stew.jpg" href="articleContent/miscellaneous/Irish-food_Irish-lamb-stew.jpg" media-type="image/jpeg"/>
+		<item id="articleContent_miscellaneous_walkthrough-005.png" href="articleContent/miscellaneous/walkthrough-005.png" media-type="image/png"/>
+
+  </manifest>
+
+  <spine toc="ncx">    
+    <itemref idref="cover" linear="yes"/>
+    		<itemref linear="yes" idref="cover"/>
+		<itemref linear="yes" idref="feature_54.xhtml"/>
+		<itemref linear="yes" idref="feature_60.xhtml"/>
+
+    <itemref idref="toc" linear="no"/>
+  </spine>
+  
+  <guide>
+    <reference type="cover"      title="Cover"        href="html/cover_53.xhtml"></reference>
+    <reference type="toc"        title="Table of Contents"	href="toc.xhtml" ></reference>
+   </guide>
+
+</package>
