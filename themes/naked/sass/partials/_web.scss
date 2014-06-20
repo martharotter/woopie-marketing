@@ -1,0 +1,35 @@
+/* Woopie framework 0.2 */
+/* Base stylesheet - web specifics */
+
+/* Basic Stuff  */  
+body	{
+	background: $bg;
+	font-family: $bodycopy;
+	color: $bodycolor;
+} 
+
+/* *	{
+	outline: 1px dotted red;
+} */
+
+/* link colors */ 
+a	{ 
+	text-decoration: none; 
+	-webkit-transition: all 0.1s linear;
+&:link		{	color:$alink;	} 
+&:visited	{	color:$vlink;	}
+&:focus		{	color:$flink;	} 
+&:hover		{	color:$hlink;	} 
+&:active	{	color:$actlink;	}
+}
+
+/* selection colours */   
+::selection {    
+	background: $revcolor2; /* Safari */
+	color:#fff; 
+	}  
+::-moz-selection { 
+	background: $revcolor2; /* Firefox */   
+	color:#fff; 
+}
+ 

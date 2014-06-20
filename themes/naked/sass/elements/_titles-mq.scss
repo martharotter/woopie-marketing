@@ -1,0 +1,182 @@
+/* Woopie framework 0.2 */
+/* Titles - Media Queries Styles */
+#intro-heading	{
+
+	#main-image-print	{
+		display: none;
+	}
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#intro-heading	{
+	    width: 100%;
+	    @include boxit(vertical);
+	
+		hgroup	{
+			background: darken($color1,20%);
+			margin:0;
+			padding: $grid*2  $gutter $grid*0.25  $gutter;
+			@include boxnum(1);
+			
+			h1	{
+				color: $revcolor1;
+			}
+			
+			h2	{
+				color: $revcolor1;
+			}
+		}
+		
+		#main-image	{
+			@include roundcorner(0);
+			@include boxnum(2);
+		}
+		
+		#credits	{
+			@include boxnum(3);
+		}
+		
+		&.noimage	{
+			margin-top:0;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#intro-heading	{
+		margin: 0;
+		
+		#main-image	{
+			height: $mainimage;
+			margin: 0 0 $grid*2 0;
+		}
+		
+		hgroup	{
+			margin:0 $gutter;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $gutter;
+			
+			h1 {
+				@include type
+				(3, 1.25, 2);
+			}
+			
+			h2	{
+				@include type
+				(2, 1.25, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagemed;
+			@include roundcorneradv(0,0,4,4);
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $medgutter;
+			
+			h1 {
+				@include type
+				(4, 1.25, 3);
+			}
+			
+			h2	{
+				@include type
+				(2.5, 1.25, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagemed;
+			@include roundcorneradv(0,0,4,4);
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $rightlargegutter 0 $leftlargegutter;
+
+			h1 {
+				@include type
+				(5, 1.25, 4);
+			}
+			
+			h2	{
+				@include type
+				(3, 1.25, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagelarge;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+	
+	#intro-heading {
+		hgroup	{
+			margin:0 $righthugegutter 0 $lefthugegutter;
+
+			h1 {
+				@include type
+				(6, 1.25, 4);
+			}
+			
+			h2	{
+				@include type
+				(3.5, 1.25, 2);
+			}
+		}
+		
+		#main-image	{
+			height: $mainimagehuge;
+		}
+	}
+}
