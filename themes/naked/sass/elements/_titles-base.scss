@@ -1,0 +1,69 @@
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+
+/* Intro Headings */
+#intro-heading {
+
+	hgroup	{
+		margin: 0 ;
+		padding:  0;
+		clear: both;
+	}
+		
+	h1 {
+		color: $titleh1color;
+		@include type
+		(2, 1.25, 1.5, bold, normal);
+		font-family: $titleh1;
+	}
+	
+	h2	{
+		color: $titleh2color;
+		@include type
+		(1.5, 1.25, 1, normal, italic);
+		padding: 0 0 $grid 0;
+		font-family: $titleh2;
+	}
+	
+	h3	{
+		background: $sectionbg;
+		display: inline-block;
+		text-transform: uppercase;
+		@include type
+		(0.75, 1, 1);
+		padding: $grid*0.5 $grid;
+		@include roundcorner;
+
+		b {
+			color: $sectioncolor;
+			font-family: $section;
+			font-weight:bold;
+			padding: 0 $grid*0.5 0 0;
+		}
+		
+		i	{
+			color: $subsectioncolor;
+			font-family: $subsection;
+			font-style: normal;
+		}
+	}
+	
+	#main-image	{
+		background: url(../images/changes.jpg) no-repeat center center;
+		background-size: cover;
+		height: $mainimagemobile;
+		width: 100%;
+	}
+	
+	
+	#main-image-print	{
+		display: block;
+		line-height: 0;
+		padding: 0;
+		margin: 0 0 $grid*2 0;
+	}
+
+	&.noimage	{
+		margin-top:$grid*2;
+	}
+}

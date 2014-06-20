@@ -1824,6 +1824,7 @@ a {
 
 .reveal-modal {
   visibility: hidden;
+  opacity: 0;
   top: 80px;
   left: 50%;
   margin-left: -260px;

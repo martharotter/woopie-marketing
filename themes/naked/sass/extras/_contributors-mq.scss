@@ -1,0 +1,119 @@
+/* Woopie framework 0.2 */
+/* Contributors - Media Queries Styles */
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	.contributor	{
+		width: 100%;
+		margin-bottom: $grid;
+		
+		.contributor-image	{
+			float: right;
+			margin-left:$grid;
+			width: $grid*6;
+		}
+		
+		.contributor-info	{
+		}
+		
+		.more-info	{
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	.contributor	{
+		border: none;
+		margin:0 $grid $grid 0;
+		width:  100%;
+		
+		.contributor-image	{
+			float: left;
+			margin-right:$grid;
+			width: $grid*6;
+		}
+		
+		.contributor-info	{
+			margin-left: $grid*8 ;
+		}
+		
+		.more-info	{
+			margin-left: $grid*8 ;
+		}
+	}
+	
+	#contributors .contributor:last-child	{
+		border: none;
+	}	
+}
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+	#contributors	{
+		margin:0 $medgutter;
+	}
+	
+	.contributor	{
+		width: 48%;	
+		float: left;
+			
+		.contributor-image	{				
+			float: left;
+			width: $grid*8;
+		}
+		
+		.contributor-info {
+			margin-left: $grid*10;
+		}
+		.more-info {
+			margin-left: $grid*10;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+	#contributors	{
+		margin:0 $rightlargegutter 0 $leftlargegutter;
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#contributors	{
+		margin:0 $righthugegutter 0 $lefthugegutter;
+	}
+}

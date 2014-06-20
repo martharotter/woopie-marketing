@@ -3,6 +3,7 @@
  * www.ZURB.com
  * Copyright 2010, ZURB
  * Free to use under the MIT license.
+ * Update to hide Facebook box
  * http://www.opensource.org/licenses/mit-license.php
 */
 
@@ -76,14 +77,14 @@
 						}, options.animationspeed,unlockModal());					
 					}
 					if(options.animation == "fade") {
-						modal.css({'opacity' : 0, 'visibility' : 'visible', 'top': $(document).scrollTop()+topMeasure});
+						modal.css({'opacity' : 0, 'visibility' : 'visible', 'opacity' : 1, 'top': $(document).scrollTop()+topMeasure});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
 							"opacity" : 1
 						}, options.animationspeed,unlockModal());					
 					} 
 					if(options.animation == "none") {
-						modal.css({'visibility' : 'visible', 'top':$(document).scrollTop()+topMeasure});
+						modal.css({'visibility' : 'visible',  'opacity' : 1, 'top':$(document).scrollTop()+topMeasure});
 						modalBG.css({"display":"block"});	
 						unlockModal()				
 					}
@@ -115,7 +116,7 @@
 						});					
 					}  	
 					if(options.animation == "none") {
-						modal.css({'visibility' : 'hidden', 'top' : topMeasure});
+						modal.css({'visibility' : 'hidden', 'opacity' : 0,  'top' : topMeasure});
 						modalBG.css({'display' : 'none'});	
 					}		
 				}
