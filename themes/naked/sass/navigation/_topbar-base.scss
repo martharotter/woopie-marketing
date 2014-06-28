@@ -1,0 +1,166 @@
+/* Woopie framework 0.2 */
+/* Topbar - Base Styles */
+
+/* Top Bar */
+#top-bar	{
+	background: $topbarbg;
+	border-bottom: $grid*0.25 solid $topbarborder;
+	clear: both;
+	min-height: $grid*2.5;
+	margin:0;
+	padding:0;
+	position: relative;
+}
+
+/* Navigation/Social buttons */
+.button-links	{
+
+	 ul	{
+		margin:0;
+		padding:0;
+
+		li	{
+			display: inline;
+			line-height:$grid*2.5;
+			margin:0;
+			padding:0;
+			z-index: 200;
+		
+			a	{
+				-webkit-font-smoothing: antialiased;
+				background: transparent;
+				color:$topbaricon;
+				display: block;
+				float: left;
+				font-family:  'ModernPictogramsNormal';
+				@include type
+				(1.5, 2.5, 0);
+				line-height:$grid*2.5;
+				margin:0;
+				padding: 0;
+				text-decoration: none;
+				&:hover	{
+					color:$topbarhover;
+				}
+
+				
+				&.cont:hover .cont-dropdown, &.cont:active .cont-dropdown {
+					left:0;
+				}
+	
+			}
+			
+		
+			i	{
+				display: block;
+				float: left;
+				margin: 0;
+				vertical-align: baseline;
+				font-family: $icons;
+				font-style: normal;
+				font-weight: normal;
+				text-align: center;
+				width: $grid*2.5;
+			}
+			
+			b	{
+				float: left;
+				font-family: $font2;
+				font-style: normal;
+				font-weight: normal;
+				font-size: $grid;
+				text-transform: uppercase;
+				@include imagereplace;
+				display: none;
+			}
+		}
+	}
+}
+
+.icon-cover:before					{ content:"B"; }
+.icon-contents:before				{ content:"5"; }
+.icon-previousarticle:before		{ content:"<"; }
+.icon-nextarticle:before			{ content:">"; }
+.icon-twitter:before				{ content:"T"; }
+.icon-facebook:before				{ content:"F"; }
+.icon-share:before					{ content:"o"; }
+.icon-comment:before				{ content:"b"; }
+	
+#top-nav	{
+	float: left;
+	z-index: 200;
+}
+
+#top-social	{
+	float: right;
+	z-index: 200;
+}
+
+#top-title	{
+	color: $topbartitlecolor;
+	@include type
+	(1, 2.5, 0);
+	line-height:$grid*2.5;
+	font-family: $topbartitle;
+	left:50%;
+	margin-left: -$grid*8; /* Half the width */
+	padding: 0 8px;
+	position: absolute;
+	text-align: center;
+	width: $grid*16;
+	z-index: 1;
+}
+				
+.cont-dropdown {
+	background: $color1;
+	position: absolute;
+	width:100%;
+	left: -9999px;
+	top: $grid*2.5;
+
+	ol	{
+	
+		li {
+			display: block;
+			width: 100%;
+			
+			h2 a	{
+				background: darken($color1,10%);
+				@include type
+				(1, 1.5, 0);
+			}
+			
+			a {
+				border-bottom: 1px solid lighten($color1,10%);
+				color: $revcolor1;
+				display: block;
+				font-family: $font3;
+				padding: $grid*0.5 $grid;
+				width: 100%;
+				@include type
+				(1, 1.5, 0);
+				
+				&:hover	{
+					background: $color3;
+					color: $revcolor1;
+				}
+				
+				span, p	{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+#rightPanel{ border-left:20px solid #ddd; width:0px; left:0; position:fixed; top:0px; height:100%; vertical-align:top; border-right:1px dotted #800; color:black; background-color:white; padding:0; overflow:auto; z-index:100;}
+
+#rightPanelcontent { width:166px;  padding: 2px 20px 2px 2px;  overflow: auto; height: 100%; 
+	
+	.cont-dropdown {
+					left:0;
+				}
+	
+}
+
+#rightPanel.expanded { border-left:1px solid #800; padding:5px; }

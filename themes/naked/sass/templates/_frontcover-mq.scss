@@ -1,0 +1,90 @@
+/* Woopie framework 0.2 */
+/* Front cover - Media Queries Styles */
+#frontcover-image-print	{
+	display: none;
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+	
+	#frontcover-heading	{	
+		padding: $grid*4;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -$grid*12; /* half the width */
+		margin-top: -$grid*12; /* half the height */
+		width: $grid*24;
+		height: $grid*24;
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#frontcover-heading	{	
+		padding: $grid*4;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -$grid*18; /* half the width */
+		margin-top: -$grid*18; /* half the height */
+		width: $grid*36;
+		height: $grid*36;
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#frontcover-heading	{
+		margin-top: $grid*16;
+	}
+	
+	#frontcover-image-print	{
+		display: block;
+	}
+}
