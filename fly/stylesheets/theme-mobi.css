@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0 1%; }
+
+article {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 150%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.1;
+  text-align: left; }
+
+h2 {
+  font-size: 125%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.1;
+  text-align: left; }
+
+h3 {
+  font-size: 120%;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  line-height: 1.1;
+  text-align: left; }
+
+h4 {
+  font-size: 110%;
+  margin-bottom: 0.5em;
+  text-align: left; }
+
+p {
+  font-size: 100%;
+  margin-bottom: 0.5em; }
+
+figcaption {
+  font-size: 100%;
+  margin-bottom: 0.5em; }
+
+img {
+  width: 100%; }
+
+ul, ol {
+  margin: 0 0 1em 1em;
+  padding: 0; }
+
+li {
+  padding: 0;
+  text-align: left; }
+  li ul, li ol {
+    margin: 0 0 0.5em 1em;
+    padding: 0; }
+
+blockquote {
+  margin: 0;
+  padding: 0; }
+
+blockquote p {
+  margin: 0;
+  font-style: italic;
+  padding: 0 0 0.5em 0; }
+
+blockquote cite {
+  font-style: italic; }
+
+table {
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-collapse: collapse; }
+
+th, td {
+  padding: 0.25em;
+  border: 1px solid black; }
+
+th {
+  text-align: left; }
+
+#credits {
+  font-size: 80%;
+  margin: 0 0 0.5em 0; }
+
+#contents-listing ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li ol li {
+    margin: 0 0 1em 0; }
+    #contents-listing ol li ol li h3 {
+      margin: 0; }
+
+section {
+  margin: 0 0 0.5em 0; }
+
+.grp-name {
+  font-weight: bold; }
