@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
 <!-- HTML5 Boilerplate -->
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
@@ -29,7 +30,7 @@
 <![endif]-->
 
 <!-- JavaScript -->
-<script src="js/modernizr-2.5.3-min.js"></script>
+<script src="/js/modernizr-2.5.3-min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/cey6laq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -44,11 +45,12 @@
 
 <body class="clearfix" id="features">
 
+<span itemscope itemtype="http://schema.org/SoftwareApplication">
 <div class="alertbar" id="top-alert">
 	<div class="row">
 		<div id="top-logo"><img src="/img/woopie.png" alt="Woopie"></div>
 		<p>We are looking for adventurous digital publications for our beta program</p>
-		<a class="btn btn-success" href="/invitation_form.html">Apply for Private Beta</a>
+		<a itemprop="downloadUrl" class="btn btn-success" href="/invitation_form.html">Apply for Private Beta</a>
 	</div>
 </div>
 
@@ -60,7 +62,7 @@
 				<ul>
 					<li><a href="/index.html">Home</a></li>
 					<li><a href="/features.html">Features</a></li>
-					<li><a href="/portfolio/" class="active">Portfolio</a></li>
+					<li><a itemprop="url" href="/portfolio/" class="active">Portfolio</a></li>
 					<li><a href="http://blog.woop.ie">Blog</a></li>
 					<li><a href="/contact.html">Contact</a></li>
 				</ul>
@@ -75,14 +77,14 @@
 			<h1 id="logo"><a href="/index.html"><img src="/img/woopie.png" id="logo-img"></a></h1>
 		</div>
 		<div class="rcol">
-			<img src="/img/devices-samples.png" id="devices" />
+			<img itemprop="screenshot" src="/img/devices-samples.png" id="devices" />
 		</div> 
 		<div class="lcol">
 			<hgroup id="headmain">
 				<h1>Make Something Fantastic!</h1>
 				<h2>Here are some of our customer success stories over the past year, showing different features, layouts <span class="amp">&amp;</span> templates available to you.</h2>
 			</hgroup>
-			<p>Woopie - Write Only Once, Publish It Everywhere - Produce a professional, responsive document that looks fantastic on every device.</p>
+			<p><span itemprop="name">Woopie</span> - Write Only Once, Publish It Everywhere - Produce a professional, responsive document that looks fantastic on every device.</p>
 		</div>
 	</div>
 	
@@ -104,7 +106,7 @@
                 <div class="rcol">
                         <div class="browser-frame">
                                 <div class="sample-tab blue-tab"><b>Available</b></div>
-                                <a href="https://egovstatus.maharashtra.gov.in/"><img src="/img/demo-egovernment.jpg" /></a>
+                                <a href="https://egovstatus.maharashtra.gov.in/"><img itemprop="image" src="/img/demo-egovernment.jpg" /></a>
                         </div>
                 </div>
         </div>
@@ -326,7 +328,8 @@
 	<div class="row">
 		<article>
                         <h1>About Woopie</h1>
-                        <p>Woopie - Write Only Once, Publish It Everywhere, is a digital publishing platform for businesses to help them get their message to anyone, anywhere, on any device. View our <a href="press.html">press pack</a> for logos and images.</p>
+                        <p><span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+<span itemprop="name">Woopie</span></span> - Write Only Once, Publish It Everywhere, is a digital <span itemprop="applicationCategory">publishing platform</span> for businesses to help them get their message to anyone, anywhere, on any device. View our <a href="press.html">press pack</a> for logos and images.</p>
                 </article>
                 <article>
                         <h1>What we do</h1>
@@ -369,9 +372,12 @@
 		<p></p>
 	</div>
 </footer>
+<meta itemprop="datePublished" content="2014-09-11">
+<span itemprop="author" itemscope itemtype="http://schema.org/Person">
+<meta itemprop="name" content="Martha Rotter & Stewart Curry"></span></span>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
 
 
 <script src="/js/plugins.js"></script>
