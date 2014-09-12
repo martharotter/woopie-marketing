@@ -19,11 +19,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="../css/stylesheet.css">
-<link rel="stylesheet" href="../css/flexslider.css">
+<link rel="stylesheet" href="/css/stylesheet.min.css">
+<link rel="stylesheet" href="/css/flexslider.min.css">
 
 <!-- JavaScript -->
-<script src="../js/modernizr-2.5.3-min.js"></script>
+<script src="/js/modernizr-2.5.3-min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/cey6laq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -36,9 +36,9 @@
 
 <div class="alertbar" id="top-alert">
 	<div class="row">
-		<div id="top-logo"><img src="../img/woopie.png" alt="Woopie"></div>
+		<div id="top-logo"><img src="/img/woopie.png" alt="Woopie"></div>
 		<p>We are looking for adventurous digital publications for our beta program</p>
-		<a class="btn btn-success" href="../invitation_form.html">Apply for Private Beta</a>
+		<a class="btn btn-success" href="/invitation_form.html">Apply for Private Beta</a>
 	</div>
 </div>
 
@@ -48,15 +48,15 @@
 		<div class="rcol">
 			<nav>
 				<ul>
-					<li><a href="../index.html" class="white-bg">Home &rarr;</a></li>
+					<li><a href="/index.html" class="white-bg">Home &rarr;</a></li>
 				</ul>
 			</nav>
 		</div>
 		<div class="lcol">
-			<h1 id="logo"><a href="../index.html"><img src="../img/woopie-dark.png" id="logo-img"></a></h1>
+			<h1 id="logo"><a href="/index.html"><img src="/img/woopie-dark.png" id="logo-img"></a></h1>
 		</div>
 		<div class="rcol">
-			<img src="../img/samples/movietop5cover.png" alt="Spotify top 5 cover" id="cover">
+			<img src="http://res.cloudinary.com/lrsteupaz/image/upload/v1410538632/movietop5cover_abdgbo.png" alt="Spotify top 5 cover" id="cover">
 		</div> 
 		<div class="lcol">
 			<hgroup id="headmain">
@@ -69,11 +69,11 @@
 				<span class="download-help">Great for mobile, tablet &amp; desktop</span>
 			</div>
 			<div class="download-file">
-				<a class="btn btn-success btn-block" href="movietop5.epub">Download the .ePub</a>
+				<a class="btn btn-success btn-block" href="movietop5.epub" onClick="ga('send', 'event', 'download', 'click', ‘download_movies_epub');">Download the .ePub</a>
 				<span class="download-help">Great for iBooks &amp; Nook</span>
 			</div>
 			<div class="download-file">
-				<a class="btn btn-success btn-block" href="movietop5-color.mobi">Download the .mobi</a>
+				<a class="btn btn-success btn-block" href="movietop5-color.mobi" onClick="ga('send', 'event', 'download', 'click', ‘download_movies_kindle');">Download the .mobi</a>
 				<span class="download-help">Great for Kindle Fire <i>|</i> <a href="http://www.amazon.com/gp/sendtokindle">Sending files to Kindle</a></span>
 			</div>
 		</div>
@@ -122,14 +122,14 @@
 	</div>
 	<div class="row">
 		<div id="address">
-			<small>The Liffey Trust Centre, 117-126 Upr. Sheriff St., Dublin 1, Ireland. Email <a href="mailto:info@woop.ie">info@woop.ie</a><a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a><a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 			</small>
 			<small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
 		</div>
 		<div id="support">
 			<h1>Supported by</h1>
-                        <p><a href="http://matter.vc/"><img src="img/matter.png" alt="Matter"></a></p>
-			<p><a href="http://ie.wayra.org/"><img src="../img/wayra-telefonica.png" alt="Wayra Telefonica" width="280" height="50"></a></p>
+                        <p><a href="http://matter.vc/"><img src="/img/matter.png" alt="Matter"></a></p>
+			<p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica.png" alt="Wayra Telefonica" width="280" height="50"></a></p>
 		</div>
 	</div>
 	<div class="row">
@@ -141,7 +141,7 @@
 <script>window.jQuery || document.write('<script src="../js/jquery-1.7.2.min.js"><\/script>')</script>
 
 
-<script src="../js/jquery.flexslider.js"></script>
+<script src="/js/jquery.flexslider.min.js"></script>
 <script type="text/javascript">
 // Can also be used with $(document).ready()
 $(window).load(function() {
@@ -152,14 +152,19 @@ $(window).load(function() {
 });
   </script>
 
-<script src="../js/plugins.js"></script>
-<script src="../js/script.js"></script>
-<script src="../js/helper.js"></script>
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/helper.min.js"></script>
+
 <script>
-var _gaq=[["_setAccount","UA-28531592-1"],["_trackPageview"]];
-(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
-g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-s.parentNode.insertBefore(g,s)}(document,"script"));
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-28531592-1', 'auto');
+  ga('send', 'pageview');
+
 </script>
 
 <div id="fb-root"></div>
