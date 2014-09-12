@@ -70,11 +70,11 @@
 				<span class="download-help">Great for mobile, tablet &amp; desktop</span>
 			</div>
 			<div class="download-file">
-				<a class="btn btn-success btn-block" href="spotifytop5.epub" onClick="ga('send', 'event', 'download', 'click', ‘download_spotify_epub');>Download the .ePub</a>
+				<a id="downloadSpotifyEpub" class="btn btn-success btn-block" href="spotifytop5.epub">Download the .ePub</a>
 				<span class="download-help">Great for iBooks &amp; Nook</span>
 			</div>
 			<div class="download-file">
-				<a class="btn btn-success btn-block" href="spotifytop5.epub" onClick="ga('send', 'event', 'download', 'click', ‘download_spotify_mobi');>Download the .mobi</a>
+				<a id="downloadSpotifyMobi" class="btn btn-success btn-block" href="spotifytop5.epub">Download the .mobi</a>
 				<span class="download-help">Great for Kindle Fire <i>|</i> <a href="http://www.amazon.com/gp/sendtokindle">Sending files to Kindle</a></span>
 			</div>
 		</div>
@@ -164,6 +164,13 @@ $(window).load(function() {
 
   ga('create', 'UA-28531592-1', 'auto');
   ga('send', 'pageview');
+
+  $('#downloadSpotifyEpub').on('click', function() {
+    ga('send', 'event', 'button', 'click', 'download_spotify_epub');
+  });
+  $('#downloadSpotifyMobi').on('click', function() {
+    ga('send', 'event', 'download', 'click', 'download_spotify_mobi');
+  });
 
 </script>
 
