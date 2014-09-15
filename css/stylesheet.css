@@ -1740,7 +1740,7 @@ body#casestudy {
     margin-top: -1px;
     position: relative;
     letter-spacing: 3px; }
-    .feature hgroup h1 {
+    .feature hgroup h2.small {
       color: #383837;
       display: inline;
       font-size: 16px;
@@ -1813,7 +1813,7 @@ body#casestudy {
   float: left;
   margin-top: -1px;
   width: 50%; }
-  .feature-example h1 {
+  .feature-example h2 {
     background: #e7e7e7 url(../img/down-arrow.png) no-repeat 90% 10px;
     color: #383837;
     display: inline-block;
@@ -1863,7 +1863,7 @@ body#casestudy {
   #example2 blockquote p, #example2 blockquote cite {
     display: block; }
 
-#home-create.feature:hover hgroup h1, .features-available.feature:hover hgroup h1 {
+#home-create.feature:hover hgroup h2.small, .features-available.feature:hover hgroup h2.small {
   color: #007acc; }
 #home-create.feature:hover hgroup h2, #home-create.feature:hover hgroup .amp, .features-available.feature:hover hgroup h2, .features-available.feature:hover hgroup .amp {
   color: #0098ff; }
@@ -1874,7 +1874,7 @@ body#casestudy {
 
 #home-design.feature:hover hgroup, #contact-form.feature:hover hgroup, .features-onsale.feature:hover hgroup {
   border-bottom-color: #f8b3ac; }
-  #home-design.feature:hover hgroup h1, #contact-form.feature:hover hgroup h1, .features-onsale.feature:hover hgroup h1 {
+  #home-design.feature:hover hgroup h2.small, #contact-form.feature:hover hgroup h2.small, .features-onsale.feature:hover hgroup h2.small {
     color: #981a0d; }
   #home-design.feature:hover hgroup h2, #home-design.feature:hover hgroup .amp, #contact-form.feature:hover hgroup h2, #contact-form.feature:hover hgroup .amp, .features-onsale.feature:hover hgroup h2, .features-onsale.feature:hover hgroup .amp {
     color: #c72211; }
@@ -2059,7 +2059,7 @@ body#casestudy {
 
 #home-publish.feature:hover hgroup, #alpha-form.feature:hover hgroup {
   border-bottom-color: #fff2cc; }
-  #home-publish.feature:hover hgroup h1, #alpha-form.feature:hover hgroup h1 {
+  #home-publish.feature:hover hgroup h2.small, #alpha-form.feature:hover hgroup h2.small {
     color: #cc9a00; }
   #home-publish.feature:hover hgroup h2, #home-publish.feature:hover hgroup .amp, #alpha-form.feature:hover hgroup h2, #alpha-form.feature:hover hgroup .amp {
     color: #ffc000; }
@@ -2068,7 +2068,7 @@ body#casestudy {
 #home-publish.feature hgroup, #alpha-form.feature hgroup {
   border-top-color: #ffc000; }
 
-#features-templates.feature:hover hgroup h1 {
+#features-templates.feature:hover hgroup h2.small {
   color: #cc4800; }
 #features-templates.feature:hover hgroup h2, #features-templates.feature:hover hgroup .amp {
   color: #ff5a00; }
@@ -2077,7 +2077,7 @@ body#casestudy {
 #features-templates.feature hgroup {
   border-top-color: #ff5a00; }
 
-#features-populate.feature:hover hgroup h1, .features-sample.feature:hover hgroup h1 {
+#features-populate.feature:hover hgroup h2.small, .features-sample.feature:hover hgroup h2.small {
   color: #869c00; }
 #features-populate.feature:hover hgroup h2, #features-populate.feature:hover hgroup .amp, .features-sample.feature:hover hgroup h2, .features-sample.feature:hover hgroup .amp {
   color: #b2cf00; }
@@ -2086,7 +2086,7 @@ body#casestudy {
 #features-populate.feature hgroup, .features-sample.feature hgroup {
   border-top-color: #b2cf00; }
 
-#features-manage.feature:hover hgroup h1 {
+#features-manage.feature:hover hgroup h2 .small {
   color: #cc0082; }
 #features-manage.feature:hover hgroup h2, #features-manage.feature:hover hgroup .amp {
   color: #ff00a2; }
@@ -2225,7 +2225,7 @@ footer {
     color: #999999;
     float: left;
     margin: 0 20px; }
-    footer article h1 {
+    footer article h2 {
       color: #383837;
       font-weight: normal;
       margin: 20px 0;
@@ -2234,7 +2234,7 @@ footer {
       lettewr-spacing: 2px; }
   footer #support {
     margin: 0 20px; }
-    footer #support h1 {
+    footer #support h2 {
       color: #383837;
       font-weight: normal;
       margin: 20px 0;
@@ -2801,7 +2801,7 @@ input#lvcheck {
       width: 100%;
       margin: 0;
       padding: 0; }
-      .feature-example .example-item h1 {
+      .feature-example .example-item h2 {
         display: block; }
       .feature-example .example-item p {
         padding: 5px 20px;
@@ -2934,7 +2934,7 @@ input#lvcheck {
       width: 100%;
       margin: 0;
       padding: 0; }
-      .feature-example .example-item h1 {
+      .feature-example .example-item h2 {
         display: block; }
       .feature-example .example-item p {
         padding: 5px 20px;
