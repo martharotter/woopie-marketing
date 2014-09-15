@@ -1,0 +1,55 @@
+/* Woopie framework 0.2 */
+/* Print stylesheet */
+/* based on 320 and up https://github.com/malarkey/320andup */
+@print {
+  * {
+    background: transparent;
+    color: black;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  h2, h3 {
+    orphans: 3;
+    widows: 3;
+    page-break-after: avoid; }
+
+  p {
+    orphans: 3;
+    widows: 3; }
+
+  pre, blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid; }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  a, a:visited {
+    color: #444444 !important;
+    text-decoration: none; }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-style: italic;
+    color: #999999 !important; }
+
+  a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: ""; }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr {
+    page-break-inside: avoid; }
+
+  /* Hide */
+  .no-print {
+    display: none; } }
