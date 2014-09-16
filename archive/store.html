@@ -34,9 +34,7 @@
 
 <link rel="shortcut icon" href="/favicon.ico">
 
-
 <meta http-equiv="cleartype" content="on">
-
 <script>
         window.butler=window.butler||[];butler.load=function(a){window._bid=a;var b=document.createElement("script");b.type="text/javascript",b.async=!0,b.src=("https:"===document.location.protocol?"https:":"http:")+"//www.hellobutler.com/javascripts/b.min.js";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);var d=function(a){return function(){butler.push([a].concat(Array.prototype.slice.call(arguments,0)))}},e=["identify","track"];for(var f=0;f<e.length;f++)butler[e[f]]=d(e[f])};
         butler.load("b07UWNuq35");
@@ -59,7 +57,7 @@
 		<div class="wcol">
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="/index.html">Home</a></li>
 					<li><a href="features.html">Features</a></li>
 					<li><a href="/portfolio/">Portfolio</a></li>
 					<li><a href="http://blog.woop.ie">Blog</a></li>
@@ -75,126 +73,38 @@
 				<div class="row">
 					<hgroup>
 						<ol id="step-through">
-							<li>1</li>
-							<li class="st-active">2</li>
+							<li class="st-active">1</li>
+							<li>2</li>
 							<li>3</li>
 						</ol>
 						<h1>Subscriptions</h1>
-						<h2>Enter your Details</h2>
+						<h2>Please select a package</h2>
 					</hgroup>
-					<form novalidate autocomplete="on" id="payment-form">
-					
-					<h3>Personal Details</h3>
-					
-					<div class="form-row">
-						<label>
-							<span>Cardholder Name</span>
-							<div class="inputs">
-								<input type="text" size="20" class="name" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>Company/Publication</span>
-							<div class="inputs">
-								<input type="text" size="20" class="company" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>Address 1</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_line1 address" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>Address 2</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_line2 address" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>City</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_city address" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>State</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_state address" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>ZIP</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_zip" />
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>Country</span>
-							<div class="inputs">
-								<input type="text" size="20" class="address_country address" />
-							</div>
-						</label>
-					</div>
-					 
-					<h3>Payment Details</h3>
-					
-					<div class="form-row">
-						<label>
-							<span>Card Number</span>
-							<div class="inputs">
-								<input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
-							</div>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>CVC</span>
-							<div class="inputs">
-								<input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Code" required maxlength="4" autocomplete="off">
-							</div>
-							<span class="helper">3 or 4 digit code</span>
-						</label>
-					</div>
-					
-					<div class="form-row">
-						<label>
-							<span>Expiration</span>
-							<div class="inputs">
-								<input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="MM/YY" required maxlength="9">
-							</div>
-							<span class="helper">MM / YY</span>
-						</label>
-					</div>
-					<h2 class="validation"></h2>
-					<div class="form-pay">
-						<input type="submit" name="submit" class="btn btn-success" value="Make your Payment now">
-					</div>
-					
-					<img src="img/glossy.png" alt="Powered by Stripe" width="149" height="41">
-					
+					<form>
+					<table class="ordering">
+						<tr class="order-packages">
+							<th width="33%">Solo</th>
+							<th width="33%">Multiple</th>
+							<th width="33%">Enterprise</th>
+						</tr>
+						<tr class="order-details">
+							<td><h2>Just me</h2><p>1 user</p><p>1 publication</p></td>
+							<td><h2>Up to</h2><p>5 users</p><p>10 publications</p></td>
+							<td><h2>Up to</h2><p>50 user</p><p>100 publications</p></td>
+						</tr>
+						<tr class="order-pricing">
+							<td>$80<span>per month</span></td>
+							<td>$700<span>per month</span></td>
+							<td>$2500<span>per month</span></td>
+						</tr>
+						<tr class="order-purchases">
+							<td><a href="checkout.html" name="sub1" class="btn btn-success">Purchase</a></td>
+							<td><a href="checkout.html" name="sub2" class="btn btn-success">Purchase</a></td>
+							<td><a href="checkout.html" name="sub3" class="btn btn-success">Purchase</a></td>
+						</tr>
+					</table>
+					<p>Need a custom plan or a special solution? <a href="contact.html">We'd love to chat</a></p>
+					<p>Here are the <a rel="leanModal" href="#tcmodal">terms and conditions</a> for our subscription and service.</p>
 					</form>
 				</div>
 			</section>
@@ -202,22 +112,10 @@
 		<div class="ncol">
 			<hgroup id="headmain">
 				<h1>Store</h1>
-			
-			<table class="ordering">
-				<tr class="order-packages">
-					<th>Your plan: Solo</th>
-				</tr>
-				<tr class="order-details">
-					<td><p>1 user</p><p>1 publication</p></td>
-				</tr>
-				<tr class="order-pricing">
-					<td>$80<span>per month</span></td>
-				</tr>
-				<tr class="order-purchases">
-					<td><a href="store.html" name="sub1" class="btn btn-success">Change it</a></td>
-				</tr>
-			</table>
+				<h2>Purchase your monthly subscription to Woopie, based on how many people <span class="amp">&amp;</span> publications you need.</h2>
+				<p><a class="btn btn-success" href="contact.html">Talk to us about pricing</a></p>
 			</hgroup>
+			<p>We've kept our pricing very simple. We only charge you for access to our platform, and we give you your files to sell however you like. No <span class="amp">%</span> cut, no metered access, no download blocks. Just one monthly fee, based on how many users <span class="amp">&amp;</span> publications you are working on.</p>
 		</div>
 	</div>
 </header>
@@ -256,11 +154,11 @@
 			</small>
 			<small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
 		</div>
-		<div id="support">
-			<h1>Supported by</h1>
-                        <p><a href="http://matter.vc/"><img src="img/matter.png" alt="Matter"></a></p>
-			<p><a href="http://ie.wayra.org/"><img src="img/wayra-telefonica.png" alt="Wayra Telefonica" width="280" height="50"></a></p>
-		</div>
+<div id=support>
+<h2>Supported by</h2>
+<p><a href="http://matter.vc/"><img src="/img/mattervc-logo.png" alt="Matter.vc logo"></a></p>
+<p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica-logo.png" alt="Wayra and Telefonica logos" width=280 height=50></a></p>
+</div>
 	</div>
 	<div class="row">
 		<p></p>
@@ -282,42 +180,6 @@
 			});
 </script>
  
- 
-<!-- Stripe //-->
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script type="text/javascript">
-  // This identifies your website in the createToken call below
-  Stripe.setPublishableKey('pk_test_uTFIpKekdksTYhcbQ6vgs630');
-  // ...
-</script>
-<script type="text/javascript" src="js/jquery.payment.js"></script>
-
-<script>
-    jQuery(function($){
-      $('.cc-number').payment('formatCardNumber');
-      $('.cc-exp').payment('formatCardExpiry');
-      $('.cc-cvc').payment('formatCardCVC');
-
-      $('form').submit(function(e){
-        e.preventDefault();
-        $('input').removeClass('invalid');
-        $('.validation').removeClass('passed failed');
-
-        var cardType = $.payment.cardType($('.cc-number').val());
-
-        $('.cc-number').toggleClass('invalid', !$.payment.validateCardNumber($('.cc-number').val()));
-        $('.cc-exp').toggleClass('invalid', !$.payment.validateCardExpiry($('.cc-exp').payment('cardExpiryVal')));
-        $('.cc-cvc').toggleClass('invalid', !$.payment.validateCardCVC($('.cc-cvc').val(), cardType));
-
-        if ( $('input.invalid').length ) {
-          $('.validation').addClass('failed');
-        } else {
-          $('.validation').addClass('passed');
-        }
-      });
-    });
-  </script>
-  
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -326,7 +188,7 @@
 
   ga('create', 'UA-28531592-1', 'woop.ie');
   ga('send', 'pageview');
-</script>
+</script> 
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

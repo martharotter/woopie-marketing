@@ -34,6 +34,7 @@
 
 <link rel="shortcut icon" href="/favicon.ico">
 
+
 <meta http-equiv="cleartype" content="on">
 
 <script>
@@ -75,23 +76,125 @@
 					<hgroup>
 						<ol id="step-through">
 							<li>1</li>
-							<li>2</li>
-							<li class="st-active">3</li>
+							<li class="st-active">2</li>
+							<li>3</li>
 						</ol>
 						<h1>Subscriptions</h1>
-						<h2>Thanks!</h2>
+						<h2>Enter your Details</h2>
 					</hgroup>
-					<form>
-						<p>Thank you for signing up to Woopie!</p>
-						<p>Use the following links to get you started...</p>
-						<video width="600" height="340" controls>
-						  <source src="video/newpublication.m4v" type="video/mp4">
-						</video>
-						<ul>
-							<li><a href="#">Help Documentation</a></li>
-							<li><a href="#">Create your first Publication</a></li>
-							<li><a href="#">Using templates</a></li>
-						</ul>
+					<form novalidate autocomplete="on" id="payment-form">
+					
+					<h3>Personal Details</h3>
+					
+					<div class="form-row">
+						<label>
+							<span>Cardholder Name</span>
+							<div class="inputs">
+								<input type="text" size="20" class="name" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>Company/Publication</span>
+							<div class="inputs">
+								<input type="text" size="20" class="company" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>Address 1</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_line1 address" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>Address 2</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_line2 address" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>City</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_city address" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>State</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_state address" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>ZIP</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_zip" />
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>Country</span>
+							<div class="inputs">
+								<input type="text" size="20" class="address_country address" />
+							</div>
+						</label>
+					</div>
+					 
+					<h3>Payment Details</h3>
+					
+					<div class="form-row">
+						<label>
+							<span>Card Number</span>
+							<div class="inputs">
+								<input type="text" class="cc-number" pattern="\d*" x-autocompletetype="cc-number" placeholder="Card number" required>
+							</div>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>CVC</span>
+							<div class="inputs">
+								<input type="text" class="cc-cvc" pattern="\d*" x-autocompletetype="cc-csc" placeholder="Code" required maxlength="4" autocomplete="off">
+							</div>
+							<span class="helper">3 or 4 digit code</span>
+						</label>
+					</div>
+					
+					<div class="form-row">
+						<label>
+							<span>Expiration</span>
+							<div class="inputs">
+								<input type="text" class="cc-exp" pattern="\d*" x-autocompletetype="cc-exp" placeholder="MM/YY" required maxlength="9">
+							</div>
+							<span class="helper">MM / YY</span>
+						</label>
+					</div>
+					<h2 class="validation"></h2>
+					<div class="form-pay">
+						<input type="submit" name="submit" class="btn btn-success" value="Make your Payment now">
+					</div>
+					
+					<img src="img/glossy.png" alt="Powered by Stripe" width="149" height="41">
+					
 					</form>
 				</div>
 			</section>
@@ -111,7 +214,7 @@
 					<td>$80<span>per month</span></td>
 				</tr>
 				<tr class="order-purchases">
-					<td><a href="store.html" name="sub1" class="btn btn-success">Get Started!</a></td>
+					<td><a href="store.html" name="sub1" class="btn btn-success">Change it</a></td>
 				</tr>
 			</table>
 			</hgroup>
@@ -149,15 +252,15 @@
 	</div>
 	<div class="row">
 		<div id="address">
-			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a><a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a> &nbsp; <a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 			</small>
 			<small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
 		</div>
-		<div id="support">
-			<h1>Supported by</h1>
-                        <p><a href="http://matter.vc/"><img src="img/matter.png" alt="Matter"></a></p>
-			<p><a href="http://ie.wayra.org/"><img src="img/wayra-telefonica.png" alt="Wayra Telefonica" width="280" height="50"></a></p>
-		</div>
+<div id=support>
+<h2>Supported by</h2>
+<p><a href="http://matter.vc/"><img src="/img/mattervc-logo.png" alt="Matter.vc logo"></a></p>
+<p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica-logo.png" alt="Wayra and Telefonica logos" width=280 height=50></a></p>
+</div>
 	</div>
 	<div class="row">
 		<p></p>
@@ -166,7 +269,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-
 
 <script src="/js/plugins.js"></script>
 <script src="/js/script.js"></script>
@@ -223,7 +325,7 @@
 
   ga('create', 'UA-28531592-1', 'woop.ie');
   ga('send', 'pageview');
-</script>  
+</script>
 
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

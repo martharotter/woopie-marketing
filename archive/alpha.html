@@ -7,11 +7,10 @@
 
 <head>
 <meta charset="utf-8">
-
-<title>Woopie - Beautiful Digital Publications</title>
-
 <meta name="description" content="">
 <meta name="author" content="">
+
+<title>Woopie - Beautiful Digital Publications</title>
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -19,19 +18,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/css/stylesheet.min.css">
+<link rel="stylesheet" href="/css/stylesheet.css">
 <link rel="stylesheet" href="/css/flexslider.min.css">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
-<script src="js/selectivizr-min.js"></script>
+<script src="/js/selectivizr-min.js"></script>
 <![endif]-->
 
 <!-- JavaScript -->
 <script src="//cdn.optimizely.com/js/501341344.js"></script>
-<script src="js/modernizr-2.5.3-min.js"></script>
+<script src="/js/modernizr-2.5.3-min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/cey6laq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
 
 <link rel="shortcut icon" href="/favicon.ico">
 
@@ -66,24 +64,48 @@
 			</nav>
 		</div>
 		<div class="ncol">
-			<h1 id="logo"><a href="index.html"><img src="img/woopie.png" id="logo-img"></a></h1>
+			<h2 id="logo"><a href="index.html"><img src="img/woopie.png" id="logo-img"></a></h2>
 		</div>
 		<div class="wcol">
 			<section class="feature" id="alpha-form">
 				<div class="row">
 					<hgroup>
-						<h1>Alpha</h1>
-						<h2>Apply to be part of our alpha programme.</h2>
+						<h2 class="small">Alpha</h2>
+						<h2>Apply to be part of our beta program.</h2>
 						<span class="arrow">&darr;</span>
 					</hgroup>
-					<form><p>Thank you for applying for our alpha programme. We will be in touch to let you know about our progress.</p></form>
-				</div>
+					<script type="text/javascript">var submitted=false;</script>
+					<iframe name="hidden_iframe" id="hidden_iframe"
+					style="display:none;" onload="if(submitted)
+					{window.location='alpha-thankyou.html';}"></iframe>
+					<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dHppN1Rad3FJQjgyc1Zud1AzbmZxRVE6MQ&ifq" method="post"
+					target="hidden_iframe" onsubmit="submitted=true;">
+						<p>Want to talk to us about collaboration/advertising/jobs/whatever? <a href="contact.html">Get in touch</a>, we'd love to hear from you.</p>
+
+						<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0" placeholder="Your Name">
+						<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1" placeholder="Your Email Address">				
+						<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2" placeholder="Your Publication Title">			
+						<input type="text" name="entry.3.single" value="" class="ss-q-short" id="entry_3" placeholder="Website (if you have one)">
+						<input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4" placeholder="Telephone Number">
+						<textarea name="entry.5.single" rows="20" class="ss-q-long" id="entry_5" placeholder="Tell us a bit about your publication"></textarea>
+						<input type="hidden" name="pageNumber" value="0">
+						<input type="hidden" name="backupCache" value="">
+					
+						<input type="submit" name="submit" value="Apply for Private Alpha" class="btn btn-success">
+						<br /><br />
+						</form>
+					</div>
+				
 			</section>
 		</div>
 		<div class="ncol">
 			<hgroup id="headmain">
-				<h1>Thanks!</h1>
+				<h1>Want to help us?</h1>
+				<h2>We’re looking for suitable publications for a select beta program to help us build the best platform possible.</h2>
 			</hgroup>
+			<p>The more you can tell us about your publication, the better.</p>
+			<p>We’d love to know what your publication is about, what kind of stories and content you publish, and what kind of layouts <span class="amp">&amp;</span> templates you have. </p>
+			<p class="sidenote">Please note we will be only taking on a few projects that we feel we can work best with to develop our platform.</p>
 		</div>
 	</div>
 </header>
@@ -97,15 +119,15 @@
 <footer>
 	<div class="row">
 		<article>
-                        <h1>About Woopie</h1>
+                        <h2>About Woopie</h2>
                         <p>Woopie - Write Only Once, Publish It Everywhere, is a digital publishing platform for businesses to help them get their message to anyone, anywhere, on any device. View our <a href="press.html">press pack</a> for logos and images.</p>
                 </article>
                 <article>
-                        <h1>What we do</h1>
+                        <h2>What we do</h2>
                         <p>We help businesses and organizations create documents and publications that look professional and beautiful on every device.</p>
 		</article>
 		<article>
-			<h1>Stay Informed</h1>
+			<h2>Stay Informed</h2>
 			<form id="signup" action="http://makewoopie.us4.list-manage.com/subscribe/post?u=e8240329fbb899266e07d4314&amp;id=314873291b" method="post" class="validate" target="_blank">
 				<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email address" required="">
 				<input type="submit" value="Sign Up" id="mc-embedded-subscribe" class="btn">
@@ -122,20 +144,19 @@
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 			  })();
 			</script>
-
 		</article>
 	</div>
 	<div class="row">
 		<div id="address">
-			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a><a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a> &nbsp; <a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
 			</small>
 			<small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
 		</div>
-		<div id="support">
-			<h1>Supported by</h1>
-                        <p><a href="http://matter.vc/"><img src="img/matter.png" alt="Matter"></a></p>
-			<p><a href="http://ie.wayra.org/"><img src="img/wayra-telefonica.png" alt="Wayra Telefonica" width="280" height="50"></a></p>
-		</div>
+<div id=support>
+<h2>Supported by</h2>
+<p><a href="http://matter.vc/"><img src="/img/mattervc-logo.png" alt="Matter.vc logo"></a></p>
+<p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica-logo.png" alt="Wayra and Telefonica logos" width=280 height=50></a></p>
+</div>
 	</div>
 	<div class="row">
 		<p></p>
