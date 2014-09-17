@@ -18,7 +18,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/css/stylesheet.css">
+<link rel="stylesheet" href="/css/stylesheet.min.css">
 <link rel="stylesheet" href="/css/flexslider.min.css">
 <link rel="stylesheet" href="/css/lightbox.min.css">
 
@@ -142,7 +142,8 @@
 			<h3>Idea Magazine</h3>
 			<h4>#4: The Data Issue</h4>
 			<p><strong>Idea</strong> is a magazine we developed in 2012, about Ideas <span class="amp">&amp;</span> technology in Ireland. It has interviews, event guides, job listings, and image galleries.</p>
-			<a class="btn btn-success" href="http://readidea.com/magazines/issue4/001.html">Read Issue 4 of Idea</a> <a class="btn btn-neutral" rel="lightbox[previews]" href="http://res.cloudinary.com/lrsteupaz/image/upload/v1410530603/preview-idea_cglwhi.jpg">Preview</a>
+			<!-- <a class="btn btn-success" href="http://readidea.com/magazines/issue4/001.html">Read Issue 4 of Idea</a> <a class="btn btn-neutral" rel="lightbox[previews]" href="http://res.cloudinary.com/lrsteupaz/image/upload/v1410530603/preview-idea_cglwhi.jpg">Preview</a> -->
+			<a class="btn btn-success" href="http://readidea.com/magazines/issue4/001.html">Read Issue 4 of Idea</a> <a class="btn btn-neutral" rel="lightbox[previews]" href="/img/preview-idea.jpg">Preview</a>
 		</div>
 		<div class="rcol">
 			<div class="browser-frame">
@@ -385,6 +386,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-28531592-1', 'woop.ie');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
   $('#purechat-name-submit').on('click', function() {
