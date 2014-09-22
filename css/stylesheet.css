@@ -1625,7 +1625,7 @@ body#casestudy {
       font-weight: normal;
       font-size: 20px;
       line-height: 24px;
-      margin: 0 0 20px 0; }
+      margin: 0 0 15px 0; }
     #home-banner #headmain .btn {
       -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.75);
@@ -1640,7 +1640,7 @@ body#casestudy {
   #home-banner p {
     color: #383837;
     font-size: 18px;
-    margin: 0 0 40px 0; }
+    margin: 0 0 20px 0; }
   #home-banner ul#checklist {
     border-top: 2px solid #e7e7e7;
     margin: 0;
@@ -3051,7 +3051,7 @@ input#lvcheck {
   #home-banner #headmain h1 {
     font-size: 50px;
     line-height: 60px;
-    margin: 0 0 40px 0; }
+    margin: 0 0 10px 0; }
   #home-banner #headmain .btn {
     display: inline; }
   #home-banner #features-list {
