@@ -6,17 +6,18 @@
 <html lang="en" class="" prefix="og: http://ogp.me/ns#">
 <!--<![endif]-->
 
+
 <head>
 
 <meta charset="utf-8">
 
 <! -- About the Article //-->
-<title>Woopie Help Documentation</title>
-<meta name="description" content="Introduction to Woopie Help Documentation" />
-<meta name="author" content="Stewart Curry">
+<title>Contents</title>
+<meta name="description" content="DESCRIPTION" />
+<meta name="author" content="Firstname Lastname">
 
 <meta property="og:site_name" content="woop.ie" />
-<meta property="og:title" content="Cover" />
+<meta property="og:title" content="Table of Contents" />
 <meta property="og:description" content="DESCRIPTION" />
 <meta property="og:article:author" content="AUTHORURL" />
 <meta property="og:article:section" content="Section" />
@@ -37,7 +38,7 @@
 <! -- Stylesheets //-->
 <link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
 <link href="stylesheets/theme.css" rel="stylesheet" />
-<link href="frontcover/styles.css" rel="stylesheet" />
+<link href="article/styles.css" rel="stylesheet" />
 <link href="stylesheets/print.css" rel="stylesheet" />
 <!--[if IE]>
 	<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -49,30 +50,78 @@
 
 </head>
 
-<body class="page" id="frontcover">
-<img src="articleContent/53/cover-help-bg.jpg" id="bg" alt="None"/>
+
+<body class="page" id="contents">
 
 
 
 <!-- START main wrapper //-->
 <div id="wrapper">
 
+<!-- START top bar //-->
+<div id="top-bar" class="group">
+
+	<!-- START top bar navigation //-->
+	<nav role="navigation" id="top-nav" class="button-links">
+		<ul>
+			<li id="top-nav-cover"><a href="index.html"><i class="icon icon-cover"></i> <b>Cover</b></a></li>
+			<li id="top-nav-contents"><a href="contents.html" class="cont"><i class="icon icon-contents"></i> <b>Contents</b>
+				<nav id="cont-dropdown"><span data-src="inc/toc.html">[toc]</span></nav>
+			</a>
+			</li>
+		</ul>
+	</nav>
+	<!-- END top bar navigation //-->
+	
+	<h1 id="top-title">Woopie</h1>
+	
+	<!-- START top social navigation //-->
+    
+	<!-- END top social navigation //-->
+
+</div><!-- END top bar //-->
+
+
 
 <!-- START article heading //-->
-<header role="banner" id="frontcover-heading" class="group go-middle">
+<header role="banner" id="intro-heading" class="group noimage">
+
+	<div class="titles">
+		<h1>Woopie</h1>
+		<p class="subtitle">Woopie Help</p>
+	</div>
 	
-	<a href="feature_60.html">
-	<!-- START main image //-->
-	<div id="frontcover-image"><h1><img src="articleContent/53/cover-help-badge.png" width="100%" alt="None"></h1></div>
-	<!-- END main image //-->
-	</a>
-
 </header>
-
 <!-- End article heading //-->
+
+<!-- START article //-->
+<article role="main" id="contents-body">
+
+    <!-- START table of contents // -->
+    <nav role="toc" id="contents-listing">
+	    <span data-src="inc/toc.html">[toc]</span>
+    </nav>
+    <!-- END table of contents // -->
+
+	<!-- START end social tools //-->
+    
+	<!-- END end social tools //-->
+
+		
+</article>
+<!-- END article //-->
+	
+<footer role="contentinfo" id="publication-footer">
+	<span data-src="inc/footer.html">[footer]</span>
+</footer>
+
 
 </div><!-- END main wrapper //-->
 
+
+<!-- START Modal windows for Social & Sharing //-->
+
+<!-- END Modal windows for Social & Sharing //-->
 
 <!-- jQuery plugins, CDN and fallback //-->
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -81,8 +130,19 @@ if (typeof jQuery == 'undefined') {
     document.write(unescape("%3Cscript src='js/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
 }
 </script>
-<script type="text/javascript" src="js/scripts-combined.js"></script>
-<script type="text/javascript" src="js/debug.js"></script>
+	<script type="text/javascript" src="js/scripts-combined.js"></script>
+	<script type="text/javascript" src="js/debug.js"></script>
+
+<!-- Facebook Code //-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=117684858358873";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <!-- Google Analytics -->
 <script>
