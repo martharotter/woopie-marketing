@@ -1,0 +1,1289 @@
+/* Woopie framework 0.3 */
+/* ePub Theme - Pull in relevant template files, set elements values */
+/* Woopie framework 0.3 */
+/* Variables - define widths, colors, font families etc. */
+/* Measurements */
+/* Set a base scale */
+/* Left and right spacing */
+/* Specific left and right spacing for wider screens */
+/* Indent for wider screens */
+/* Main image sizing */
+/* Fonts */
+.font1 {
+  font-family: "Noto Sans", "HelveticaNeue", sans-serif; }
+
+.font2 {
+  font-family: "Noto Serif", Georgia, serif; }
+
+.font3 {
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif; }
+
+/* Type */
+/* Color Set */
+/* Grey - Main text color */
+/* Blue - Secondary text color */
+/* Green - Highlight color */
+/* Red - Highlight color */
+/* Yellow - Highlight color */
+/* White - Inverse(ish) Main text color */
+/* Grey - Inverse(ish) Secondary text color */
+.color1 {
+  color: #222222 !important; }
+
+.color2 {
+  color: #00afbe !important; }
+
+.color3 {
+  color: #1bad3e !important; }
+
+.color4 {
+  color: #d22228 !important; }
+
+.revcolor1 {
+  color: white !important; }
+
+.revcolor2 {
+  color: #dfdbd0 !important; }
+
+.color1-bg {
+  background-color: #222222 !important; }
+
+.color2-bg {
+  background-color: #00afbe !important; }
+
+.color3-bg {
+  background-color: #1bad3e !important; }
+
+.color4-bg {
+  background-color: #d22228 !important; }
+
+.revcolor1-bg {
+  background-color: white !important; }
+
+.revcolor2-bg {
+  background-color: #dfdbd0 !important; }
+
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.allcaps {
+  text-transform: uppercase; }
+
+/* Colors */
+/* Page colors */
+/* Top bar */
+/* Titles */
+/* Links */
+/* Woopie framework 0.3 */
+/* Mixins - useful shortcuts and tools */
+/* Woopie framework 0.3 */
+/* Wrapper stylesheet */
+#wrapper {
+  margin: 0;
+  padding: 0; }
+
+/* Containers */
+/* Woopie framework 0.1 */
+/* Fonts - Modern Pictograms */
+/* @font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../../fonts/modernpics-webfont.eot');
+    src: url('../../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/modernpics-webfont.woff') format('woff'),
+         url('../../fonts/modernpics-webfont.ttf') format('truetype'),
+         url('../../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+/* Icons - icon typeface */
+/* Woopie framework 0.3 */
+/* Global content blocks - Base Styles */
+.content-block {
+  margin: 0 0 36px 0;
+  /* Start Blockquote */
+  /* End Blockquote */
+  /* Tooltips */
+  /* Tables*/
+  /* Report Tables	*/
+  /* Size things */ }
+  .content-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content-block h1 {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0 0 18px 0;
+    font-weight: bold;
+    font-style: normal;
+    text-rendering: optimizeLegibility; }
+  .content-block h2 {
+    font-family: "Noto Serif", Georgia, serif;
+    font-size: 1.75em;
+    line-height: 1;
+    margin: 0 0 18px 0;
+    font-weight: normal;
+    font-style: normal; }
+  .content-block h3 {
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 0 0 18px 0; }
+  .content-block h4 {
+    color: #222222;
+    font-size: 1.25em;
+    line-height: 1;
+    margin: 0 0 18px 0; }
+  .content-block p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 18px 0; }
+  .content-block pre {
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+    background: #dfdbd0;
+    border: 1px inset #dfdbd0;
+    box-shadow: inset 1px 1px 5px #b6ad93;
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 18px;
+    white-space: pre-wrap; }
+  .content-block ul, .content-block ol {
+    margin: 0 0 27px 27px;
+    padding: 0; }
+  .content-block li {
+    font-size: 1em;
+    line-height: 1.75;
+    margin: 0 0 4.5px 0;
+    padding: 0; }
+    .content-block li ul, .content-block li ol {
+      margin: 9px 0 0 36px;
+      padding: 0; }
+  .content-block ul li, .content-block ol ul li {
+    list-style: square; }
+  .content-block ol li, .content-block ul ol li {
+    list-style: decimal; }
+  .content-block sup {
+    font-size: 9px; }
+  .content-block abbr {
+    border-bottom: 1px dotted #00afbe;
+    cursor: help; }
+  .content-block blockquote, .content-block quote {
+    border: 1px solid #00afbe;
+    border-width: 2px 0 1px 0;
+    margin: 0 0 18px 0;
+    padding: 18px 0;
+    page-break-inside: avoid; }
+  .content-block blockquote p {
+    font-family: "Noto Serif", Georgia, serif;
+    font-style: italic; }
+  .content-block blockquote cite {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    font-style: normal;
+    color: #00afbe;
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .content-block blockquote cite:before {
+    content: "— ";
+    opacity: 0.5; }
+  .content-block .tooltip {
+    border-bottom: 1px dotted #d22228; }
+  .content-block table {
+    border-collapse: collapse;
+    margin: 0 0 36px 0;
+    padding: 0;
+    width: 100%; }
+    .content-block table caption {
+      text-align: left;
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 0 0 18px 0;
+      font-weight: bold;
+      font-style: normal; }
+    .content-block table th, .content-block table td {
+      border-bottom: 1px solid #a2a2a2;
+      padding: 9px 9px 9px 0;
+      font-size: 1em;
+      line-height: 1.25;
+      margin: 0 0 18px 0;
+      vertical-align: top; }
+    .content-block table th {
+      text-align: left;
+      vertical-align: bottom; }
+    .content-block table thead th {
+      border-bottom: 1px solid #090909; }
+  .content-block .footable .footable-row-detail-inner div {
+    margin-bottom: 4.5px; }
+  .content-block .report th, .content-block .report td {
+    border: none;
+    vertical-align: top; }
+  .content-block .report .right {
+    padding: 9px 0 9px 9px;
+    text-align: right; }
+  .content-block .report .level1 {
+    padding-left: 18px; }
+  .content-block .report .level2 {
+    padding-left: 36px; }
+  .content-block .report .level3 {
+    padding-left: 54px; }
+  .content-block .report .singleLine {
+    border-bottom: 1px solid #a2a2a2; }
+  .content-block .report .doubleLine {
+    border-bottom: 2px double #a2a2a2; }
+  .content-block .tiny {
+    width: 72px; }
+  .content-block .small {
+    width: 144px; }
+  .content-block .medium {
+    width: 288px; }
+  .content-block .large {
+    width: 432px; }
+
+/* Base HTML formating */
+/* Woopie framework 0.3 */
+/* Titles - Base Styles */
+/* Intro Headings */
+#intro-heading hgroup {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  z-index: 0; }
+#intro-heading h1 {
+  color: #222222;
+  font-size: 2em;
+  line-height: 1.25;
+  margin: 0 0 27px 0;
+  font-weight: bold;
+  font-style: normal;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif; }
+#intro-heading h2 {
+  color: #555555;
+  font-size: 1.5em;
+  line-height: 1.25;
+  margin: 0 0 18px 0;
+  font-weight: normal;
+  font-style: normal;
+  padding: 0 0 18px 0;
+  font-family: "Noto Serif", Georgia, serif; }
+#intro-heading h3 {
+  background: #fcee24;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 0 18px 0;
+  padding: 9px 18px; }
+  #intro-heading h3 b {
+    color: #222222;
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    font-weight: bold;
+    padding: 0 9px 0 0; }
+  #intro-heading h3 i {
+    color: #222222;
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    font-style: normal; }
+#intro-heading #main-image {
+  margin: 0 0 18px 0; }
+  #intro-heading #main-image img {
+    display: block;
+    width: 100%; }
+#intro-heading.noimage {
+  margin-top: 36px; }
+
+/* Top of page */
+/* Woopie framework 0.3 */
+/* Introduction section - Base Styles */
+#intro-section p {
+  font-size: 1.25em;
+  line-height: 1.5;
+  margin: 0 0 36px 0;
+  font-weight: normal;
+  font-style: italic; }
+#intro-section ul {
+  margin: 0;
+  padding: 0; }
+  #intro-section ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 18px 0; }
+
+/* Credits */
+#credits {
+  margin: 0 0 18px 0; }
+
+#roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 36px 0;
+  clear: both;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+  width: 100%; }
+  #roles dt {
+    color: #222222;
+    float: left;
+    font-weight: bold;
+    margin: 0 18px 0 0;
+    padding: 0; }
+  #roles dd {
+    margin: 0;
+    padding: 0;
+    color: #222222; }
+
+/* Issue Info */
+#issue {
+  margin: 18px 36px; }
+
+#edition {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+  padding: 0 0 36px 0;
+  width: 100%; }
+  #edition dt {
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #edition dd {
+    float: left;
+    margin: 0 36px 0 9px;
+    padding: 0 9px; }
+
+/* Roles & Credits */
+/* Woopie framework 0.3 */
+/* Global content blocks - Base Styles */
+.content-block {
+  /* Side Elements */
+  /* Fixed Background Callout */
+  /* Callout Image with text */
+  /* Callout Box */ }
+  .content-block .media-element-side, .content-block .media-element-full {
+    margin: 0 0 36px 0;
+    padding: 0;
+    page-break-inside: avoid;
+    position: relative;
+    text-align: left; }
+    .content-block .media-element-side img, .content-block .media-element-side video, .content-block .media-element-side audio, .content-block .media-element-full img, .content-block .media-element-full video, .content-block .media-element-full audio {
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+  .content-block figcaption, .content-block .caption {
+    margin: 0;
+    padding: 9px 0;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif; }
+    .content-block figcaption h3, .content-block .caption h3 {
+      font-weight: bold; }
+    .content-block figcaption p, .content-block .caption p {
+      margin: 0; }
+    .content-block figcaption code, .content-block .caption code {
+      font-style: normal; }
+  .content-block .fixedsize {
+    width: 100%;
+    margin: 0 0 18px 0; }
+    .content-block .fixedsize img {
+      width: auto;
+      margin: 0; }
+    .content-block .fixedsize figcaption {
+      background: none;
+      padding: 9px 0;
+      text-align: left;
+      width: 100%; }
+  .content-block .fig-image-zoom {
+    background: #222222;
+    color: white;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 4em;
+    line-height: 1;
+    margin: 0 0 0px 0;
+    padding: 0 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  .content-block .fixed-bg {
+    background-color: #222222;
+    background-size: cover;
+    background-position: center center;
+    border: none;
+    display: block;
+    clear: both;
+    color: #fff;
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    padding: 72px;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 36px 0;
+    font-weight: bold;
+    font-style: normal;
+    margin: 36px -36px; }
+  .content-block .callout-image {
+    background: #00afbe;
+    clear: both;
+    margin: 0 0 36px 0;
+    page-break-before: always;
+    page-break-after: avoid; }
+    .content-block .callout-image img {
+      width: 100%;
+      margin: 0; }
+    .content-block .callout-image .caption {
+      background: transparent; }
+      .content-block .callout-image .caption p {
+        padding: 18px;
+        font-size: 1.5em;
+        line-height: 1.25;
+        margin: 0 0 0px 0;
+        font-weight: normal;
+        font-style: normal;
+        color: white; }
+  .content-block .callout-box {
+    border: 2px solid #00afbe;
+    clear: both;
+    padding: 18px;
+    padding-bottom: 0;
+    margin: 0 0 36px 0;
+    page-break-before: always;
+    page-break-after: avoid; }
+    .content-block .callout-box ul, .content-block .callout-box ol {
+      margin-left: 36px; }
+
+/* Media Elements */
+/* Woopie framework 0.3 */
+/* Credits - Base Styles */
+.colophon h1 {
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 2em;
+  line-height: 2.5;
+  margin: 0 0 0px 0; }
+
+#article-body .copyinfo {
+  font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+  font-style: italic; }
+
+#colophon-listing {
+  margin: 18px 0; }
+
+#colophon-roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%; }
+  #colophon-roles dt {
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    margin: 9px 18px 0 0;
+    padding: 0; }
+  #colophon-roles dd {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    margin: 0;
+    padding: 0; }
+    #colophon-roles dd a {
+      font-style: italic; }
+
+/* Extra elements */
+/* Woopie framework 0.3 */
+/* Footnotes - Base Styles */
+#footnotes {
+  counter-reset: notes; }
+  #footnotes p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 18px 0; }
+    #footnotes p:before {
+      counter-increment: notes;
+      content: "[" counter(notes) "] "; }
+
+.content-block .footnote-ref {
+  font-size: 0.75em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  margin: 0 0 0 1.8px; }
+  .content-block .footnote-ref a:before {
+    content: "["; }
+  .content-block .footnote-ref a:after {
+    content: "]"; }
+
+.footnotelink:before {
+  content: "["; }
+.footnotelink:after {
+  content: "]"; }
+
+/* Woopie framework 0.3 */
+/* scrollbox - Base Styles */
+.scroll-box {
+  clear: right;
+  float: right;
+  margin: 0 0 18px 36px;
+  page-break-inside: avoid;
+  position: relative; }
+  .scroll-box ::-webkit-scrollbar {
+    width: 22.5px;
+    opacity: 0.5; }
+  .scroll-box ::-webkit-scrollbar-track {
+    background: #151515; }
+  .scroll-box ::-webkit-scrollbar-thumb {
+    background: black;
+    border: 3px solid #151515;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+  .scroll-box .scroll-icon {
+    background: url(../images/scroll-icon.png) rgba(0, 0, 0, 0.5) no-repeat 1px 0;
+    background-size: 18px 18px;
+    width: 22.5px;
+    height: 22.5px;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .scroll-box .scroll-body img {
+    display: block;
+    margin: 0 0 18px 0;
+    width: 100%; }
+  .scroll-box .scroll-body p {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif; }
+
+.scroll-box {
+  width: 100%;
+  height: auto; }
+  .scroll-box .scroll-body {
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto; }
+  .scroll-box .scroll-icon {
+    display: none; }
+
+/* Woopie framework 0.3 */
+/* Card Flip - Base Styles */
+.flippers {
+  position: relative;
+  clear: both; }
+
+.flipper {
+  border: 1px solid #dfdbd0;
+  margin: 0 0 36px 0; }
+
+.flipper article {
+  padding: 18px; }
+  .flipper article ul {
+    margin-left: 18px; }
+  .flipper article img {
+    max-height: 200px;
+    max-width: 100%; }
+
+/* Woopie framework 0.3 */
+/* FORM - Base Styles */
+.form {
+  background: white;
+  border: 9px solid #dfdbd0;
+  border-bottom: 0;
+  -webkit-box-shadow: 1px 1px 2px 1px #bbbbbb;
+  -moz-box-shadow: 1px 1px 2px 1px #bbbbbb;
+  box-shadow: 1px 1px 2px 1px #bbbbbb;
+  margin-bottom: 36px; }
+  .form .form-line {
+    border-bottom: 1px dotted #dfdbd0;
+    padding: 18px; }
+  .form .form-inline {
+    clear: both; }
+    .form .form-inline label {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      width: 144px; }
+    .form .form-inline input, .form .form-inline select {
+      margin: 0;
+      font-family: "Noto Serif", Georgia, serif; }
+  .form .form-full {
+    clear: both; }
+    .form .form-full label {
+      display: block;
+      margin: 0 0 9px 0; }
+    .form .form-full textarea {
+      margin: 0;
+      width: 100%;
+      font-family: "Noto Serif", Georgia, serif; }
+  .form h1 {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 18px 0; }
+  .form .explanation {
+    background: #61e681;
+    margin: 0;
+    padding: 18px; }
+  .form .form-inline input, .form .form-inline textarea, .form .form-full input, .form .form-full textarea {
+    border: 1px solid #a2a2a2;
+    padding: 9px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .form .form-controls {
+    background: #dfdbd0;
+    padding: 18px;
+    margin: 0; }
+
+.content-block .switching {
+  margin: 0 0 18px 0;
+  padding: 0 0 18px 0;
+  border-bottom: 1px solid #cac4b2; }
+.content-block button, .content-block .btn {
+  background: #cac4b2;
+  border: none;
+  color: #555555;
+  display: inline-block;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+  margin: 0;
+  padding: 9px 18px;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 0 0px 0;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase; }
+  .content-block button:hover, .content-block .btn:hover {
+    background: #aba184; }
+.content-block .btn-submit {
+  background: #d22228;
+  color: white;
+  font-weight: bold; }
+  .content-block .btn-submit:hover {
+    background: #a61b20; }
+.content-block .btn-helper {
+  background: #1bad3e;
+  color: white; }
+  .content-block .btn-helper:hover {
+    background: #14812e; }
+
+/* Woopie framework 0.3 */
+/* QUIZ - Base Styles */
+.correct {
+  color: #2fbe76; }
+
+.incorrect {
+  color: #ae1717; }
+
+.content-block .quiz-single, .content-block .quiz-multiple, .content-block .quiz-text {
+  page-break-inside: avoid; }
+  .content-block .quiz-single p, .content-block .quiz-multiple p, .content-block .quiz-text p {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    padding: 18px;
+    margin: 0; }
+    .content-block .quiz-single p.quiz-question, .content-block .quiz-multiple p.quiz-question, .content-block .quiz-text p.quiz-question {
+      font-weight: bold; }
+  .content-block .quiz-single label, .content-block .quiz-multiple label, .content-block .quiz-text label {
+    margin: 0;
+    padding: 0; }
+  .content-block .quiz-single ul, .content-block .quiz-multiple ul, .content-block .quiz-text ul {
+    padding: 0 36px; }
+    .content-block .quiz-single ul li, .content-block .quiz-multiple ul li, .content-block .quiz-text ul li {
+      margin: 0;
+      padding: 0; }
+  .content-block .quiz-single .quiz-answerbox, .content-block .quiz-multiple .quiz-answerbox, .content-block .quiz-text .quiz-answerbox {
+    border: 1px solid #a2a2a2;
+    padding: 9px;
+    margin: 0 0 18px 18px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+  .content-block .quiz-single .quiz-help p, .content-block .quiz-multiple .quiz-help p, .content-block .quiz-text .quiz-help p {
+    border-bottom: 9px solid #dfdbd0; }
+.content-block .quiz-option label {
+  padding-left: 10px;
+  padding-right: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 5px; }
+.content-block input[type="text"].quiz-correct, .content-block textarea.quiz-correct {
+  background-color: #2fbe76;
+  border-color: #1b6c43;
+  color: white; }
+.content-block input[type="text"].quiz-wrong, .content-block textarea.quiz-wrong {
+  background-color: #ae1717;
+  border-color: #540b0b;
+  color: white; }
+.content-block .quiz-correct label {
+  background-color: #2fbe76;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .content-block .quiz-correct label:after {
+    background: #25955d;
+    color: white;
+    content: "Correct";
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0 18px;
+    padding: 3px 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+.content-block .quiz-wrong label {
+  background-color: #ae1717;
+  color: white;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .content-block .quiz-wrong label:after {
+    background: #811111;
+    color: white;
+    content: "Incorrect";
+    font-weight: bold;
+    font-style: italic;
+    margin: 0 0 0 18px;
+    padding: 3px 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+
+/* Woopie framework 0.3 */
+/* Sidebar - Base Styles */
+.content-block .sidebar {
+  border: 1px solid #dfdbd0;
+  margin: 0 0 18px 18px;
+  padding: 9px;
+  float: right;
+  width: 108px; }
+  .content-block .sidebar img {
+    width: 100%;
+    margin: 0 0 9px 0; }
+  .content-block .sidebar h3 {
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    font-size: 0.9em;
+    line-height: 1.25;
+    margin: 0 0 9px 0;
+    font-weight: normal;
+    font-style: normal; }
+    .content-block .sidebar h3 b {
+      color: #00afbe;
+      text-transform: none;
+      font-weight: normal;
+      padding: 0 4px; }
+  .content-block .sidebar h4 {
+    font-family: "Noto Serif", Georgia, serif;
+    font-size: 0.8em;
+    line-height: 1.25;
+    margin: 0 0 9px 0;
+    font-weight: normal;
+    font-style: italic;
+    text-transform: none; }
+  .content-block .sidebar p {
+    margin: 0;
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    font-size: 0.75em;
+    line-height: 1.25;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: normal;
+    color: #555555; }
+  .content-block .sidebar:hover h3 b {
+    color: #1bad3e; }
+
+/* Woopie framework 0.3 */
+/* Advert - Base Styles */
+#advert {
+  background: #333333 url(../../images/kitten.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #advert .adblock {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    #advert .adblock p {
+      margin: 0;
+      padding: 0; }
+  #advert #publication-footer {
+    color: white; }
+
+#advert #end-nav ul a {
+  border: none; }
+#advert #end-nav hgroup h1, #advert #end-nav hgroup h2 {
+  color: #fff; }
+
+/* Page types */
+/* Woopie framework 0.3 */
+/* Article - Base Styles */
+#article-body {
+  margin: 0; }
+  #article-body section {
+    margin: 0 0 54px 0; }
+
+/* Woopie framework 0.3 */
+/* Contents - Base Styles */
+#contents-body {
+  margin: 0; }
+
+#contents-listing ol {
+  margin: 0 0 36px 0;
+  padding: 0;
+  list-style: none; }
+  #contents-listing ol li {
+    margin: 0;
+    padding: 0; }
+    #contents-listing ol li h2 {
+      font-size: 1.25em;
+      line-height: 1.5;
+      margin: 0 0 0px 0;
+      font-weight: bold;
+      font-style: normal;
+      padding: 13.5px 0;
+      font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif; }
+    #contents-listing ol li ol li a {
+      display: block;
+      margin: 0;
+      padding: 18px 0; }
+      #contents-listing ol li ol li a h3 {
+        font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 1.25em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        font-weight: bold;
+        font-style: normal; }
+      #contents-listing ol li ol li a i {
+        font-family: "Noto Serif", Georgia, serif; }
+      #contents-listing ol li ol li a em {
+        font-family: "Noto Serif", Georgia, serif; }
+      #contents-listing ol li ol li a p {
+        font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+        margin: 18px 0 0 0;
+        padding: 0; }
+      #contents-listing ol li ol li a:hover h3, #contents-listing ol li ol li a:hover i, #contents-listing ol li ol li a:hover em, #contents-listing ol li ol li a:hover p {
+        color: #00afbe; }
+
+/* Woopie framework 0.3 */
+/* Front cover - Base Styles */
+#divider #end-nav, #divider #publication-footer {
+  display: none; }
+
+#divider-image {
+  display: block;
+  margin: 0 0 18px 0;
+  width: 100%; }
+
+#divider-heading {
+  margin: 0;
+  padding: 18px; }
+  #divider-heading h1 {
+    font-size: 2em;
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif; }
+  #divider-heading h2 {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+    font-family: "Noto Serif", Georgia, serif; }
+    #divider-heading h2 i {
+      padding: 0 18px 0 0; }
+
+.divider-content {
+  padding: 0 18px; }
+
+.divider-box a {
+  color: white; }
+
+#divider-link {
+  background: black;
+  display: block;
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 22.5px;
+  text-align: center;
+  margin: 9px 0 0 0;
+  padding: 4.5px 0;
+  opacity: 0.5; }
+  #divider-link:hover, #divider-link:focus {
+    background: #00afbe;
+    opacity: 0.75; }
+
+/* Woopie framework 0.3 */
+/* Front cover - Base Styles */
+#frontcover {
+  background: #333333 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #frontcover #top-bar, #frontcover #end-nav, #frontcover #publication-footer {
+    display: none; }
+  #frontcover #wrapper {
+    display: table; }
+
+#frontcover-heading {
+  padding: 18px; }
+  #frontcover-heading img {
+    width: 100%; }
+
+#frontcover-items {
+  color: #fff;
+  width: 100%; }
+  #frontcover-items p a {
+    display: block; }
+    #frontcover-items p a:hover {
+      text-decoration: underline; }
+
+#linkthrough {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 100; }
+  #linkthrough:hover {
+    border: 2px solid rgba(255, 255, 255, 0.75); }
+
+.go-middle {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+/* Woopie framework 0.3 */
+/* TEMPLATE - Base Styles */
+#gallery-body {
+  margin: 0; }
+
+.gallery-images {
+  margin: 18px 0 0 0;
+  padding: 0; }
+  .gallery-images section {
+    margin: 0 0 72px 0;
+    padding: 0; }
+    .gallery-images section img {
+      display: block;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+    .gallery-images section .imageinfo {
+      margin: 0; }
+      .gallery-images section .imageinfo p {
+        font-family: "Noto Serif", Georgia, serif;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 0 18px 0;
+        margin: 0 0 9px 0;
+        padding: 9px 0 0 0; }
+      .gallery-images section .imageinfo dl {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        line-height: 1.5;
+        margin: 0 0 0px 0;
+        font-family: "Noto Serif", Georgia, serif;
+        width: 100%; }
+        .gallery-images section .imageinfo dl dt {
+          float: left;
+          font-weight: bold;
+          margin: 0 18px 0 0;
+          padding: 0; }
+        .gallery-images section .imageinfo dl dd {
+          margin: 0;
+          padding: 0; }
+
+/* Woopie framework 0.3 */
+/* Listing - Base Styles */
+#listing-body {
+  margin: 0; }
+  #listing-body .events-listing h1 {
+    clear: both; }
+
+.item-graphic {
+  text-align: center;
+  position: relative; }
+  .item-graphic img {
+    display: block;
+    margin: 0 0 9px 0;
+    padding: 0;
+    width: 100%; }
+  .item-graphic .caption p {
+    font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+    font-size: 1em;
+    line-height: 1.25;
+    margin: 0 0 0px 0; }
+  .item-graphic b {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 9px;
+    background: #00afbe;
+    border-bottom: 2px solid #00808b;
+    color: white;
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 0 0px 0; }
+
+.content-block .grp-item {
+  margin: 0 0 36px 0;
+  padding: 0; }
+  .content-block .grp-item li {
+    list-style: none; }
+  .content-block .grp-item .grp-name {
+    font-weight: bold; }
+
+/* Ratings */
+.rating {
+  font-family: "ModernPictogramsNormal", Arial, Serif;
+  font-size: 2em;
+  line-height: 2;
+  margin: 0 0 0px 0; }
+
+.rating b {
+  color: #00afbe; }
+
+/* item Elements */
+.content-block .item-location {
+  text-transform: none; }
+.content-block .item-date {
+  font-style: italic;
+  font-size: 1.25em;
+  line-height: 1;
+  margin: 0 0 18px 0; }
+.content-block .item-credits {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif; }
+  .content-block .item-credits dt {
+    float: left;
+    font-weight: bold;
+    margin: 0 18px 0 0;
+    padding: 0; }
+  .content-block .item-credits dd {
+    margin: 0;
+    padding: 0; }
+.content-block .item-button {
+  margin: 0 0 36px 0; }
+  .content-block .item-button .btn {
+    display: inline-block;
+    font-family: "Noto Serif", Georgia, serif;
+    font-weight: bold;
+    background: #00afbe;
+    color: white; }
+    .content-block .item-button .btn:hover {
+      background: #00808b; }
+  .content-block .item-button i {
+    font-style: normal;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 27px; }
+  .content-block .item-button a[itemprop="url"] {
+    margin-left: 36px; }
+.content-block .item-social {
+  clear: both;
+  min-height: 36px; }
+  .content-block .item-social .fb-follow {
+    float: left;
+    margin: -2px 18px 0 0; }
+  .content-block .item-social .twitter-follow-button {
+    float: left; }
+
+/* Woopie framework 0.3 */
+/* Base stylesheet - epub specifics */
+/* Basic Stuff  */
+#wrapper {
+  font-family: "Noto Serif", Georgia, serif;
+  font-size: 11pt;
+  background-color: #fff;
+  color: #222222; }
+
+/* link colors */
+a {
+  text-decoration: none;
+  -webkit-text-fill-color: #00afbe; }
+
+.btn {
+  text-decoration: none;
+  -webkit-text-fill-color: #222222; }
+
+.btn-submit {
+  text-decoration: none;
+  -webkit-text-fill-color: white; }
+
+/* SLides */
+.content-block .slides {
+  margin: 0;
+  padding: 0; }
+  .content-block .slides li {
+    margin: 0 0 18px 0;
+    padding: 0;
+    list-style: none; }
+    .content-block .slides li img {
+      display: block;
+      width: 100%;
+      margin: 0; }
+    .content-block .slides li .flex-caption {
+      margin: 9px 0 36px 0; }
+
+/* Hide from ePub */
+.swipe-icon, .fig-image-zoom {
+  display: none; }
+
+/* Woopie framework 0.3 */
+/* CLASSIC - Base Styles */
+/* Nav */
+#top-social {
+  position: absolute;
+  right: 100%;
+  display: none; }
+
+#top-title {
+  left: 100%;
+  width: 360px;
+  margin-left: -360px;
+  padding-right: 18px;
+  text-align: right; }
+
+/* Content */
+.content-block {
+  /* Callout Media */ }
+  .content-block h2 {
+    color: #555555; }
+  .content-block h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #00afbe; }
+  .content-block h4 {
+    font-size: 1em;
+    line-height: 1;
+    margin: 0 0 9px 0;
+    font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+    text-transform: uppercase;
+    color: #222222; }
+  .content-block pre {
+    background-color: #f4f2ee;
+    border: none; }
+  .content-block .media-element-full figcaption, .content-block .media-element-full .section-caption, .content-block .media-element-side figcaption, .content-block .media-element-side .section-caption {
+    font-family: "Noto Serif", Georgia, serif; }
+  .content-block .media-element-full {
+    background: #dfdbd0;
+    border: 19px solid #dfdbd0;
+    clear: both;
+    position: relative;
+    margin: 0 0 54px 0; }
+    .content-block .media-element-full .caption {
+      padding: 18px 0 0 0; }
+      .content-block .media-element-full .caption h3 {
+        border-bottom: 1px solid #b6ad93;
+        color: #222222;
+        font-style: normal;
+        text-transform: none;
+        margin: 9px 0;
+        padding: 0 0 9px 0; }
+      .content-block .media-element-full .caption p {
+        font-family: "Noto Serif", Georgia, serif;
+        margin: 0; }
+    .content-block .media-element-full audio {
+      padding: 0 0 0 18px; }
+    .content-block .media-element-full audio + .caption p {
+      padding-left: 18px; }
+    .content-block .media-element-full.fixedsize {
+      border: 0;
+      background: none; }
+  .content-block .fixed-bg {
+    font-family: "Noto Serif", Georgia, serif;
+    font-style: italic; }
+  .content-block .callout-box {
+    background: #eee;
+    border: none;
+    padding-bottom: 18px; }
+    .content-block .callout-box h1 {
+      background: #d22228;
+      color: white;
+      font-weight: normal;
+      font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      padding: 18px; }
+  .content-block .form {
+    border-color: #f4f2ee; }
+    .content-block .form .explanation {
+      background: #f4f2ee; }
+  .content-block .form-controls {
+    background: #f4f2ee; }
+  .content-block .btn-submit {
+    background: #00afbe; }
+  .content-block .quiz-single .quiz-help p, .content-block .quiz-multiple .quiz-help p, .content-block .quiz-text .quiz-help p {
+    border-bottom: 9px solid #f4f2ee; }
+
+/* Contributors */
+.contributor h2 {
+  font-weight: bold;
+  text-transform: uppercase; }
+
+/* Flippers */
+.content-block .side h1 {
+  border-bottom: 1px solid #00afbe;
+  font-size: 13.5px;
+  font-family: "Oswald", "HelveticaNeue-CondensedBold", sans-serif;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  color: #626262; }
+.content-block .side h2 {
+  font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+  font-weight: normal; }
+.content-block .side .back h1 {
+  border-bottom-color: #d22228; }
+
+.flexslider {
+  border-width: 19px;
+  position: relative; }
+
+.scroll-box ::-webkit-scrollbar-thumb {
+  background: #00afbe; }
+
+.number-highlight b {
+  background: #dfdbd0;
+  color: white;
+  display: inline-block;
+  font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+  padding: 2px 6px; }
+
+.content-block .number-highlight-list {
+  counter-reset: li; }
+.content-block .number-highlight-list > li {
+  position: relative;
+  list-style: none; }
+.content-block .number-highlight-list > li:before {
+  background: #d22228;
+  color: white;
+  content: counter(li);
+  counter-increment: li;
+  font-family: "Noto Sans", "HelveticaNeue", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: -2px;
+  left: -36px;
+  width: 22.5px;
+  margin-right: 9px;
+  padding: 2px;
+  text-align: center; }
+
+p:hover .number-highlight, h3:hover .number-highlight {
+  border-bottom: 1px solid #d22228; }
+  p:hover .number-highlight b, h3:hover .number-highlight b {
+    background: #d22228;
+    color: white; }
+
+.mediaicon {
+  display: none; }
