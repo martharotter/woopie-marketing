@@ -1804,6 +1804,14 @@ body#casestudy {
   .feature p, .feature li {
     font-size: 16px; }
 
+.flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
+    opacity: 0;
+}
+.flexslider:hover .flex-prev, .flexslider:hover .flex-next {
+    opacity: 0;
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover { opacity: 0; }
+
 #home-examples {
   border-top: 1px solid #e7e7e7;
   clear: both; }

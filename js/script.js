@@ -17,12 +17,70 @@ $(document).ready(function() {
         window.open( $(this).attr('href') );
         return false;
     });
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() < 100) {
+            $("#top-logo").removeClass("showme");
+        }
+        else {
+            $("#top-logo").addClass("showme");
+        }
+    });
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshowSpeed: 5000
+    });
+
+    $('a[rel*=leanModal]').leanModal({ top: 100 });		
 });
+
+
+// google analytics 
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments);},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-28531592-1', 'woop.ie');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+$('#purechat-name-submit').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'submit_purechat_request');
+});
+$('#submit_beta').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'submit_beta_form');
+});
+$('#downloadSpotifyEpub').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_spotify_epub');
+});
+$('#downloadSpotifyMobi').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_spotify_mobi');
+});
+$('#downloadMovieEpub').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_movies_epub');
+});
+$('#downloadMovieMobi').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_movies_mobi');
+});
+
+// facebook connect
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=315222535232576";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+// chat widget
+(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://www.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '16804ef1-9422-406c-a0b5-98a07e24dd87', f: true }); done = true; } }; })();
 
 // the modal window html
 var logos = '<h2>Looking for our Logo? <span class="close btn btn-info">x</span></h2>';
 logos += '<p>View our press page for high-res downloads of our logos and images</p>';
-logos += '<a href="press.html" class="btn btn-success getlogos">Get Logos and Images</a>'
+logos += '<a href="press.html" class="btn btn-success getlogos">Get Logos and Images</a>';
 
 
 function showPressModal() {
