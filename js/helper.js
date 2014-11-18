@@ -266,8 +266,7 @@ MBP.autogrow = function (element, lh) {
                    parseInt(textLineHeight, 10);
 
   element.style.overflow = "hidden";
-  element.addEventListener ? element.addEventListener('keyup', handler, false) :
-                             element.attachEvent('onkeyup', handler);
+  element.addEventListener ? element.addEventListener('keyup', handler, false) : element.attachEvent('onkeyup', handler);
 };
 
 

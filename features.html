@@ -19,8 +19,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/css/stylesheet.min.css">
-<link rel="stylesheet" href="/css/flexslider.min.css">
+<link rel="stylesheet" href="/css/combined.min.css">
 <style>
 .flex-control-nav {width: 100%; position: absolute; bottom: 40px; }
 </style>
@@ -31,12 +30,13 @@
 
 <!-- JavaScript -->
 <script src="//cdn.optimizely.com/js/501341344.js"></script>
-<script src="/js/modernizr-2.5.3-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="/js/production.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/cey6laq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
 <link rel="shortcut icon" href="/favicon.ico">
-
 </head>
 
 <body class="clearfix" id="features">
@@ -191,51 +191,7 @@
 	</div>
 </footer>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
-
-
-<script src="/js/jquery.flexslider.min.js"></script>
-<script type="text/javascript">
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    slideshowSpeed: 5000
-  });
-});
-  </script>
-
-<script src="/js/plugins.js"></script>
-<script src="/js/script.js"></script>
-<script src="/js/helper.min.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-28531592-1', 'woop.ie');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-
-  $('#purechat-name-submit').on('click', function() {
-    ga('send', 'event', 'button', 'click', 'submit_purechat_request');
-  });
-</script>
-
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=315222535232576";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<!-- chat widget //-->
-<script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://www.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: '16804ef1-9422-406c-a0b5-98a07e24dd87', f: true }); done = true; } }; })();</script>
 
 </body>
 </html>
