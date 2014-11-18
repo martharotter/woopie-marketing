@@ -1911,6 +1911,21 @@ ga('send', 'pageview');
 $('#purechat-name-submit').on('click', function() {
   ga('send', 'event', 'button', 'click', 'submit_purechat_request');
 });
+$('#submit_beta').on('click', function() {
+  ga('send', 'event', 'button', 'click', 'submit_beta_form');
+});
+$('#downloadSpotifyEpub').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_spotify_epub');
+});
+$('#downloadSpotifyMobi').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_spotify_mobi');
+});
+$('#downloadMovieEpub').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_movies_epub');
+});
+$('#downloadMovieMobi').on('click', function() {
+  ga('send', 'event', 'download', 'click', 'download_movies_mobi');
+});
 
 // facebook connect
 (function(d, s, id) {
