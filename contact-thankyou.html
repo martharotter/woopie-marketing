@@ -19,6 +19,9 @@
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/css/combined.min.css">
+<style>
+.flex-control-nav {width: 100%; position: absolute; bottom: 40px; }
+</style>
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <script src="/js/selectivizr-min.js"></script>
@@ -26,7 +29,9 @@
 
 <!-- JavaScript -->
 <script src="//cdn.optimizely.com/js/501341344.js"></script>
-<script src="/js/modernizr-2.5.3-min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="/js/production.min.js"></script>
 <script type="text/javascript" src="//use.typekit.net/cey6laq.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -41,27 +46,26 @@
 	<div class="row">
 		<div id="top-logo"><img src="/img/woopie.png" alt="Woopie"></div>
 		<p>We are looking for adventurous digital publications for our beta program</p>
-		<a class="btn btn-success" href="invitation_form.html">Try it free for 14 days</a>
+		<a class="btn btn-success" href="/invitation_form.html">Try it free for 14 days</a>
 	</div>
 </div>
-
 
 <header role="banner" class="clearfix" id="home-banner">
 	<div class="row">
 		<div class="wcol">
 			<nav>
 				<ul>
-					<li><a href="/index.html">Home</a></li>
-					<li><a href="/features.html">Features</a></li>
-					<li><a href="/portfolio/">Portfolio</a></li>
-                                        <li><a href="/pricing.html">Pricing</a></li>
-					<li><a href="http://blog.woop.ie">Blog</a></li>
-					<li><a href="/contact.html" class="active">Contact</a></li>
-				</ul>
-				<ul id="sub">
-					<li><a href="/press.html">Press Pack</a></li>
-					<li><a href="http://www.hipchat.com/gKylY4HqD">HipChat</a></li>
-					<li><a href="/invitation_form.html">Beta Signup</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/features.html">Features</a></li>
+                    <li><a href="/portfolio/">Portfolio</a></li>
+                    <li><a href="/pricing.html">Pricing</a></li>
+                    <li><a href="http://blog.woop.ie">Blog</a></li>
+                    <li><a href="/contact.html" class="active">Contact</a></li>
+                </ul>
+                <ul id="sub">
+                    <li><a href="/press.html">Press Pack</a></li>
+                    <li><a href="http://www.hipchat.com/gKylY4HqD">HipChat</a></li>
+                    <li><a href="/invitation_form.html">Beta Signup</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -76,7 +80,7 @@
 						<h2>How can we help?</h2>
 						<span class="arrow">&darr;</span>
 					</hgroup>
-					<form><p>Thank you contacting us. We will reply as soon as possible. You can also find us on Twitter at: </p>
+					<form><p>Thank you for contacting us. We will reply as soon as possible. You can also find us on Twitter at: </p>
 					<ul class="social-buttons">
 							<li><a href="https://twitter.com/makewoopie" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @makewoopie</a></li>
 						<li><a href="https://twitter.com/martharotter" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @martharotter</a></li>
@@ -96,8 +100,6 @@
 							<li><a href="https://plus.google.com/u/0/111495707446033537968/posts" class="goo">Google+</a></li>
 							<li><a href="mailto:info@woop.ie" class="email">Email</a></li>
 						</ul>
-						
-						
 						
 					</div>
 				</div>
@@ -119,25 +121,25 @@
 </div>
 
 <footer>
-	<div class="row">
-		<article>
-                        <h2>About Woopie</h2>
-                        <p>Woopie - Write Only Once, Publish It Everywhere, is a digital publishing platform for businesses to help them get their message to anyone, anywhere, on any device. View our <a href="/press.html">press pack</a> for logos and images.</p>
-                </article>
-                <article>
-                        <h2>What we do</h2>
-                        <p>We help businesses and organizations create documents and publications that look professional and beautiful on every device.</p>
-		</article>
-		<article>
-			<h2>Stay Informed</h2>
-			<form id="signup" action="http://makewoopie.us4.list-manage.com/subscribe/post?u=e8240329fbb899266e07d4314&amp;id=314873291b" method="post" class="validate" target="_blank">
-				<input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email address" required="">
-				<input type="submit" value="Sign Up" id="mc-embedded-subscribe" class="btn">
-			</form>
+    <div class="row">
+        <article>
+            <h2>About Woopie</h2>
+            <p>Woopie - Write Only Once, Publish It Everywhere, is a digital publishing platform for businesses to help them get their message to anyone, anywhere, on any device. View our <a href="/press.html">press pack</a> for logos and images.</p>
+        </article>
+        <article>
+            <h2>What we do</h2>
+            <p>We help businesses and organizations create documents and publications that look professional and beautiful on every device.</p>
+        </article>
+        <article>
+            <h2>Stay Informed</h2>
+            <form id="signup" action="http://makewoopie.us4.list-manage.com/subscribe/post?u=e8240329fbb899266e07d4314&amp;id=314873291b" method="post" class="validate" target="_blank">
+                <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Your email address" required="">
+                <input type="submit" value="Sign Up" id="mc-embedded-subscribe" class="btn">
+            </form>
 			<p>&nbsp;</p>
 			<a href="https://twitter.com/makewoopie" class="twitter-follow-button" data-show-count="false">Follow @makewoopie</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			<div class="fb-like" data-href="http://developers.facebook.com/makewoopie" data-width="200" data-layout="button_count" data-show-faces="false" data-send="false"></div>
-						&nbsp;
+            &nbsp;
 			<div class="g-plusone" data-size="medium"></div>
 			<script type="text/javascript">
 			  (function() {
@@ -146,54 +148,24 @@
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 			  })();
 			</script>
-
-		</article>
-	</div>
-	<div class="row">
-		<div id="address">
-			<small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a> &nbsp; <a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
-			</small>
-			<small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
+        </article>
+    </div>
+    <div class="row">
+        <div id="address">
+            <small>421 Bryant Street, San Francisco, CA 94107, USA. Email <a href="mailto:info@woop.ie">info@woop.ie</a> &nbsp; <a href="https://www.iubenda.com/privacy-policy/431895"  class="iubenda-black iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+            </small>
+            <small>Created by Stewart Curry <a href="http://www.twitter.com/irishstu">@irishstu</a> &amp; Martha Rotter <a href="http://www.twitter.com/martharotter">@martharotter</a></small>
 		</div>
-<div id=support>
-<h2>Supported by</h2>
-<p><a href="http://matter.vc/"><img src="/img/mattervc-logo.png" alt="Matter.vc logo"></a></p>
-<p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica-logo.png" alt="Wayra and Telefonica logos" width=280 height=50></a></p>
-</div>
-	</div>
-	<div class="row">
-		<p></p>
-	</div>
+        <div id=support>
+            <h2>Supported by</h2>
+            <p><a href="http://matter.vc/"><img src="/img/mattervc-logo.png" alt="Matter.vc logo"></a></p>
+            <p><a href="http://ie.wayra.org/"><img src="/img/wayra-telefonica-logo.png" alt="Wayra and Telefonica logos" width=280 height=50></a></p>
+        </div>
+    </div>
+    <div class="row">
+        <p></p>
+    </div>
 </footer>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-
-
-<script src="/js/jquery.flexslider.min.js"></script>
-<script type="text/javascript">
-// Can also be used with $(document).ready()
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide"
-  });
-});
-  </script>
-
-<script src="/js/plugins.js"></script>
-<script src="/js/script.js"></script>
-<script src="/js/helper.min.js"></script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-28531592-1', 'woop.ie');
-  ga('require', 'displayfeatures');
-  ga('send', 'pageview');
-</script>
 
 </body>
 </html>
