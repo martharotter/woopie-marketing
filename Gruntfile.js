@@ -32,7 +32,8 @@ module.exports = function(grunt) {
         jshint: {
             "options": {
                 "evil": false,
-                "expr": true
+                "expr": true,
+                "-W069": true
             },
             beforeconcat: [ 'js/helper.js', 'js/lib/jquery.leanModal.js', 'js/lib/lightbox.js', 'js/script.js' ],
             afterconcat: []
@@ -58,6 +59,35 @@ module.exports = function(grunt) {
                 src: 'css/combined.css',
                 dest: 'css/combined.min.css'
             }
+        },
+        validation: {
+            options: {
+                stoponerror: false,
+                relaxerror: ['Bad value X-UA-Compatible for attribute http-equiv on element meta.'] // ignores these errorjws
+            },
+            files: {
+                src: [/* 'index.html',
+                      'portfolio.html',
+                      'pricing.html',
+                      'features.html',
+                      'contact.html',
+                      'press.html',
+                      'brochure/*.html',
+                      'business/*.html',
+                      'casestudies/*.html',
+                      'education/*.html',
+                      'fly/*.html',
+                      'help/*.html',
+                      'help_beta/*.html',
+                      'info/*.html', */
+                      'magazine/*.html',
+                      /* 'makeawishsample/*.html',
+                      'miscscamples/*.html',
+                      'portfolio/*.html',
+                      'samples/*.html',
+                      'themes/*.html' */
+                    ]
+            }
         }
     });
 
@@ -71,6 +101,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-html-validation');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'jshint', 'uglify', 'cssmin']);
+    grunt.registerTask('default', ['concat', 'jshint', 'uglify', 'cssmin', 'validation']);
     grunt.registerTask('imagemin', ['imagemin']);
+    grunt.registerTask('validate', ['validation']);
 };
