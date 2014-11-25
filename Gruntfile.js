@@ -66,7 +66,7 @@ module.exports = function(grunt) {
                 relaxerror: ['Bad value X-UA-Compatible for attribute http-equiv on element meta.'] // ignores these errorjws
             },
             files: {
-                src: [/* 'index.html',
+                src: ['index.html',
                       'portfolio.html',
                       'pricing.html',
                       'features.html',
@@ -79,13 +79,13 @@ module.exports = function(grunt) {
                       'fly/*.html',
                       'help/*.html',
                       'help_beta/*.html',
-                      'info/*.html', */
+                      'info/*.html',
                       'magazine/*.html',
-                      /* 'makeawishsample/*.html',
+                      'makeawishsample/*.html',
                       'miscscamples/*.html',
                       'portfolio/*.html',
                       'samples/*.html',
-                      'themes/*.html' */
+                      'themes/*.html'
                     ]
             }
         }
