@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf"
+         version="2.0"
+         unique-identifier="etextno">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:dcterms="http://purl.org/dc/terms/"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns:opf="http://www.idpf.org/2007/opf">
+
+    <dc:identifier opf:scheme="UUID" id="etextno">d989d60c-2302-40d1-9c85-1c028414342a</dc:identifier>
+    <dc:creator opf:file-as="Lastname, Firstname">Drew Wilson &amp; Josh Long</dc:creator>
+    <dc:title>Execute</dc:title>
+    <dc:language xsi:type="dcterms:RFC3066">en</dc:language>
+    <dc:subject>Ideas</dc:subject>
+    <dc:publisher>Drew Wilson &amp; Josh Long</dc:publisher>
+    <dc:rights>All rights reserved</dc:rights>
+    <dc:source>www.executebook.com</dc:source>
+    
+    <meta name="cover" content="book-cover"/>
+    
+  </metadata>
+  
+  
+
+  <manifest>
+  
+    <item href="images/cover.png" 						id="cover-image" 	media-type="image/png" />
+    <item href="images/book-cover.png" 					id="book-cover" 	media-type="image/png" />
+    <item href="images/kitten.jpg" 						id="kitten" 		media-type="image/jpeg" />
+    <item href="images/divider-text.jpg" 				id="dividertext" 	media-type="image/jpeg" />
+    
+    <item href="toc.ncx" 								id="ncx"			media-type="application/x-dtbncx+xml" />
+    <item href="css/theme-mobi.css"  					id="style"			media-type="text/css" />
+    
+    <item href="html/cover.html" 						id="cover"			media-type="application/xhtml+xml"/>
+    <item href="html/divider-mobi.html" 				id="divider" 		media-type="application/xhtml+xml" />
+    <item href="html/article-mobi.html" 				id="article" 		media-type="application/xhtml+xml" />
+    <item href="html/question-mobi.html" 				id="question" 		media-type="application/xhtml+xml" />
+    
+  </manifest>
+
+  <spine toc="ncx">
+    <itemref idref="cover" 			linear="no" />
+    <itemref idref="article" 		linear="yes" />
+    <itemref idref="divider" 		linear="yes" />
+    <itemref idref="question" 		linear="yes" />
+  </spine>
+
+  <guide>
+    <reference href="html/cover.html"	title="Cover Image"		type="cover" /> 
+  </guide>
+
+</package>

@@ -1,0 +1,316 @@
+/* Woopie framework 0.2 */
+/* Titles - Media Queries Styles */
+#intro-heading	{
+
+	#main-image-print	{
+		display: none;
+	}
+}
+
+#question-heading	{
+	text-align: center;
+
+	hgroup	{
+		
+		h1	{
+			border-bottom: 1px solid $revcolor2;
+			color: $revcolor2;
+			margin: $grid $grid*4 $grid $grid*4;
+			padding: $grid;
+		}
+		
+		h2	{
+			color: $revcolor2;
+		}
+		
+		h3	{
+			padding: $grid*0.5 $grid;
+		}
+	}
+}
+
+#contents-heading {
+
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#intro-heading	{
+	    width: 100%;
+	    height: auto;
+	    margin: 0;
+		
+		#main-image	{
+			margin:0 0 $grid*2 0;
+		}
+		
+		hgroup	{
+			margin:0 $gutter $grid*4 $gutter;
+			padding: 0;
+		}
+		
+		&.noimage	{
+			margin-top:0;
+		}
+	}
+	
+	#question-heading	{
+	    width: 100%;
+	    height: auto;
+	    margin: 0;
+		
+		hgroup	{
+			margin:0 $gutter $grid*4 $gutter;
+			padding: 0;
+		}
+	}
+	
+	#contents-heading {
+		
+		margin: 0;
+		
+		hgroup	{
+			margin:$grid $gutter 0 $gutter;
+			padding: 0;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#intro-heading	{
+		height: auto;
+	    margin: 0;
+	    
+		    hgroup	{
+						
+				h1 {
+					@include type
+					(3, 1.25, 2);
+				}
+				
+				h2	{
+					@include type
+					(2, 1.25, 1);
+				}
+			}
+		
+		#main-image	{
+			height: $mainimage;
+			margin: 0 0 $grid*2 0;
+		}
+		
+		hgroup	{
+			margin:0 $gutter $grid*4 $gutter;
+			padding: 0;
+		}
+	}
+	
+	#question-heading	{
+	    height: auto;
+	    margin: 0;
+		
+		hgroup	{
+			margin:0 $gutter $grid*4 $gutter;
+			padding: 0;
+		}
+	}
+	
+	#contents-heading	{
+	    margin: 0;
+		
+		hgroup	{
+			margin:$grid*2 $gutter 0 $gutter;
+			padding: 0;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em)  { 
+
+	#intro-heading	{
+		
+		#main-image	{
+			clear: none;
+			float: right;
+			height: $mainimagemed;
+			margin: 0 0 $grid*2 0;
+			width: $grid*16;
+		}
+		
+		hgroup	{
+			float: left;
+			margin: $grid*4 $gutter $grid*4 $gutter; 
+		}
+	}
+	
+	
+	#question-heading	{
+	    width: 100%;
+	    height: auto;
+	    margin: 0;
+		
+		hgroup	{
+			margin: $grid*2 $gutter $grid*4 $gutter; 
+			
+			h1	{
+				margin: $grid $grid*8 $grid*4 $grid*8;
+			}
+			
+			h2	{
+				@include type
+				(1.5, 1.25, 1);
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+	#intro-heading {
+	
+		hgroup	{
+			margin: $grid*16 $gutter $grid*4 $gutter;
+		}
+	}
+	
+	#question-heading {
+	
+		hgroup	{
+			margin: $grid*4 $gutter $grid*4 $gutter;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:$grid*16 $medgutter $grid*4 $medgutter;
+			
+			h1 {
+				@include type
+				(4, 1.25, 3);
+			}
+			
+			h2	{
+				@include type
+				(2.5, 1.25, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagelarge;
+		}
+	}
+	
+	#question-heading {
+	
+		hgroup	{
+			margin:$grid*4 $medgutter $grid*4 $medgutter;
+				
+			h1	{
+				margin: $grid $grid*12 $grid*4 $grid*12;
+			}
+			
+			h2	{
+				@include type
+				(2, 1.25, 1);
+			}
+		}
+
+	}
+	
+	#contents-heading {
+
+		hgroup	{
+			margin:$grid*4 $medgutter 0 $medgutter;
+			padding: 0;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:$grid*16 $rightlargegutter $grid*4 $leftlargegutter;
+
+			h1 {
+				@include type
+				(5, 1.25, 4);
+			}
+			
+			h2	{
+				@include type
+				(3, 1.25, 1);
+			}
+		}
+	}
+		
+	#question-heading {
+	
+		hgroup	{
+			margin:$grid*4 $rightlargegutter $grid*4 $leftlargegutter;
+		}
+	}
+	
+	#contents-heading {
+
+		hgroup	{
+			margin:$grid*4 $rightlargegutter 0 $leftlargegutter;
+			padding: 0;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+	
+	#intro-heading {
+		hgroup	{
+			margin:$grid*16 $righthugegutter $grid*4 $lefthugegutter;
+		}
+		
+		#main-image	{
+			height: $mainimagehuge;
+		}
+	}
+	
+	#question-heading {
+	
+		hgroup	{
+			margin:$grid*6 $righthugegutter $grid*4 $lefthugegutter;
+		}
+	}
+	
+	#contents-heading {
+
+		hgroup	{
+			margin:$grid*4 $righthugegutter 0 $lefthugegutter;
+			padding: 0;
+		}
+	}
+}
