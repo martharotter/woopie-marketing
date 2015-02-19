@@ -1,0 +1,79 @@
+/* Woopie framework 0.2 */
+/* Print stylesheet */
+/* based on 320 and up https://github.com/malarkey/320andup */
+/* line 5, ../sass/print.scss */
+* {
+  background: transparent;
+  color: black;
+  text-shadow: none !important;
+  filter: none !important;
+  -ms-filter: none !important;
+}
+
+@page {
+  margin: 0.5cm;
+}
+
+/* line 15, ../sass/print.scss */
+h2, h3 {
+  orphans: 3;
+  widows: 3;
+  page-break-after: avoid;
+}
+
+/* line 20, ../sass/print.scss */
+p {
+  orphans: 3;
+  widows: 3;
+}
+
+/* line 24, ../sass/print.scss */
+pre, blockquote {
+  border: 1px solid #999;
+  page-break-inside: avoid;
+}
+
+/* line 28, ../sass/print.scss */
+abbr[title]:after {
+  content: " (" attr(title) ")";
+}
+
+/* line 31, ../sass/print.scss */
+a, a:visited {
+  color: #444 !important;
+  text-decoration: none;
+}
+
+/* line 35, ../sass/print.scss */
+a[href]:after {
+  content: " (" attr(href) ")";
+  font-style: italic;
+  color: #999 !important;
+}
+
+/* line 41, ../sass/print.scss */
+a[href^="javascript:"]:after, a[href^="#"]:after {
+  content: "";
+}
+
+/* line 44, ../sass/print.scss */
+img {
+  max-width: 100% !important;
+  page-break-inside: avoid;
+}
+
+/* line 48, ../sass/print.scss */
+thead {
+  display: table-header-group;
+}
+
+/* line 51, ../sass/print.scss */
+tr {
+  page-break-inside: avoid;
+}
+
+/* Hide */
+/* line 56, ../sass/print.scss */
+.no-print {
+  display: none;
+}

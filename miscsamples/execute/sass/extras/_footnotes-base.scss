@@ -1,0 +1,45 @@
+/* Woopie framework 0.2 */
+/* Footnotes - Base Styles */
+
+#footnotes	{
+	counter-reset: notes;
+	
+	p {
+		@include type
+		(1, 1.5, 1);
+		
+		&:before	{
+			counter-increment: notes;
+			content: "["counter(notes) "] ";
+		}
+	}
+}
+
+.content-block .footnote-ref	{
+
+	@include type
+	(0.75, 1, 0);
+	margin:0 0 0 $grid*0.1;
+
+	a {
+		&:before	{
+			content: "[";
+		}
+	
+		&:after	{
+			content: "]";
+		}
+	}
+}
+
+.footnotelink	{
+	
+	&:before	{
+		content: "[";
+	}
+	
+	&:after	{
+		content: "]";
+	}
+
+}
