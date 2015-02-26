@@ -1,0 +1,106 @@
+/* Woopie framework 0.2 */
+/* Global content blocks - Base Styles */
+.article, .section	{
+	margin: 0;
+	padding: 0;
+}
+
+h1	{
+	font-size:110%;
+	margin-bottom: 0.5em;
+}
+
+h2	{
+	font-size:105%;
+	margin-bottom: 0.5em;
+}
+
+
+h3	{
+	font-size:100%;
+	margin-bottom: 0.5em;
+}
+
+
+h4	{
+	font-size:100%;
+	margin-bottom: 0.5em;
+}
+
+p	{
+	font-size:1em;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+	text-indent: 0;
+}
+
+b	{
+	font-weight: bold;
+}
+
+figcaption	{
+	font-size:100%;
+	margin-bottom: 0.5em;
+}
+
+img	{
+	width: 100%;
+}
+
+
+pre	{
+}
+
+ul, ol	{
+	margin:0 0 1em 1em;
+	padding: 0;
+}
+
+li {
+	padding: 0;
+	
+	ul, ol	{
+		margin:0 0 0.5em 1em;
+		padding: 0;
+	}
+}
+
+/* Start Blockquote */
+blockquote	{		
+	margin: 0;
+	padding:1em 0;
+}
+
+blockquote p	{
+	margin: 0;
+}
+
+blockquote hr	{
+	margin: 1em 0;
+}
+
+blockquote cite	{
+	font-style: italic;
+}
+
+
+/* Tables*/
+table	{
+	border: 1px solid black;
+	margin:0;
+	padding:0;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td	{
+	padding: 0.25em;
+	border: 1px solid black;
+}
+
+th	{
+	text-align: left;
+}
+
+td	{
+}

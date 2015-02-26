@@ -1,0 +1,48 @@
+/* Woopie framework 0.2 */
+/* scrollbox - Base Styles */
+.scroll-box	{
+	clear: right;
+	float: right;
+	margin:0 0 $grid $grid*2;
+	page-break-inside: avoid;
+	position: relative;
+
+	::-webkit-scrollbar {
+	    width: $grid*1.25;
+	    opacity: 0.5;
+	}
+	 
+	::-webkit-scrollbar-track {
+	    background: darken($color1,5%);
+	}
+	 
+	::-webkit-scrollbar-thumb {
+	    background: darken($color1,15%);
+	    border:3px solid darken($color1,5%);
+	    @include roundcorner(20);
+	}
+	
+	.scroll-icon	{
+		background:url(../images/scroll-icon.png) rgba(0,0,0,0.5) no-repeat 1px 0;
+		background-size: 18px 18px;
+		width: $grid*1.25;
+		height: $grid*1.25;
+		position: absolute;
+		top:0;
+		right:0;
+	}
+	
+	.scroll-body	{
+
+		img	{
+			display: block;
+			margin:0 0 $grid 0;
+		}
+		
+		p {
+			font-family: $font1;
+		}
+	}
+}
+
+@include scrollbox(100%,auto,auto,auto,none);

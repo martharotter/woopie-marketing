@@ -1,0 +1,165 @@
+/* Woopie framework 0.2 */
+/* Front cover - Media Queries Styles */
+#divider	{
+	background: darken($color1,20%);
+}
+
+#divider-image-print	{
+	display: none;
+}
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#divider-heading	{
+		background: none;
+		margin: 0;
+		padding:$grid $gutter;
+		
+		h1	{
+
+		}
+		
+		h2	{
+
+		}
+		
+		@include scrollbox(100%,auto,auto,auto,none)
+	}
+	
+	#divider-link	{
+		background: $color2;
+		opacity: 1;
+				
+		&:hover, &:focus	{
+			background: $color3;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#divider-image	{
+		display: none;
+	}
+	
+	#divider	{
+		background:$color3 url(../images/changes.jpg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+
+	#divider-heading	{	
+		background: none;
+		float: right;
+		width: $grid*12;	
+			
+		h1	{
+			padding-top: $grid*2;
+			@include type
+			(2, 1.25, 1);
+		}
+		
+		h2	{
+			@include type
+			(1, 1.25, 1);
+		}
+		
+		.scroll-box	{
+			margin-top: $grid;
+		}
+		
+		@include scrollbox(100%,auto,auto,auto,none)
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+	
+	#divider-heading	{	
+		background: none;
+		float: right;
+		width: $grid*16;
+			
+		.scroll-box	{
+			margin-top: $grid;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+	
+	#divider-heading	{	
+		background: none;
+		float: right;
+		width: $grid*20;
+			
+		h1	{
+			padding-top: $grid*4;
+			@include type
+			(3, 1.25, 1);
+		}
+		
+		h2	{
+			@include type
+			(1.25, 1.5, 1);
+		}
+		
+		.scroll-box	{
+			margin-top: $grid*2;
+		}
+	}
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+	#divider-heading	{
+		
+		@include scrollbox(100%,$grid*16,hidden,scroll,block)
+	}
+
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#divider-image-print	{
+		display: block;
+	}
+}

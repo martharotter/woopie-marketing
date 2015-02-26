@@ -1,0 +1,203 @@
+/* Woopie framework 0.2 */
+/* Contents - Media Queries Styles */
+
+#contents-body	{
+	
+	margin: 0 $gutter;
+	
+}
+
+#contents-listing	{
+	
+	ol li	{
+		padding:0 $gutter;
+		
+		h2	{
+			padding: $grid 0;
+			margin: 0;
+		}
+	
+		ol {
+			margin: 0;
+			padding: 0 0 $grid 0;
+			
+			li {
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+	
+	#tocdep002, #tocdep004	{
+		background: $color1;
+		
+		a {
+			color: $revcolor1;
+			
+			&:hover	{
+				color: $color2;
+			}
+		}
+	}
+}
+
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#contents-listing	{
+		
+		ol li	{
+			padding:0 $gutter;
+
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#contents-listing	{
+		
+		ol li	{
+			padding:0 $gutter 0 ($gutter + $grid*8);
+		}
+		
+			
+		#tocdep001, #tocdep002, #tocdep003, #tocdep004, #tocdep005	{
+			background-image: url(../images/purpose-eye.png);
+			background-repeat: no-repeat;
+			background-size: 80px 80px;
+			background-position: $gutter top;
+		}
+	}
+
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+		
+	#contents-listing	{
+
+		ol li	{
+
+			h2	{
+				@include type
+				(2, 1, 0);
+			}
+			
+			ol li {
+				@include type
+				(1.25, 1, 0);
+				padding: $grid*0.5 0;
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#contents-body	{
+		margin:0 $medgutter;
+	}
+	
+		
+	#contents-listing	{
+		margin:0;
+		
+		ol li	{
+			padding:0 $medgutter 0 ($medgutter + $grid*8);
+		}
+			
+		#tocdep001, #tocdep002, #tocdep003, #tocdep004, #tocdep005	{
+			background-image: url(../images/purpose-eye.png);
+			background-repeat: no-repeat;
+			background-size: 80px 80px;
+			background-position: $medgutter top;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#contents-body	{
+		margin:0 $rightlargegutter 0 $leftlargegutter;
+	}	
+	
+	#contents-listing	{
+		margin:0;
+		
+		ol li	{
+			padding:0 $rightlargegutter 0 ($leftlargegutter + $grid*8);		
+				
+			h2	{
+				@include type
+				(3, 1, 0);
+			}
+		}
+			
+		#tocdep001, #tocdep002, #tocdep003, #tocdep004, #tocdep005	{
+			background-image: url(../images/purpose-eye.png);
+			background-repeat: no-repeat;
+			background-size: 80px 80px;
+			background-position: $leftlargegutter top;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#contents-body	{
+		margin:0 $righthugegutter 0 $lefthugegutter;
+
+	}
+	
+	#contents-listing	{
+		margin:0;	
+		
+		ol li	{
+			padding:0 $righthugegutter 0 ($lefthugegutter + $grid*8);
+		}
+			
+		#tocdep001, #tocdep002, #tocdep003, #tocdep004, #tocdep005	{
+			background-image: url(../images/purpose-eye.png);
+			background-repeat: no-repeat;
+			background-size: 80px 80px;
+			background-position: $lefthugegutter top;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#main-image-print	{
+		display: block;
+	}
+}

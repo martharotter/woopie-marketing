@@ -1,0 +1,16 @@
+/* Woopie framework 0.2 */
+/* Base stylesheet - epub specifics */ 
+
+/* Basic Stuff  */  
+#wrapper	{
+	font-family: $font1; 
+	background-color: #fff;
+	color: $color1;
+}
+  
+/* link colors */ 
+a	{ 
+	text-decoration: none;
+	-webkit-text-fill-color: $color2; 
+}
+

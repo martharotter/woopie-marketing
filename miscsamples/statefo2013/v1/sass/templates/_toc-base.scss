@@ -1,0 +1,33 @@
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+
+#contents-body, #contents-listing	{
+	margin:0;
+}
+
+#contents-listing	{
+	
+	clear: both;
+
+	ol	{
+		margin: 0 0 $grid*2 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			margin: 0;
+			padding: 0;
+			
+			a {
+				display: block;
+				margin: 0;
+				padding: $grid*0.5 0;
+			}
+		}	
+	}
+}
+
+#contents-intro	{
+	clear: both;
+	width: 100%;
+}

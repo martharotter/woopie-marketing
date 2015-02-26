@@ -1,0 +1,85 @@
+/* Woopie framework 0.2 */
+/* Variables - define widths, colors, font families etc. */
+
+/* Measurements */
+$grid				:	18px;	/* Set a base scale */
+
+/* Left and right spacing */
+$gutter				:	$grid*2;			
+$medgutter			:	$gutter*3;
+
+/* Specific left and right spacing for wider screens */
+$leftlargegutter	:	$gutter*4;
+$rightlargegutter	:	$gutter*2;
+$lefthugegutter		:	$gutter*6;
+$righthugegutter	:	$gutter*2;
+
+/* Indent for wider screens */
+$medindent			: 	-$gutter*2;
+$largeindent		: 	-$gutter*4;
+$hugeindent			: 	-$gutter*6;
+
+/* Main image sizing */
+$mainimagemobile	:	$grid*24;			
+$mainimage			:	$grid*32;
+$mainimagemed		:	$grid*36;
+$mainimagelarge		:	$grid*42;
+$mainimagehuge		:	$grid*48;
+
+/* Font Set */
+$font1		:	"adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+$font2		:	"adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+$font3		:	"sophisto", "EumphemiaUCAS", "Helvetica Neue", "Helvetica", sans-serif;
+
+/* Type */
+$topbartitle	:	$font3;
+$titleh1		:	$font1;
+$titleh2		:	$font1; 
+$section		:	$font3;
+$subsection		:	$font3;
+$credittitle	:	$font1;
+$creditdata		:	$font1;
+$bodyh1			:	$font1;
+$bodyh2			:	$font1;
+$bodyh3			:	$font1;
+$bodyh4			:	$font1;
+$bodyh5			:	$font1;
+$bodyh6			:	$font1;
+$bodycopy		:	$font1;
+$quotes			:	$font1; 
+$quotecite		:	$font1;
+$captions		:	$font1;
+$endbartitle	:	$font1;
+$endbarlink		:	$font1;
+$footer			:	$font1;
+
+
+/* Color Set */
+$color1		: 	#6d675b;				/* State Mid/Dark Grey - Main text color */
+$color2		: 	#99948c;				/* State Mid/Dark Grey (70%) - Secondary text color */
+$color3		: 	#7a7968;				/* State Dark Grey - Highlight color */
+$color4		: 	#a7a49d;				/* State Mid/Dark Grey (60%) - Highlight color */
+$revcolor1	: 	#dbd2c8;				/* State Light Grey */
+$revcolor2	: 	#ffffff;				/* White */
+
+/* Colors */
+$bg					:	lighten($revcolor1,20%);		/* Page colors */
+$bodycolor			:	$color1;
+$topbarbg			:	$color1;			/* Top bar */
+$topbartitlecolor	:	$revcolor2;
+$topbaricon			:	$revcolor2;
+$topbarhover		:	$revcolor1;
+$topbarborder		:	$color1;
+$titleh1color		:	$color1;			/* Titles */
+$titleh2color		:	$color1; 
+$alink				:	$color2;			/* Links */
+$vlink				:	$color2;
+$flink				:	$color3;
+$hlink				:	$color3;
+$actlink			:	$color4;
+$sectionbg			:	transparent;
+$sectioncolor		:	$color2;
+$subsectioncolor	:	$color2;
+$endbartitlecolor	:	$color4;
+$endbarlinkcolor	:	$color1;
+

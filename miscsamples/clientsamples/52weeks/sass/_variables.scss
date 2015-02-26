@@ -1,0 +1,83 @@
+/* Woopie framework 0.2 */
+/* Variables - define widths, colors, font families etc. */
+
+/* Measurements */
+$grid				:	16px;	/* Set a base scale */
+
+/* Left and right spacing */
+$gutter				:	$grid*2;			
+$medgutter			:	$gutter*2.5;
+
+/* Specific left and right spacing for wider screens */
+$leftlargegutter	:	$gutter*3;
+$rightlargegutter	:	$gutter*3;
+$lefthugegutter		:	$gutter*4;
+$righthugegutter	:	$gutter*4;
+
+/* Indent for wider screens */
+$medindent			: 	0;			
+$largeindent		: 	-$gutter*4;
+$hugeindent			: 	-$gutter*6;
+
+/* Main image sizing */
+$mainimagemobile	:	$grid*16;			
+$mainimage			:	$grid*24;
+$mainimagemed		:	$grid*28;
+$mainimagelarge		:	$grid*32;
+$mainimagehuge		:	$grid*48;
+
+/* Font Set */
+$font1		:	"proxima-nova", "Avenir Next Bold", Helvetica Neue, Helvetica, Sans-serif;
+$font2		:	Palatino, Georgia, Serif;
+$font3		:	"proxima-nova-n1", "proxima-nova", Helvetica, Sans-serif;;
+
+/* Type */
+$topbartitle	:	$font1;
+$titleh1		:	$font1;
+$titleh2		:	$font3; 
+$section		:	$font3;
+$subsection		:	$font3;
+$bodyh1			:	$font2;
+$bodyh2			:	$font2;
+$bodyh3			:	$font2;
+$bodyh4			:	$font2;
+$bodyh5			:	$font2;
+$bodyh6			:	$font2;
+$bodycopy		:	$font2;
+$quotes			:	$font2; 
+$quotecite		:	$font2;
+$captions		:	$font2;
+$endbartitle	:	$font1;
+$endbarlink		:	$font2;
+$footer			:	$font2;
+
+
+/* Color Set */
+$color1		: 	#1A1A1A;				/* Dark Grey - Main text color */
+$color2		: 	#7A7A7A;				/* Light Grey - Secondary text color */
+$color3		: 	#8C0806;				/* Red - Highlight color */
+$color4		: 	#A94644;				/* Red - Highlight color */
+$revcolor1	: 	#FFFFFF;				/* White */
+$revcolor2	: 	#B9B9B9;				/* Light Grey */
+
+/* Colors */
+$bg					:	$revcolor1;		/* Page colors */
+$bodycolor			:	$color1;
+$topbarbg			:	$color1;			/* Top bar */
+$topbartitlecolor	:	$revcolor2;
+$topbaricon			:	$revcolor2;
+$topbarhover		:	$revcolor1;
+$topbarborder		:	$color1;
+$titleh1color		:	$color1;			/* Titles */
+$titleh2color		:	$color2; 
+$alink				:	$color4;			/* Links */
+$vlink				:	$color4;
+$flink				:	$color3;
+$hlink				:	$color3;
+$actlink			:	$revcolor2;
+$sectionbg			:	$revcolor1;
+$sectioncolor		:	$color1;
+$subsectioncolor	:	$color1;
+$endbartitlecolor	:	$color2;
+$endbarlinkcolor	:	$color1;
+

@@ -1,0 +1,81 @@
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+
+/* Intro Headings */
+#intro-heading {
+
+	hgroup	{
+		margin: 0 ;
+		padding:  0;
+		clear: both;
+	}
+	
+	h1 {
+		border: 1px solid $color1;
+		color: $titleh1color;
+		@include type
+		(2, 2, 1.5, bold, italic);
+		font-family: $titleh1;
+		padding:$grid*2.75 $grid*2 $grid*2 $grid*2;
+		text-align: center;
+	}
+	
+	h2	{
+		color: $titleh2color;
+		@include type
+		(1.5, 1.75, 1, normal, italic);
+		padding: 0 0 $grid 0;
+		font-family: $titleh2;
+	}
+	
+	h3	{
+		background: $sectionbg;
+		display: inline-block;
+		text-transform: uppercase;
+		@include type
+		(1, 1, 1);
+		padding: $grid*0.5 0;
+		margin: $grid 0 0 0;
+	
+		b {
+			color: $sectioncolor;
+			font-family: $section;
+			font-weight:bold;
+			padding: 0 $grid*0.5 0 0;
+		}
+		
+		i	{
+			color: $subsectioncolor;
+			font-family: $subsection;
+			font-style: normal;
+		}
+	}
+	
+	.tab	{
+		background: url(../images/tab-dark.png) no-repeat;
+		background-size: 100px 25px;
+		margin-left: 20px;
+		width: 100px;
+		height:25px;
+	}
+
+	
+	#main-image	{
+		background: url(../images/kitten.jpg) no-repeat center center;
+		background-size: cover;
+		height: $mainimagemobile;
+		width: 100%;
+	}
+	
+	
+	#main-image-print	{
+		display: block;
+		line-height: 0;
+		padding: 0;
+		margin: 0 0 $grid*2 0;
+	}
+
+	&.noimage	{
+		margin-top:$grid*2;
+	}
+}

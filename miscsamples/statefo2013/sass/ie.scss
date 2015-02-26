@@ -1,0 +1,73 @@
+/* Woopie framework 0.2 */
+/* IE is the devil. Here you give it its due */
+
+header, nav, section, article, aside, footer {
+   display:block;
+}
+
+#intro-heading {
+	
+	#main-image-print	{
+		display: block;
+		
+		img	{
+			width: auto;
+			max-width: 100%;
+			width: 960px;
+		}
+	}
+	
+	#main-image	{
+		display: none;
+	}
+}
+
+#wrapper	{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#contributors	{
+	margin: 0;
+}
+
+img	{
+	width:auto;
+	max-width: 100%;
+}
+
+.content-block {
+
+	.fig-video, .fig-image-fixedsize	{
+		margin: 0 auto 20px auto;
+		
+		video	{
+			width: auto;
+			max-width: 100%;
+		}
+		
+		img	{
+			width: auto;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+		
+		figcaption	{
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+
+	img	{
+		width: auto;
+		max-width: 100%;
+	}
+	
+	.section-image {
+		
+		img	{
+			width: auto;
+			max-width: 100%;
+		}
+	}
+}

@@ -1,0 +1,199 @@
+/* Woopie framework 0.2 */
+/* Titles - Media Queries Styles */
+#intro-heading	{
+
+	#main-image-print	{
+		display: none;
+	}
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#intro-heading	{
+	    width: 100%;
+	
+		hgroup	{
+			margin: -$grid*12 0 0 0;
+			padding: $grid*2  $gutter $grid*0.25  $gutter;
+			
+			h1	{
+				border-color: $revcolor1;
+				color: $revcolor1;
+			}
+			
+			h2	{
+				color: $revcolor1;
+			}
+			.tab	{
+				background: url(../images/tab-light.png) no-repeat;
+				background-size: 100px 25px;
+			}
+		}
+		
+		#main-image	{
+			@include roundcorner(0);
+		}
+		
+		&.noimage	{
+			margin-top:0;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#intro-heading	{
+		margin: 0;
+		
+		hgroup	{
+			margin: -$grid*12 $gutter $grid*4 $gutter;
+			
+			h1	{
+				border-color: $revcolor1;
+				color: $revcolor1;
+			}
+			
+			h2	{
+				color: $revcolor1;
+			}
+			
+			.tab	{
+				background: url(../images/tab-light.png) no-repeat;
+				background-size: 100px 25px;
+			}
+		}
+		
+		#main-image	{
+			height: $mainimage;
+			margin: 0 0 $grid*2 0;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $gutter;
+			
+			h1 {
+				@include type
+				(3, 3, 2);
+				border-color: $color1;
+				color: $color1;
+			}
+			
+			h2	{
+				@include type
+				(2, 2.5, 1);
+				color: $color1;
+			}
+			
+			.tab	{
+				background: url(../images/tab-dark.png) no-repeat;
+				background-size: 100px 25px;
+			}
+		}
+
+		#main-image	{
+			height: $mainimagemed;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $medgutter;
+			
+			h1 {
+				@include type
+				(4, 4, 3);
+			}
+			
+			h2	{
+				@include type
+				(2.5, 3, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagemed;
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:0 $rightlargegutter 0 $leftlargegutter;
+
+			h1 {
+				@include type
+				(5, 5, 4);
+			}
+			
+			h2	{
+				@include type
+				(3, 3.5, 1);
+			}
+		}
+
+		#main-image	{
+			height: $mainimagelarge;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+	
+	#intro-heading {
+		hgroup	{
+			margin:0 $righthugegutter 0 $lefthugegutter;
+
+			h1 {
+				@include type
+				(6, 6, 4);
+			}
+			
+			h2	{
+				@include type
+				(3.5, 4, 2);
+			}
+		}
+		
+		#main-image	{
+			height: $mainimagehuge;
+		}
+	}
+}

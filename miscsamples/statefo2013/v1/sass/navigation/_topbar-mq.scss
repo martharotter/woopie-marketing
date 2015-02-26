@@ -1,0 +1,166 @@
+/* Woopie framework 0.2 */
+/* Topbar - Media Queries Styles */
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+	#top-title	{
+		display: none;
+	}
+	
+	.button-links	{
+	
+		 ul	{
+
+			 li	{
+			
+				a	{
+
+					#cont-dropdown {
+						height: 300px;
+						overflow-y: auto;
+					}
+
+					::-webkit-scrollbar {
+					    width: $grid*1.25;
+					    opacity: 0.5;
+					}
+					 
+					::-webkit-scrollbar-track {
+					    background: darken($color1,5%);
+					}
+					 
+					::-webkit-scrollbar-thumb {
+					    background: $color2;
+					    border:3px solid darken($color1,5%);
+					}
+				}			
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+	.button-links	{
+	
+		 ul	{
+
+			 li	{
+			
+				a	{
+
+					#cont-dropdown {
+						width:480px;
+					}
+					
+					&.cont:hover #cont-dropdown {
+						left: $grid*2.5;
+					}
+				}			
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+	#top-bar	{
+		position: fixed;
+		left:0;
+		bottom:0;
+		width: 100%;
+		z-index: 1000;
+		@include boxshadow(0,-1,4,4,rgba(0,0,0,0.2));	
+	}
+	
+	.button-links	{
+	
+		ul {
+		
+			li	{
+				line-height: $grid*3;
+			
+				a	{
+					@include type
+					(2, 3, 0);
+				}
+				
+			
+				i	{
+					width: $grid*3;
+				}
+			}
+		}
+	}
+	
+	
+	#top-title	{
+		line-height: $grid*3;
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)   { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#top-bar	{
+		position: fixed;
+		height: $grid*3;
+		left:0;
+		top:0;
+		width: 100%;
+		z-index: 1000;
+		@include boxshadow(0,1,0,2,rgba(0,0,0,0.2));	
+	}
+	
+	.button-links	{
+
+		ul {
+				
+			li	{
+				line-height: $grid*3;
+			
+				a	{
+					@include type
+					(2, 3, 0);
+					
+					#cont-dropdown {
+						top: $grid*3;
+					}
+				}
+				
+			
+				i	{
+					width: $grid*3;
+				}
+			}
+		}
+	}
+	
+	#top-title	{
+		@include type
+		(1.5, 3, 0);
+		margin-left: -$grid*8; /* Half the width */
+	}
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#top-nav, #top-social	{
+		display: none;
+	}
+}

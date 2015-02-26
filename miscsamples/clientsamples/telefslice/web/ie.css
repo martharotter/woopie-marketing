@@ -1,0 +1,6 @@
+/* Woopie framework 0.2 */
+/* IE is the devil. Here you give it its due */
+
+header, nav, section, article, aside, footer {
+   display:block;
+}

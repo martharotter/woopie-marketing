@@ -1,0 +1,75 @@
+/* Woopie framework 0.2 */
+/* Card Flip - Base Styles */
+
+.flippers	{
+	position: relative;
+	clear: both;
+}
+
+.flipper {
+	height: 240px;
+	width: 260px;
+	float: left;
+	margin: 0 $grid $grid 0;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: -webkit-transform 1.5s;
+	-webkit-box-shadow: 0 2px 5px #ccc;
+	-moz-box-shadow: 0 2px 5px #ccc;
+}
+
+.rotated {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.front{
+	z-index: 50;
+}
+
+.back{
+	z-index: 10;
+	background: #fff;
+}
+
+.rotated .back{
+	z-index: 99;
+}
+
+.side{
+	position: absolute;		
+	-webkit-backface-visibility: hidden;
+	height: 240px;
+	width: 260px;
+}
+
+
+.front{
+	background: #fff;
+	color: #000;
+	height: 240px;
+	width: 260px;
+}
+
+
+.back{
+	height: 240px;
+	width: 260px;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+}
+
+.flipper article	{
+	padding: $grid;
+	
+	ul	{
+		margin-left: $grid;
+	}
+	
+	img	{
+		position: absolute;
+		right: $grid;
+		bottom: $grid;
+		height: $grid*4;
+		width: auto;
+	}
+}

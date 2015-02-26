@@ -1,0 +1,46 @@
+/* Woopie framework 0.2 */
+/* Advert - Base Styles */
+
+#advert	{
+	background:#333 no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	.adblock {
+		display: block;
+		margin: 0;
+		padding: 0;
+		
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	
+	.split-left	{
+	}
+	
+	.split-right	{
+	}
+	
+	#publication-footer	{
+		color: $revcolor1;
+	}
+	
+}
+
+#advert #end-nav {
+
+	ul a {
+		border: none;
+	}
+
+	hgroup	{
+		h1, h2	{
+			color:#fff;
+		}
+	}
+
+}

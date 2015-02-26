@@ -1,0 +1,61 @@
+/* Woopie framework 0.2 */
+/* IE is the devil. Here you give it its due */
+#wrapper	{
+	width: 960px;
+	margin: 0 auto;
+}
+
+#newsletter-body	{
+	margin: 0;
+}
+
+#main-image {
+	margin: 0;
+	padding: 0;
+	width: 960px;
+}
+
+
+#intro-heading nav ul  {
+	height: 40px;
+}
+
+#intro-heading nav ul li {
+	display: block;
+	float: left;
+}
+
+#intro-heading nav ul li a {
+	height: 40px;
+	line-height: 40px;
+}
+
+.big-stories	{
+	float: right;
+	width: 66%;
+}
+
+.small-stories	{
+	float: left;
+	width: 31%;
+}
+
+#intro-heading	h1 {
+	font-size: 80px;
+	line-height: 88px;
+	margin-bottom: 40px;
+}
+
+#intro-heading	h2 {
+	font-size: 48px;
+	line-height: 40px;
+	margin-bottom: 16px;
+}
+
+.small-stories img	{
+	width: 230px;
+}
+
+.big-stories img	{
+	width: 510px;
+}

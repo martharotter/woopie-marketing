@@ -1,0 +1,24 @@
+/* Woopie framework 0.2 */
+/* Introduction section - Base Styles */
+
+#intro-section { 
+
+	p {
+		@include type
+		(1.1, 1.4, 2, normal, normal);
+	}
+	
+	ul	{
+	
+		margin: 0;
+		padding: 0;
+	
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			@include type
+			(1.1, 1.25, 1);
+		}
+	}
+}

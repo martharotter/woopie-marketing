@@ -1,0 +1,89 @@
+/* Woopie framework 0.2 */
+/* Footer - Media Queries Styles */
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#publication-footer 	{
+		margin:$grid $gutter;
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+	
+	#publication-footer 	{
+		margin:$grid $gutter;
+		
+		#advert &	{
+			margin: $grid;
+			text-align: center;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+	
+	#publication-footer 	{
+		margin:$grid $medgutter;
+	}
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+	
+	#publication-footer 	{
+		margin:$grid $medgutter;
+	}
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#publication-footer 	{
+		margin:$grid $medgutter;
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+	#publication-footer 	{
+		margin:$grid $rightlargegutter $grid $leftlargegutter;
+		
+		#advert	& {
+			margin: $grid;
+		}
+	}
+}    
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#publication-footer 	{
+		margin:$grid $righthugegutter $grid $lefthugegutter;
+		
+		#advert	& {
+			margin: $grid;
+		}
+	}
+}
