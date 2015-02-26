@@ -1,0 +1,23 @@
+/* Woopie framework 0.2 */
+/* Issue Info - Base Styles */
+
+#edition	{
+	@include type
+	(1.5, 1.5, 0, normal, italic);
+	color: $revcolor1;
+	font-family: $font1;
+	padding: 0 0 $grid*2 0;
+	width: 100%;
+	
+	dt	{
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	
+	dd	{
+		float: left;
+		margin: 0 $grid*2 0 $grid*0.5;
+		padding: 0;
+	}
+}

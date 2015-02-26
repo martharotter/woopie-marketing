@@ -1,0 +1,166 @@
+/* Woopie framework 0.2 */
+/* Front cover - Media Queries Styles */
+#divider	{
+	background:$color3 url(../images/kitten.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+
+#divider-image-print	{
+	display: none;
+}
+
+#divider #publication-footer	{
+	color: $revcolor2;
+	text-align: center;
+	
+	a {
+		color: $revcolor2;
+	}
+}
+
+#divider #end-nav ul li {
+	
+	h1, h2	{
+		color: $revcolor1; 
+	}
+}
+
+#divider-heading	{
+
+	h1 {
+		border: 1px solid $revcolor1;
+		color: $revcolor1;
+	}
+	
+	.tab	{
+		background: url(../images/tab-light.png) no-repeat;
+		background-size: 100px 25px;
+		margin-left: 20px;
+		width: 100px;
+		height:25px;
+	}
+}
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#divider-heading	{
+
+		height: $grid*24;
+		margin: 0;
+	
+		hgroup	{
+			margin: $grid*6 $gutter $grid*0.25  $gutter;
+			
+			h1	{
+				margin: 0;
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#divider-heading	{
+	
+		height: $grid*32;
+		margin: 0;
+	
+		hgroup	{
+			margin: $grid*6 $gutter*2 $grid*0.25  $gutter*2;
+			
+			h1	{
+				margin: 0;
+			}
+		}
+	}
+
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+	
+	#divider-heading	{
+	
+		height: $grid*36;
+	}
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+	#divider-heading	{
+	
+		hgroup	{
+			margin:$grid*8 $medgutter $grid*0.25  $medgutter;
+			
+			h1 {
+				@include type
+				(3, 1, 2);
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#divider-heading	{
+	
+		hgroup	{
+			margin:$grid*16 $gutter*4 $grid*0.25 $gutter*4;
+			
+			h1 {
+				@include type
+				(4, 1, 2);
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#divider-heading	{
+		height: $grid*42;
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#divider-image-print	{
+		display: block;
+	}
+}

@@ -1,0 +1,57 @@
+/* Woopie framework 0.2 */
+/* Debug */
+
+/* Debug Info */
+#debug-console	{
+	background: #000;
+	bottom:0;	
+	color: #ff0;
+	display: inline-block;
+	font-size: 11px;
+	font-family: Arial;
+	font-weight: bold;
+	opacity: 0.6;
+	padding:5px 10px;
+	position: fixed;
+	left:0;
+	text-transform: uppercase;
+	text-shadow: none;
+	z-index: 10000;
+	width: auto;
+}
+
+#debug-console	{
+	i {
+		color: #fff;
+		font-style: italic;
+		text-transform: lowercase;
+		padding-right: 10px;
+	}
+}
+
+/* Debug text */
+#debug-console #pixels:after {
+	@media screen and (max-width: 480px) 	{ 	content: " Under 480px";	} 
+	@media screen and (min-width: 481px) 	{ 	content: " 481px > 600px";	}	
+	@media screen and (min-width: 37.6em) 	{ 	content: " 601px > 768px";	} 
+	@media screen and (min-width: 48.1em) 	{ 	content: " 769px > 1024px";	} 
+	@media screen and (min-width: 64.1em) 	{ 	content: " 1025px > 1280px";} 
+	@media screen and (min-width: 1281px) 	{ 	content: " 1281px > 1600px";} 
+	@media screen and (min-width: 1601px) 	{ 	content: " Over 1600px";} 
+}
+
+#debug-console #ems:after {
+	@media screen and (max-width: 30em) 	{ 	content: "Under 30em ";	} 
+	@media screen and (min-width: 30.1em) 	{ 	content: "30em > 37.5em ";	}
+	@media screen and (min-width: 37.6em) 	{ 	content: "37.6em > 48em ";	}
+	@media screen and (min-width: 48.1em) 	{ 	content: "48.1em > 64em ";	}
+	@media screen and (min-width: 64.1em) 	{ 	content: "64.1em > 80em ";	}	
+	@media screen and (min-width: 80.1em) 	{ 	content: "80.1em > 100em ";	}	
+	@media screen and (min-width: 100em) 	{ 	content: "Over 100em ";	}	
+}
+
+@media screen and (max-width: 30em) { 
+	#debug-console	{
+		display: none;
+	}
+}

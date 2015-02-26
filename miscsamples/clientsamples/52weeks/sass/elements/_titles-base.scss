@@ -1,0 +1,46 @@
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+
+/* Intro Headings */
+#intro-heading {
+
+	hgroup	{
+		margin: 0 ;
+		padding:  0;
+		clear: both;
+		
+		h1 {
+			border-bottom: 1px solid $revcolor2;
+			color: $titleh1color;
+			@include type
+			(2, 1, 1, bold, normal);
+			padding: 0 0 $grid 0;
+			font-family: $titleh1;
+			text-transform: uppercase;
+		}
+		
+		h2	{
+			color: $titleh2color;
+			@include type
+			(1, 1.25, 1, normal, normal);
+			padding: $grid*0.5 0;
+			font-family: $titleh2;
+			
+			b {
+				font-weight: 100;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+
+#main-image	{
+	display: block;
+	text-align: center;
+	
+	img {
+		display: block;
+		margin: $grid auto;
+		width: auto;
+	}
+}

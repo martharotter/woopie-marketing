@@ -1,0 +1,229 @@
+/* Woopie framework 0.2 */
+/* End navigation (next/prev) - Media Queries Styles */
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#end-nav	{
+
+		ul	{
+			margin: 0;		
+						
+			li {	
+	
+				h1, h2	{
+					display: none;
+				}
+				
+				a	{
+					@include type
+					(2, 4, 0);
+					padding:0;
+				}
+			}
+			
+							
+			#end-nav-prevarticle a	{
+				text-align: left;
+			}
+			
+			#end-nav-nextarticle a	{
+				text-align: right;
+			}		
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#end-nav	{
+	
+		ul	{
+			margin: 0;	
+		
+			li {	
+			
+							
+				h1	{
+					color: $endbartitlecolor;
+					@include type
+					(0.75, 1, 0);
+				}
+				
+				h2	{
+					color: $endbarlinkcolor;
+					@include type
+					(1.25, 1.75, 0);
+					font-style: italic;
+				}
+				
+				span	{
+					margin:0;
+					line-height: $grid*3.5;
+					padding: 0;
+					@include type
+					(2, 4, 0);
+					
+					}
+					
+				hgroup	{
+					padding:0 $grid;
+					height: $grid*4;
+				}
+			}
+				
+			#end-nav-prevarticle {
+			
+				.arrow	{
+					float: left;
+				}
+				
+				hgroup	{
+					float: left;
+				}
+			}
+			
+			#end-nav-nextarticle {
+			
+				.arrow	{
+					float: right;
+				}
+				
+				hgroup	{
+					float: right;
+				}
+			}
+			
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+	#end-nav	{
+		display: none;
+	}
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+	#end-nav	{
+		
+		margin: 0 $medgutter;
+		
+		ul li {
+		
+			span	{
+				line-height: $grid*5;
+			}
+			
+			hgroup	{
+				height: $grid*5;
+		
+				h1	{
+					@include type
+					(1, 1.5, 0);
+				}
+				
+				h2	{
+					@include type
+					(1.25, 2, 0);
+				}
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+	#end-nav	{
+		margin: 0 $rightlargegutter 0 $leftlargegutter;
+		
+		ul	{
+		
+			li {
+				display: block;
+				float: left;
+				margin-top: -$grid*2;
+				position: fixed;
+				top:50%;
+				height: $grid*6;
+				width: $grid*2;
+				@include type
+				(1, 1, 0);	
+				padding: 0;
+				
+				span	{
+					display: block;
+					margin: 0;
+					padding:0 $grid*0.75;
+					&:hover	{
+					}
+				}	
+	
+				hgroup	{
+					display: none;
+				}
+				
+				a	{
+					display: inline;
+					padding: 0;
+				}
+				
+				.arrow	{
+					@include type
+					(2, 10, 0);
+				}
+			}
+		
+		}
+		
+		#end-nav-prevarticle {
+			left:0;
+		}
+		
+		#end-nav-nextarticle {
+			right:0;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#end-nav	{
+		display: none;
+	}
+}

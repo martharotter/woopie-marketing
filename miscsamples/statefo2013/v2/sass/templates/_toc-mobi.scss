@@ -1,0 +1,14 @@
+/* Woopie framework 0.2 */
+/* Contents - Mobi Styles */
+
+#contents-listing ol	{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+	li ol li {
+	
+		margin:0 0 1em 0;
+
+	}
+}

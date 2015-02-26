@@ -1,0 +1,134 @@
+/* Woopie framework 0.2 */
+/* Mixins - useful shortcuts and tools */
+
+@mixin type ($size:1, $lineheight:1.5, $marginbottom:1, $weight:"", $style:"")	{
+	font-size: $grid*$size;
+	line-height: $grid*$lineheight;
+	margin:0 0 $grid*$marginbottom 0;
+	
+	@if $weight == ""	{
+	}
+	
+	@else {
+		font-weight: #{$weight};
+	}
+	@if $style == ""	{
+	}
+	@else {
+		font-style: #{$style};
+	}
+}
+
+@mixin boxshadow ($horz, $vert, $blur, $spread, $color)	{
+	-webkit-box-shadow: #{$horz}px #{$vert}px #{$blur}px #{$spread}px $color;
+	-moz-box-shadow: #{$horz}px #{$vert}px #{$blur}px #{$spread}px $color;
+	box-shadow: #{$horz}px #{$vert}px #{$blur}px #{$spread}px $color;
+}
+
+@mixin backgroundgradient ($fallback, $direction, $color1, $color2) {
+		background-color: $fallback;
+		background: -moz-linear-gradient($direction,  0%, $color1 0%, $color2 100%); /* FF3.6+ */
+		background: -webkit-linear-gradient($direction, $color1 0%, $color2 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient($direction, $color1 0%, $color2 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient($direction, $color1 0%, $color2 100%); /* IE10+ */
+		background: linear-gradient($direction, $color1 0%, $color2 100%); /* W3C */
+}
+
+@mixin columnset	($count:3, $gap:20px) {
+	-moz-column-count: $count;
+	-moz-column-gap: $gap;
+	-webkit-column-count: $count;
+	-webkit-column-gap: $gap;
+	column-count: $count;
+	column-gap: $gap;
+}
+
+@mixin columnstyle	($color1:"", $style:solid, $width:1 ) {
+	-moz-column-rule-color: $color1;
+	-moz-column-rule-style: $style;
+	-moz-column-rule-width: #{$width}px;
+	-webkit-column-rule-color: $color1;
+	-webkit-column-rule-style: $style;
+	-webkit-column-rule-width: #{$width}px;
+	column-rule-color: $color1;
+	column-rule-style: $style;
+	column-rule-width: #{$width}px;
+}
+
+@mixin boxit ($dir) {
+	display:box;
+	display:-moz-box;
+	display:-webkit-box;
+	box-orient:$dir;
+	-moz-box-orient:$dir;
+	-webkit-box-orient:$dir;
+}
+
+@mixin boxnum($num: 1) {
+    box-ordinal-group: #{$num};
+    -moz-box-ordinal-group: #{$num};
+    -webkit-box-ordinal-group: #{$num};
+}
+
+@mixin maskimage ($path) {
+		-webkit-mask-image: url(#{$path});
+		-o-mask-image: url(#{$path});
+		-moz-mask-image: url(#{$path});
+		mask-image: url(#{$path});
+}
+
+@mixin imagereplace	{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin roundcorner ($radius: 4)	{
+	-webkit-border-radius: #{$radius}px;
+	-moz-border-radius: #{$radius}px;
+	border-radius: #{$radius}px;
+}
+
+@mixin roundcorneradv ($tl,$tr,$br,$bl)	{
+	-webkit-border-top-left-radius: #{$tl}px;
+	-webkit-border-top-right-radius: #{$tr}px;
+	-webkit-border-bottom-right-radius: #{$br}px;
+	-webkit-border-bottom-left-radius: #{$bl}px;
+	-moz-border-radius-topleft: #{$tl}px;
+	-moz-border-radius-topright: #{$tr}px;
+	-moz-border-radius-bottomright: #{$br}px;
+	-moz-border-radius-bottomleft: #{$bl}px;
+	border-top-left-radius: #{$tl}px;
+	border-top-right-radius: #{$tr}px;
+	border-bottom-right-radius: #{$br}px;
+	border-bottom-left-radius: #{$bl}px;
+}
+
+
+@mixin transanim ($time)	{
+	-webkit-transition: all #{$time}s ease-in-out;
+	-moz-transition: all #{$time}s ease-in-out;
+	-o-transition: all #{$time}s ease-in-out;
+	-ms-transition: all #{$time}s ease-in-out;
+	transition: all #{$time}s ease-in-out;
+}
+
+@mixin scrollbox ($sbwidth, $sbheight, $sboverflowx, $sboverflowy, $showscroll)	{
+	
+	.scroll-box	{
+		width: $sbwidth; 
+		height: $sbheight;
+		
+		.scroll-body {
+			width: $sbwidth;
+			height: $sbheight;
+			overflow-x: $sboverflowx;
+			overflow-y: $sboverflowy;
+		}
+		
+		.scroll-icon	{
+			display: $showscroll;
+		}
+	}
+}
+

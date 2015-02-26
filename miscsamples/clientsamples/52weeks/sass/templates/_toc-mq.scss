@@ -1,0 +1,120 @@
+/* Woopie framework 0.2 */
+/* Contents - Media Queries Styles */
+
+#contents-body, #contents-listing	{
+	margin:0 $gutter;
+}
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	
+	#contents-listing	{
+		
+		ol li ol li a	{
+			padding: $grid*0.75 0; 
+			margin: 0;
+			
+			i, em, p	{
+				display: none;
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#contents-listing	{
+		
+		ol li ol li a	{
+			background: url(../images/kitten.jpg) left top no-repeat;
+			background-size:  $grid*6, $grid*6 ; 
+			margin: $grid*0.5 0 0 0;
+			padding: 0 $grid*0.5 $grid*0.5 $grid*7;
+			
+			h3 {
+				padding:0 0 $grid*0.75 0;
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+	#contents-listing	{
+		
+		ol li ol li a {
+		
+			h3	{
+				float: left;
+			}
+			
+			span	{
+				float: right;
+				padding: $grid*0.25 $grid*0.25 0 0;
+			}
+			
+			p	{
+				clear: both;
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#contents-body, #contents-listing	{
+		margin:0 $medgutter;
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#contents-body, #contents-listing	{
+		margin:0 $rightlargegutter 0 $leftlargegutter;
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#contents-body, #contents-listing	{
+		margin:0 $righthugegutter 0 $lefthugegutter;
+	}
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#main-image-print	{
+		display: block;
+	}
+}

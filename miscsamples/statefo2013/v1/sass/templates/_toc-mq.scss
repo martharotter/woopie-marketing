@@ -1,0 +1,147 @@
+/* Woopie framework 0.2 */
+/* Contents - Media Queries Styles */
+
+#contents-body, #contents-listing	{
+	margin:0 $gutter;
+}
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#contents-listing	{
+		margin:0 $gutter;
+		
+		ol li a {
+			color: $color1;
+			
+			&:hover {
+				color: $color2;
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#contents-listing	{
+
+		border: 1px solid $color1;
+		clear: both;
+		display: table;
+		margin-bottom: $grid*2; 
+	
+		ol	{
+			padding: $grid;
+			
+			li	{
+				display: table-cell;
+				float: left;
+				margin: 0 $grid $grid 0;
+				padding: 0;
+				width: 48%;
+				
+				&:nth-of-type(2n)	{
+					margin-right:0;
+				}
+				
+				a	{
+					color: $color1;
+					padding: $grid*0.5 0;
+					
+					&:hover {
+						color: $color2;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#contents-body	{
+		margin:0 $medgutter;
+	}
+	
+	#contents-listing	{
+		margin:0 $medgutter $grid*2 $medgutter;
+		
+		ol	{
+			padding: $grid;
+			
+			li	{
+				width: 31%;
+				
+				&:nth-of-type(2n)	{
+					margin-right:$grid;	
+				}
+				
+				&:nth-of-type(3n)	{
+					margin-right:0;
+				}
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#contents-body	{
+		margin:0 $rightlargegutter 0 $leftlargegutter;
+	}
+	
+	#contents-listing	{
+		margin:0 $rightlargegutter $grid*2 $leftlargegutter;
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+	#contents-body	{
+		margin:0 $righthugegutter 0 $lefthugegutter;
+	}
+	
+	#contents-listing	{
+		margin:0 $righthugegutter $grid*2 $lefthugegutter;
+	}
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+	#main-image-print	{
+		display: block;
+	}
+}

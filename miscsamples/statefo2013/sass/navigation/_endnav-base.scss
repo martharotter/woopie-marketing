@@ -1,0 +1,54 @@
+/* Woopie framework 0.2 */
+/* End navigation (next/prev) - Base Styles */
+
+#end-nav	{
+	
+	margin: 0 $gutter;
+
+	ul	{
+		list-style: none;
+		margin:0;
+		padding: 0;
+	
+		li	{
+			float: left;
+			padding: 0;
+			text-align: center;
+			width: 50%;
+		}
+	}
+	
+	a	{
+		display: block;
+		padding: $grid*0.5 0;
+		text-decoration: none;
+	 	&:hover	{
+	 	}
+	}
+
+		
+	.arrow	{
+		font-family: $icons;
+	}
+	
+	h1	{
+		@include type
+		(1, 1.5, 0);
+		font-family: $endbartitle;
+		padding: $grid*0.25 0;
+	}
+	
+	h2	{
+		@include type
+		(1.25, 1.5, 0);
+		font-family: $endbarlink;
+	}
+	
+	#end-nav-prevarticle	{
+		text-align: left;
+	}
+
+	#end-nav-nextarticle	{
+		text-align: right;
+	}
+}

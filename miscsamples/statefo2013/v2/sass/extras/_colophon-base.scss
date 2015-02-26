@@ -1,0 +1,39 @@
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+
+.colophon h1	{
+	font-family: $font2;
+	@include type
+	(2, 2.5, 0);
+}
+
+#article-body .copyinfo	{
+	font-family: $font1;
+	font-style: italic;
+}
+
+#colophon-listing	{
+	margin: $grid 0;
+}
+
+#colophon-roles	{
+	@include type
+	(1, 1.5, 0);
+	width: 100%;
+	
+	dt	{
+		font-family: $font3;
+		margin: $grid*0.5 $grid 0 0;
+		padding: 0;
+	}
+	
+	dd	{
+		font-family: $font1;
+		margin: 0;
+		padding: 0;
+		
+		a {
+			font-style: italic;
+		}
+	}
+}

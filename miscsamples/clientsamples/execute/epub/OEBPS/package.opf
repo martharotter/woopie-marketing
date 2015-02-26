@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" version="3.0" unique-identifier="uid" xml:lang="en-US">
+    <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+        <dc:identifier id="uid">www.executebook.com</dc:identifier>
+        <dc:title>Execute</dc:title>
+        <dc:creator>Drew Wilson &amp; Josh Long</dc:creator>
+        <dc:language>en-US</dc:language>
+        <dc:date>2012-07-12</dc:date>
+        <dc:description>Execute is a new book by Drew Wilson &amp; Josh Long about executing on ideas immediately when inspired rather than following the normal rules.</dc:description>
+        <meta property="dcterms:modified">2012-07-12T12:00:00Z</meta>
+        <dc:rights>All rights reserved.</dc:rights>        
+        <meta name="cover" content="cover"/>
+    </metadata>
+  
+  <manifest>
+  	<item id="ncx"     			href="toc.ncx"                 			media-type="application/x-dtbncx+xml" />
+  	<item id="toc" 				href="toc.xhtml" 						media-type="application/xhtml+xml"	properties="nav" />
+    <item id="cover-image" 		href="images/book-cover.png" 			media-type="image/png" 				properties="cover-image" />
+    <item id="video" 			href="video/movie.m4v" 					media-type="video/m4v" />
+    <item id="video-poster"	 	href="images/poster.jpg" 				media-type="image/jpeg" />
+    <item id="no-video"	 		href="images/novideo.png" 				media-type="image/png" />
+    <item id="scrollicon"		href="images/scroll-icon.png" 			media-type="image/png" />
+    <item id="dummy1" 			href="images/dummy/dummy1.jpg" 			media-type="image/jpeg" />
+    <item id="dummy2" 			href="images/dummy/dummy2.jpg" 			media-type="image/jpeg" />
+    <item id="dummy3" 			href="images/dummy/dummy3.jpg" 			media-type="image/jpeg" />
+    <item id="dummy4" 			href="images/dummy/dummy4.jpg" 			media-type="image/jpeg" />
+    <item id="kitten" 			href="images/kitten.jpg" 				media-type="image/jpeg" />
+    <item id="dividerimg" 		href="images/divider-text.jpg" 			media-type="image/jpeg" />
+    <item id="dividertext" 		href="images/divider.jpg" 				media-type="image/jpeg" />
+    <item id="inspiration" 		href="images/inspiration.jpg" 			media-type="image/jpeg" />
+    
+    <item id="style" 			href="css/theme-epub.css" 				media-type="text/css" />
+
+    <item id="divider" 			href="html/divider-epub.xhtml" 			media-type="application/xhtml+xml" />
+    <item id="question" 		href="html/question-epub.xhtml" 		media-type="application/xhtml+xml" />
+    <item id="article" 			href="html/article-epub.xhtml" 			media-type="application/xhtml+xml" />
+    <item id="cover" 			href="html/cover.xhtml" 				media-type="application/xhtml+xml" />
+    
+    
+  </manifest>
+
+  <spine toc="ncx">    
+	<itemref idref="cover" 			linear="yes" />
+    <itemref idref="article" 		linear="yes" />
+    <itemref idref="divider" 		linear="yes" />
+    <itemref idref="question" 		linear="yes" />
+  </spine>
+  
+  <guide>
+	  <reference type="title-page" title="Title Page"   		href="html/cover.xhtml" />
+      <reference type="toc"        title="Table of Contents"	href="toc.xhtml" />
+	  <reference type="text"       title="Text"					href="html/article-epub.xhtml" />
+	  <reference type="text"       title="Text"					href="html/question-epub.xhtml" />
+	  <reference type="text"       title="Text"					href="html/divider-epub.xhtml" />
+	  <reference type="text"       title="Text"					href="html/question-epub.xhtml" />
+   </guide>
+
+</package>

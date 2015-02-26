@@ -1,0 +1,29 @@
+/* Woopie framework 0.2 */
+/* End social tools - Base Styles */
+
+#end-social	{
+	margin: $grid*2 0;
+	
+	ul	{
+		list-style: none;
+		margin:0;
+		padding: 0;
+		clear: both;
+		
+		li {
+			display: inline-block;
+			margin:0 $grid*0.5 0 0;
+		}
+	}
+	
+	.fb_iframe_widget iframe	{
+		vertical-align: top;
+		margin-top: -3px;
+	}
+	
+	h1	{
+		font-family: $bodyh2;
+		@include type
+		(1.1, 1, 0.5, bold, normal);
+	}
+}

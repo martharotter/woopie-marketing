@@ -1,0 +1,58 @@
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+
+#contents-body, #contents-listing	{
+	margin:0;
+}
+
+#contents-listing	{
+
+	ol	{
+		margin: 0 0 $grid*2 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			margin: 0;
+			padding: 0;
+		
+			h2	{
+				@include type
+				(1.25, 1, 0);
+				font-family: $font2;
+				padding: 0;
+				text-transform: uppercase;
+				
+				a {
+					color: $color1;
+					
+					&:hover	{
+						color: $color2;
+					}
+				}
+				
+				ol	{
+					margin: 0;
+					padding: 0;
+					
+					li {
+						margin: 0;
+						padding: 0;
+					}
+				}
+			}
+		}
+	}
+	
+	
+	ol li ol li a {
+		color: $color1;
+		display: block;
+		margin: 0;
+		padding: 0;
+			
+		&:hover	{
+			color: $color2;
+		}
+	}
+}

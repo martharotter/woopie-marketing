@@ -1,0 +1,89 @@
+/* Woopie framework 0.2 */
+/* scrollboxvert - Media Queries Styles */
+.scroll-box 	{
+	#article &	{
+		background: $color1;
+	}
+	.scroll-body	{
+		img	{
+			#article &	{
+				margin: 0;
+			}
+		}
+	
+		p {
+			@include type
+			(1, 1.4 ,1);
+			
+			#article &	{
+				color: $revcolor1;
+				margin: 0;
+				padding: $grid;
+			}
+			
+			#divider &	{
+				color: $revcolor1;
+				margin: 0;
+				padding: 0 0 $grid 0;
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+	
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+	@include scrollbox($grid*12,$grid*32,hidden,scroll,block)
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+	@include scrollbox($grid*18,$grid*32,hidden,scroll,block)
+}
+
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+	@include scrollbox($grid*18,$grid*32,hidden,scroll,block)
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+}

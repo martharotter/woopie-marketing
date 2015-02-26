@@ -1,0 +1,95 @@
+/* Woopie framework 0.2 */
+/* Article - Base Styles */
+#forward	{
+	background: rgb(238,42,123);
+	color: #fff;
+}
+
+.content-block p:hover	{
+	color: #fff;
+}
+
+#intro-heading.subtle-heading hgroup h1	{
+	color: #fff;
+}
+
+#intro-heading.subtle-heading hgroup h2	{
+	color: #000;
+}
+
+#end-nav ul	li	a	{
+	color:#fff;
+}
+
+#end-nav #end-nav-nextarticle, #end-nav #end-nav-prevarticle {
+	border-color:#fff;
+}
+
+/* Woopie framework 0.2 */
+/* Article - Media Queries Styles */
+
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 600px */	
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+
+}
+
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width: 100em) { 
+
+}
+
+/* ############################################################ */
+/* Print */
+@media print { 
+
+}
+
+/* ############################################################ */
+/* iPhone */
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+}

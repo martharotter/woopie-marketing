@@ -1,0 +1,15 @@
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+
+#frontcover	{
+	background:#333 no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	#top-bar, #end-nav, #publication-footer	{
+		display: none;
+	}
+}
+

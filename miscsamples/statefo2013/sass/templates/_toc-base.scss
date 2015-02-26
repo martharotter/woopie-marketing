@@ -1,0 +1,58 @@
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+#contents	{
+	background: $revcolor1;
+		
+	#intro-heading	{
+	    width: 100%;
+	
+		.titlebox	{
+			
+			h1 {
+				border-color: $color1;
+				color: $color1;
+			}
+			
+			h2	{
+				color: $color1;
+			}
+			
+			.tab	{
+				background: url(../images/tab-dark.png) no-repeat;
+				background-size: 100px 25px;
+			}
+		}
+	}
+}
+
+
+#contents-body	{
+	margin:0;
+}
+
+#contents-listing	{
+	
+	clear: both;
+
+	ol	{
+		margin: 0 0 $grid*2 0;
+		padding: 0;
+		list-style: none;
+		
+		li {
+			margin: 0;
+			padding: 0;
+			
+			a {
+				display: block;
+				margin: 0;
+				padding: $grid*0.25 0;
+			}
+		}	
+	}
+}
+
+#contents-intro	{
+	clear: both;
+	width: 100%;
+}

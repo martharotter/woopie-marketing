@@ -1,0 +1,12 @@
+/* Woopie framework 0.2 */
+/* Footer - Base Styles */
+
+#publication-footer	{
+	margin: $grid;
+	font-family: $footer;
+	
+	p	{
+		@include type
+		(1, 1.5, 1, normal, italic);
+	}
+}

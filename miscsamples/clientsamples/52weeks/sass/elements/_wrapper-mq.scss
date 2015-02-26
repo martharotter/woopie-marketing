@@ -1,0 +1,53 @@
+/* Woopie framework 0.2 */
+/* Wrapper stylesheet - media queries */ 
+
+@media only screen and (max-width: 480px)	{
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+	#wrapper, #advert	{
+		margin-bottom: $grid*6;
+	}
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em) { 
+
+	#wrapper	{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+}
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+	
+	#wrapper	{
+		max-width: 1280;
+		margin: 0 auto;
+	}
+
+}
+
+/* ############################################################ */
+/* Show on iPhone */
+.ios-only	{
+	display: none;
+}
+
+@media only screen and (max-device-width: 480px)	{
+	.ios-only	{
+		display: block;
+	}
+}
+
+@media only screen and (max-device-width: 1024px)	{
+	.ios-only	{
+		display: block;
+	}
+}

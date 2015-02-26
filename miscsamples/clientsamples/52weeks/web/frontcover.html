@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=""  prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+
+<meta charset="utf-8">
+
+<! -- About the Article //-->
+<title>Front Cover</title>
+<meta name="description" content="Description will go here that's where it goes">
+<meta name="author" content="Firstname Lastname">
+
+<meta property="og:site_name" content="woop.ie" />
+<meta property="og:title" content="Article Title" />
+<meta property="og:description" content="Description will go here that's where it goes" />
+<meta property="og:article:author" content="Firstname Lastname" />
+<meta property="og:article:section" content="Section" />
+<meta property="og:book:isbn" content="ISBN option" />
+<meta property="og:url" content="http://www.woop.ie/url/" />
+<meta property="og:image" content="article/img/thumbnail.jpg" />
+
+<! -- iOS view formatting //-->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<!--Microsoft -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- Typekit -->
+<script type="text/javascript" src="http://use.typekit.com/mzk8bbb.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+<! -- Stylesheets //-->
+<link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
+<link href="stylesheets/theme.css" rel="stylesheet" />
+<link href="frontcover/styles.css" rel="stylesheet" />
+<link href="stylesheets/print.css" media="print" rel="stylesheet" />
+<!--[if IE]>
+	<link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+</head>
+
+
+<body id="frontcover">
+
+<div id="debug-console">Pixels <i id="pixels"></i> Ems <i id="ems"></i> Window <i id="debug-window"></i> Mouse <i id="debug-coor">0, 0</i></div>
+
+<!-- START main wrapper //-->
+<div id="wrapper">
+
+
+<!-- START intro section //-->
+<section class="frontcover-box">
+
+	<!-- START article heading //-->
+	<header role="banner" id="frontcover-heading" class="group">
+	
+		<!-- START main image //-->
+		<div id="frontcover-image"><img src="images/cover.png" alt="kitten" width="100%" /></div>
+		<div id="frontcover-image-print"><img src="images/cover.png" alt="kitten" width="100%" /></div>
+		<!-- END main image //-->
+
+	</header>
+	<!-- End article heading //-->
+
+</section>
+<!-- End intro section //-->
+
+
+</div><!-- END main wrapper //-->
+
+
+<!-- jQuery plugins, CDN and fallback //-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+if (typeof jQuery == 'undefined') {
+    document.write(unescape("%3Cscript src='/js/jquery-1.7.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+}
+</script>
+<script type="text/javascript" src="js/debug.js"></script>
+
+<!-- Google Analytics //-->
+<script>
+ var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+ (function(d, t) {
+  var g = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+  g.async = true;
+  g.src = '//www.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g, s);
+ })(document, 'script');
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+/* Woopie framework 0.2 */
+/* Buttons - Base Styles */
+
+.btn	{
+	
+	a {
+		background: $color2;
+		border-bottom: 3px solid darken($color2,20%);
+		color: #fff;
+		-webkit-text-fill-color: #fff;
+		&:hover	{
+			background: $color4;
+			color: $revcolor1;
+			border-bottom: 3px solid darken($color4,20%);
+		}
+		&:active	{
+			position: relative;
+			top:2px;
+		}
+		display: inline-block;
+		font-family: $font3;
+		font-weight: bold;
+		padding: $grid*0.75 $grid;
+		margin: 0 0 $grid 0;
+		text-transform: uppercase;
+		@include roundcorner(4);
+		
+		i {
+			font-style: normal;
+			font-family: $icons;
+			font-size: $grid*1.5;
+		}
+	}
+	
+}

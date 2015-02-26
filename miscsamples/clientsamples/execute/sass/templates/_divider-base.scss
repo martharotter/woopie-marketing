@@ -1,0 +1,52 @@
+ /* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+
+#divider	{
+	#end-nav, #publication-footer	{
+		display: none;
+	}
+	
+	background:no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#divider-image	{
+	display: block;
+	margin: 0 0 $grid 0;
+}
+
+#divider-heading	{
+
+	margin: 0;
+	padding: $grid;
+	
+	a {
+		color: $revcolor1;
+	}
+
+	p	{
+		color: $revcolor1;
+		@include type
+		(3, 1, 1);
+		font-family: $font2;
+		text-align: center;
+		text-transform: uppercase;
+		
+		strong	{
+			
+		font-family: $font2;
+		}
+	}
+}
+
+.divider-content	{
+	padding:0 $grid;
+}
+
+#main-image	{
+	margin: 0;
+	padding: 0;	
+}

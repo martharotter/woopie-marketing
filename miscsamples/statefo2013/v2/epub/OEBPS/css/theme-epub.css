@@ -1,0 +1,616 @@
+/* Woopie framework 0.2 */
+/* ePub Theme - Pull in relevant template files, set elements values */
+/* Woopie framework 0.2 */
+/* Variables - define widths, colors, font families etc. */
+/* Measurements */
+/* Set a base scale */
+/* Left and right spacing */
+/* Specific left and right spacing for wider screens */
+/* Indent for wider screens */
+/* Main image sizing */
+/* Font Set */
+/* Type */
+/* Color Set */
+/* State Mid/Dark Grey - Main text color */
+/* State Mid/Dark Grey (70%) - Secondary text color */
+/* State Dark Grey - Highlight color */
+/* State Mid/Dark Grey (60%) - Highlight color */
+/* State Light Grey */
+/* White */
+/* Colors */
+/* Page colors */
+/* Top bar */
+/* Titles */
+/* Links */
+/* Woopie framework 0.2 */
+/* Mixins - useful shortcuts and tools */
+/* Woopie framework 0.2 */
+/* Wrapper stylesheet */
+#wrapper {
+  margin: 0;
+  padding: 0; }
+
+/* Containers */
+/* Woopie framework 0.1 */
+/* Fonts - Modern Pictograms */
+/* @font-face {
+    font-family: 'ModernPictogramsNormal';
+    src: url('../../fonts/modernpics-webfont.eot');
+    src: url('../../fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/modernpics-webfont.woff') format('woff'),
+         url('../../fonts/modernpics-webfont.ttf') format('truetype'),
+         url('../../fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+/* Icons - icon typeface */
+/* Woopie framework 0.2 */
+/* Global content blocks - Base Styles */
+.content-block {
+  /* Start Blockquote */
+  /* End Blockquote */
+  /* Figures */
+  /* Tables*/ }
+  .content-block h1 {
+    color: #99948c;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-size: 1.15em;
+    line-height: 1.25;
+    margin: 0 0 9px 0;
+    font-weight: normal;
+    font-style: italic;
+    text-rendering: optimizeLegibility; }
+  .content-block h2 {
+    color: #99948c;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-size: 1.15em;
+    line-height: 1.25;
+    margin: 0 0 9px 0;
+    font-weight: normal;
+    font-style: italic;
+    text-rendering: optimizeLegibility; }
+  .content-block h3 {
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-size: 1.25em;
+    line-height: 1.25;
+    margin: 0 0 18px 0; }
+  .content-block p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 36px 0; }
+  .content-block pre {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 18px 0;
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */ }
+  .content-block ul, .content-block ol {
+    margin: 0 0 18px 27px;
+    padding: 0; }
+  .content-block li {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 4.5px 0;
+    padding: 0; }
+    .content-block li ul, .content-block li ol {
+      margin: 9px 0 0 36px;
+      padding: 0; }
+  .content-block ul li, .content-block ol ul li {
+    list-style: square; }
+  .content-block ol li, .content-block ul ol li {
+    list-style: decimal; }
+  .content-block sup {
+    font-size: 9px; }
+  .content-block abbr {
+    border-bottom: 1px dotted #99948c;
+    cursor: help; }
+  .content-block blockquote {
+    border: 1px solid #99948c;
+    border-width: 2px 0 0 0;
+    margin: 0 0 18px 0;
+    padding: 18px 0;
+    page-break-inside: avoid; }
+  .content-block blockquote p {
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-style: normal;
+    margin: 0 0 18px 0;
+    padding: 0; }
+  .content-block blockquote cite {
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-style: italic;
+    color: #99948c;
+    display: block;
+    margin: 0;
+    padding: 0; }
+  .content-block blockquote cite:before {
+    content: "— ";
+    opacity: 0.5; }
+  .content-block .fig-image, .content-block .fig-image-fixedsize, .content-block .fig-video, .content-block .fig-pullquote {
+    margin: 0 0 18px 0;
+    padding: 0;
+    page-break-inside: avoid; }
+  .content-block figcaption, .content-block .section-caption {
+    background: white;
+    margin: 0;
+    padding: 9px;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomright: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px; }
+  .content-block .fig-image img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -moz-border-radius-bottomright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .content-block .fig-image {
+    position: relative;
+    clear: right;
+    float: right;
+    width: 216px;
+    margin: 0 0 18px 36px; }
+  .content-block .section-image {
+    margin: 0 0 18px 0;
+    position: relative; }
+    .content-block .section-image img {
+      display: block;
+      margin: 0;
+      -webkit-border-top-left-radius: 4px;
+      -webkit-border-top-right-radius: 4px;
+      -webkit-border-bottom-right-radius: 0px;
+      -webkit-border-bottom-left-radius: 0px;
+      -moz-border-radius-topleft: 4px;
+      -moz-border-radius-topright: 4px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px; }
+  .content-block .fig-image-fixedsize {
+    width: 100%; }
+    .content-block .fig-image-fixedsize img {
+      display: block;
+      float: none;
+      width: auto;
+      margin: 0;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px; }
+    .content-block .fig-image-fixedsize figcaption {
+      background: none;
+      padding: 9px 0;
+      width: 100%; }
+  .content-block .fig-video {
+    clear: both;
+    display: block;
+    width: 640px;
+    height: 320px;
+    height: auto;
+    page-break-inside: avoid; }
+    .content-block .fig-video video {
+      margin: 0; }
+  .content-block figcaption code {
+    font-style: normal; }
+  .content-block .fig-image-zoom {
+    color: #dbd2c8;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 4em;
+    line-height: 4;
+    margin: 0 0 0px 0;
+    padding: 0 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10; }
+  .content-block table {
+    border-collapse: collapse;
+    margin: 0 0 36px 0;
+    padding: 0;
+    width: 100%; }
+  .content-block th, .content-block td {
+    border-bottom: 1px solid #6d675b;
+    padding: 9px;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 18px 0; }
+  .content-block th {
+    text-align: left; }
+  .content-block td {
+    border-bottom: 1px solid #e6e4e1; }
+
+/* Base HTML formating */
+/* Woopie framework 0.2 */
+/* Titles - Base Styles */
+/* Intro Headings */
+#intro-heading .titlebox {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  z-index: 200;
+  position: relative; }
+#intro-heading h1 {
+  border: 1px solid #6d675b;
+  color: #6d675b;
+  font-size: 2em;
+  line-height: 1;
+  margin: 0 0 27px 0;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+  padding: 49.5px 36px 36px 36px;
+  text-align: center;
+  z-index: 300; }
+#intro-heading h2 {
+  background: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 1em;
+  line-height: 1;
+  margin: 0 0 18px 0;
+  padding: 9px 0;
+  margin: 18px 0 0 0; }
+  #intro-heading h2 b {
+    color: #99948c;
+    font-family: "sophisto", "EumphemiaUCAS", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: bold;
+    padding: 0 9px 0 0; }
+  #intro-heading h2 i {
+    color: #99948c;
+    font-family: "sophisto", "EumphemiaUCAS", "Helvetica Neue", "Helvetica", sans-serif;
+    font-style: normal; }
+#intro-heading .tab {
+  background: url(../images/tab-dark.png) no-repeat;
+  background-size: 100px 25px;
+  margin-left: 20px;
+  width: 100px;
+  height: 25px;
+  z-index: 400; }
+#intro-heading #main-image img {
+  position: relative;
+  z-index: 10; }
+#intro-heading.noimage {
+  margin-top: 36px; }
+
+#main-image-print {
+  width: 100%; }
+  #main-image-print img {
+    max-width: 100%; }
+
+/* Top of page */
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+#credits {
+  margin: 0 0 18px 0; }
+
+#roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 36px 0;
+  font-weight: normal;
+  font-style: italic;
+  clear: both;
+  padding: 0 0 36px 0;
+  width: 100%; }
+  #roles dt {
+    color: #6d675b;
+    float: left;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    margin: 0 4.5px 0 0;
+    padding: 0; }
+  #roles dd {
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    margin: 0;
+    padding: 0;
+    color: #6d675b; }
+
+/* Roles & Credits */
+/* Woopie framework 0.2 */
+/* Issue Info - Base Styles */
+#edition {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  font-weight: normal;
+  font-style: italic;
+  color: #dbd2c8;
+  font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+  padding: 0 0 36px 0;
+  width: 100%; }
+  #edition dt {
+    float: left;
+    margin: 0;
+    padding: 0; }
+  #edition dd {
+    float: left;
+    margin: 0 36px 0 9px;
+    padding: 0; }
+
+/* Issue details (month, number etc) */
+/* Woopie framework 0.2 */
+/* Introduction section - Base Styles */
+#intro-section p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin: 0 0 36px 0;
+  font-weight: normal;
+  font-style: italic; }
+#intro-section ul {
+  margin: 0;
+  padding: 0; }
+  #intro-section ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0 0 18px 0; }
+
+/* Intro deck */
+/* Woopie framework 0.2 */
+/* Buttons - Base Styles */
+.btn a {
+  background: #99948c;
+  border-bottom: 3px solid #65615a;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  display: inline-block;
+  font-family: "sophisto", "EumphemiaUCAS", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: bold;
+  padding: 13.5px 18px;
+  margin: 0 0 18px 0;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  .btn a:hover {
+    background: #a7a49d;
+    color: #dbd2c8;
+    border-bottom: 3px solid #757169; }
+  .btn a:active {
+    position: relative;
+    top: 2px; }
+  .btn a i {
+    font-style: normal;
+    font-family: "ModernPictogramsNormal", Arial, Serif;
+    font-size: 27px; }
+
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+.colophon h1 {
+  font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+  font-size: 2em;
+  line-height: 2.5;
+  margin: 0 0 0px 0; }
+
+#article-body .copyinfo {
+  font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+  font-style: italic; }
+
+#colophon-listing {
+  margin: 18px 0; }
+
+#colophon-roles {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+  width: 100%; }
+  #colophon-roles dt {
+    font-family: "sophisto", "EumphemiaUCAS", "Helvetica Neue", "Helvetica", sans-serif;
+    margin: 9px 18px 0 0;
+    padding: 0; }
+  #colophon-roles dd {
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    margin: 0;
+    padding: 0; }
+    #colophon-roles dd a {
+      font-style: italic; }
+
+/* Woopie framework 0.2 */
+/* Cfredits - Base Styles */
+.credits-block {
+  clear: both; }
+  .credits-block .fig-more {
+    margin: 0; }
+  .credits-block h2 {
+    color: #99948c;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 0px 0;
+    font-weight: normal;
+    font-style: italic;
+    text-rendering: optimizeLegibility;
+    padding: 0; }
+  .credits-block p {
+    margin: 0 0 18px 0; }
+
+/* Woopie framework 0.2 */
+/* Advert - Base Styles */
+#advert {
+  background: #333 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  #advert .adblock {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    #advert .adblock p {
+      margin: 0;
+      padding: 0; }
+  #advert #publication-footer {
+    color: #dbd2c8; }
+
+#advert #end-nav ul a {
+  border: none; }
+#advert #end-nav hgroup h1, #advert #end-nav hgroup h2 {
+  color: #fff; }
+
+/* Page types */
+/* Woopie framework 0.2 */
+/* Article - Base Styles */
+#article-body {
+  margin: 0; }
+  #article-body section {
+    margin: 0 0 54px 0; }
+
+/* Woopie framework 0.2 */
+/* Contents - Base Styles */
+#contents {
+  background: #35322d; }
+  #contents #intro-heading {
+    width: 100%; }
+    #contents #intro-heading .titlebox h1 {
+      border-color: #dbd2c8;
+      color: #dbd2c8; }
+    #contents #intro-heading .titlebox h2 {
+      color: #dbd2c8; }
+    #contents #intro-heading .titlebox .tab {
+      background: url(../images/tab-light.png) no-repeat;
+      background-size: 100px 25px; }
+
+#contents-body, #contents-listing {
+  margin: 0;
+  color: #dbd2c8; }
+
+#contents-listing {
+  clear: both; }
+  #contents-listing h3 {
+    color: #dbd2c8; }
+  #contents-listing ol {
+    margin: 0 0 36px 0;
+    padding: 0;
+    list-style: none; }
+    #contents-listing ol li {
+      margin: 0;
+      padding: 0; }
+      #contents-listing ol li a {
+        color: #dbd2c8;
+        display: block;
+        margin: 0;
+        padding: 4.5px 0; }
+
+#contents-intro {
+  clear: both;
+  width: 100%; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#divider-heading {
+  padding: 18px; }
+  #divider-heading img {
+    margin: 0 0 18px 0; }
+  #divider-heading h1 {
+    border: 1px solid #6d675b;
+    color: #6d675b;
+    font-size: 2em;
+    line-height: 1;
+    margin: 0 0 27px 0;
+    font-weight: bold;
+    font-style: italic;
+    font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+    padding: 49.5px 36px 36px 36px;
+    text-align: center; }
+  #divider-heading .tab {
+    background: url(../images/tab-dark.png) no-repeat;
+    background-size: 100px 25px;
+    margin-left: 20px;
+    width: 100px;
+    height: 25px; }
+
+.divider-box a {
+  color: #dbd2c8; }
+
+/* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+#frontcover {
+  background: #333 no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; }
+  #frontcover #top-bar, #frontcover #end-nav, #frontcover #publication-footer {
+    display: none; }
+
+#frontcover-heading {
+  position: relative;
+  height: 440px;
+  padding: 20px;
+  text-align: center; }
+
+#frontcover-image-top {
+  margin: 0 auto;
+  max-width: 480px; }
+
+#frontcover-image-end {
+  position: absolute;
+  bottom: 20px;
+  margin: 0 auto;
+  margin-top: 300px;
+  max-width: 480px; }
+
+#front-box-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000; }
+
+/* Woopie framework 0.2 */
+/* Base stylesheet - epub specifics */
+/* Basic Stuff  */
+#wrapper {
+  font-family: "adobe-caslon-pro", Palatino, "TimesNewRomanPSMT", "Times New Roman", Serif;
+  font-size: 11pt;
+  background-color: #fff;
+  color: #6d675b; }
+
+/* link colors */
+a {
+  text-decoration: none;
+  -webkit-text-fill-color: #99948c; }
+
+/* Audio player */
+audio {
+  display: block;
+  margin: 4.5px 0 9px 0;
+  width: 300px;
+  height: 30px; }

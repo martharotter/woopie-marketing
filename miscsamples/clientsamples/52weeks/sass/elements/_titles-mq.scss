@@ -1,0 +1,153 @@
+/* Woopie framework 0.2 */
+/* Titles - Media Queries Styles */
+#intro-heading	{
+
+}
+
+/* ############################################################ */
+/* Less than 480px */
+@media screen and (max-width: 30em) { 
+
+	#intro-heading	{
+	    width: 100%;
+	
+		hgroup	{
+			background: $color1;
+			margin:0 0 $grid 0;
+			padding: $grid $gutter $grid*0.25  $gutter;
+			@include boxit(vertical);
+			
+			h1	{
+				border: none;
+				color: $revcolor1;
+				@include boxnum(2);
+			}
+			
+			h2	{
+				color: $revcolor2;
+				border-width: 1px 0;
+				@include boxnum(1);
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+
+	}
+	
+	#main-image	{
+		margin: 0;
+		padding: 0;
+		
+		img	{
+			max-width: 200px;
+		}
+	}
+}
+
+
+/* ############################################################ */
+/* Over 480px */	
+@media screen and (min-width: 30.1em)  { 
+
+	#intro-heading	{
+		margin: 0;
+		
+		hgroup	{
+			margin:$grid*2 $gutter;
+			border: 1px solid $revcolor2;
+			border-width: 2px 0 1px 0;
+			
+			h1	{
+				padding: $grid 0;
+				margin: 0;
+			}
+			
+			h2 {
+				display: none;
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 600px */
+@media screen and (min-width: 37.6em)  { 
+
+}
+
+/* ############################################################ */
+/* For general iPad layouts */
+@media only screen and (device-width: 768px) {
+
+}
+
+/* ############################################################ */
+/* Over 768px */
+@media screen and (min-width: 48.1em)  { 
+		
+	#main-image	{
+		float: left;
+		margin: 0 $grid*4 $grid*2 0;
+	}
+}
+
+/* ############################################################ */
+/* Over 1024px */
+@media screen and (min-width: 64.1em)  { 
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:$grid*2 $medgutter $grid*2 $medgutter;
+			
+			h1 {
+				@include type
+				(3, 1, 0);
+			}
+			
+			h2	{
+				@include type
+				(1.5, 1.25, 1);
+			}
+		}
+	}
+}
+
+/* ############################################################ */
+/* Over 1280px */
+@media screen and (min-width: 80.1em)	{
+	
+	#intro-heading {
+	
+		hgroup	{
+			margin:$grid*2 $rightlargegutter $grid*3 $leftlargegutter;
+		}
+	}
+} 
+
+/* ############################################################ */
+/* Over 1600px */
+@media screen and (min-width:  100em) { 
+	
+	#intro-heading {
+	
+		margin-top: $grid*4;
+	
+		hgroup	{
+			margin:$grid*4 $righthugegutter $grid*3 $lefthugegutter;
+		}
+	}
+	
+			
+	#main-image	{	
+		position: fixed;
+		float: left;
+		margin:(-$grid*11) 0 $grid*2 (-$grid*26);
+		text-align: right;
+		width: $grid*22;
+		
+		img	{
+			float: right;
+		}
+	}
+}

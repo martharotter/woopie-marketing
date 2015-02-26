@@ -1,0 +1,40 @@
+/* Woopie framework 0.2 */
+/* Base stylesheet - useful objects */ 
+
+/* Box size */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;  }
+
+
+/* Reset headings */
+h1,h2, h3, h4, h5, h6	{
+	display: block;
+	font-size:1em;
+	font-weight: normal;
+	margin:0;
+	padding:0;
+}
+
+/* clearfix */
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+body	{
+	margin:0;
+	padding:0;
+	-webkit-font-smoothing: antialiased;
+}
+
+a:hover, a:active	{
+	cursor: pointer;
+}
+
+

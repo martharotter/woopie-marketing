@@ -1,0 +1,23 @@
+/* Woopie framework 0.2 */
+/* Cfredits - Base Styles */
+.credits-block	{
+
+	clear: both;
+	
+	.fig-more	{
+		margin: 0;
+	}
+	
+	h2	{
+		color: $color2;
+		font-family: $bodyh2;
+		@include type
+		(1.15, 1.5, 0, bold, italic);
+		text-rendering: optimizeLegibility;
+		padding: 0;
+	}
+	
+	p	{
+		margin: 0 0 $grid 0;
+	}
+}

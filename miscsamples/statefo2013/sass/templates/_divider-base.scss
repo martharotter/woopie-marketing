@@ -1,0 +1,37 @@
+ /* Woopie framework 0.2 */
+/* Front cover - Base Styles */
+
+#divider-heading	{
+
+	padding: $grid;
+	
+	img	{
+		margin: 0 0 $grid 0;
+	}
+	
+	h1 {
+		border: 1px solid $color1;
+		color: $color1;
+		@include type
+		(2, 1, 1.5, bold, italic);
+		font-family: $titleh1;
+		padding:$grid*2.75 $grid*2 $grid*2 $grid*2;
+		text-align: center;
+	}
+	
+	.tab	{
+		background: url(../images/tab-dark.png) no-repeat;
+		background-size: 100px 25px;
+		margin-left: 20px;
+		width: 100px;
+		height:25px;
+	}
+
+}
+
+.divider-box	{
+	
+	a {
+		color: $revcolor1;
+	}
+}

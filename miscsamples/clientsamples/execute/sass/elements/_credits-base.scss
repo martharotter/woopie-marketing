@@ -1,0 +1,30 @@
+/* Woopie framework 0.2 */
+/* Credits - Base Styles */
+
+#credits	{
+	margin:0 0 $grid 0;
+}
+
+#roles	{
+	@include type
+	(1, 1.5, 0);
+	clear: both;
+	width: 100%;
+	
+	dt	{
+		color: $color1;
+		float:left;
+		font-family: $font3;
+		font-weight: bold;
+		margin: 0 $grid 0 0;
+		padding: 0;
+		
+	}
+	
+	dd	{
+		font-family: $font3;
+		margin: 0;
+		padding: 0;
+		color: $color1;
+	}
+}
