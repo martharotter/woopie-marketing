@@ -2651,7 +2651,7 @@ html[xmlns] .slides {
 /* Woopie framework 0.2 */
 /* Advert - Base Styles */
 #advert {
-  background: #333333 url(../../images/kitten.jpg) no-repeat center center fixed;
+  background: #333333 url(../images/kitten.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
