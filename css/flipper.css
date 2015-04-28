@@ -1,0 +1,81 @@
+/* Woopie framework 0.3 */
+/* Flip cards - Media Queries Styles */
+.flipper {
+  border: none;
+  height: 280px;
+  width: 260px;
+  float: left;
+  position: relative;
+  margin: 0 18px 18px 0;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1.5s;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+  -moz-box-shadow: 0 2px 5px #ccc; }
+
+.rotated {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+.front {
+  z-index: 50; }
+
+.back {
+  z-index: 10;
+  background: #fff; }
+
+.rotated .back {
+  z-index: 99; }
+
+.side {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  height: 280px;
+  width: 260px;
+  overflow: auto; }
+
+.front {
+  background: #fff;
+  color: #000;
+  height: 280px;
+  width: 260px; }
+
+.back {
+  height: 280px;
+  width: 260px;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg); }
+
+/* Less than 500px #################### */
+@media screen and (max-width: 31.25em) {
+  .flipper, .side, .front, .back {
+    width: 29%; } }
+/* More than 500px #################### */
+@media screen and (min-width: 31.25em) {
+  .flipper {
+    width: 29%;
+    margin: 2%; }
+    .flipper .side, .flipper .front, .flipper .back {
+      width: 100%; } }
+/* More than 800px ##################### */
+/* More than 1200px #################### */
+/* Print  ############################## */
+
+.content-block .flipper h1 {
+  border-bottom: 1px solid #db3a5c;
+  font-size: 13.5px;
+  font-family: "Open Sans Condensed", "HelveticaNeue-CondensedBold", sans-serif;
+  padding-bottom: 9px;
+  text-transform: uppercase;
+  color: #738295; }
+.content-block .flipper h2 {
+  font-family: "Arvo", "HelveticaNeue", sans-serif;
+  font-weight: normal; }
+.content-block .flipper .back h1 {
+  border-bottom-color: #3a86db; }
+
+/* Woopie framework 0.3 */
+/* CLASSIC - Media Queries Styles */
+.content-block .flipper {
+  -webkit-box-shadow: 0px 0px 10px 1px #bcc3cc;
+  -moz-box-shadow: 0px 0px 10px 1px #bcc3cc;
+  box-shadow: 0px 0px 10px 1px #bcc3cc; }
