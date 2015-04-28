@@ -12,6 +12,7 @@ module.exports = function(grunt) {
                      'css/lib/flexslider.css',
                      'css/lib/lightbox.css',
                      'css/flexslider.override.css',
+                     'css/flipper.css',
                      'css/stylesheet.css',
                     ],
                 dest: 'css/combined.css'
@@ -25,6 +26,7 @@ module.exports = function(grunt) {
                     'js/lib/selectivizr-min.js',
                     'js/helper.js', 
                     'js/script.js',
+                    'js/flipper.js',
                 ],
                 dest: 'js/production.js',
             }
