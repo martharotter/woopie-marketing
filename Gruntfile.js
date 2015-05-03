@@ -4,6 +4,13 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        import: {
+            options: {},
+            dist: {
+                src: 'js/script.js',
+                dest: 'js/script-imported.js',
+            }
+        },
         concat: {
             // 2. Configuration for concatinating files goes here.
             css: {
@@ -25,7 +32,7 @@ module.exports = function(grunt) {
                     'js/lib/modernizr-2.5.3-min.js',
                     'js/lib/selectivizr-min.js',
                     'js/helper.js', 
-                    'js/script.js',
+                    'js/script-imported.js',
                     'js/flipper.js',
                 ],
                 dest: 'js/production.js',
@@ -37,7 +44,7 @@ module.exports = function(grunt) {
                 "expr": true,
                 "-W069": true
             },
-            beforeconcat: [ 'js/helper.js', 'js/lib/jquery.leanModal.js', 'js/lib/lightbox.js', 'js/script.js' ],
+            beforeconcat: [ 'js/helper.js', 'js/lib/jquery.leanModal.js', 'js/lib/lightbox.js', 'js/script-imported.js' ],
             afterconcat: []
         },
         uglify: {
@@ -94,6 +101,7 @@ module.exports = function(grunt) {
     });
 
     // 3. Where we tell Grunt we plan to use this plug-in.
+    grunt.loadNpmTasks('grunt-import');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -103,7 +111,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-html-validation');
 
     // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-    grunt.registerTask('default', ['concat', 'jshint', 'uglify', 'cssmin', 'validation']);
+    grunt.registerTask('default', ['import', 'concat', 'jshint', 'uglify', 'cssmin', 'validation']);
     grunt.registerTask('imagemin', ['imagemin']);
     grunt.registerTask('validate', ['validation']);
 };
