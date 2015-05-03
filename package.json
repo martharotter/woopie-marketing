@@ -9,6 +9,7 @@
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-html-validation": "^0.1.18",
-    "grunt-contrib-jshint": "^0.10.0"
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-import": "^0.1.7"
   }
 }
