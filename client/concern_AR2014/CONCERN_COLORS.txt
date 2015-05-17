@@ -1,0 +1,18 @@
+CONCERN COLORS: 
+
+
+emergencies - 
+mustard yellow: #b6c444;
+livelihoods - 
+lime green: #75bf5b
+health - 
+light aqua blue: #4ac4ba
+education - 
+dark teal blue: #288b82
+
+
+(totals)
+light table teal: #46978e
+
+(headers)
+dark table teal: #00756b
