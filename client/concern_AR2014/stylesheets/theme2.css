@@ -3637,3 +3637,23 @@ html, body {
 
   .no-print, #footer-social, #publication-footer h1, .more-links, #end-nav, #top-bar, #debug-console {
     display: none; } }
+
+.two-col {
+-webkit-column-count: 2;
+-moz-column-count: 2;
+column-count: 2;
+-webkit-column-gap: 4em;
+-moz-column-gap: 4em;
+column-gap: 4em;
+}    
+
+@media screen and (max-width: 31.25em) {
+  .two-col {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 4em;
+    -moz-column-gap: 4em;
+    column-gap: 4em;
+  } 
+}
