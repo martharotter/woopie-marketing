@@ -53,14 +53,6 @@
 
 <!-- CUSTOM CSS -->
 <style> 
-.two-col {
--webkit-column-count: 2;
--moz-column-count: 2;
-column-count: 2;
--webkit-column-gap: 4em;
--moz-column-gap: 4em;
-column-gap: 4em;
-}    
 #intro-heading #main-image {
     height:658px;
 }
@@ -68,7 +60,20 @@ column-gap: 4em;
   height:658px;
   padding: 0 170px;
 }
-
+.content-block h2.header-content {
+  color: #b6c444;
+  font-size: 1.75em;
+  line-height: 1.2;
+}
+@media screen and (max-width: 31.25em) {
+    #intro-heading #main-image {
+    height: auto;
+  }
+  #intro-heading {
+    height: auto;
+    padding: 0;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -127,7 +132,7 @@ column-gap: 4em;
         <aside class="sidebar go-right">
         <p>A girl with her family’s food ration card at a general food distribution site in Juba, South Sudan. Concern distributed more than 2,000 metric tonnes of food to more than 11,800 people living in the camp. Once a family checks into the distribution, a card is given to them to access a month’s ration of food.<br/><em>Photo: Crystal Wells</em></p>
         </aside>
-        <h1 style="font-size: 1.75em;line-height: 1.2;">Prevention and preparation</h1>
+        <h2 class="header-content">Prevention and preparation</h2>
 
     <!-- START a section //-->
     <section class="content-block">

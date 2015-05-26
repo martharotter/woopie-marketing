@@ -52,6 +52,32 @@
 
 <!-- CUSTOM CSS -->
 <style> 
+ul.minilist {
+  list-style-type: none;
+}
+.content-block ul.chevronlist li, .content-block ol ul.chevronlist li {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.chevronlist li:before{ content:"»  "; position:relative; left:-5px;}
+
+.content-block ul.circlelist li, .content-block ol ul.circlelist li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.circlelist li:before{ content:""; position:relative; left:-5px;}
+
+.content-block ul.minilist li, .content-block ol ul.minilist li {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.minilist li:before{ content:"-"; position:relative; left:-5px;}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -109,16 +135,20 @@
 
     <!-- START a section //-->
     <section class="content-block two-col">
-        <p>»  Unrestricted funds: these are of two types:</p>
-<ul>
+        <ul class="chevronlist">
+        <li> &nbsp; Unrestricted funds: these are of two types:
+<ul class="circlelist">
 <li>Designated funds (€39.9 million); these are unrestricted funds which have been allocated by the Council for specific purposes and which are (as a result) not available for general usage. At the end of 2014 funds had been designated for four specific purposes as follows:</li>
 
-<br> &nbsp; -  To cover the planned 2015 budget deficit.
-<br> &nbsp; -  To recognise that a portion of reserves is invested in the charity’s fixed assets (tangible and financial) and is not therefore available for other purposes.
-<br> &nbsp; -  To ensure the continuity of operations in the event of a temporary downturn in income.
-<br> &nbsp; -  To finance investment in new fundraising opportunities.
-<br><br>
+<ul class="minilist">
+<li> &nbsp; To cover the planned 2015 budget deficit.
+<li> &nbsp; To recognise that a portion of reserves is invested in the charity’s fixed assets (tangible and financial) and is not therefore available for other purposes.
+<li> &nbsp; To ensure the continuity of operations in the event of a temporary downturn in income.
+<li> &nbsp; To finance investment in new fundraising opportunities.
+</ul>
+
 <li>General unrestricted funds (€0.8 million): these represent funds which are available for the general purposes of the charity.</li>
+</ul>
 </ul>
 
 <p>Council reviews the level of reserves held periodically. The 
@@ -140,18 +170,19 @@ basis in preparing the financial statements.</p>
 <br>In addition to the parent company, during 2014 there 
 were two active subsidiary companies within the group:</p>
 
-<p>»  Concern Worldwide (UK) engages in fundraising, 
+<ul class="chevronlist">
+<li>Concern Worldwide (UK) engages in fundraising, 
 development education and advocacy work in 
 the United Kingdom. The company had another 
 successful year in 2014, producing substantial net 
 income for group activities. The year-end position of 
 the company was satisfactory and it is expected to 
-continue trading for the foreseeable future.</p>
-
-<p>»  Concern Charity Trading Limited continued to provide 
+continue trading for the foreseeable future.</li>
+<li>Concern Charity Trading Limited continued to provide 
 support to group fundraising activities. Any costs 
 associated with this activity have been borne by the 
-parent company.</p>
+parent company.</li>
+</ul>
 
 <p> 
 As explained in note 25 to the financial statements, apart 

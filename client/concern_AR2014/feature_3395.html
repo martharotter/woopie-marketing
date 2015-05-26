@@ -51,15 +51,18 @@
 <![endif]-->
 
 <!-- CUSTOM CSS -->
-<style> 
-.two-col {
--webkit-column-count: 2;
--moz-column-count: 2;
-column-count: 2;
--webkit-column-gap: 4em;
--moz-column-gap: 4em;
-column-gap: 4em;
-}      
+<style>
+.content-block h1 {
+  font-size: 2em;
+}
+.content-block {
+  width: 60%;
+}
+@media screen and (max-width: 31.25em) {
+  .content-block {
+    width: 80%;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -117,8 +120,8 @@ column-gap: 4em;
 <article role="main" id="article-body">
 
     <!-- START a section //-->
-    <section class="content-block" style="width:60%;">
-    <div style="width:170px;border-top: 10px black solid;"></div>
+    <section class="content-block">
+    <div id="top-border-bar"></div>
         <h1>Information Technology</h1>
         <p>We continue to use technology to improve efficiency and effectiveness in our offices and on the ground.</p>
 

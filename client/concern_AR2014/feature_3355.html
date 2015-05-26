@@ -78,6 +78,12 @@
     width:170px;
     vertical-align: top;
 }
+category-left {
+    float:left;
+}
+category-right {
+    float:right;
+}
 .category-box h2{
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 24px;
@@ -89,6 +95,35 @@
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
     padding: 5px 5px 0 5px;
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .grid-container {
+    width: 740px;
+    background-image: url(articleContent/3355/8_Im0.jpeg);
+    background-repeat: no-repeat;
+    background-position: 0 -50px; 
+    background-size: 100px auto;
+  } 
+  .flexy {
+    display:block;
+  }
+  .bottom-article {
+    display:block;
+  }
+  .category-box {
+    width: 250px;
+    height: 290px;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 20px;
+    margin-bottom: 5px;
+  }
+  .category-box p {
+    width: 280px;
+  }
+  p.vision-text {
+    text-shadow: 1px 1px white;
+  }
 }
 </style>
 
@@ -149,28 +184,28 @@
 
 <section class="grid-container">
   <div class="flexy left-half">
-    <article>
-        <div class="category-box" style="float:left;">
+    <article class="top-article">
+        <div class="category-box category-left" style="float:left;">
             <h2>OUR<br>IDENTITY</h2>
             <p><strong>Who we are</strong></p>
             <p>Concern Worldwide is a non-governmental, international, humanitarian organisation dedicated to the reduction of suffering and working towards the ultimate elimination of extreme poverty in the world’s poorest countries.</p>
         </div>
-
-        <div class="category-box" style="float:right;">
+        <div class="category-box category-right" style="float:right">
             <h2>OUR<br>MISSION</h2>
             <p><strong>What we do</strong></p>
             <p>Our mission is to help people living in extreme poverty achieve major improvements in their lives which last and spread without ongoing support from Concern. </p>
         </div>
     </article>
   </div>
+
   <div class="flexy right-half">
-    <article>
-        <div class="category-box" style="float:left;">
+    <article class="bottom-article" >
+        <div class="category-box category-left" style="float:left">
             <h2>OUR<br>VISION </h2>
             <p><strong>For change</strong></p>
-            <p>A world where no-one lives in poverty, fear or oppression; where all have access to a decent standard of living and the opportunities and choices essential to a long, healthy and creative life; a world where everyone is treated with dignity and respect.</p>
+            <p class="vision-text">A world where no-one lives in poverty, fear or oppression; where all have access to a decent standard of living and the opportunities and choices essential to a long, healthy and creative life; a world where everyone is treated with dignity and respect.</p>
         </div>
-        <div class="category-box" style="float:right;">
+        <div class="category-box category-right" style="float:right">
             <h2>OUR<br>VALUES</h2>
             <p><strong>What guides<br>our work</strong></p>
             <p>Concern’s core values derive from a single central value:</p>

@@ -56,47 +56,52 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
 #intro-heading.noimage .titles .subtitle {
     color: #00756b;
 }
-td {
+.content-block table td {
     text-align:right;
     color: #00756b;
 }
-td.b {
+.content-block table td.b {
     font-weight:800;
 }
-tr.total td {
+.content-block table tr.total td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     padding-left: 3px;
     border: 0;
 }
-tr:first-child td {
+.content-block table tr:first-child th {
     background-color:#00756b;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-tr:last-child td {
+/* .content-block table tr:first-child td {
+    background-color:#00756b;
+    color: white;
+    font-weight: 800;
+    text-align: right;
+} */
+.content-block table tr:last-child td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-td:first-child {
+.content-block table td:first-child {
     text-align:left;
 }
-td:nth-child(2) {
+.content-block table td:nth-child(2) {
     font-weight: 800;
 }
-
 p {
     color: #00756b;
-}    
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -156,27 +161,18 @@ p {
 
     <!-- START a section //-->
     <section class="content-block">
-        <table>
-<tbody>
-<tr>
-    <td height="15" width="65" style="height:15.0pt;width:65pt">
-    </td>
-    <td align="right" width="65" style="width:65pt">
-        2014<br>€'000
-    </td>
-    <td align="right" width="65" style="width:65pt">
-        2013<br>€'000
-    </td>
-    <td align="right" width="65" style="width:65pt">
-        2012<br>€'000
-    </td>
-    <td align="right" width="65" style="width:65pt">
-        2011<br>€'000
-    </td>
-    <td align="right" width="65" style="width:65pt">
-        2010<br>€'000
-    </td>
-</tr>
+        <table class="footable">
+    <thead>
+        <tr>
+            <th data-class="expand" class="doubleLine" width="50%" scope="row"> </th>
+            <th data-hide="" class="right doubleLine" width="10%">2014 <br />&euro;'000</th>
+            <th data-hide="phone" class="right doubleLine" width="10%">2013 <br />&euro;'000</th>
+            <th data-hide="phone" class="right doubleLine" width="10%">2012 <br />&euro;'000</th>
+            <th data-hide="phone,tablet" class="right doubleLine" width="10%">2011 <br />&euro;'000</th>
+            <th data-hide="phone,tablet" class="right doubleLine" width="10%">2010 <br />&euro;'000</th>
+        </tr>
+    </thead>
+    <tbody>
 <tr height="15" style="height:15.0pt">
     <td height="15" style="height:15.0pt">
         <strong>Income</strong>

@@ -52,10 +52,36 @@
 
 <!-- CUSTOM CSS -->
 <style> 
-   
+ul.minilist {
+  list-style-type: none;
+}
+.content-block ul.chevronlist li, .content-block ol ul.chevronlist li {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.chevronlist li:before{ content:"»  "; position:relative; left:-5px;}
 
+.content-block ul.circlelist li, .content-block ol ul.circlelist li {
+  list-style-type: disc;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.circlelist li:before{ content:""; position:relative; left:-5px;}
 
-
+.content-block ul.minilist li, .content-block ol ul.minilist li {
+  list-style-type: none;
+  list-style-position: inside;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+ul.minilist li:before{ content:"-"; position:relative; left:-5px;}
+.content-block h1 {
+  font-size: 2em;
+  width: 60%;
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -103,11 +129,8 @@
 </div><!-- END top bar //-->
 
 <!-- START article heading //-->
-    <header role="banner" id="intro-heading" class="group noimage">
-
-
+<header role="banner" id="intro-heading" class="group noimage">
     <div class="titles">
-        <h1>Independent auditors’ report to the members of Concern Worldwide </h1>
     </div>
 </header>
 <!-- End article heading //-->
@@ -117,6 +140,8 @@
 
     <!-- START a section //-->
     <section class="content-block">
+        <div id="top-border-bar"></div>
+        <h1>Independent auditors’ report to the members of Concern Worldwide </h1>
 
 <p>We have audited the group and company financial statements (‘‘financial statements’’) of Concern Worldwide for the year ended December 31, 2014 which comprise the Consolidated Statement of Financial Activities, Consolidated and Company only Balance Sheets, the Consolidated Cash Flow Statement and the related notes. The financial reporting framework that has been applied in their preparation is Irish law and accounting standards issued by the Financial Reporting Council and promulgated by the Institute of Chartered Accountants in Ireland (Generally Accepted Accounting Practice in Ireland). </p>
 
@@ -131,10 +156,11 @@
 <p>Opinion on financial statements</p>
 
 <p>In our opinion: </p>
-
-<p>» the financial statements give a true and fair view, in accordance with Generally Accepted Accounting Practice in Ireland, of the state of the group’s and parent company’s affairs as at December 31, 2014 and of the group’s surplus for the year then ended; and</p>
-
-<p>» the financial statements have been properly prepared in accordance with the Companies Acts 1963 to 2013. </p>
+<ul class="chevronlist">
+<li>the financial statements give a true and fair view, in accordance with Generally Accepted Accounting Practice in Ireland, of the state of the group’s and parent company’s affairs as at December 31, 2014 and of the group’s surplus for the year then ended; and</li>
+<br>
+<li>the financial statements have been properly prepared in accordance with the Companies Acts 1963 to 2013. </li>
+</ul>
 
 <p><strong>Matters on which we are required to report by the Companies Acts 1963 to 2013</strong>
 <br>We have obtained all the information and explanations which we consider necessary for the purposes of our audit.</p>

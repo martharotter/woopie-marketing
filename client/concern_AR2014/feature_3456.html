@@ -56,38 +56,44 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
-td {
+.content-block table td {
     text-align:right;
     color: #00756b;
 }
-td.b {
+.content-block table td.b {
     font-weight:800;
 }
-tr.total td {
+.content-block table tr.total td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     padding-left: 3px;
     border: 0;
 }
-tr:first-child td {
+.content-block table tr:first-child th {
     background-color:#00756b;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-tr:last-child td {
+/* .content-block table tr:first-child td {
+    background-color:#00756b;
+    color: white;
+    font-weight: 800;
+    text-align: right;
+} */
+.content-block table tr:last-child td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-td:first-child {
+.content-block table td:first-child {
     text-align:left;
 }
-td:nth-child(2) {
+.content-block table td:nth-child(2) {
     font-weight: 800;
 }
 .content-block h2 {
@@ -155,15 +161,14 @@ h2, p {
         <h2> Irish Aid Programme Funding (IAPF) funded by the Government of Ireland through Irish Aid</h2>
         <p>The 2014 IAPF grant was utilised as follows: </p>
 
-<table>
+<table class="footable">
+    <thead>
+        <tr>
+            <th class="doubleLine" width="90%" scope="col"> </th>
+            <th class="right doubleLine" width="10%" scope="col">2014 <br>€'000</th>
+        </tr>
+    </thead>
 <tbody>
-<tr>
-    <td colspan="2" align="right">
-        2014
-        <br>
-        €'000
-    </td>
-</tr>
 <tr><td colspan="2"></td></tr>
 <tr>
     <td>
@@ -202,18 +207,15 @@ h2, p {
 
 <p>Details of the direct programme expenditure are as follows:
 
-<table>
+<table class="footable">
+    <thead>
+        <tr>
+            <th class="doubleLine" width="90%" scope="col"> </th>
+            <th class="right doubleLine" width="10%" scope="col">2014 <br>€'000</th>
+        </tr>
+    </thead>
+
 <tbody>
-<tr height="15" style="height:15.0pt">
-    <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">
-        Programme Outcomes
-    </td>
-    <td align="right">
-        2014
-<br>
-€'000
-    </td>
-</tr>
 <tr height="15" style="height:15.0pt">
     <td height="15" style="height:15.0pt">
         Assets and Return on Assets
@@ -257,18 +259,16 @@ h2, p {
 </tbody>
 </table>
 
-<table>
+<table class="footable">
+    <thead>
+        <tr>
+            <th style="text-align:left;padding-left:5px;" class="left doubleLine" width="90%" scope="col">IAPF Expenditure by Country</th>
+            <th class="right doubleLine" width="10%" scope="col">2014 <br>€'000</th>
+        </tr>
+    </thead>
+
+    <tbody>
 <tbody>
-<tr height="15" style="height:15.0pt">
-    <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">
-        IAPF Expenditure by Country
-        <span style="mso-spacerun:yes">&nbsp;</span>
-    </td>
-    <td align="right">
-        2014<br/>
-        €'000
-    </td>
-</tr>
 <tr height="15" style="height:15.0pt">
     <td height="15" style="height:15.0pt">
         Afghanistan

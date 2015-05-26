@@ -53,6 +53,15 @@
 
 <!-- CUSTOM CSS -->
 <style> 
+#intro-heading.noimage {
+  background: none;
+}
+@media screen and (min-width: 31.25em) {
+  #intro-heading.noimage {
+    background: none;
+  }
+} 
+
 #intro-heading.noimage .titles h1 {
     border-top: none;
 }
@@ -73,6 +82,38 @@
     font-weight: 800;
     padding: 50px 20px 0 5px;
 }   
+@media screen and (min-width: 62.5em) {
+  article[role="main"], #contributors, #publication-footer {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 31.25em) {
+  .left-col {
+    padding-top: 440px;
+    width: 200px;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  article[role=main] {
+    margin: 0 96px;
+  }
+  .left-col {
+    padding-top: 440px;
+    width: 200px;
+  }
+}
+#end-nav ul li .end-article {
+  color: white;
+}
+#end-nav ul li .end-prevnext {
+  color: white;
+}
+a, a:visited {
+  color: white;
+}
+
 </style>
 
 <!-- Prev / Next pages //-->
@@ -130,10 +171,10 @@
 
     <section class="content-block">
         <div class="left-col">
-            <div style="width:170px;border-top: 20px #000000 solid;"></div>
+            <div style="width:170px;border-top: 20px #ffffff solid;"></div>
             <br/>
-            <p style="font-size: 36px;line-height:40px;font-weight:800;color:#000000;">Financial Statements</p>
-            <p style="color:#000000;font-weight:800;">Joyce, (eight), holds a chicken that was provided as part of Concern’s Realigning Agriculture to Improve Nutrition (RAIN) programme to her mother Lillian Shachinda.  Photo: Gareth Bentley, Concern, Zambia, 2014</p>
+            <p style="font-size: 36px;line-height:40px;font-weight:800;color:#ffffff;">Financial Statements</p>
+            <p style="color:#ffffff;font-weight:800;">Joyce, (eight), holds a chicken that was provided as part of Concern’s Realigning Agriculture to Improve Nutrition (RAIN) programme to her mother Lillian Shachinda.  Photo: Gareth Bentley, Concern, Zambia, 2014</p>
         </div>
     </section>
     <!-- END a section //-->

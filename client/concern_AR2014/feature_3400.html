@@ -60,10 +60,10 @@ body {
     background-color: #91d5ca;
     color: #00756b;
 }
-#intro-heading.noimage .titles h1 {
+.content-block h1 {
     color: #00756b;
-    border-top: 12px solid #00756b;
     width: 50%;
+    font-size: 2em;
 }
 
 .content-block p {
@@ -71,6 +71,9 @@ body {
     font-weight:700;
     line-height:32px;
     width:400px;
+}
+#top-border-bar {
+  border-top: 20px #00756b solid;
 }
 </style>
 
@@ -119,30 +122,23 @@ body {
 </div><!-- END top bar //-->
 
 <!-- START article heading //-->
-    <header role="banner" id="intro-heading" class="group noimage">
+<header role="banner" id="intro-heading" class="group noimage">
     <div class="titles">
-        <h1>Review of Financial Outcome 2014</h1>
-        <p class="subtitle"> </p>
     </div>
 </header>
 <!-- End article heading //-->
 
 <!-- START article //-->
 <article role="main" id="article-body">
+    <section class="content-block">
+        <div id="top-border-bar"></div>
+        <h1>Review of Financial Outcome 2014</h1>
+    </section>
 
 </article>
 <!-- END article //-->
 
 
-<!-- START Contributors listing info -->
-<footer role="complimentary" id="contributors" class="group">
-            
-    <!-- START Contributor info -->
-    
-    <!-- END Contributor info -->
-
-</footer>
-<!-- END Contributors listing info -->
 
 <!-- START end pagination //-->
 <nav id="end-nav" class="group">
@@ -174,12 +170,6 @@ body {
     </ul>
 </nav>
 <!-- END end pagination //-->
-
-
-<footer role="contentinfo" id="publication-footer">
-    <span data-src="inc/footer.html">[footer]</span>
-</footer>
-
 
 </div><!-- END main wrapper //-->
 

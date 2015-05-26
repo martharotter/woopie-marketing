@@ -40,7 +40,6 @@
 <!-- Stylesheets //-->
 <link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
 <link href="stylesheets/theme2.css" rel="stylesheet" />
-
 <link href="stylesheets/print.css" rel="stylesheet" />
 
 <!--[if IE]>
@@ -61,17 +60,28 @@ body {
     background-color: #91d5ca;
     color: #00756b;
 }
-#intro-heading.noimage .titles h1 {
+.content-block h1 {
     color: #00756b;
-    border-top: 12px solid #00756b;
+    font-size: 2em;
+    width: 50%;
 }
 
 .content-block p {
     font-size:26px;
     font-weight:700;
     line-height:32px;
-    width:400px;
+    width:430px;
 }
+#top-border-bar {
+    border-top: 20px solid #00756b;
+}
+
+@media screen and (max-width: 31.25em) {
+  .content-block p {
+    width: 360px;
+  }
+}
+
 
 </style>
 
@@ -120,13 +130,9 @@ body {
 </div><!-- END top bar //-->
 
 <!-- START article heading //-->
-    <header role="banner" id="intro-heading" class="group noimage">
-
+<header role="banner" id="intro-heading" class="group noimage">
     <div class="titles">
-        <h1>Our Overseas Programmes</h1>
-        <p class="subtitle"> </p>
     </div>
-    
 </header>
 <!-- End article heading //-->
 
@@ -135,8 +141,10 @@ body {
 
     <!-- START a section //-->
     <section class="content-block">
+        <div id="top-border-bar"></div>
+        <h1>Our Overseas Programmes</h1>
 
-<p>Our four programme areas are : Emergencies, Livelihoods, Health and Education </p>
+<br><p style="font-weight:800;">Our four programme areas are:<br><br>Emergencies, Livelihoods, Health and Education</p>
 
 <p>Our programmes are increasingly integrated, to tackle poverty and hunger in a holistic way. We also embed gender equality, HIV prevention and emergency preparations in our work to achieve lasting improvements for vulnerable people.</p>
 
