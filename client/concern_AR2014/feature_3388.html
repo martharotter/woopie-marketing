@@ -98,6 +98,27 @@ column-gap: 4em;
     background-color: #288b82;
     color: #ffffff;
 }   
+#end-nav ul li .end-article {
+  color: white;
+}
+#end-nav ul li .end-prevnext {
+  color: white;
+}
+a, a:visited {
+  color: white;
+}
+.content-block p.large-text-blurb {
+  font-size: 28px;
+  line-height: 32px;
+}
+@media screen and (max-width: 31.25em) {
+  .content-block p.small-text-blurb {
+    padding-left: 19px;
+  }
+  .content-block p.large-text-blurb {
+    padding-left: 19px;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -106,7 +127,7 @@ column-gap: 4em;
 
 </head>
 
-<body class="page" id="article">
+<body class="page" id="article" style="background-color:#288b82">
 
 <!-- START main wrapper //-->
 <div id="wrapper" style="background-color:#288b82;">
@@ -168,8 +189,8 @@ column-gap: 4em;
         </div>
 
         <div class="right-col">
-            <p style="font-size:28px;line-height:32px;">OUR EDUCATION PROGRAMMES DIRECTLY BENEFITED 600,000 CHILDREN AND YOUNG PEOPLE DIRECTLY AND 2 .2 MILLION INDIRECTLY IN 2014. FIFTY PER CENT WERE FEMALE.</p>
-            <p>A good quality education is one of the best routes out of poverty. That is why Concern improves access to education and quality teaching for children in the most poor and vulnerable communities. </p>
+            <p class="large-text-blurb">OUR EDUCATION PROGRAMMES DIRECTLY BENEFITED 600,000 CHILDREN AND YOUNG PEOPLE DIRECTLY AND 2 .2 MILLION INDIRECTLY IN 2014. FIFTY PER CENT WERE FEMALE.</p>
+            <p class="small-text-blurb">A good quality education is one of the best routes out of poverty. That is why Concern improves access to education and quality teaching for children in the most poor and vulnerable communities. </p>
         </div>
     </section>
     <!-- END a section //-->

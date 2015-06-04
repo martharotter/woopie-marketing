@@ -1183,9 +1183,11 @@ a {
     font-size: 1.2em;
     line-height: 1.25;
     margin: 0 0 16px 0; } }
+
 @media screen and (min-width: 50em) {
   .content-block p, .content-block pre, .content-block li, .content-block th, .content-block td, .content-block dt, .content-block dd, .content-block blockquote p {
-    font-size: 1.2em; }
+    font-size: 1.2em; 
+    line-height: 1.25em; }
   .content-block ol li ol li, .content-block ol li ul li, .content-block ul li ol li, .content-block ul li ul li {
     font-size: 1em; }
   .content-block h1 {
@@ -1388,6 +1390,7 @@ video {
     margin: 16px -64px 32px -64px;
     padding-left: 64px;
     padding-right: 64px; } }
+
 @media screen and (min-width: 31.25em) {
   .content-block blockquote {
     padding: 0 32px; }
@@ -1395,7 +1398,6 @@ video {
     width: 100%; }
   .content-block .scroll-vert {
     margin: 0 0 16px 16px; }
-
   .fixed-bg {
     margin: 16px -64px 32px -64px;
     padding-left: 64px;
@@ -3646,6 +3648,16 @@ column-count: 2;
 -moz-column-gap: 4em;
 column-gap: 4em;
 }    
+.content-block p.full-caption {
+  margin: 0;
+  font-family: "Source Sans Pro", "HelveticaNeue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.75em;
+  line-height: 1.25;
+  margin: 0 0 16px 0;
+  font-weight: normal;
+  font-style: normal;
+  color: #333333;
+}
 
 @media screen and (max-width: 31.25em) {
   .two-col {
@@ -3656,4 +3668,10 @@ column-gap: 4em;
     -moz-column-gap: 4em;
     column-gap: 4em;
   } 
+}
+
+#top-border-bar {
+  width: 240px;
+  border-top: 20px black solid;
+  padding-bottom: 10px;
 }

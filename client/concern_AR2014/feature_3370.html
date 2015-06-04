@@ -53,14 +53,6 @@
 
 <!-- CUSTOM CSS -->
 <style> 
-.two-col {
--webkit-column-count: 2;
--moz-column-count: 2;
-column-count: 2;
--webkit-column-gap: 4em;
--moz-column-gap: 4em;
-column-gap: 4em;
-}   
 .left-col {
     width: 175px;
     float:left;
@@ -99,6 +91,27 @@ column-gap: 4em;
     background-color: #b6c444;
     color: #ffffff;
 }   
+#end-nav ul li .end-article {
+  color: white;
+}
+#end-nav ul li .end-prevnext {
+  color: white;
+}
+a, a:visited {
+  color: white;
+}
+.content-block p.large-text-blurb {
+  font-size: 28px;
+  line-height: 32px;
+}
+@media screen and (max-width: 31.25em) {
+  .content-block p.small-text-blurb {
+    padding-left: 13px;
+  }
+  .content-block p.large-text-blurb {
+    padding-left: 13px;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -107,7 +120,7 @@ column-gap: 4em;
 
 </head>
 
-<body class="page" id="article">
+<body class="page" id="article" style="background-color:#b6c444;">
 
 <!-- START main wrapper //-->
 <div id="wrapper" style="background-color:#b6c444;">
@@ -176,10 +189,9 @@ column-gap: 4em;
         </div>
 
         <div class="right-col">
-            <p style="font-size:28px;line-height:32px;">
-            IN 2014 WE RESPONDED TO 33 EMERGENCIES IN 23 COUNTRIES, DIRECTLY ASSISTING MORE THAN 2 .8 MILLION PEOPLE.</p>
-            <p>We aim to support the world’s most vulnerable people. It is hard to imagine anyone more vulnerable than families who lose their homes and livelihoods following natural disasters or armed conflict. We work in dangerous and difficult places to help people in emergencies transform their lives.</p>
-            <p>In the immediate aftermath of an emergency, we provide the essentials: water, food and shelter. In the longer term, we enable communities to rebuild their livelihoods and infrastructures. And we work with communities and governments to help prevent, or reduce the impact of, future emergencies.           </p>
+            <p class="large-text-blurb">IN 2014 WE RESPONDED TO 33 EMERGENCIES IN 23 COUNTRIES, DIRECTLY ASSISTING MORE THAN 2 .8 MILLION PEOPLE.</p>
+            <p class="small-text-blurb">We aim to support the world’s most vulnerable people. It is hard to imagine anyone more vulnerable than families who lose their homes and livelihoods following natural disasters or armed conflict. We work in dangerous and difficult places to help people in emergencies transform their lives.</p>
+            <p class="small-text-blurb">In the immediate aftermath of an emergency, we provide the essentials: water, food and shelter. In the longer term, we enable communities to rebuild their livelihoods and infrastructures. And we work with communities and governments to help prevent, or reduce the impact of, future emergencies.           </p>
 </div>
     </section>
     <!-- END a section //-->

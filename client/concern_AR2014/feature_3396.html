@@ -60,9 +60,9 @@ body {
     background-color: #91d5ca;
     color: #00756b;
 }
-#intro-heading.noimage .titles h1 {
+.content-block h1 {
     color: #00756b;
-    border-top: 12px solid #00756b;
+    font-size: 2em;
 }
 
 .content-block p {
@@ -70,6 +70,14 @@ body {
     font-weight:700;
     line-height:32px;
     width:400px;
+}
+#top-border-bar {
+  border-top: 20px #00756b solid;
+}
+@media screen and (max-width: 31.25em) {
+  .content-block p {
+    width: 340px;
+  }
 }
 </style>
 
@@ -116,14 +124,9 @@ body {
 </div><!-- END top bar //-->
 
 <!-- START article heading //-->
-    <header role="banner" id="intro-heading" class="group noimage">
-
-
+<header role="banner" id="intro-heading" class="group noimage">
     <div class="titles">
-        <h1>Fundraising in 2014</h1>
-        <p class="subtitle"> </p>
     </div>
-    
 </header>
 <!-- End article heading //-->
 
@@ -132,6 +135,8 @@ body {
 
     <!-- START a section //-->
     <section class="content-block">
+        <div id="top-border-bar"></div>
+        <h1>Fundraising in 2014</h1>
         <p>We cannot achieve our objectives alone. Concern’s impact is based on the generosity of many individuals, groups and companies. Their donations and fundraising make it possible for us to respond to emergencies and tackle poverty, hunger and inequality.</p>
 
 <p>We, and the millions of people we work with, truly appreciate this support .</p>

@@ -72,6 +72,40 @@
     font-weight: 800;
     padding: 50px 20px 0 5px;
 }   
+#intro-heading.noimage {
+  background: none;
+}
+#end-nav ul li .end-article {
+  color: white;
+}
+#end-nav ul li .end-prevnext {
+  color: white;
+}
+a, a:visited {
+  color: white;
+}
+@media screen and (min-width: 62.5em) {
+  article[role="main"], #contributors, #publication-footer {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 31.25em) {
+  .left-col {
+    padding-top: 20px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  article[role=main] {
+    margin: 0 96px;
+  }
+  .left-col {
+    padding-top: 440px;
+    width: 250px;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -80,10 +114,8 @@
 
 </head>
 
-<body class="page" id="article">
-
- 
-
+<body class="page" id="frontcover">
+<img id="bg" src="articleContent/3382/35_Im0_hr.jpeg"/>
 <!-- START main wrapper //-->
 <div id="wrapper">
 
@@ -105,6 +137,13 @@
     <!-- END top bar navigation //-->
     
     <h1 id="top-title">Concern Worldwide</h1>
+    <nav id="top-social" class="button-links">
+        <ul>
+            <li class="nav-twitter"><a href="#" data-reveal-id="twitterModal"><i class="icon icon-twitter"></i><b>Twitter</b></a></li>
+            <li class="nav-facebook"><a href="#" data-reveal-id="facebookModal"><i class="icon icon-facebook"></i> <b>Facebook</b></a></li>
+        </ul>
+    </nav>
+    <!-- END top social navigation //-->
     
 </div><!-- END top bar //-->
 
@@ -116,7 +155,7 @@
 <!-- End article heading //-->
 
 <!-- START article //-->
-<article role="main" id="article-body" style="background:url(articleContent/3382/35_Im0_hr.jpeg) no-repeat;height:1027px;">
+<article role="main" id="article-body" style="height:775px;margin-top:40px;">
     <!-- START a section //-->
     <section class="content-block">
         <div class="left-col">
@@ -125,7 +164,7 @@
         <p style="font-size: 36px;font-weight:800;">HEALTH</p>
 
         <p style="font-weight:800;">Mukankaka Seraphine, 38, with her youngest child, Nshimiyimana Olivier, one year six months, at the family’s home in southern Rwanda.</p> 
-        <p>She and her husband met and married in Burundi after fleeing Rwanda for their lives in the midst of the genocide. Today, they are a part of Concern Worldwide’s graduation programme. They received seed money to start a small business. This support allowed them to not only meet basic needs like food and clothing, but also acquire a cow, two pigs, and two goats.<br>Photo: Crystal Wells</p>
+        <p style="font-weight:800;">She and her husband met and married in Burundi after fleeing Rwanda for their lives in the midst of the genocide. Today, they are a part of Concern Worldwide’s graduation programme. They received seed money to start a small business. This support allowed them to not only meet basic needs like food and clothing, but also acquire a cow, two pigs, and two goats. Photo: Crystal Wells</p>
     </div>
     </section>
     <!-- END a section //-->

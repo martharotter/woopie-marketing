@@ -56,7 +56,7 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
 td {
     text-align:right;
@@ -83,6 +83,19 @@ tr:last-child td {
     color: white;
     font-weight: 800;
     text-align: right;
+}
+tr.normal td {
+    background-color:white;
+    color: #00756b;
+    font-weight: normal;
+    text-align: right;
+}
+tr td:first-child {
+    text-align:left;
+    padding-left: 5px;
+}
+tr.normal td:first-child {
+    text-align:left;
 }
 td:first-child {
     text-align:left;
@@ -127,6 +140,15 @@ h2, p, li {
     <!-- END top bar navigation //-->
     
     <h1 id="top-title">Concern Worldwide</h1>
+      <!-- START top social navigation //-->
+    <nav id="top-social" class="button-links">
+    <ul>
+      <li class="nav-twitter"><a href="#" data-reveal-id="twitterModal"><i class="icon icon-twitter"></i><b>Twitter</b></a></li>
+      <li class="nav-facebook"><a href="#" data-reveal-id="facebookModal"><i class="icon icon-facebook"></i> <b>Facebook</b></a></li>
+    </ul>
+  </nav>
+  <!-- END top social navigation //-->
+
     
 </div><!-- END top bar //-->
 
@@ -192,11 +214,11 @@ h2, p, li {
 <table>
  <tr>
   <td style="border-bottom:none;">
-  <td style="text-align:center;border-bottom:none;">Defined benefit pension scheme</td>
-  <td style="text-align:center;border-bottom:none;">Overseas local staff service payments</td>
-  <td style="text-align:center;border-bottom:none;">Liability for incapacitated staff</td>
-  <td style="text-align:center;border-bottom:none;">Total 2014</td>
-  <td style="text-align:center;border-bottom:none;">Total 2013</td>
+  <td style="text-align:right;border-bottom:none;">Defined<br>benefit<br>pension scheme</td>
+  <td style="text-align:right;border-bottom:none;">Overseas<br>local staff<br>service payments</td>
+  <td style="text-align:right;border-bottom:none;">Liability for<br>incapacitated staff</td>
+  <td style="text-align:right;border-bottom:none;">Total 2014</td>
+  <td style="text-align:right;border-bottom:none;">Total 2013</td>
  </tr>
  <tr style="background-color:#00756b;color:#ffffff;font-weight: 800;">
   <td height=15 style='height:15.0pt'></td>
@@ -228,12 +250,12 @@ h2, p, li {
 
 <table>
  <tr>
-  <td style="border-bottom:none;"></td>
-  <td style="text-align:center;border-bottom:none;">Defined benefit pension scheme</td>
-  <td style="text-align:center;border-bottom:none;">Overseas local staff service payments</td>
-  <td style="text-align:center;border-bottom:none;">Liability for incapacitated staff</td>
-  <td style="text-align:center;border-bottom:none;">Total 2014</td>
-  <td style="text-align:center;border-bottom:none;">Total 2013</td>
+  <td style="border-bottom:none;">
+  <td style="text-align:right;border-bottom:none;">Defined<br>benefit<br>pension scheme</td>
+  <td style="text-align:right;border-bottom:none;">Overseas<br>local staff<br>service payments</td>
+  <td style="text-align:right;border-bottom:none;">Liability for<br>incapacitated staff</td>
+  <td style="text-align:right;border-bottom:none;">Total 2014</td>
+  <td style="text-align:right;border-bottom:none;">Total 2013</td>
  </tr>
  <tr style="background-color:#00756b;color:#ffffff;font-weight: 800;">
   <td height=15 style='height:15.0pt'></td>
@@ -245,18 +267,65 @@ h2, p, li {
  </tr>
  <tr><td colspan="6"></td></tr>
 <tr><td>Cost of charitable activities - (credit)/charge</td>
+  <td>(74)</td>
+  <td>1908</td>
+  <td>5</td>
+  <td>1,839</td>
+  <td>828</td>
+</tr>
 <tr><td>Costs of generating funds - (credit)</td>
+  <td>(11)</td>
+  <td>-</td>
+  <td>-</td>
+  <td>(11)</td>
+  <td>(13)</td>
+</tr>
 <tr><td>Governance costs - (credit)</td>
-<tr><td>Total of amounts included in resources expended<br />
-in the consolidated statement of financial activities</td>
+  <td>(5)</td>
+  <td>-</td>
+  <td>-</td>
+  <td>(5)</td>
+  <td>(6)</td>
+</tr>
+<tr><td><strong>Total of amounts included in resources expended in the consolidated statement of financial activities</strong></td>
+  <td>(90)</td>
+  <td>1,908</td>
+  <td>5</td>
+  <td>1,823</td>
+  <td>809</td>
+</tr>
  <tr><td colspan="6"></td></tr>
 <tr><td><strong>Other gains and losses:</strong>Actuarial loss/(gain) on the schemes</td>
- <tr><td colspan="6"></td></tr>
+  <td>1,194</td>
+  <td>(170)</td>
+  <td>48</td>
+  <td>1,072</td>
+  <td>(1,137)</td>
+</tr>
+<tr><td colspan="6"></td></tr>
 <tr><td><strong>Total of amounts included in the consolidated statement of financial activities</strong></td>
- <tr><td colspan="6"></td></tr>
+  <td>1,104</td>
+  <td>1,738</td>
+  <td>53</td>
+  <td>2,895</td>
+  <td>(328)</td>
+</tr>
+<tr><td colspan="6"></td></tr>
 <tr><td>Contributions/benefits paid during the year</td>
+  <td>(377)</td>
+  <td>(839)</td>
+  <td>(24)</td>
+  <td>(1,240)</td>
+  <td>(1,706)</td>
+ </tr>
  <tr><td colspan="6"></td></tr>
-<tr><td>Total increases/(decreases) in liabilities during the year</td>
+ <tr><td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">Total increases/(decreases) in liabilities during the year</td>
+  <td>727</td>
+  <td>899</td>
+  <td>29</td>
+  <td>1,655</td>
+  <td>(2,034)</td>
+ </tr>
 </table>
 
 <p><strong>(a) Defined benefit pension scheme</strong></p>
@@ -264,544 +333,857 @@ in the consolidated statement of financial activities</td>
 
 <p>The revised funding proposal provides for the company to make annual contributions of €0.2 million per annum in addition to maintaining its existing contribution rate of 25% of revalued pensionable salaries as at March 31, 2009 until October 31, 2018.<br /> </p>
 
-<p>The most recent full valuation of the scheme was as at January 1, 2013 and was updated for FRS 17 Retirement Benefits purposes to December 31, 2014 by a qualified independent actuary. </p>
+<p>The most recent full valuation of the scheme was as at January 1, 2013 and was updated for FRS 17 <em>Retirement Benefits</em> purposes to December 31, 2014 by a qualified independent actuary. </p>
+
 <p><strong><em>(i) Financial assumptions</em></strong></p>
 <p>The principal financial assumptions used to calculate the retirement benefit liabilities were as follows:</p>
 
-<p>Valuation method</p>
-<p>Discount rate for scheme liabilities
-Inflation rate
-Rate of increase to pensions in payment
-Salary increases</p>
-<p>2014 
-Projected unit method</p>
-<p>2013 
-Projected unit method</p>
-<p>2.10%
-1.50%
-1.50%
-N/A</p>
-<p>3.80%
-2.00%
-1.75%
-N/A</p>
-<p>The mortality assumptions allow for future improvements in longevity, the valuation uses 108% of PNXL00 (U2013) mortality table 
-for current employees and retired members. The assumptions are equivalent to expecting a 65 year old to live for a number of years 
-as follows; current pensioner aged sixty five years and future retiree upon reaching sixty five years of age; male - 22.8 years (2013: 
-22.7 years) and female - 24.1 years (2013: 24 years). The assumptions used by the actuary are chosen from a range of possible 
-actuarial assumptions, which, due to the timescale covered, may not necessarily be borne out in practice. </p>
 
-<p>(a) Defined benefit pension scheme (continued) </p>
-<p>If the life expectancy of a member had been changed to assume all members of the fund lived for one year longer, the value of the 
-reported liabilities at December 31, 2014 would have increased by e0.4 million (2013: e0.3 million).</p>
-<p>Assumptions relating to future salary increases are not applicable in 2014 as, with effect from March 31, 2009, there are no future 
-benefits accruing.</p>
-<p>(ii) Valuation
-The scheme assets are stated at their bid value at each balance sheet date. The present value of the liability to meet future 
-pension payments is arrived at by applying a discount rate equivalent to the rate of return expected to be derived from a Class 
-AA corporate bond.</p>
+<table>
+<tbody>
+    <tr height="15" style="height:15.0pt;border-bottom:none;">
+    <td height="15" style="height:15.0pt;width:65pt;border-bottom:none;">Valuation Method </td>
+    <td style="width:65pt;border-bottom:none;">
+        2014<br>Projected unit method
+        <span style="mso-spacerun:yes">&nbsp;</span>
+    </td>
+    <td style="width:65pt;border-bottom:none;">
+        2013<br>Projected unit method
+    </td>
+</tr>
+<tr>
+  <td>Discount rate for scheme liabilities</td>
+  <td>2.10%</td>
+  <td>3.80%</td>
+</tr>
+<tr>
+  <td>Inflation rate</td>
+  <td>1.50%</td>
+  <td>2.00%</td>
+</tr>
+<tr>
+<td>Rate of increase to pensions in payment</td>
+<td>1.50%</td>
+<td>1.75%</td>
+</tr>
+<tr class="normal">
+  <td>Salary increases</td>
+  <td style="font-weight:800;">N/A</td>
+  <td>N/A</td>
+  </tr>
+</table>
+
+<p>The mortality assumptions allow for future improvements in longevity, the valuation uses 108% of PNXL00 (U2013) mortality table for current employees and retired members. The assumptions are equivalent to expecting a 65 year old to live for a number of years as follows; current pensioner aged sixty five years and future retiree upon reaching sixty five years of age; male - 22.8 years (2013: 22.7 years) and female - 24.1 years (2013: 24 years). The assumptions used by the actuary are chosen from a range of possible actuarial assumptions, which, due to the timescale covered, may not necessarily be borne out in practice. </p>
+
+<p><strong>(a) Defined benefit pension scheme (continued)</strong>
+<br>If the life expectancy of a member had been changed to assume all members of the fund lived for one year longer, the value of the reported liabilities at December 31, 2014 would have increased by e0.4 million (2013: e0.3 million).</p>
+
+<p>Assumptions relating to future salary increases are not applicable in 2014 as, with effect from March 31, 2009, there are no future benefits accruing.</p>
+
+<p><em><strong>(ii) Valuation</strong></em>
+<br>The scheme assets are stated at their bid value at each balance sheet date. The present value of the liability to meet future pension payments is arrived at by applying a discount rate equivalent to the rate of return expected to be derived from a Class AA corporate bond.</p>
 <p>Using these bases, the valuation was as follows:</p>
-<p>Long term rate of 
-return expec ted at 
-December 31,<br />
-2014</p>
-<p>Value at
-December 31,
-2014</p>
-<p>Long term rate of
-return expec ted<br />
-at December 31,<br />
-2013</p>
-<p>Value at
-December 31,
-2013</p>
-<p>Bonds
-Other/Cash
-Equities
-Property
-Total fair value of pension scheme assets</p>
-<p>Present value of pension scheme liabilities</p>
-<p>n/a
-n/a
-n/a
-n/a</p>
-<p>€ '000
-5 ,420
-3 ,735
-3 ,944
-147
-13 ,246</p>
-<p>(13 ,271)</p>
-<p>Net (deficit)/surplus in defined benefit pension scheme</p>
-<p>(25 )</p>
-<p>2.65%
-4.50%
-6.40%
-5.40%</p>
-<p>€ '000
-4,489
-3,246
-3,345
-143
-11,223</p>
-<p>(10,521)</p>
-<p>702</p>
-<p>In 2013, the group employed a building block approach in determining the rate of return on pension scheme assets. Historical 
-markets were studied and assets with higher volatility were assumed to generate higher returns consistent with widely 
-accepted capital market principles. The assumed rate of return on each asset class is set out above for the prior year. The 
-overall expected rate of return on assets was then derived by aggregating the expected return for each asset class over the 
-actual asset allocation for the scheme at the balance sheet date. Expected returns on assets are not disclosed for 2014 as this 
-disclosure is not necessary given the transition to FRS 102 The Financial Reporting Standard applicable in the UK and Republic 
-of Ireland in 2015, as the return on assets is based on the discount rate.</p>
 
-<p>(a)  Defined benefit pension scheme (continued)</p>
-<p>(iii) Movement in fair value of scheme assets</p>
-<p>Opening fair value of scheme assets</p>
-<p>Expected return on assets
-Employer contributions - cash
-Net benefits paid
-Net actuarial gain on assets</p>
-<p>Closing fair value of scheme assets</p>
-<p>Actual return on pension scheme assets</p>
-<p>(iv)  Movement in present value of scheme liabilities</p>
-<p>Opening present value of scheme liabilities</p>
-<p>Reduction to past service costs 
-Interest cost
-Net benefits paid
-Net actuarial (loss)/gain on liabilities
-Closing present value of scheme liabilities</p>
-<p>2014
-€ '000</p>
-<p>2013
-€ '000</p>
-<p>11,223</p>
-<p>9,641</p>
-<p>406
-377
-(244 )
-1,484</p>
-<p>444
-686
-(222)
-674</p>
-<p>13 ,246</p>
-<p>11,223</p>
-<p>1,890</p>
-<p>1,118</p>
-<p>2014</p>
-<p>€ '000</p>
-<p>2013</p>
-<p>€ '000</p>
-<p>(10,521)</p>
-<p>(10,674)</p>
-<p>78
-(394 )
-244
-(2 ,678 )
-(13 ,271)</p>
-<p>64 
-(390)
-222
-257
-(10,521)</p>
-<p>The past service credit in 2014 of €0.078 million arises from the treatment of the pension levy (imposed by the Irish 
-Government). The company declined to bear the cost of the pension levy and as a result the Trustees notified members that<br />
-the cost of that levy at June 30, 2014 of €0.09 million (2013: €0.06 million) would have to be borne by the scheme members. </p>
 
-<p>(a)  Defined benefit pension scheme (continued)</p>
-<p>(v) History of defined benefit pension scheme</p>
-<p>2014
-€ '000</p>
-<p>2013
-€ '000</p>
-<p>2012
-€ '000</p>
-<p>2011
-€ '000</p>
-<p>8,344
-(9,548)
-(1,204)</p>
-<p>2010
-€ '000</p>
-<p>8,565
-(8,948)
-(383)</p>
-<p>286
-3.34%</p>
-<p>11,223
-(10 ,521)
-702</p>
-<p>9,641
-(10,674)
-(1,033)</p>
-<p>674
-6 .01%</p>
-<p>673
-6.98%</p>
-<p>(952)
-(11.41%)</p>
-<p>Fair value of scheme assets
-Present value of scheme liabilities
-(Deficit)/surplus in scheme</p>
-<p>Experience gains/(losses) on scheme assets
-Expressed as a percentage of scheme assets</p>
-<p>Experience gains/(losses) on scheme liabilities
-Expressed as a percentage of scheme liabilities</p>
-<p>13 ,246
-(13 ,271)
-(25 )</p>
-<p>1,484
-11.20%</p>
-<p>187
-(1.41%)</p>
-<p>76
-(0 .72%)</p>
-<p>12
-(0.11%)</p>
-<p>(36)
-0.38%</p>
-<p>116
-(1.30%)</p>
-<p>(vi) Expected expense in 2015 </p>
-<p>Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial 
-activities for 2015 is expected to be €0.02 million. </p>
-<p>(b)   Overseas local staf f service payments<br />
+<style>
+td:nth-child(2), td:nth-child(3) {
+    font-weight: 800;
+}
+</style>
+ <table>
+ <tr>
+  <td></td>
+  <td >Long term rate of<br>return expected at<br>December 31,<br>2014</td>
+  <td >Value at<br>December 31,<br>2014</td>
+  <td >Long term rate of<br>return expected<br>at December 31,<br>2013</td>
+  <td >Value at<br>December 31,<br>2013</td>
+ </tr>
+ <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt"></td>
+    <td></td>
+    <td style="color:white;font-weight:900;">
+        €'000
+    </td>
+    <td></td>
+    <td style="color:white;font-weight:900;">
+        €'000
+    </td>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Bonds<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class=xl65 align=right>5,420</td>
+  <td class=xl66 align=right>2.65%</td>
+  <td class=xl65 align=right>4,489</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Other/Cash<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class=xl65 align=right>3,735</td>
+  <td class=xl66 align=right>4.50%</td>
+  <td class=xl65 align=right>3,246</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Equities<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class=xl65 align=right>3,944</td>
+  <td class=xl66 align=right>6.40%</td>
+  <td class=xl65 align=right>3,345</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Property<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>147</td>
+  <td class=xl66 align=right>5.40%</td>
+  <td align=right>143</td>
+ </tr>
+ <tr class="total">
+  <td height=15>Total fair value of pension scheme assets</td>
+  <td></td>
+  <td class=xl65 align=right>13,246</td>
+  <td></td>
+  <td class=xl65 align=right style="font-weight:normal;">11,223</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 colspan=2 style='height:15.0pt;mso-ignore:colspan'>Present value of pension scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(13,271)</td>
+  <td></td>
+  <td class=xl65 align=right>(10,521)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 colspan=2 style='height:15.0pt;mso-ignore:colspan'>Net (deficit)/surplus in defined benefit pension scheme<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(25)</td>
+  <td></td>
+  <td align=right style="font-weight:normal;">702</td>
+ </tr>
+</table>
+
+
+<p>In 2013, the group employed a building block approach in determining the rate of return on pension scheme assets. Historical markets were studied and assets with higher volatility were assumed to generate higher returns consistent with widely accepted capital market principles. The assumed rate of return on each asset class is set out above for the prior year. The overall expected rate of return on assets was then derived by aggregating the expected return for each asset class over the actual asset allocation for the scheme at the balance sheet date. Expected returns on assets are not disclosed for 2014 as this disclosure is not necessary given the transition to FRS 102 <em>The Financial Reporting Standard applicable in the UK and Republic of Ireland</em> in 2015, as the return on assets is based on the discount rate.</p>
+
+<p><strong>(a)  Defined benefit pension scheme (continued)</strong></p>
+
+<p><strong><em>(iii) Movement in fair value of scheme assets</em></strong></p>
+
+<style>
+td:nth-child(2) {
+    font-weight: 800;
+}
+td:nth-child(3) {
+    font-weight: normal;
+}
+</style>
+
+<table>
+  <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+        2014
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2013
+        <br>
+        €'000
+    </td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Opening fair value of scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>11,223</td>
+  <td class=xl65 align=right>9,641</td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Expected return on assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>406</td>
+  <td align=right>444</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Employer contributions - cash<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>377</td>
+  <td align=right>686</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Net benefits paid<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(244)</td>
+  <td align=right>(222)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Net actuarial gain on assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>1,484</td>
+  <td align=right>674</td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr class="total">
+  <td height=15 style='height:15.0pt'>Closing fair value of scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>13,246</td>
+  <td class=xl65 align=right style="font-weight:normal;">11,223</td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='font-weight:normal;height:15.0pt'>Actual return on pension scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>1,890</td>
+  <td class=xl65 align=right style="font-weight:normal;">1,118</td>
+ </tr>
+</table>
+
+<p><strong><em>(iv)  Movement in present value of scheme liabilities</em></strong></p>
+
+<table>
+  <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+        2014
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2013
+        <br>
+        €'000
+    </td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Opening present value of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(10,521)</td>
+  <td class=xl65 align=right>(10,674)</td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Reduction to past service costs<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>78</td>
+  <td align=right>64</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Interest cost<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(394)</td>
+  <td align=right>(390)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Net benefits paid<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>244</td>
+  <td align=right>222</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Net actuarial (loss)/gain on liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(2,678)</td>
+  <td align=right>257</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Closing present value of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(13,271)</td>
+  <td class=xl65 align=right style="font-weight:normal;">(10,521)</td>
+ </tr>
+</table>
+
+
+
+<p>The past service credit in 2014 of €0.078 million arises from the treatment of the pension levy (imposed by the Irish Government). The company declined to bear the cost of the pension levy and as a result the Trustees notified members that the cost of that levy at June 30, 2014 of €0.09 million (2013: €0.06 million) would have to be borne by the scheme members. </p>
+
+<p><strong><em>(v) History of defined benefit pension scheme</em></strong></p>
+
+<table>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'></td>
+     <td style="color:white;font-weight:900;">
+        2014
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2013
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2012
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2011
+        <br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        2010
+        <br>
+        €'000
+    </td>
+ </tr>
+ <tr><td colspan="6"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Fair value of scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>13,246</td>
+  <td class=xl65 align=right>11,223</td>
+  <td class=xl65 align=right>9,641</td>
+  <td class=xl65 align=right>8,344</td>
+  <td class=xl65 align=right>8,565</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Present value of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(13,271)</td>
+  <td class=xl65 align=right>(10,521)</td>
+  <td class=xl65 align=right>(10,674)</td>
+  <td class=xl65 align=right>(9,548)</td>
+  <td class=xl65 align=right>(8,948)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt' class="total">
+  <td height=15 style='height:15.0pt'>(Deficit)/surplus in scheme<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(25)</td>
+  <td align=right>702</td>
+  <td class=xl65 align=right>(1,033)</td>
+  <td class=xl65 align=right>(1,204)</td>
+  <td align=right>(383)</td>
+ </tr>
+ <tr><td colspan="6"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Experience<span style="mso-spacerun:yes">&nbsp;</span>gains/(losses) on scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>1,484</td>
+  <td align=right>674</td>
+  <td align=right>673</td>
+  <td align=right>(952)</td>
+  <td align=right>286</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Expressed as a percentage of scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>11.20%</td>
+  <td class=xl66 align=right>6.01%</td>
+  <td class=xl66 align=right>6.98%</td>
+  <td class=xl66 align=right>(11.41%)</td>
+  <td class=xl66 align=right>3.34%</td>
+ </tr>
+ <tr><td colspan="6"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Experience<span style="mso-spacerun:yes">&nbsp;</span>gains/(losses) on scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>187</td>
+  <td align=right>76</td>
+  <td align=right>12</td>
+  <td align=right>(36)</td>
+  <td align=right>116</td>
+ </tr>
+ <tr class="normal" height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Expressed as a percentage of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right style="font-weight:800;">(1.41%)</td>
+  <td class=xl66 align=right>(0.72%)</td>
+  <td class=xl66 align=right>(0.11%)</td>
+  <td class=xl66 align=right>0.38%</td>
+  <td class=xl66 align=right>(1.30%)</td>
+ </tr>
+</table>
+
+
+<p><strong><em>(vi) Expected expense in 2015</em></strong>
+<br>Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial activities for 2015 is expected to be €0.02 million. </p>
+
+<p><strong>(b)  Overseas local staff service payments</strong>
+<br>In some of its overseas operations, the company has legal or constructive obligations to pay lump sum benefits to national staff on cessation of their employment. While the precise obligation varies from country to country it typically requires that the amount payable be based on terminal salary and length of service. </p>
+<p>The schemes are not externally funded i.e. assets have not been placed in separately administered trusts to meet liabilities as they arise, instead the gross value of likely future payments is recognised as a liability at each balance sheet date. </p>
+
+<p>As benefits payable under these schemes meet the definition of retirement benefits set out in FRS 17 Retirement Benefits, the company requested advice from independent professional actuaries, AON Hewitt, to review the methodology being utilised to determine liabilities in order to ensure that it would produce results in accordance with the standard. The actuarial assessment concluded that the methodology being used would produce calculations that materially meet the requirements of the standard, and in addition, it provided the information below in order to reflect the schemes in accordance with the requirements of FRS 17 <em>Retirement Benefits</em>.</p>
+
+<p><strong><em>(i) Financial assumptions </em></strong>
+<br>The main financial assumptions used to calculate the retirement benefit liabilities were as follows: </p>
+
+<style>
+td:nth-child(2), td:nth-child(3) {
+    font-weight: normal;
+}
+</style>
+<table>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'></td>
+  <td align=right>2014</td>
+  <td align=right>2013</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Rate of general long-term increase in salaries - US$ linked liabilities<span
+  style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>4.15%</td>
+  <td class=xl66 align=right>5.00%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Discount rate for liabilities - US$</td>
+  <td class=xl66 align=right>4.15%</td>
+  <td class=xl66 align=right>5.00%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Rate of general long-term increase in salaries - EUR€ linked liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>2.10%</td>
+  <td class=xl66 align=right>3.80%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Discount rate for liabilities - EUR€</td>
+  <td class=xl66 align=right>2.10%</td>
+  <td class=xl66 align=right>3.80%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Rate of general long-term increase in salaries - Stg£ linked liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>3.35%</td>
+  <td class=xl66 align=right>4.40%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt' class="normal">
+  <td height=15 style='height:15.0pt'>Discount rate for liabilities - Stg£</td>
+  <td class=xl66 align=right>3.35%</td>
+  <td class=xl66 align=right>4.40%</td>
+ </tr>
+</table>
+
+
+<p><strong><em>(ii) Valuation</em></strong>
+<br>Using these assumptions the unfunded liability was as follows: </p>
+
+
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+        Value at<br>December 31,<br>2014<br>
+        €'000
+    </td>
+    <td style="color:white;font-weight:900;">
+        Value at<br>December 31,<br>2013<br>
+        €'000
+    </td>
+</tr>
+<tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Present value of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(4,191)</td>
+  <td class=xl65 align=right>(3,292)</td>
+ </tr>
+<tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Unfunded scheme liability<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(4,191)</td>
+  <td class=xl65 align=right>(3,292)</td>
+ </tr>
+</table>
+
+
+<p><strong><em>(iii) Movements in unfunded scheme liabilities</em></strong>
+
+
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+      2014<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2013<br>€'000
+    </td>
+</tr>
+<tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Scheme liability at beginning of year<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(3,292)</td>
+  <td class=xl65 align=right>(3,387)</td>
+ </tr>
+<tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Current service costs<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right>(1,738)</td>
+  <td align=right>(903)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Benefits paid during the year<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>839</td>
+  <td align=right>998</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Interest cost<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(170)</td>
+  <td align=right>(133)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Actuarial gain<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>170</td>
+  <td align=right>133</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Unfunded scheme liability at end of year<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right style="font-weight:800;">(4,191)</td>
+  <td class=xl65 align=right style="font-weight:800;">(3,292)</td>
+ </tr>
+</table>
+
+
+<p><strong><em>(iv) History of unfunded scheme liability</em></strong></p>
+
+<style>
+td:nth-child(2) {
+    font-weight: 800;
+}
+</style>
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+      2014<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2013<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2012<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2011<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2010<br>€'000
+    </td>
+</tr>
+<tr><td colspan="6"></td></tr>
+<tr>
+<td>Present value of unfunded scheme liabilities</td>
+<td>(4,191)</td>
+<td>(3,292)</td>
+<td>(3,387)</td>
+<td>(3,473)</td>
+<td>(3,025)</td>
+</tr>
+<tr><td colspan="6"></td></tr>
+<tr>
+<td>Experience gains on scheme liabilities</td>
+<td>170</td>
+<td>133</td>
+<td>165</td>
+<td>177</td>
+<td>177</td>
+</tr>
+<tr><td colspan="6"></td></tr>
+<tr class="normal">
+<td>Expressed as a percentage of scheme liabilities</td>
+<td style="font-weight:800">(4.06%)</td>
+<td>(4.04%)</td>
+<td>(4.87%)</td>
+<td>(5.10%)</td>
+<td>(5.85%)</td>
+</tr>
+</table>
+
+<p><strong><em>(v) Expected expense in 2015 </em></strong>
+<br>Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial activities for 2015 in respect of overseas local staff payments is expected to be €1.9 million. </p>
+<p><strong>(c) Liability for incapacitated staff</strong>
+<br>The group pays ongoing benefits to two ex-staff members who became incapacitated while working overseas. The group believes that it has a moral and constructive obligation to continue to make these payments for as long as they are needed and as a result, it has recognised a liability for these payments. </p>
+<p>The group made investments to cover the liability to the incapacitated staff and these were transferred into a discretionary trust for the benefit of the relevant individuals in 2007. </p>
+<p>As required by FRS 17 <em>Retirement Benefits</em>, an updated actuarial assessment of the liabilities to the incapacitated staff was carried out using the projected unit method at December 31, 2014 by AON Hewitt on behalf of the group. <br />
 </p>
-<p>In some of its overseas operations, the company has legal or constructive obligations to pay lump sum benefits to national 
-staff on cessation of their employment. While the precise obligation varies from country to country it typically requires that the 
-amount payable be based on terminal salary and length of service. </p>
-<p>The schemes are not externally funded i.e. assets have not been placed in separately administered trusts to meet liabilities as 
-they arise, instead the gross value of likely future payments is recognised as a liability at each balance sheet date. </p>
-<p>As benefits payable under these schemes meet the definition of retirement benefits set out in FRS 17 Retirement Benefits, the 
-company requested advice from independent professional actuaries, AON Hewitt, to review the methodology being utilised to 
-determine liabilities in order to ensure that it would produce results in accordance with the standard. The actuarial assessment 
-concluded that the methodology being used would produce calculations that materially meet the requirements of the standard, 
-and in addition, it provided the information below in order to reflect the schemes in accordance with the requirements of FRS 
-17 Retirement Benefits.</p>
 
-<p>(b)   Overseas local staf f service payments (continued) </p>
-<p>(i) Financial assumptions 
-The main financial assumptions used to calculate the retirement benefit liabilities were as follows: </p>
-<p>Rate of general long-term increase in salaries - US$ linked liabilities
-Discount rate for liabilities - US$
-Rate of general long-term increase in salaries - EUR€ linked liabilities
-Discount rate for liabilities - EUR€
-Rate of general long-term increase in salaries - Stg£ linked liabilities
-Discount rate for liabilities - Stg£</p>
-<p>(ii) Valuation 
-Using these assumptions the unfunded liability was as follows: </p>
-<p>Present value of scheme liabilities</p>
-<p>Unfunded scheme liability</p>
-<p>(iii) Movements in unfunded scheme liabilities</p>
-<p>Scheme liability at beginning of year</p>
-<p>Current service costs
-Benefits paid during the year
-Interest cost
-Actuarial gain
-Unfunded scheme liability at end of year</p>
-<p>2014
-4.15%
-4.15%
-2.10%
-2.10%
-3.35%
-3.35%</p>
-<p>2013
-5.00%
-5.00%
-3.80%
-3.80%
-4.40%
-4.40%</p>
-<p>Value at
-December 31, 
-2014
-€'000</p>
-<p>Value at
-December 31,
-2013
-€'000</p>
-<p>(4,191)</p>
-<p>(4,191)</p>
-<p>2014
-€'000</p>
-<p>(3,292)</p>
-<p>(1,738)
-839
-(170)
-170
-(4,191)</p>
-<p>(3,292)</p>
-<p>(3,292)</p>
-<p>2013
-€'000</p>
-<p>(3,387)</p>
-<p>(903)
-998
-(133)
-133
-(3,292)</p>
+<p><strong><em>(i) Financial assumptions</em></strong>
+<br>The main financial assumptions used to calculate the liability for incapacity benefits payable were as follows:</p>
 
-<p>(b)   Overseas local staf f service payments (continued) </p>
-<p>(iv) History of unfunded scheme liability</p>
-<p>2014
-€'000</p>
-<p>2013
-€'000</p>
-<p>2012
-€'000</p>
-<p>2011
-€'000</p>
-<p>2010
-€'000</p>
-<p>Present value of unfunded scheme liabilities</p>
-<p>(4,191)</p>
-<p>(3,292)</p>
-<p>(3,387)</p>
-<p>(3,473)</p>
-<p>(3,025)</p>
-<p>Experience gains on scheme liabilities</p>
-<p>170</p>
-<p>133</p>
-<p>165</p>
-<p>177</p>
-<p>177</p>
-<p>Expressed as a percentage of scheme liabilities</p>
-<p>(4.06%)</p>
-<p>(4.04%)</p>
-<p>(4.87%)</p>
-<p>(5.10%)</p>
-<p>(5.85%)</p>
-<p>(v) Expected expense in 2015 
-Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial 
-activities for 2015 in respect of overseas local staff payments is expected to be €1.9 million. </p>
-<p>(c ) Liability for incapacitated staf f<br />
-</p>
-<p>The group pays ongoing benefits to two ex-staff members who became incapacitated while working overseas. The group believes 
-that it has a moral and constructive obligation to continue to make these payments for as long as they are needed and as a result,<br />
-</p>
-<p>it has recognised a liability for these payments. </p>
-<p>The group made investments to cover the liability to the incapacitated staff and these were transferred into a discretionary trust for 
-the benefit of the relevant individuals in 2007. </p>
-<p>As required by FRS 17 Retirement Benefits, an updated actuarial assessment of the liabilities to the incapacitated staff was carried 
-out using the projected unit method at December 31, 2014 by AON Hewitt on behalf of the group. <br />
-</p>
-<p>(i) Financial assumptions
-The main financial assumptions used to calculate the liability for incapacity benefits payable were as follows:</p>
-<p>Rate of increase in benefits in payment 
-Inflation rate
-Discount rate for liabilities - EUR €
-Discount rate for liabilities - Stg £</p>
-<p>2014</p>
-<p>2013</p>
-<p>1.50%
-1.50%
-2 .10%
-3 .35%</p>
-<p>1.75%
-2 .00%
-3 .80%
-4 .40%</p>
-<p>In line with the changes made to the defined benefit pension scheme in 2012 the rate of increase in benefits has been 
-changed from a fixed 3% p.a. to the lesser of CPI or 3% p.a. </p>
-<p>In addition it has been assumed that the beneficiaries will enjoy a normal lifespan of eighty-nine years, they are currently aged </p>
-<p>fifty and sixty-one years. </p>
+<style>
+td:nth-child(2), td:nth-child(3) {
+    font-weight: 800;
+}
+</style>
 
-<p>(c ) Liability for incapacitated staf f (continued)   </p>
+<table> 
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'></td>
+  <td align=right>2014</td>
+  <td align=right>2013</td>
+ </tr>
+ <tr><td colspan=3></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Rate of increase in benefits in payment<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>1.50%</td>
+  <td class=xl66 align=right>1.75%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Inflation rate<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>1.50%</td>
+  <td class=xl66 align=right>2.00%</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Discount rate for liabilities - EUR €<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>2.10%</td>
+  <td class=xl66 align=right>3.80%</td>
+ </tr>
+ <tr class="normal" height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Discount rate for liabilities - Stg £</td>
+  <td class=xl66 align=right style="font-weight:800;">3.35%</td>
+  <td class=xl66 align=right style="font-weight:800;">4.40%</td>
+ </tr>
+</table>
 
-<p>(ii) Valuation
-The assets are stated at their bid value at each balance sheet date. The present value of the liability to meet future payments is 
-arrived at by applying a discount rate equivalent to the rate of return expected to be derived from a Class AA corporate bond.</p>
+<p>In line with the changes made to the defined benefit pension scheme in 2012 the rate of increase in benefits has been changed from a fixed 3% p.a. to the lesser of CPI or 3% p.a. </p>
+<p>In addition it has been assumed that the beneficiaries will enjoy a normal lifespan of eighty-nine years, they are currently aged fifty and sixty-one years. </p>
+
+<p><strong><em>(ii) Valuation</em></strong>
+<br>The assets are stated at their bid value at each balance sheet date. The present value of the liability to meet future payments is arrived at by applying a discount rate equivalent to the rate of return expected to be derived from a Class AA corporate bond.</p>
 
 <p>Using these bases the valuation was as follows:</p>
 
-<p>Long term rate of
-return expec ted
-at December 31, 
-2014</p>
+<table>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'></td>
+  <td>Long term rate of<br>return expected<br>at December 31,<br>2014</td>
+  <td>Value<br>at<br>December 31,<br>2014<br>€'000</td>
+  <td>Long term rate of<br>return expected<br>at December 31,<br>2013</td>
+  <td>Value<br>at<br>December 31,<br>2013<br>€'000</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Bonds<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class=xl66 align=right>2.65%</td>
+  <td>-</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Equities<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td class=xl66 align=right>6.40%</td>
+  <td>-</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Other<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>109</td>
+  <td class=xl66 align=right>2.00%</td>
+  <td align=right>109</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Property<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td>n/a<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>324</td>
+  <td class=xl66 align=right>5.40%</td>
+  <td align=right>248</td>
+  <td></td>
+ </tr>
+ <tr><td colspan="5"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'><strong>Total market value of incapacitated staff arrangement assets</strong></span></td>
+  <td></td>
+  <td align=right>433</td>
+  <td></td>
+  <td align=right>357</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Present value of pension liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td></td>
+  <td align=right style="font-weight:normal;">(640)</td>
+  <td></td>
+  <td align=right>(535)</td>
+ </tr>
+ <tr><td colspan="5"></td></tr>
+ <tr height=15 style='height:15.0pt' class="normal">
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'><strong>Net deficit in incapacitated staff arrangement</strong></td>
+  <td></td>
+  <td align=right style="font-weight:800;">(207)</td>
+  <td></td>
+  <td align=right>(178)</td>
+ </tr>
+</table>
 
-<p>n/a
-n/a
-n/a
-n/a</p>
+<p>In 2013, the group employed a building block approach in determining the rate of return on pension scheme assets. Historical markets were studied and assets with higher volatility were assumed to generate higher returns consistent with widely accepted capital market principles. The assumed rate of return on each asset class is set out above for the prior year. The overall expected rate of return on assets was then derived by aggregating the expected return for each asset class over the actual asset allocation for the scheme at the balance sheet date. Expected returns on assets are not disclosed for 2014 as this disclosure is not necessary given the transition to FRS 102 The Financial Reporting Standard applicable in the UK and Republic of Ireland in 2015, as the return on assets is based on the discount rate.</p>
 
-<p>Value  
-at
-December 31,
-2014
-€ '000
--
--
-109
-324</p>
+<p><strong><em>(iii) Movement in fair value of scheme assets</em></strong>
+<br>
 
-<p>Bonds
-Equities
-Other
-Property</p>
+<style>
+td:nth-child(3) {
+    font-weight: normal;
+}
+</style>
 
-<p>Total market value of incapacitated staff arrangement assets                 433
-Present value of pension liabilities
-(640)</p>
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+      2014<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2013<br>€'000
+    </td>
+</tr>
+<tr><td colspan='3'></td></tr>
+<tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Opening fair value of assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>357</td>
+  <td align=right>347</td>
+ </tr>
+<tr><td colspan='3'></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Expected return on assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>16</td>
+  <td align=right>15</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Employer contributions<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>23</td>
+  <td align=right>22</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Benefits paid out<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(23)</td>
+  <td align=right>(22)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Actuarial gains/(losses) on assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>60</td>
+  <td align=right>(5)</td>
+ </tr>
+<tr><td colspan='3'></td></tr>
+ <tr class="total" height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Closing fair value of assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>433</td>
+  <td align=right style="font-weight:normal;">357</td>
+ </tr>
+<tr><td colspan='3'></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Actual return on scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>76</td>
+  <td align=right>10</td>
+ </tr>
+</table>
 
-<p>Net deficit in incapacitated staf f arrangement</p>
+<p><strong><em>(iv) Changes to the present value of liabilities</em></strong>
 
-<p>(207)</p>
-
-<p>Long term rate of
-return expec ted
-at December 31, 
-2013</p>
-
-<p>2.65%
-6.40%
-2.00%
-5.40%</p>
-
-<p>Value  
-at
-December 31,
-2013
-€ '000
--
--
-109
-248</p>
-
-<p> 357 
-(535)</p>
-
-<p>(178)</p>
-
-<p>In 2013, the group employed a building block approach in determining the rate of return on pension scheme assets. Historical 
-markets were studied and assets with higher volatility were assumed to generate higher returns consistent with widely 
-accepted capital market principles. The assumed rate of return on each asset class is set out above for the prior year. The 
-overall expected rate of return on assets was then derived by aggregating the expected return for each asset class over the 
-actual asset allocation for the scheme at the balance sheet date. Expected returns on assets are not disclosed for 2014 as this 
-disclosure is not necessary given the transition to FRS 102 The Financial Reporting Standard applicable in the UK and Republic 
-of Ireland in 2015, as the return on assets is based on the discount rate.</p>
-
-<p>(iii) Movement in fair value of scheme assets</p>
-
-<p>Opening fair value of assets</p>
-
-<p>Expected return on assets
-Employer contributions
-Benefits paid out
-Actuarial gains/(losses) on assets</p>
-
-<p>Closing fair value of assets</p>
-
-<p>Actual return on scheme assets</p>
-
-<p>2014
-2013
-€ '000 € '000</p>
-
-<p>357</p>
-
-<p>347</p>
-
-<p>16
-23
-(23 )
-60</p>
-
-<p>433</p>
-
-<p>76</p>
-
-<p>15
-22
-(22)
-(5)</p>
-
-<p>357</p>
-
-<p>10</p>
-
-
-<p>(c) Liability for incapacitated staff (continued) <br />
-</p>
-<p>(iv) Changes to the present value of liabilities</p>
-<p>Opening present value of liabilities</p>
-<p>Interest cost
-Net benefits paid for the year
-Past service credit
-Actuarial (losses)/gains on liabilities
-Closing present value of liabilities</p>
-<p>(v) History of liability for incapacitated staff</p>
-<p>Fair value of assets
-Present value of liabilities
-Deficit in scheme</p>
-<p>2014
-2013
-€ '000 € '000</p>
-<p>(535 )</p>
-<p>(729)</p>
-<p>(21)
-24
- - 
-(108 )
-(640 )</p>
-<p>(32)
- 22 
- 126 
-78
-(535)</p>
-<p>2014</p>
-<p>€ '000</p>
-<p>433
-(640 )
-(207)</p>
-<p>2013</p>
-<p>€ '000</p>
-<p>2012</p>
-<p>€ '000</p>
-<p>2011</p>
-<p>€ '000</p>
-<p>2010</p>
-<p>€ '000</p>
-<p>357
-(535)
-(178)</p>
-<p>347
-(729)
-(382)</p>
-<p>314
-(673)
-(359)</p>
-<p>323
-(602)
-(279)</p>
-<p>Experience gains/(losses) on assets
-Expressed as a percentage of scheme assets</p>
-<p>60
-(5)
-13 .86% (1.40%)</p>
-<p>18
-(27)
-5.19% (8.60%)</p>
-<p>(13)
-(4.02%)</p>
-<p>Experience (losses)/gains on liabilities
-Expressed as a percentage of scheme liabilities</p>
-<p>(23 )
-84
-3 .59% (15.70%)</p>
-<p>3
-(0.41%)</p>
-<p>9
-(1.34%)</p>
-<p>(3)
-0.50%</p>
-<p>(vi) Expected expense in 2015
-Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial 
-activities in 2015 in respect of the incapacitated staff arrangements is expected to be €0.006 million.</p>
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+      2014<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2013<br>€'000
+    </td>
+</tr>
+<tr><td colspan='3'></td></tr>
+<tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Opening present value of liabilities<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>(535)</td>
+  <td align=right>(729)</td>
+ </tr>
+<tr><td colspan='3'></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Interest cost<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>(21)</td>
+  <td align=right>(32)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Net benefits paid for the year<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>24</td>
+  <td align=right>22</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Past service credit<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>126</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Actuarial
+  (losses)/gains on liabilities<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>(108)</td>
+  <td align=right>78</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt;mso-ignore:colspan'>Closing present value of liabilities<span style="mso-spacerun:yes">&nbsp;</span></td>
+  <td align=right>(640)</td>
+  <td align=right style="font-weight:normal;">(535)</td>
+ </tr>
+</table>
 
 
-        
+<p><strong><em>(v) History of liability for incapacitated staff</em></strong>
 
+<table>
+<tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
+    <td height="15" style="height:15.0pt">
+    </td>
+    <td style="color:white;font-weight:900;">
+      2014<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2013<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2012<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2011<br>€'000
+    </td>
+    <td style="color:white;font-weight:900;">
+      2010<br>€'000
+    </td>
+</tr>
+<tr><td colspan="6"></td></tr>
+<tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Fair value of assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>433</td>
+  <td align=right>357</td>
+  <td align=right>347</td>
+  <td align=right>314</td>
+  <td align=right>323</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Present value of liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(640)</td>
+  <td align=right>(535)</td>
+  <td align=right>(729)</td>
+  <td align=right>(673)</td>
+  <td align=right>(602)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt' class="total">
+  <td height=15 style='height:15.0pt'>Deficit in scheme<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(207)</td>
+  <td align=right>(178)</td>
+  <td align=right>(382)</td>
+  <td align=right>(359)</td>
+  <td align=right>(279)</td>
+ </tr>
+<tr><td colspan="6"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Experience<span style="mso-spacerun:yes">&nbsp;</span>gains/(losses) on assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>60</td>
+  <td align=right>(5)</td>
+  <td align=right>18</td>
+  <td align=right>(27)</td>
+  <td align=right>(13)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Expressed as a percentage of scheme assets<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right>13.86%</td>
+  <td class=xl66 align=right>(1.40%)</td>
+  <td class=xl66 align=right>5.19%</td>
+  <td class=xl66 align=right>(8.60%)</td>
+  <td class=xl66 align=right>(4.02%)</td>
+ </tr>
+<tr><td colspan="6"></td></tr>
+ <tr height=15 style='height:15.0pt'>
+  <td height=15 style='height:15.0pt'>Experience<span style="mso-spacerun:yes">&nbsp;</span>(losses)/gains on liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td align=right>(23)</td>
+  <td align=right>84</td>
+  <td align=right>3</td>
+  <td align=right>9</td>
+  <td align=right>(3)</td>
+ </tr>
+ <tr height=15 style='height:15.0pt' class="normal">
+  <td height=15 style='height:15.0pt'>Expressed as a percentage of scheme liabilities<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl66 align=right style="font-weight:800">3.59%</td>
+  <td class=xl66 align=right>(15.70%)</td>
+  <td class=xl66 align=right>(0.41%)</td>
+  <td class=xl66 align=right>(1.34%)</td>
+  <td class=xl66 align=right>0.50%</td>
+ </tr>
+</table>
+
+<p><strong><em>(vi) Expected expense in 2015</em></strong>
+<br>Using the same assumptions as have been used at December 31, 2014 the charge to the consolidated statement of financial activities in 2015 in respect of the incapacitated staff arrangements is expected to be €0.006 million.</p>
 
     </section>
     <!-- END a section //-->
@@ -830,7 +1212,7 @@ activities in 2015 in respect of the incapacitated staff arrangements is expecte
  <span class="arrow">&lt;</span>
  <div class="end-titles">
  <p class="end-prevnext">Previous Page</p>
- <p class="end-article">Notes to the Financial Statements (continued)</p>
+ <p class="end-article">Notes to the Financial Statements [cont]</p>
  </div>
  </a>
 
@@ -841,8 +1223,8 @@ activities in 2015 in respect of the incapacitated staff arrangements is expecte
             <a href="feature_3442.html">
 <span class="arrow">&gt;</span>
  <div class="end-titles">
- <p class="end-prevnext">Notes to the Financial Statements (continued)</p>
- <p class="end-article">full</p>
+ <p class="end-prevnext">Next Page</p>
+ <p class="end-article">Notes to the Financial Statements [cont]</p>
  </div>
  </a>
 

@@ -40,7 +40,6 @@
 <!-- Stylesheets //-->
 <link href="fonts/modern-pictograms/stylesheet.css" rel="stylesheet" /> <!-- temp sass compile workaround //-->
 <link href="stylesheets/theme2.css" rel="stylesheet" />
-
 <link href="stylesheets/print.css" rel="stylesheet" />
 
 <!--[if IE]>
@@ -56,44 +55,49 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
-td {
+.content-block table td {
     text-align:right;
     color: #00756b;
 }
-td.b {
+.content-block table td.b {
     font-weight:800;
 }
-tr.total td {
+.content-block table tr.total td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     padding-left: 3px;
     border: 0;
 }
-tr:first-child td {
+.content-block table tr:first-child th {
     background-color:#00756b;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-tr:last-child td {
+/* .content-block table tr:first-child td {
+    background-color:#00756b;
+    color: white;
+    font-weight: 800;
+    text-align: right;
+} */
+.content-block table tr:last-child td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-td:first-child {
+.content-block table td:first-child {
     text-align:left;
 }
-td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+.content-block table td:nth-child(3), td:nth-child(4), td:nth-child(5) {
     font-weight: 800;
 }
-
 p {
     color: #00756b;
-}   
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -127,6 +131,14 @@ p {
     <!-- END top bar navigation //-->
     
     <h1 id="top-title">Concern Worldwide</h1>
+      <!-- START top social navigation //-->
+    <nav id="top-social" class="button-links">
+    <ul>
+      <li class="nav-twitter"><a href="#" data-reveal-id="twitterModal"><i class="icon icon-twitter"></i><b>Twitter</b></a></li>
+      <li class="nav-facebook"><a href="#" data-reveal-id="facebookModal"><i class="icon icon-facebook"></i> <b>Facebook</b></a></li>
+    </ul>
+  </nav>
+  <!-- END top social navigation //-->
     
 </div><!-- END top bar //-->
 
@@ -153,24 +165,32 @@ p {
 
     <!-- START a section //-->
     <section class="content-block">
-        <table>
- <tbody><tr height="15" style="height:15.0pt">
-  <td height="15" width="65" style="height:15.0pt;width:65pt"></td>
-  <td width="65" style="width:65pt">Notes</td>
-  <td align="right" width="65" style="width:65pt">2014</td>
-  <td width="65" style="width:65pt"></td>
-  <td align="right" width="65" style="width:65pt">2013</td>
-  <td width="65" style="width:65pt"></td>
+        <table class="footable">
+<thead>
+<tr>
+  <th data-class="expand" class="doubleLine" width="50%"></th> 
+  <th data-hide="phone" class="right doubleLine" width="10%" scope="col">Notes</th>
+    <th data-hide="" class="right doubleLine" width="10%" scope="col">
+        2014<br>
+        €'000
+    </th>
+    <th data-hide="" class="right doubleLine" width="10%" scope="col">
+        2014<br>
+        €'000
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
+        2013<br>
+        €'000
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
+        2013<br>
+        €'000
+    </th>
  </tr>
+</thead>
+<tbody>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan"></td>
-  <td>€'000</td>
-  <td>€'000</td>
-  <td>€'000</td>
-  <td>€'000</td>
- </tr>
- <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan">Fixed assets</td>
+  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan"><strong>Fixed assets</strong></td>
   <td colspan="4" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="15" style="height:15.0pt">
@@ -181,6 +201,8 @@ p {
   <td></td>
   <td class="xl65" align="right">15,700</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
   <td height="15" style="height:15.0pt">Financial fixed assets</td>
   <td align="right">11</td>
@@ -189,8 +211,9 @@ p {
   <td></td>
   <td class="xl65" align="right">2,365</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan">Current assets</td>
+  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan"><strong>Current assets</strong></td>
   <td colspan="4" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="15" style="height:15.0pt">
@@ -226,41 +249,46 @@ p {
   <td></td>
  </tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan">Total current assets</td>
-  <td class="xl65" align="right">57,195</td>
+  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan"><strong>Total current assets</strong></td>
+  <td align="right"><strong>57,195</strong></td>
   <td></td>
-  <td class="xl65" align="right">40,544</td>
+  <td class="xl65" align="right" style="font-weight:normal;">40,544</td>
   <td></td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" style="height:15.0pt">Creditors: amounts falling due within one year</td>
+  <td height="15" style="height:15.0pt"><strong>Creditors:</strong> amounts falling due within one year</td>
   <td align="right">16</td>
   <td class="xl65" align="right">(21,590)</td>
   <td></td>
   <td class="xl65" align="right">(12,800)</td>
   <td></td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan">Net current assets</td>
+  <td height="15" colspan="2" style="height:15.0pt;mso-ignore:colspan"><strong>Net current assets</strong></td>
   <td></td>
   <td class="xl65" align="right">35,605</td>
   <td></td>
   <td class="xl65" align="right">27,744</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" style="height:15.0pt">Creditors: amounts falling due after more than one year</td>
+  <td height="15" style="height:15.0pt"><strong>Creditors:</strong> amounts falling due after more than one year</td>
   <td align="right">17</td>
   <td></td>
   <td class="xl65" align="right">(4,065)</td>
   <td></td>
   <td class="xl65" align="right">(4,644)</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="3" style="height:15.0pt;mso-ignore:colspan">Net assets excluding staff retirement liabilities</td>
+  <td height="15" colspan="3" style="height:15.0pt;mso-ignore:colspan"><strong>Net assets excluding staff retirement liabilities</strong></td>
   <td class="xl65" align="right">46,969</td>
   <td></td>
   <td class="xl65" align="right">41,165</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
   <td height="15" style="height:15.0pt">Staff retirement liabilities</td>
   <td>18(2)</td>
@@ -269,14 +297,16 @@ p {
   <td></td>
   <td class="xl65" align="right">(2,768)</td>
  </tr>
- <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="3" style="height:15.0pt;mso-ignore:colspan">Net assets including staff retirement liabilities</td>
+ <tr><td colspan="6"></td></tr>
+ <tr class="total" height="15" style="height:15.0pt">
+  <td height="15" colspan="3" style="height:15.0pt;mso-ignore:colspan"><strong>Net assets including staff retirement liabilities</strong></td>
   <td class="xl65" align="right">42,546</td>
   <td></td>
   <td class="xl65" align="right">38,397</td>
  </tr>
+ <tr><td colspan="6"></td></tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" style="height:15.0pt">Funded by:</td>
+  <td height="15" style="height:15.0pt"><strong>Funded by:</strong></td>
   <td colspan="5" style="mso-ignore:colspan"></td>
  </tr>
  <tr height="15" style="height:15.0pt">
@@ -296,7 +326,7 @@ p {
   <td class="xl65" align="right">35,537</td>
  </tr>
  <tr height="15" style="height:15.0pt">
-  <td height="15" colspan="2" style="text-align:left">Total Group funds</td>
+  <td height="15" colspan="2" style="text-align:left;padding-left:5px;">Total Group funds</td>
   <td></td>
   <td class="xl65" align="right">42,546</td>
   <td></td>

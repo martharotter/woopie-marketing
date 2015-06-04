@@ -53,7 +53,7 @@
 <!-- CUSTOM CSS -->
 <style> 
 body {
-    background-color: #91d5ca;
+    background-color: #a7d3c9;
     color: #00756b;
 }   
 #intro-heading, #intro-heading.noimage {
@@ -74,11 +74,32 @@ body {
 tr:first-child,tr:last-child {
     font-weight:900;
 }
+.content-block h1 {
+    font-size: 2em;
+    color: #00756b;
+}
+#top-border-bar {
+    border-top: 20px #00756b solid;
+}
+.content-block p.section-headline {
+  border-bottom: 10px #00756b solid;
+  height:52px;
+  width:100%;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 31.25em) {
+  .content-block p.section-headline {
+    width:95%;
+    padding-bottom: 70px;
+    margin-bottom: 30px;
+  }
+}
 </style>
 
 <!-- Prev / Next pages //-->
 <a rel="prev" class="prev" href="feature_3409.html"></a>
-<a rel="next" class="next" href="feature_3413.html"></a>
+<a rel="next" class="next" href="feature_3411.html"></a>
 
 </head>
 
@@ -101,7 +122,7 @@ tr:first-child,tr:last-child {
             </a>
             </li>
             <li id="top-nav-prevarticle"><a href="feature_3409.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
-            <li id="top-nav-nextarticle"><a href="feature_3413.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
+            <li id="top-nav-nextarticle"><a href="feature_3411.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
         </ul>
     </nav>
     <!-- END top bar navigation //-->
@@ -115,16 +136,11 @@ tr:first-child,tr:last-child {
 		</ul>
 	</nav>
 	<!-- END top social navigation //-->
-
-
-    
 </div><!-- END top bar //-->
 
 <!-- START article heading //-->
-    <header role="banner" id="intro-heading" class="group noimage">
+<header role="banner" id="intro-heading" class="group noimage">
     <div class="titles">
-        <h1>Income and Expenditure</h1>
-        <p class="subtitle"> </p>
     </div>
 </header>
 <!-- End article heading //-->
@@ -134,13 +150,12 @@ tr:first-child,tr:last-child {
 
     <!-- START a section //-->
     <section class="content-block">
-    <p style="border-bottom: 10px #00756b solid;height:52px;width:100%;">
-    Where our income came from<br>
-</p>
+        <div id="top-border-bar"></div>
+        <h1>Income and Expenditure</h1>
+        <br><br>
+        <p class="section-headline">Where our income came from<br>&nbsp;<br>&nbsp;</p>
 
-<p>
-    Income
-</p>
+<p>Income</p>
 
 <img src="articleContent/3410/chart1.png" style="float:right; height:200px"/>
 <table style="width:70%">
@@ -210,13 +225,9 @@ tr:first-child,tr:last-child {
 </tbody>
 </table>
 
-<p style="border-bottom: 10px #00756b solid;height:52px;width:100%;">
-    How your money was spent
-</p>
+<p class="section-headline">How your money was spent</p>
 
-<p>
-    Expenditure
-</p>
+<p>Expenditure</p>
 
 <img src="articleContent/3410/chart2.png" style="float:right; height:200px"/>
 <table style="width:70%">
@@ -324,11 +335,11 @@ tr:first-child,tr:last-child {
         
         <!-- Next article //-->
         <li id="end-nav-nextarticle">
-            <a href="feature_3413.html">
+            <a href="feature_3411.html">
 <span class="arrow">&gt;</span>
  <div class="end-titles">
  <p class="end-prevnext">Next Page</p>
- <p class="end-article">Consolidated Statement of Financial Activity</p>
+ <p class="end-article">Financial Statements</p>
  </div>
  </a>
 

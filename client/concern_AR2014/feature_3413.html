@@ -56,48 +56,53 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
-td {
+.content-block table td {
     text-align:right;
     color: #00756b;
 }
-td.b {
+.content-block table td.b {
     font-weight:800;
 }
-tr.total td {
+.content-block table tr.total td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     padding-left: 3px;
     border: 0;
 }
-tr:first-child td {
+.content-block table tr:first-child th {
     background-color:#00756b;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-tr:last-child td {
+/* .content-block table tr:first-child td {
+    background-color:#00756b;
+    color: white;
+    font-weight: 800;
+    text-align: right;
+} */
+.content-block table tr:last-child td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-td:first-child {
+.content-block table td:first-child {
     text-align:left;
 }
-td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+.content-block table td:nth-child(3), td:nth-child(4), td:nth-child(5) {
     font-weight: 800;
 }
-
 p {
     color: #00756b;
 }
 </style>
 
 <!-- Prev / Next pages //-->
-<a rel="prev" class="prev" href="feature_3410.html"></a>
+<a rel="prev" class="prev" href="feature_3411.html"></a>
 <a rel="next" class="next" href="feature_3414.html"></a>
 
 </head>
@@ -118,7 +123,7 @@ p {
                 <nav id="cont-dropdown"><span data-src="inc/toc.html">[toc]</span></nav>
             </a>
             </li>
-            <li id="top-nav-prevarticle"><a href="feature_3410.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
+            <li id="top-nav-prevarticle"><a href="feature_3411.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
             <li id="top-nav-nextarticle"><a href="feature_3414.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
         </ul>
     </nav>
@@ -151,32 +156,35 @@ p {
 
     <!-- START a section //-->
     <section class="content-block">
-<table>
-<tbody>
+<table class="footable">
+<thead>
 <tr height="15" style="height:15.0pt">
-    <td height="15" style="height:15.0pt;width:65pt">
-    </td>
-    <td width="65" style="width:65pt">
-        Notes
+    <th data-class="expand" class="doubleLine" width="50%">
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
+        <em>Notes</em>
         <span style="mso-spacerun:yes">&nbsp;</span>
-    </td>
-    <td width="65" style="width:65pt">
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
         Restricted<br>Funds
         <br>€'000
-    </td>
-    <td width="65" style="width:65pt">
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
         Unrestricted<br>Funds
         <br>€'000
-    </td>
-    <td width="65" style="width:65pt">
+    </th>
+    <th data-hide="" class="right doubleLine" width="10%" scope="col">
         Total<br>2014
         <br>€'000
-    </td>
-    <td width="65" style="width:65pt">
+    </th>
+    <th data-hide="phone" class="right doubleLine" width="10%" scope="col">
         Total<br>2013
         <br>€'000
-    </td>
+    </th>
 </tr>
+</thead>
+<tbody>
+<tr><td colspan="6"></td></tr>
 <tr height="15" style="height:15.0pt">
     <td height="15" colspan="6" class="b">
         Incoming resources
@@ -407,6 +415,7 @@ p {
         (1,705)
     </td>
 </tr>
+<tr><td colspan="6"></td></tr>
 <tr height="15" style="height:15.0pt">
     <td height="15" colspan="6" class="b" style="height:15.0pt;mso-ignore:colspan">
         Other recognised gains and losses
@@ -456,15 +465,9 @@ p {
         Realisation of revaluation gains on investments
     </td>
     <td></td>
-    <td>
-        <span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span>
-    </td>
-    <td>
-        <span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span>
-    </td>
-    <td>
-        <span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span>
-    </td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
     <td align="right">
         (711)
     </td>
@@ -529,6 +532,7 @@ p {
         1,137
     </td>
 </tr>
+<tr><td colspan="6"></td></tr>
 <tr height="15" style="height:15.0pt" class="total">
     <td style="text-align:left">
         Net movement in funds for the year
@@ -585,7 +589,7 @@ p {
     
         <!-- Previous article //-->
         <li id="end-nav-prevarticle">
-            <a href="feature_3410.html">
+            <a href="feature_3411.html">
  <span class="arrow">&lt;</span>
  <div class="end-titles">
  <p class="end-prevnext">Previous Page</p>

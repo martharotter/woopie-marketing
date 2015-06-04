@@ -56,38 +56,44 @@
 #intro-heading.noimage .titles h1 {
     color: #00756b;
     font-size: 3em;
-    border-color: #00756b;
+    border: none;
 }   
-td {
+.content-block table td {
     text-align:right;
     color: #00756b;
 }
-td.b {
+.content-block table td.b {
     font-weight:800;
 }
-tr.total td {
+.content-block table tr.total td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     padding-left: 3px;
     border: 0;
 }
-tr:first-child td {
+.content-block table tr:first-child th {
     background-color:#00756b;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-tr:last-child td {
+/* .content-block table tr:first-child td {
+    background-color:#00756b;
+    color: white;
+    font-weight: 800;
+    text-align: right;
+} */
+.content-block table tr:last-child td {
     background-color:#46978e;
     color: white;
     font-weight: 800;
     text-align: right;
 }
-td:first-child {
+.content-block table td:first-child {
     text-align:left;
 }
-td:nth-child(4) {
+.content-block table td:nth-child(4) {
     font-weight: 800;
 }
 .content-block h2 {
@@ -155,23 +161,25 @@ h2, p {
         <h2>Grants to Partner Agencies for Charitable Activities</h2>
         <p> The top 50 grant recipients in 2014 are listed below: </p>
 
-<table >
- <tr>
-  <td style="text-align:left;padding-left:5px;">
-    Name of partner institution
-  </td>
-  <td>
-    Country
-  </td>
-  <td>
-    No. of grants
-  </td>
-  <td>
-    2014
-    <br>
-    €'000
-  </td>
+<table class="footable">
+<thead>
+<tr>
+    <th data-class="expand" data-hide="" style="text-align:left;padding-left:5px;" class="left doubleLine" width="55%" scope="col">
+        Name of partner institution
+    </th>
+    <th data-hide="phone" class="right doubleLine" width="25%" scope="col">
+        Country
+    </th>
+    <th data-hide="phone,tablet" class="right doubleLine" width="10%" scope="col">
+        No. of grants
+    </th>
+    <th data-hide="" class="right doubleLine" width="10%" scope="col">
+        2014 <br>
+        €'000
+    </th>
 </tr>
+</thead>
+<tbody>
  <tr >
   <td >1. Jagrata Juba Shangha (JJS) </td>
   <td>Bangladesh<span

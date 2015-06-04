@@ -70,6 +70,18 @@
     font-weight: 800;
     padding: 50px 20px 0 5px;
 }     
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+p.caption { 
+   position: absolute; 
+   top: 30px; 
+   left: 20px; 
+   width: 30%; 
+   color: #ffffff;
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -100,6 +112,15 @@
     <!-- END top bar navigation //-->
     
     <h1 id="top-title">Concern Worldwide</h1>
+        <!-- START top social navigation //-->
+    <nav id="top-social" class="button-links">
+        <ul>
+            <li class="nav-twitter"><a href="#" data-reveal-id="twitterModal"><i class="icon icon-twitter"></i><b>Twitter</b></a></li>
+            <li class="nav-facebook"><a href="#" data-reveal-id="facebookModal"><i class="icon icon-facebook"></i> <b>Facebook</b></a></li>
+        </ul>
+    </nav>
+    <!-- END top social navigation //-->
+
     
 </div><!-- END top bar //-->
 
@@ -111,30 +132,18 @@
 <!-- End article heading //-->
 
 <!-- START article //-->
-<article role="main" id="article-body" style="background:url(articleContent/3376/29_Im0_hr.jpeg) no-repeat;height:1027px;">
+<!--<article role="main" id="article-body" style="background:url(articleContent/3376/29_Im0_hr.jpeg) no-repeat;height:1227px;"> -->
+<article role="main" id="article-body">
 
-    <section class="content-block">
-        <div class="left-col">
-        <div style="width:170px;border-top: 20px #ffffff solid;"></div>
-        <br/><br/>
-
-        <p style="font-weight:800;">Ibrie Seid, 32, stands in the shed that stores the potatoes the community has grown with the help of Concern.<br>Photo: Petterik Wiggers, Ethiopia</p>
+    <section class="content-block image">
+        <figure class="media-element-full"><img src="articleContent/3376/29_Im0_hr.jpeg" width="100%" alt="Ibrie Seid, 32, stands in the shed that stores the potatoes the community has grown with the help of Concern.">
+        </figure>
+        <p class="caption" style="font-weight:800;">Ibrie Seid, 32, stands in the shed that stores the potatoes the community has grown with the help of Concern.<br>Photo: Petterik Wiggers, Ethiopia</p>
     </section>
     <!-- END a section //-->
 
 </article>
 <!-- END article //-->
-
-
-<!-- START Contributors listing info -->
-<footer role="complimentary" id="contributors" class="group">
-            
-    <!-- START Contributor info -->
-    
-    <!-- END Contributor info -->
-
-</footer>
-<!-- END Contributors listing info -->
 
 <!-- START end pagination //-->
 <nav id="end-nav" class="group">

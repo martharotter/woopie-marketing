@@ -56,10 +56,10 @@
     border-top: none;
 }
 .left-col {
-    width: 330px;
-    float:left;
-    padding: 50px 5px 0 20px;
-    color: #ffffff;
+  width: 220px;
+  float: left;
+  padding: 50px 5px 0 0;
+  color: #ffffff;
 }   
 .left-col p {
     font-size:14px;
@@ -72,6 +72,41 @@
     font-weight: 800;
     padding: 50px 20px 0 5px;
 }
+@media screen and (min-width: 62.5em) {
+  article[role="main"], #contributors, #publication-footer {
+    max-width: 1044px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 50em) {
+  article[role="main"], #contributors, #publication-footer {
+    max-width: 844px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 31.25em) {
+  article[role=main] {
+  }
+  .left-col {
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 31.25em) {
+  article[role=main] {
+    margin: 0 96px;
+  }
+  .left-col {
+    padding-top: 440px;
+    width: 250px;
+  }
+}
+#intro-heading.noimage {
+  background: none;
+}
 </style>
 
 <!-- Prev / Next pages //-->
@@ -80,9 +115,8 @@
 
 </head>
 
-<body class="page" id="article">
-
- 
+<body class="page" id="frontcover">
+<img id="bg" src="articleContent/3387/RS15185__1140896_1-lpr.jpg"/>
 
 <!-- START main wrapper //-->
 <div id="wrapper">
@@ -113,8 +147,6 @@
 		</ul>
 	</nav>
 	<!-- END top social navigation //-->
-
-
     
 </div><!-- END top bar //-->
 
@@ -126,7 +158,7 @@
 <!-- End article heading //-->
 
 <!-- START article //-->
-<article role="main" id="article-body" style="background:url(articleContent/3387/40_Im0.jpeg) no-repeat;height:1027px;">
+<article role="main" id="article-body" style="height:775px;margin-top:40px;">
 
     <!-- START a section //-->
     <section class="content-block">
