@@ -12,8 +12,8 @@
 <meta charset="utf-8">
 
 <!-- About the Article //-->
-<title></title>
-<meta name="description" content=" ">
+<title>Our Identity, Vision, Mission and Values</title>
+<meta name="description" content="Our Identity, Vision, Mission and Values">
 <meta name="author" content="Firstname Lastname">
 
 <meta name="twitter:card" content="summary">
@@ -66,17 +66,149 @@
     font-weight: 800;
     padding: 50px 20px 0 5px;
 }
+.grid-container {
+  display: flex;
+  width: 850px;
+}
+.flexy {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+}
+.left-half {
+  flex: 1;
+  padding: 1rem;
+  height: 480px;
+}
+.right-half {
+  flex: 1;
+  padding: 1rem;
+  height: 480px;
+} 
+.category-box {
+    color: #000000;
+    width:170px;
+    vertical-align: top;
+}
+.category-left {
+    float:left;
+}
+.category-right {
+    float:right;
+}
+li h2{
+    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    padding: 5px 5px 0 0;
+    margin: 0;
+}
+.category-box p{
+    font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 5px 5px 0 5px;
+}
+ul.values {
+    display: block;
+    color: #000000;
+    list-style: none;
+    list-style-type: none;
+    float: none;
+    width: 95%;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 50px auto 20px;
+    padding: 0; }
+.values li {
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    width: 20%;
+    padding: 5px;
+    text-align: left; }
+ul.values2 {
+    display: block;
+    color: #000000;
+    list-style: none;
+    list-style-type: none;
+    float: none;
+    width: 100%;
+    vertical-align: baseline;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0; }
+.values2 li {
+    vertical-align: top;
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    width: 45%;
+    padding: 0;
+    text-align: left; }
+.values2 li p {
+    font-size: .9em;
+}
+@media screen and (max-width: 31.25em) {
+ul.values {
+    width: 90%;
+    display: block; }
+.values li {
+    width: 100%;
+    display: block; }
+}
+@media screen and (min-width: 31.25em) and (max-width: 50em) {
+ul.values {
+    width: 90%;
+    display: block; }
+.values li {
+    width: 50%;
+    display: inline-block; }
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  .grid-container {
+    width: 740px;
+  } 
+  .flexy {
+    display:block;
+  }
+  .bottom-article {
+    display:block;
+  }
+  .category-box {
+    width: 250px;
+    height: 290px;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 20px;
+    margin-bottom: 5px;
+  }
+  .category-box p {
+    width: 280px;
+  }
+  p.vision-text {
+    text-shadow: 1px 1px white;
+  }
+}
+@media screen and (min-width: 31.25em) {
+#intro-heading.noimage {
+  background: none;
+  height: auto;
+  margin-top: 0; }
+
+
 </style>
 
 <!-- Prev / Next pages //-->
-<a rel="prev" class="prev" href="feature_3355.html"></a>
+<a rel="prev" class="prev" href="feature_3353.html"></a>
 <a rel="next" class="next" href="feature_3357.html"></a>
 
 </head>
 
-<body class="page" id="article">
-
- 
+<body class="page" id="frontcover">
+<img id="bg" src="articleContent/3356/RS15167__1130618-lpr_cr.jpg"/>
 
 <!-- START main wrapper //-->
 <div id="wrapper">
@@ -92,7 +224,7 @@
                 <nav id="cont-dropdown"><span data-src="inc/toc.html">[toc]</span></nav>
             </a>
             </li>
-            <li id="top-nav-prevarticle"><a href="feature_3355.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
+            <li id="top-nav-prevarticle"><a href="feature_3353.html" class="prev"><i class="icon icon-previousarticle"></i> <b>Previous</b></a></li>
             <li id="top-nav-nextarticle"><a href="feature_3357.html" class="next"><i class="icon icon-nextarticle"></i> <b>Next</b></a></li>
         </ul>
     </nav>
@@ -120,23 +252,44 @@
 <!-- End article heading //-->
 
 <!-- START article //-->
-<article role="main" id="article-body" style="background:url(articleContent/3356/9_Im0.jpeg) no-repeat;height:1027px;">
+<article role="main" id="article-body" style="height:1027px;">
+
+  <ul class="values">
+    <li><h2>OUR<br>IDENTITY</h2>
+            <p><strong>Who we are</strong></p>
+            <p>Concern Worldwide is a non-governmental, international, humanitarian organisation dedicated to the reduction of suffering and working towards the ultimate elimination of extreme poverty in the world’s poorest countries.</p>
+    </li>
+    <li><h2>OUR<br>MISSION</h2>
+            <p><strong>What we do</strong></p>
+            <p>Our mission is to help people living in extreme poverty achieve major improvements in their lives which last and spread without ongoing support from Concern. </p>
+    </li>
+    <li><h2>OUR<br>VISION </h2>
+            <p><strong>For change</strong></p>
+            <p class="vision-text">A world where no-one lives in poverty, fear or oppression; where all have access to a decent standard of living and the opportunities and choices essential to a long, healthy and creative life; a world where everyone is treated with dignity and respect.</p>
+    </li>
+    <li><h2>OUR<br>VALUES</h2>
+            <p><strong>What guides<br>our work</strong></p>
+            <p>Concern’s core values derive from a single central value:</p>
+            <p>Extreme poverty must be targeted. The quality of our overall endeavour must ultimately be measured by its contribution to the rapid elimination of the extreme form of poverty defined by the United Nations as “absolute poverty”.  </p>
+    </li>
 
     <!-- START a section //-->
     <section class="content-block">
-        <div class="left-col">
-            <p>Our other values, stated below, are derived from this central value:</p>
-            <p>Respect for people comes first.
-            <br><br>Gender equality is a prerequisite for development.
-            <br><br>Development is a process not a gift.
-            <br><br>Greater participation leads to greater commitment.
-            <br><br>All governments have responsibility for poverty elimination.
-            <br><br>Emergencies call for rapid response.
-            <br><br>The environment must be respected. Good stewardship ensures trust.</p>
-        </div>
-        <div class="right-col">
-            <p>Coconut plantations in Zambezia province, Mozambique, have been decimated in recent years by Lethal Yellow Disease, leaving communities without a vital source of food and income. Concern has been working to encourage small farmers to grow replacement crops such as sesame as a more profitable alternative. Photo: Concern Worldwide</p>
-        </div>
+        <ul class="values2">
+            <li>
+                <p class="vision-text" style="width:180px;">Our other values, stated below, are derived from this central value:</p>
+                <p class="vision-text" style="width:180px;">Respect for people comes first.
+                <br><br>Gender equality is a prerequisite for development.
+                <br><br>Development is a process not a gift.
+                <br><br>Greater participation leads to greater commitment.
+                <br><br>All governments have responsibility for poverty elimination.
+                <br><br>Emergencies call for rapid response.
+                <br><br>The environment must be respected. Good stewardship ensures trust.</p>
+            </li>
+            <li style="margin-left:20px;">
+                <p class="vision-text" style="width:355px"><strong>Coconut plantations in Zambezia province, Mozambique, have been decimated in recent years by Lethal Yellow Disease, leaving communities without a vital source of food and income. Concern has been working to encourage small farmers to grow replacement crops such as sesame as a more profitable alternative. Photo: Concern Worldwide</strong></p>
+            </li>
+        </ul>
     </section>
     <!-- END a section //-->
 
@@ -144,27 +297,17 @@
 <br/><br/>
 <!-- END article //-->
 
-<!-- START Contributors listing info -->
-<footer role="complimentary" id="contributors" class="group">
-            
-    <!-- START Contributor info -->
-    
-    <!-- END Contributor info -->
-
-</footer>
-<!-- END Contributors listing info -->
-
 <!-- START end pagination //-->
 <nav id="end-nav" class="group">
     <ul>
     
         <!-- Previous article //-->
         <li id="end-nav-prevarticle">
-            <a href="feature_3355.html">
+            <a href="feature_3353.html">
  <span class="arrow">&lt;</span>
  <div class="end-titles">
  <p class="end-prevnext">Previous Page</p>
- <p class="end-article">Identity and Mission</p>
+ <p class="end-article">Contents</p>
  </div>
  </a>
 
@@ -185,12 +328,6 @@
     </ul>
 </nav>
 <!-- END end pagination //-->
-
-
-<footer role="contentinfo" id="publication-footer">
-    <span data-src="inc/footer.html">[footer]</span>
-</footer>
-
 
 </div><!-- END main wrapper //-->
 
