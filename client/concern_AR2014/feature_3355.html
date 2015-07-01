@@ -68,7 +68,6 @@
   padding: 1rem;
 }
 .right-half {
-  background: url(articleContent/3355/8_Im0.jpeg) no-repeat;
   flex: 1;
   padding: 1rem;
   height: 1027px;
@@ -95,6 +94,21 @@ category-right {
     font-family: Lato, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 16px;
     padding: 5px 5px 0 5px;
+}
+.category-box.category-right {
+  float: right;
+}
+@media only screen and (max-width : 31em) {
+  .grid-container {
+    width: 30em;
+  }
+  .flexy {
+    display:block;
+    padding: .5rem;
+  }
+  .category-box.category-right {
+    float: none;
+  }
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
   .grid-container {
@@ -190,7 +204,7 @@ category-right {
             <p><strong>Who we are</strong></p>
             <p>Concern Worldwide is a non-governmental, international, humanitarian organisation dedicated to the reduction of suffering and working towards the ultimate elimination of extreme poverty in the world’s poorest countries.</p>
         </div>
-        <div class="category-box category-right" style="float:right">
+        <div class="category-box category-right">
             <h2>OUR<br>MISSION</h2>
             <p><strong>What we do</strong></p>
             <p>Our mission is to help people living in extreme poverty achieve major improvements in their lives which last and spread without ongoing support from Concern. </p>
@@ -205,7 +219,7 @@ category-right {
             <p><strong>For change</strong></p>
             <p class="vision-text">A world where no-one lives in poverty, fear or oppression; where all have access to a decent standard of living and the opportunities and choices essential to a long, healthy and creative life; a world where everyone is treated with dignity and respect.</p>
         </div>
-        <div class="category-box category-right" style="float:right">
+        <div class="category-box category-right">
             <h2>OUR<br>VALUES</h2>
             <p><strong>What guides<br>our work</strong></p>
             <p>Concern’s core values derive from a single central value:</p>
