@@ -99,8 +99,11 @@ category-right {
   float: right;
 }
 @media only screen and (max-width : 31em) {
+article[role=main] {
+  margin: 0 26px;
+}
   .grid-container {
-    width: 30em;
+    width: 23em;
   }
   .flexy {
     display:block;
@@ -108,6 +111,9 @@ category-right {
   }
   .category-box.category-right {
     float: none;
+  }
+  .category-box {
+    margin-bottom: 10px;
   }
 }
 @media only screen and (min-width : 768px) and (max-width : 1024px) {
