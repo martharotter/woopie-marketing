@@ -86,9 +86,9 @@ tr:last-child td {
 td:first-child {
     text-align:left;
 }
-td:nth-child(3), td:nth-child(4), td:nth-child(5) {
+/*td:nth-child(3), td:nth-child(4), td:nth-child(5) {
     font-weight: 800;
-}
+} */
 .content-block h2 {
     color: #00756b;
 }
@@ -169,31 +169,45 @@ h2, p, li {
 <table>
 <tbody>
 <tr height="15" style="height:15.0pt">
-    <td height="15" width="65" style="height:15.0pt;width:65pt">
+    <td height="15" width="65" style="height:15.0pt;width:65pt;border-bottom:none;">
     </td>
-    <td width="65" style="width:65pt">
-        Land & freehold premises<br>
-        €'000
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Land &amp; freehold premises
     </td>
-    <td width="65" style="width:65pt">
-        Office furniture & equipment<br>
-        €'000
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Office furniture &amp; equipment
     </td>
-    <td width="65" style="width:65pt">
-        Computer equipment<br>
-        €'000
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Computer equipment
     </td>
-    <td width="65" style="width:65pt">
-        Motor vehicles<br>
-        €'000
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Motor vehicles
     </td>
-    <td width="65" style="width:65pt">
-        Total<br>
-        €'000
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Total
+    </td>
+</tr>
+<tr style="background-color:#00756b;color:#ffffff;font-weight:800;text-align:right;">
+    <td height="15" style="height:15.0pt;">
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
     </td>
 </tr>
 <tr height="15" style="height:15.0pt">
-    <td colspan="6" height="15" style="height:15.0pt">
+    <td colspan="6" height="15" style="height:15.0pt;font-weight:800;">
         Cost
     </td>
 </tr>
@@ -257,7 +271,7 @@ h2, p, li {
         60
     </td>
 </tr>
-<tr height="15" style="height:15.0pt">
+<tr height="15" style="height:15.0pt" class="total">
     <td height="15" style="height:15.0pt">
         At end of year
     </td>
@@ -277,6 +291,7 @@ h2, p, li {
         25,257
     </td>
 </tr>
+<tr><td colspan="6"> &nbsp; </td></tr>
 <tr height="15" style="height:15.0pt">
     <td height="15" colspan="6" style="height:15.0pt;mso-ignore:colspan">
         <strong>Depreciation and impairment provisions</strong>
@@ -342,7 +357,7 @@ h2, p, li {
         52
     </td>
 </tr>
-<tr height="15" style="height:15.0pt">
+<tr height="15" style="height:15.0pt" class="total">
     <td height="15" style="height:15.0pt">
         At end of year
     </td>
@@ -362,12 +377,13 @@ h2, p, li {
         9,832
     </td>
 </tr>
-<tr height="15" style="height:15.0pt">
-    <td height="15" colspan="6" style="height:15.0pt;mso-ignore:colspan">
+<tr><td style="border-bottom:0;" colspan="6"> &nbsp; </td></tr>
+<tr style="border-top:0;">
+    <td height="15" colspan="6" style="font-weight:800;">
         Net book value
     </td>
 </tr>
-<tr height="15" style="height:15.0pt">
+<tr height="15" style="height:15.0pt" class="total">
     <td height="15" style="height:15.0pt">
         At December 31, 2014<span style="mso-spacerun:yes">&nbsp;</span>
     </td>
@@ -387,49 +403,75 @@ h2, p, li {
         15,425
     </td>
 </tr>
+<tr style="border-bottom:0;"><td colspan="6"> &nbsp; </td></tr>
 <tr height="15" style="height:15.0pt">
-    <td height="15" style="height:15.0pt">
+    <td height="15" style="text-align:left;padding-left:3px;font-weight:normal;">
         At December 31, 2013
     </td>
-    <td class="xl65" align="right">
+    <td class="xl65" align="right" style="font-weight:normal;">
         15,431
     </td>
-    <td align="right">
+    <td align="right" style="font-weight:normal;">
         151
     </td>
-    <td align="right">
+    <td align="right" style="font-weight:normal;">
         107
     </td>
-    <td align="right">
+    <td align="right" style="font-weight:normal;">
         11
     </td>
-    <td class="xl65" align="right">
+    <td class="xl65" align="right" style="font-weight:normal;">
         15,700
     </td>
 </tr>
 </tbody>
 </table>
 
-<p>
-    During 2013 the Council reviewed the value of its land and freehold premises and decided they should write down the value 
-of these assets to their recoverable amount. This resulted in an impairment charge of €0.8 million. The Council is satisfied that 
-the service potential of all fixed assets held by the group at December 31, 2014 has not diminished, and therefore no further 
-provision for impairment has been made at December 31, 2014.
-</p>
+<p>During 2013 the Council reviewed the value of its land and freehold premises and decided they should write down the value of these assets to their recoverable amount. This resulted in an impairment charge of €0.8 million. The Council is satisfied that the service potential of all fixed assets held by the group at December 31, 2014 has not diminished, and therefore no further provision for impairment has been made at December 31, 2014.</p>
 
 <h2> TANGIBLE FIXED ASSETS - COMPANY </h2>
 
 <table>
+    <tr height="15" style="height:15.0pt">
+    <td height="15" width="65" style="height:15.0pt;width:65pt;border-bottom:none;">
+    </td>
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Land &amp; freehold premises
+    </td>
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Office furniture &amp; equipment
+    </td>
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Computer equipment
+    </td>
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Motor vehicles
+    </td>
+    <td width="65" style="width:65pt;border-bottom:none;">
+        Total
+    </td>
+</tr>
+<tr style="background-color:#00756b;color:#ffffff;font-weight:800;text-align:right;">
+    <td height="15" style="height:15.0pt;">
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+    <td style="color:#ffffff;">
+        €’000
+    </td>
+</tr>
  <tr height=15 style='height:15.0pt'>
-  <td height=15 width=65 style='height:15.0pt;width:65pt'></td>
-  <td width=65 style='width:65pt'>Land &amp; freehold premises<br>€'000</td>
-  <td width=65 style='width:65pt'>Office furniture &amp; equipment<br>€'000</td>
-  <td width=65 style='width:65pt'>Computer equipment<br>€'000</td>
-  <td width=65 style='width:65pt'>Motor vehicles<br>€'000</td>
-  <td width=65 style='width:65pt'>Total<br>€'000</td>
- </tr>
- <tr height=15 style='height:15.0pt'>
-  <td colspan=6 height=15 style='height:15.0pt'>Cost</td>
+  <td colspan=6 height=15 style='font-weight:800;'>Cost</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>At beginning of year</td>
@@ -447,7 +489,7 @@ provision for impairment has been made at December 31, 2014.
   <td>-</td>
   <td align=right>227</td>
  </tr>
- <tr height=15 style='height:15.0pt'>
+ <tr height=15 style='height:15.0pt' class="total">
   <td height=15 style='height:15.0pt'>At end of year</td>
   <td class=xl65 align=right>18,906</td>
   <td class=xl65 align=right>1,423</td>
@@ -455,8 +497,9 @@ provision for impairment has been made at December 31, 2014.
   <td align=right>43</td>
   <td class=xl65 align=right>24,351</td>
  </tr>
+<tr><td colspan="6"> &nbsp; </td></tr>
  <tr height=15 style='height:15.0pt'>
-  <td colspan=6 height=15 style='height:15.0pt;mso-ignore:colspan'>Depreciation and impairment provisions</td>
+  <td colspan=6 height=15 style='font-weight:800;'>Depreciation and impairment provisions</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>At beginning of year</td>
@@ -474,7 +517,7 @@ provision for impairment has been made at December 31, 2014.
   <td align=right>6</td>
   <td align=right>492</td>
  </tr>
- <tr height=15 style='height:15.0pt'>
+ <tr height=15 style='height:15.0pt' class="total">
   <td height=15 style='height:15.0pt'>At end of year</td>
   <td class=xl65 align=right>3,864</td>
   <td class=xl65 align=right>1,291</td>
@@ -482,10 +525,11 @@ provision for impairment has been made at December 31, 2014.
   <td align=right>37</td>
   <td class=xl65 align=right>9,033</td>
  </tr>
+<tr><td colspan="6"> &nbsp; </td></tr>
  <tr height=15 style='height:15.0pt'>
-  <td height=15 colspan=6 style='height:15.0pt;mso-ignore:colspan'>Net book value</td>
+  <td height=15 colspan=6 style='font-weight:800;'>Net book value</td>
  </tr>
- <tr height=15 style='height:15.0pt'>
+ <tr height=15 style='height:15.0pt' class="total">
   <td height=15 style='height:15.0pt'>At December 31, 2014</td>
   <td class=xl65 align=right>15,042</td>
   <td align=right>132</td>
@@ -493,22 +537,18 @@ provision for impairment has been made at December 31, 2014.
   <td align=right>6</td>
   <td class=xl65 align=right>15,318</td>
  </tr>
+<tr><td colspan="6"> &nbsp; </td></tr>
  <tr height=15 style='height:15.0pt'>
-  <td height=15 style='height:15.0pt'>At December 31, 2013<span style="mso-spacerun:yes">&nbsp;</span></span></td>
-  <td class=xl65 align=right>15,341</td>
-  <td align=right>130</td>
-  <td align=right>100</td>
-  <td align=right>12</td>
-  <td class=xl65 align=right>15,583</td>
+  <td height=15 style="font-weight:normal;">At December 31, 2013<span style="mso-spacerun:yes">&nbsp;</span></span></td>
+  <td class=xl65 align=right style="font-weight:normal;">15,341</td>
+  <td align=right style="font-weight:normal;">130</td>
+  <td align=right style="font-weight:normal;">100</td>
+  <td align=right style="font-weight:normal;">12</td>
+  <td class=xl65 align=right style="font-weight:normal;">15,583</td>
  </tr>
 </table>
 
-<p>
-    During 2013 the Council reviewed the value of its land and freehold premises and decided they should write down the value of 
-these assets to their recoverable amount. This resulted in an impairment charge of €0.8 million. The Council is satisfied that the 
-service potential of all fixed assets held by the company at December 31, 2014 has not diminished, and therefore no further 
-provision for impairment has been made at December 31, 2014.
-</p>
+<p>During 2013 the Council reviewed the value of its land and freehold premises and decided they should write down the value of these assets to their recoverable amount. This resulted in an impairment charge of €0.8 million. The Council is satisfied that the service potential of all fixed assets held by the company at December 31, 2014 has not diminished, and therefore no further provision for impairment has been made at December 31, 2014.</p>
 
         
     </section>
