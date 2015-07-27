@@ -65,13 +65,6 @@ td {
 td.b {
     font-weight:800;
 }
-tr.total td {
-    background-color:#46978e;
-    color: white;
-    font-weight: 800;
-    padding-left: 3px;
-    border: 0;
-}
 tr:first-child td {
     background-color:#00756b;
     color: white;
@@ -90,14 +83,21 @@ td:first-child {
 td:nth-child(2), td:nth-child(3), td:nth-child(4) {
     font-weight: normal;
 }
-table.reconciliation-of-funds td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+table.reconciliationOfFunds td:nth-child(2), table.reconciliationOfFunds td:nth-child(3), table.reconciliationOfFunds td:nth-child(4) {
     font-weight: 800;
 }
-table.movement-of-funds td:nth-child(2), td:nth-child(3), td:nth-child(4) {
+table#movementOfFunds td:nth-child(2), #movementOfFunds td:nth-child(3), #movementOfFunds td:nth-child(4) {
     font-weight: normal;
 }
-table.movement-of-funds td:nth-child(9) {
+table#movementOfFunds td:nth-child(9) {
     font-weight: 800;
+}
+tr.total td {
+    background-color:#46978e;
+    color: white;
+    font-weight: 800;
+    padding-left: 3px;
+    border: 0;
 }
 .content-block h2, .content-block h3 {
     color: #00756b;
@@ -106,16 +106,13 @@ h2, p, li{
     color: #00756b;
 }
 </style>
+</head>
 
 <!-- Prev / Next pages //-->
 <a rel="prev" class="prev" href="feature_3432.html"></a>
 <a rel="next" class="next" href="feature_3446.html"></a>
 
-</head>
-
 <body class="page" id="article">
-
- 
 
 <!-- START main wrapper //-->
 <div id="wrapper">
@@ -167,8 +164,7 @@ h2, p, li{
 
 <p><strong>(a) Reconciliation of funds - group</strong></p>
 
-<table class="reconciliation-of-funds">
-<tbody>
+<table class="reconciliationOfFunds">
 <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
     <td height="15" style="height:15.0pt">
     </td>
@@ -195,10 +191,10 @@ h2, p, li{
 </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'><strong>Total funds at beginning of year</strong></td>
-  <td class=xl65 align=right style="font-weight:800;">2,860</td>
-  <td class=xl65 align=right style="font-weight:800;">35,537</td>
-  <td class=xl65 align=right style="font-weight:800;">38,397</td>
-  <td class=xl65 align=right>37,349</td>
+  <td align=right style="font-weight:800;">2,860</td>
+  <td align=right style="font-weight:800;">35,537</td>
+  <td align=right style="font-weight:800;">38,397</td>
+  <td align=right>37,349</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'><br><strong>Movement in funds</strong></td>
@@ -207,9 +203,9 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;'>Net incoming/(outgoing) resources for the year before other recognised gains and losses</td>
   <td align=right style="font-weight:800;">(54)</td>
-  <td class=xl65 align=right style="font-weight:800;">7,467</td>
-  <td class=xl65 align=right style="font-weight:800;">7,413</td>
-  <td class=xl65 align=right>(1,705)</td>
+  <td align=right style="font-weight:800;">7,467</td>
+  <td align=right style="font-weight:800;">7,413</td>
+  <td align=right>(1,705)</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Exchange gain/(loss) on consolidation of foreign subsidiary</td>
@@ -229,8 +225,8 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Realisation<span style="mso-spacerun:yes">&nbsp;</span>of fair value gains on financial fixed asset<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>(3,127)</td>
-  <td class=xl65 align=right>(3,127)</td>
+  <td align=right>(3,127)</td>
+  <td align=right>(3,127)</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
  </tr>
  <tr height=15 style='height:15.0pt'>
@@ -238,7 +234,7 @@ h2, p, li{
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,365</td>
+  <td align=right>2,365</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Realisation<span style="mso-spacerun:yes">&nbsp;</span>of revaluation gains on investments<span style="mso-spacerun:yes">&nbsp;</span></span></td>
@@ -257,31 +253,30 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Actuarial (loss)/gain on staff retirement schemes<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>(1,072)</td>
-  <td class=xl65 align=right>(1,072)</td>
-  <td class=xl65 align=right>1,137</td>
+  <td align=right>(1,072)</td>
+  <td align=right>(1,072)</td>
+  <td align=right>1,137</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'><strong>Net movement in funds for the year</strong></td>
   <td align=right>(201)</td>
-  <td class=xl65 align=right>4,350</td>
-  <td class=xl65 align=right>4,149</td>
-  <td class=xl65 align=right>1,048</td>
+  <td align=right>4,350</td>
+  <td align=right>4,149</td>
+  <td align=right>1,048</td>
  </tr>
  <tr><td colspan="5"></td></tr>
  <tr height=15 style='height:15.0pt'>
   <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">Total funds at end of year</td>
-  <td class=xl65 align=right>2,659</td>
-  <td class=xl65 align=right>39,887</td>
-  <td class=xl65 align=right>42,546</td>
+  <td align=right>2,659</td>
+  <td align=right>39,887</td>
+  <td align=right>42,546</td>
   <td style="font-weight:normal;">38,397</td>
  </tr>
 </table>
 
 <p>The funds held by the group at December 31, 2014 are made up as follows:</p>
 
-<table>
-<tbody>
+<table class="reconciliationOfFunds">
 <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
     <td height="15" style="height:15.0pt">
     </td>
@@ -308,32 +303,31 @@ h2, p, li{
 </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Restricted funds<span style="mso-spacerun:yes">&nbsp;</span></span></td>
-  <td class=xl65 align=right>2,201</td>
+  <td align=right>2,201</td>
   <td align=right>458</td>
-  <td class=xl65 align=right>2,659</td>
-  <td class=xl65 align=right>2,860</td>
+  <td align=right>2,659</td>
+  <td align=right>2,860</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Unrestricted funds<span style="mso-spacerun:yes">&nbsp;</span></span></td>
-  <td class=xl65 align=right>37,607</td>
-  <td class=xl65 align=right>2,280</td>
-  <td class=xl65 align=right>39,887</td>
-  <td class=xl65 align=right>35,537</td>
+  <td align=right>37,607</td>
+  <td align=right>2,280</td>
+  <td align=right>39,887</td>
+  <td align=right>35,537</td>
  </tr>
  <tr><td colspan="5"></td></tr>
  <tr height=15 style='height:15.0pt'>
   <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">Total</td>
-  <td class=xl65 align=right>39,808</td>
-  <td class=xl65 align=right>2,738</td>
-  <td class=xl65 align=right>42,546</td>
-  <td class=xl65 align=right>38,397</td>
+  <td align=right>39,808</td>
+  <td align=right>2,738</td>
+  <td align=right>42,546</td>
+  <td align=right>38,397</td>
  </tr>
 </table>
 
 <p>(b) Reconciliation of funds - company</p>
 
-<table class="reconciliation-of-funds">
-<tbody>
+<table class="reconciliationOfFunds">
 <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
     <td height="15" style="height:15.0pt">
     </td>
@@ -361,10 +355,10 @@ h2, p, li{
  <tr><td colspan="5"></td></tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'><strong>Total funds at beginning of year</strong></td>
-  <td class=xl65 align=right>2,349</td>
-  <td class=xl65 align=right>33,852</td>
-  <td class=xl65 align=right>36,201</td>
-  <td class=xl65 align=right>35,559</td>
+  <td align=right>2,349</td>
+  <td align=right>33,852</td>
+  <td align=right>36,201</td>
+  <td align=right>35,559</td>
  </tr>
  <tr><td colspan="5"></td></tr>
  <tr height=15 style='height:15.0pt'>
@@ -374,9 +368,9 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Net incoming/(outgoing) resources for the year before other recognised gains and losses</td>
   <td align=right>(148)</td>
-  <td class=xl65 align=right>7,188</td>
-  <td class=xl65 align=right>7,040</td>
-  <td class=xl65 align=right>(2,149)</td>
+  <td align=right>7,188</td>
+  <td align=right>7,040</td>
+  <td align=right>(2,149)</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Fair value gain on financial fixed asset<span style="mso-spacerun:yes">&nbsp;</span></span></td>
@@ -388,8 +382,8 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Realisation<span style="mso-spacerun:yes">&nbsp;</span>of fair value gains on financial fixed asset<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>(3,127)</td>
-  <td class=xl65 align=right>(3,127)</td>
+  <td align=right>(3,127)</td>
+  <td align=right>(3,127)</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
  </tr>
  <tr height=15 style='height:15.0pt'>
@@ -397,7 +391,7 @@ h2, p, li{
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,365</td>
+  <td align=right>2,365</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Realisation<span style="mso-spacerun:yes">&nbsp;</span>of revaluation gains on investments<span style="mso-spacerun:yes">&nbsp;</span></span></td>
@@ -409,31 +403,31 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'>Actuarial (loss)/gain on staff retirement schemes<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>(1,072)</td>
-  <td class=xl65 align=right>(1,072)</td>
-  <td class=xl65 align=right>1,137</td>
+  <td align=right>(1,072)</td>
+  <td align=right>(1,072)</td>
+  <td align=right>1,137</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt'><strong>Net movement in funds for the year</strong></td>
   <td align=right>(148)</td>
-  <td class=xl65 align=right>3,755</td>
-  <td class=xl65 align=right>3,607</td>
+  <td align=right>3,755</td>
+  <td align=right>3,607</td>
   <td align=right>642</td>
  </tr>
  <tr><td colspan="5"></td></tr>
  <tr height=15 style='height:15.0pt'>
   <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">Total funds at end of year</td>
-  <td class=xl65 align=right>2,201</td>
-  <td class=xl65 align=right>37,607</td>
-  <td class=xl65 align=right>39,808</td>
-  <td class=xl65 align=right style="font-weight:normal;">36,201</td>
+  <td align=right>2,201</td>
+  <td align=right>37,607</td>
+  <td align=right>39,808</td>
+  <td align=right style="font-weight:normal;">36,201</td>
  </tr>
 </table>
 
 <p><strong>19 (c) Movements in funds</strong>
 <br>The movements in funds classified in accordance with the group accounting policies are as follows:</p>
 
-<table class="movement-of-funds">
+<table id="movementOfFunds">
 <tbody>
 <tr height="15" style="height:15.0pt;background-color:#00756b;color:white;font-weight: 800;text-align: right;border-top:none">
     <td height="15" style="height:15.0pt;border-bottom:none;">
@@ -495,8 +489,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Afghanistan<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>4,350</td>
-  <td class=xl65 align=right>4,350</td>
+  <td align=right>4,350</td>
+  <td align=right>4,350</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -506,8 +500,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Bangladesh<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>4,754</td>
-  <td class=xl65 align=right>4,754</td>
+  <td align=right>4,754</td>
+  <td align=right>4,754</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -517,8 +511,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Burundi<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>1,493</td>
-  <td class=xl65 align=right>1,493</td>
+  <td align=right>1,493</td>
+  <td align=right>1,493</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -546,8 +540,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>1,859</td>
-  <td class=xl65 align=right>1,859</td>
+  <td align=right>1,859</td>
+  <td align=right>1,859</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -561,8 +555,8 @@ h2, p, li{
   Korea<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,035</td>
-  <td class=xl65 align=right>2,035</td>
+  <td align=right>2,035</td>
+  <td align=right>2,035</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -576,8 +570,8 @@ h2, p, li{
   Congo<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>5,519</td>
-  <td class=xl65 align=right>5,519</td>
+  <td align=right>5,519</td>
+  <td align=right>5,519</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -592,8 +586,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>4,646</td>
-  <td class=xl65 align=right>4,646</td>
+  <td align=right>4,646</td>
+  <td align=right>4,646</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -608,8 +602,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>6,127</td>
-  <td class=xl65 align=right>6,127</td>
+  <td align=right>6,127</td>
+  <td align=right>6,127</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -624,8 +618,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>4,188</td>
-  <td class=xl65 align=right>4,188</td>
+  <td align=right>4,188</td>
+  <td align=right>4,188</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -638,8 +632,8 @@ h2, p, li{
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>246</td>
-  <td class=xl65 align=right>4,777</td>
-  <td class=xl65 align=right>4,845</td>
+  <td align=right>4,777</td>
+  <td align=right>4,845</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -653,8 +647,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>3,143</td>
-  <td class=xl65 align=right>2,897</td>
+  <td align=right>3,143</td>
+  <td align=right>2,897</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right>5</td>
@@ -668,8 +662,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,522</td>
-  <td class=xl65 align=right>2,522</td>
+  <td align=right>2,522</td>
+  <td align=right>2,522</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -684,8 +678,8 @@ h2, p, li{
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,051</td>
-  <td class=xl65 align=right>2,051</td>
+  <td align=right>2,051</td>
+  <td align=right>2,051</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -700,8 +694,8 @@ h2, p, li{
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>110</td>
-  <td class=xl65 align=right>5,052</td>
-  <td class=xl65 align=right>5,161</td>
+  <td align=right>5,052</td>
+  <td align=right>5,161</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -716,8 +710,8 @@ h2, p, li{
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>446</td>
-  <td class=xl65 align=right>8,202</td>
-  <td class=xl65 align=right>8,600</td>
+  <td align=right>8,202</td>
+  <td align=right>8,600</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -729,9 +723,9 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Philippines<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
-  <td class=xl65 align=right>1,567</td>
-  <td class=xl65 align=right>1,890</td>
-  <td class=xl65 align=right>2,474</td>
+  <td align=right>1,567</td>
+  <td align=right>1,890</td>
+  <td align=right>2,474</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right>17</td>
@@ -743,8 +737,8 @@ h2, p, li{
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>4,344</td>
-  <td class=xl65 align=right>4,344</td>
+  <td align=right>4,344</td>
+  <td align=right>4,344</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
@@ -758,8 +752,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Rwanda<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>1,849</td>
-  <td class=xl65 align=right>1,849</td>
+  <td align=right>1,849</td>
+  <td align=right>1,849</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -769,8 +763,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Sierra Leone<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>6,333</td>
-  <td class=xl65 align=right>6,127</td>
+  <td align=right>6,333</td>
+  <td align=right>6,127</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right>3</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -780,8 +774,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Somalia<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>52</td>
-  <td class=xl65 align=right>8,866</td>
-  <td class=xl65 align=right>8,918</td>
+  <td align=right>8,866</td>
+  <td align=right>8,918</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -791,8 +785,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>South Sudan<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>12,723</td>
-  <td class=xl65 align=right>12,281</td>
+  <td align=right>12,723</td>
+  <td align=right>12,281</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -802,8 +796,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Syria - Turkey<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>360</td>
-  <td class=xl65 align=right>3,442</td>
-  <td class=xl65 align=right>3,177</td>
+  <td align=right>3,442</td>
+  <td align=right>3,177</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right>8</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -813,8 +807,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Tanzania<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,978</td>
-  <td class=xl65 align=right>2,978</td>
+  <td align=right>2,978</td>
+  <td align=right>2,978</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -824,8 +818,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Uganda<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,747</td>
-  <td class=xl65 align=right>2,747</td>
+  <td align=right>2,747</td>
+  <td align=right>2,747</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -835,8 +829,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>Zambia<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,084</td>
-  <td class=xl65 align=right>2,084</td>
+  <td align=right>2,084</td>
+  <td align=right>2,084</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -846,8 +840,8 @@ h2, p, li{
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>HQ and other projects<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
   <td align=right>79</td>
-  <td class=xl65 align=right>3,304</td>
-  <td class=xl65 align=right>3,306</td>
+  <td align=right>3,304</td>
+  <td align=right>3,306</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
@@ -856,14 +850,14 @@ h2, p, li{
  <tr height=15 style='height:15.0pt' class="total">
   <td height=15 style='height:15.0pt'>Total restricted funds<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="font-weight:normal;">(i)</span></td>
-  <td class=xl65 align=right>2,860</td>
-  <td class=xl65 align=right>111,600</td>
-  <td class=xl65 align=right>111,654</td>
+  <td align=right style="font-weight:800;">2,860</td>
+  <td align=right style="font-weight:800;">111,600</td>
+  <td align=right style="font-weight:800;">111,654</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span
   style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right style="font-weight:normal;">33</td>
   <td align=right style="font-weight:normal;">(180)</td>
-  <td class=xl65 align=right>2,659</td>
+  <td align=right>2,659</td>
  </tr>
 <tr><td colspan=9></td></tr>
  <tr height=15 style='height:15.0pt'>
@@ -874,9 +868,9 @@ h2, p, li{
   <td height=15 style='height:15.0pt'>General funds<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td><span style="font-weight:normal;">(ii)</span></td>
   <td align=right>115</td>
-  <td class=xl65 align=right>30,728</td>
-  <td class=xl65 align=right>26,304</td>
-  <td class=xl65 align=right>(3,432)</td>
+  <td align=right>30,728</td>
+  <td align=right>26,304</td>
+  <td align=right>(3,432)</td>
   <td align=right>136</td>
   <td align=right>(434)</td>
   <td align=right>809</td>
@@ -901,70 +895,71 @@ h2, p, li{
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>&nbsp; &nbsp; Tangible fixed assets<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
-  <td class=xl65 align=right>10,231</td>
+  <td align=right>10,231</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td align=right>448</td>
-  <td class=xl65 align=right>10,679</td>
+  <td align=right>10,679</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>&nbsp; &nbsp; Programme continuity<span style="mso-spacerun:yes">&nbsp;</span>fund<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td></td>
-  <td class=xl65 align=right>22,534</td>
+  <td align=right>22,534</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>2,333</td>
-  <td class=xl65 align=right>24,867</td>
+  <td align=right>2,333</td>
+  <td align=right>24,867</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>&nbsp; &nbsp; Financial fixed assets<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td></td>
-  <td class=xl65 align=right>2,365</td>
+  <td align=right>2,365</td>
   <td>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>(2,361)</td>
+  <td align=right>(2,361)</td>
   <td align=right>4</td>
  </tr>
  <tr height=15 style='height:15.0pt'>
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>&nbsp; &nbsp; Fundraising investment fund<span style="mso-spacerun:yes">&nbsp;</span></span></td>
   <td></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>3,127</td>
+  <td align=right>3,127</td>
   <td align=right>84</td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
   <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>3,043</td>
+  <td align=right>3,043</td>
  </tr>
  <tr height=15 style='height:15.0pt' class="total">
   <td height=15 style='height:15.0pt;mso-ignore:colspan'>Total unrestricted funds</td>
   <td></td>
-  <td class=xl65 align=right>35,537</td>
-  <td class=xl65 align=right>33,855</td>
-  <td class=xl65 align=right>26,388</td>
-  <td class=xl65 align=right>(3,432)</td>
-  <td align=right>136</td>
-  <td align=right>180</td>
-  <td class=xl65 align=right>39,887</td>
+  <td align=right style="font-weight:800;">35,537</td>
+  <td align=right style="font-weight:800;">33,855</td>
+  <td align=right style="font-weight:800;">26,388</td>
+  <td align=right style="font-weight:800;">(3,432)</td>
+  <td align=right style="font-weight:800;">136</td>
+  <td align=right style="font-weight:800;">180</td>
+  <td align=right style="font-weight:800;">39,887</td>
  </tr>
  <tr><td colspan=9></td></tr>
  <tr height=15 style='height:15.0pt'>
   <td height="15" style="height:15.0pt;text-align:left;padding-left:5px;">Total funds</td>
   <td><span style="font-weight:normal;">(iv)</span></td>
-  <td class=xl65 align=right>38,397</td>
-  <td class=xl65 align=right>145,455</td>
-  <td class=xl65 align=right>138,042</td>
-  <td class=xl65 align=right>(3,432)</td>
-  <td align=right>169</td>
-  <td><span style="mso-spacerun:yes">&nbsp;</span>-<span style="mso-spacerun:yes">&nbsp;</span></td>
-  <td class=xl65 align=right>42,546</td>
+  <td align=right style="font-weight:800;">38,397</td>
+  <td align=right style="font-weight:800;">145,455</td>
+  <td align=right style="font-weight:800;">138,042</td>
+  <td align=right style="font-weight:800;">(3,432)</td>
+  <td align=right style="font-weight:800;">169</td>
+  <td style="font-weight:800;">-</td>
+  <td align=right style="font-weight:800;">42,546</td>
  </tr>
+</tbody>
 </table>
 
 
@@ -1056,6 +1051,7 @@ which they were donated as quickly as possible.<br />
   <td style="font-weight:normal;">39,887</td>
   <td style="font-weight:normal;">42,546</td>
 </tr>
+</tbody>
 </table>
 
 <p><em><strong>Analysis of company net assets between funds</strong></em></p>
@@ -1118,6 +1114,7 @@ which they were donated as quickly as possible.<br />
   <td style="font-weight:normal;">37,607</td>
   <td style="font-weight:normal;">39,808</td>
 </tr>
+</tbody>
 </table>
 
     </section>
