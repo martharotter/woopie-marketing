@@ -172,7 +172,7 @@ $(document).ready(function() {
 	//Validation Starts Here    
 	$('#alpha-form').submit(function() {
 		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-			$('form').attr('action', 'https://docs.google.com/spreadsheet/formResponse?formkey=dGJFbEVHTTgwWXBoTmxCUXUxdFlZb1E6MA');
+			$('form').attr('action', 'https://docs.google.com/forms/d/e/1FAIpQLSdhZzbnI7Whn5L1LJURqiHtf_XjUiExu5Ttr0g8UCbDibqO4A/formResponse');
 			return true;
 		}
 		else
