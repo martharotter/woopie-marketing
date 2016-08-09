@@ -211,16 +211,16 @@ $(document).ready(function() {
 
 	//Validation Starts Here
 	$('#signup-form').submit(function(event) {
-		event.preventDefault();
-		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-            url = "https://app.woop.ie/customers/";
-            var xhr = createCORSRequest('POST', url);
-            if (!xhr) {
-              throw new Error('CORS not supported');
+            event.preventDefault();
+	    if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+                url = "https://app.woop.ie/customers/";
+                var xhr = createCORSRequest('POST', url);
+                if (!xhr) {
+                  throw new Error('CORS not supported');
+                }
+                xhr.send($(this).serialize());
             }
-            xhr.send($(this).serialize());
-		}
-		else {
+	    else {
 			alert("Please Enter Correct Verification Number");
 			randomgen();
 			$('#enterVerify').select();
