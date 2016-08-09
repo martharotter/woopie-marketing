@@ -140,6 +140,30 @@ function hidePressModal() {
 	});
 }
 
+function createCORSRequest(method, url) {
+  var xhr = new XMLHttpRequest();
+  if ("withCredentials" in xhr) {
+
+    // Check if the XMLHttpRequest object has a "withCredentials" property.
+    // "withCredentials" only exists on XMLHTTPRequest2 objects.
+    xhr.open(method, url, true);
+
+  } else if (typeof XDomainRequest != "undefined") {
+
+    // Otherwise, check if XDomainRequest.
+    // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+
+  } else {
+
+    // Otherwise, CORS is not supported by the browser.
+    xhr = null;
+
+  }
+  return xhr;
+}
+
 // SPam
 $(document).ready(function() {
 	function randomgen()
@@ -186,19 +210,17 @@ $(document).ready(function() {
 	});
 
 	//Validation Starts Here
-	$('#signup-form').submit(function() {
-		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-			$.ajax({
-                data: $(this).serialize(), // get the form data
-                url: 'https://app.woop.ie/customers/',
-                type: 'POST',
-                success: function(response) { // on success..
-                	console.log("request submitted");
+	$('#signup-form').submit(function(event) {
+            event.preventDefault();
+	    if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+                url = "https://app.woop.ie/customers/";
+                var xhr = createCORSRequest('POST', url);
+                if (!xhr) {
+                  throw new Error('CORS not supported');
                 }
-			});
-            return false;
-		}
-		else {
+                xhr.send($(this).serialize());
+            }
+	    else {
 			alert("Please Enter Correct Verification Number");
 			randomgen();
 			$('#enterVerify').select();
