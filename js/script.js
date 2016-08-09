@@ -153,7 +153,7 @@ $(document).ready(function() {
 	}
 	randomgen();
 	
-	//Validation Starts Here    
+	//Validation Starts Here
 	$('#contact-form').submit(function() {
 		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
 			$('form').attr('action', 'https://docs.google.com/spreadsheet/formResponse?formkey=dFdpcVMyYTVCSzA3bzY2WkRjX05UOWc6MQ&ifq');
@@ -169,7 +169,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	//Validation Starts Here    
+	//Validation Starts Here
 	$('#alpha-form').submit(function() {
 		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
 			$('form').attr('action', 'https://docs.google.com/spreadsheet/formResponse?formkey=dGJFbEVHTTgwWXBoTmxCUXUxdFlZb1E6MA');
@@ -177,6 +177,28 @@ $(document).ready(function() {
 		}
 		else
 		{
+			alert("Please Enter Correct Verification Number");
+			randomgen();
+			$('#enterVerify').select();
+			$('#enterVerify').focus();
+			return false;
+		}
+	});
+
+	//Validation Starts Here
+	$('#signup-form').submit(function() {
+		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+			$.ajax({
+                data: $(this).serialize(), // get the form data
+                url: 'http://127.0.0.1:8000/customers/',
+                type: 'POST',
+                success: function(response) { // on success..
+                	console.log("request submitted");
+                }
+			});
+            return false;
+		}
+		else {
 			alert("Please Enter Correct Verification Number");
 			randomgen();
 			$('#enterVerify').select();
