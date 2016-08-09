@@ -190,7 +190,7 @@ $(document).ready(function() {
 		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
 			$.ajax({
                 data: $(this).serialize(), // get the form data
-                url: 'http://127.0.0.1:8000/customers/',
+                url: 'https://app.woop.ie/customers/',
                 type: 'POST',
                 success: function(response) { // on success..
                 	console.log("request submitted");
