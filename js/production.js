@@ -2070,25 +2070,29 @@ $(document).ready(function() {
 		}
 	});
 
-	//Validation Starts Here
-	$('#signup-form').submit(function(event) {
-            event.preventDefault();
-	    if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
-                url = "https://app.woop.ie/customers/";
-                var xhr = createCORSRequest('POST', url);
-                if (!xhr) {
-                  throw new Error('CORS not supported');
-                }
-                xhr.send($(this).serialize());
+    //Validation Starts Here
+    $('#signup-form').submit(function(event) {
+        event.preventDefault();
+        if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
+            url = "https://app.woop.ie/customers/";
+            var formData = new FormData();
+            formData.append('email', $('#id_email').val());
+            formData.append('name', $('#id_name').val());
+            formData.append('details', $('#id_details').val());
+
+            var xhr = createCORSRequest('POST', url);
+            if (!xhr) {
+                throw new Error('CORS not supported');
             }
-	    else {
-			alert("Please Enter Correct Verification Number");
-			randomgen();
-			$('#enterVerify').select();
-			$('#enterVerify').focus();
-			return false;
-		}
-	});
+            xhr.send(formData);
+        } else {
+            alert("Please Enter Correct Verification Number");
+            randomgen();
+            $('#enterVerify').select();
+            $('#enterVerify').focus();
+            return false;
+        }
+    });
 });
 
 // Flipper control
