@@ -2046,15 +2046,6 @@ $(document).ready(function() {
 		}
 	});
 
-
-        $('#YOUR_FORM').submit(function() { // catch the form's submit event
-            $.ajax({ // create an AJAX call...
-                data: $(this).serialize(), // get the form data
-                type: $(this).attr('method'), // GET or POST
-                url: $(this).attr('action'), // the file to call
-            });
-            return false;
-
 	//Validation Starts Here
 	$('#signup-form').submit(function() {
 		if($('#enterVerify').val() == $('#verifyNumHidden').val() ) {
@@ -2068,8 +2059,7 @@ $(document).ready(function() {
 			});
             return false;
 		}
-		else
-		{
+		else {
 			alert("Please Enter Correct Verification Number");
 			randomgen();
 			$('#enterVerify').select();
